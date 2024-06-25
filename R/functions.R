@@ -77,7 +77,7 @@ monotonic_gam <- function(beta_dist,nK=5){
   
   # predict 
   outData <- data.frame(distance = seq(1 , max(beta_dist$distance) , l = 1e3))
-  outData$pred_fit <- Predict.matrix(sm, data.frame(distance = newdata$distance)) %*% p
+  outData$pred_fit <- Predict.matrix(sm, data.frame(distance = outData$distance)) %*% p
   return(outData)
   
 }
