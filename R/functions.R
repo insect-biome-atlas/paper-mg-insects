@@ -34,10 +34,11 @@ partition_beta_diversity <- function(sp_matrix_total , trap_dist) {
   
   # Create a data frame with Jaccard turnover values for each trap pair
   IBA_turnover <- data.frame( 
+    
     trap_1 = rownames(sp_matrix_total)[ind_jtu[,1]],
     trap_2 = rownames(sp_matrix_total)[ind_jtu[,2]],
     jaccard = IBA_jtu[ind_jtu]) |>
-    mutate(trap_ID = interaction(trap_1 , trap_2 , sep = "_")) |>droplevels()
+    mutate(trap_ID = interaction(trap_1 , trap_2 , sep = "_")) |> droplevels()
   
   # Merge the trap distance data with the Jaccard turnover data
   IBA_betapart <- inner_join(trap_dist , IBA_turnover , by = "trap_ID")
@@ -81,3 +82,4 @@ monotonic_gam <- function(beta_dist,nK=5){
   return(outData)
   
 }
+ 

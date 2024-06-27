@@ -20,9 +20,12 @@ source("R/functions.R")
 OTU_DT_se <- readRDS("data/species_table_se.rds")
 OTU_DT_mg <- readRDS("data/species_table_mg.rds")
 
+# Meta data
+site_meta_mg <- fread("data/sites_metadata_mg.tsv") 
+site_meta_se <- fread("data/sites_metadata_se.tsv") 
 
 # Get species * site matrices  ----------------------- 
-sp_matrix_se <- OTU_DT_se |> 
+sp_matrix_se <- OTU_DT_se |>  
           pivot_wider(names_from = cluster, values_from = pres , values_fill = 0) |> 
           column_to_rownames("trapID")
 
