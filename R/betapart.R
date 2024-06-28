@@ -11,7 +11,6 @@ library(patchwork)
 set.seed(10)
 source("R/functions.R")
 
-
 # ---------------------------------------------------------------------------------------------
 # tidy data -----------------------------------------------------------------------------------
 # ---------------------------------------------------------------------------------------------
@@ -21,8 +20,10 @@ OTU_DT_se <- readRDS("data/species_table_se.rds")
 OTU_DT_mg <- readRDS("data/species_table_mg.rds")
 
 # Meta data
-site_meta_mg <- fread("data/sites_metadata_mg.tsv") 
-site_meta_se <- fread("data/sites_metadata_se.tsv") 
+# TODO: Change to local path to figshare repo for metadata
+metadata_path <- "~/dev/figshare-repos/iba/raw_data/"
+site_meta_mg <- fread(paste0(metadata_path,"sites_metadata_MG.tsv"))
+site_meta_se <- fread(paste0(metadata_path,"sites_metadata_SE.tsv")) 
 
 # Get species * site matrices  ----------------------- 
 sp_matrix_se <- OTU_DT_se |>  
@@ -80,5 +81,5 @@ p2 <- ggplot(betapart_mad , aes(distance , jaccard))+
   labs(x = "Distance (km)" , y = "Dissimilarity (J)" , colour = "Distance (km)") 
 
 # Print Plots
-p1 + p2 
+print(p1 + p2) 
 
