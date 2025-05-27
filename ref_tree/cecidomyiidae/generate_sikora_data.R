@@ -69,7 +69,7 @@ sikora_species <- c("Bibio marci",
                     "Claspettomyia sp.",
                     "Dicerura dentata",
                     "Dicerura sp.",
-                    "Dirhiza lateritia",
+                    "Dirhiza lateritia",                # Apparently incorrectly given as lateralia
                     "Porricondyla nigripennis",
                     "Svenartia spungisi",
                     "Tetraneuromyia hirticornis",
