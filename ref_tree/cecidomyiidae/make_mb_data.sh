@@ -19,6 +19,6 @@ R --no-save < merge_cecidomyiidae_data.R
 # Delete sites with 90% or more gaps
 Rscript --vanilla ../code/trim_gaps.R expanded_cecidomyiidae_aligned.fasta expanded_cecidomyiidae_aligned_trimmed.fasta 0.9
 
-# Make the NEXUS constraint files
+# Make the NEXUS data and constraint files
 R --no-save < generate_cecidomyiidae_nexus_files.R
 
