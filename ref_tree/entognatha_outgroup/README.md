@@ -1,0 +1,16 @@
+# entognatha_outgroup
+
+For Entognatha and outgroups, we used the data from Sundh et al (2024). Briefly, it consists of data assembled from Bellini et al (2023) on Collembola, and missing data on other Entognatha groups and on suitable outgroups from GenBank. As far as possible, in this process, data from mitochondrial genomes was favored, as the Bellini et al (2023) paper is based on mitogenomes. The data are in the files `collembola_CO1.fasta`, `missing_entognatha_CO1.fasta` and `root_mt_genomes.fasta`.
+
+The corresponding taxonomy files are `collembola_taxonomy.tsv`, `missing_entognatha_taxonomy.tsv` and `root_taxonomy.tsv`. They contain data on the start and stop of the CO1 sequences (in frame).
+
+The preferred tree in Bellini et al (2023; Figure 1) is given in the file collembola_tree.nwk.
+
+We merged the sequence data and taxonomy from these sources (in `merge_entognatha_outgroup_data.R`).
+
+The merged sequences were aligned as amino acid sequences and the alignment converted back to a nucleotide alignment, and sites with 90% or more gaps were trimmed away (see `make_mb_data.sh` for the scripts used to achieve this). The resulting alignment is in `expanded_cecidomyiidae_aligned_trimmed.fasta`. Note that this alignment is slightly trimmed compared to the one used in Sundh et al (2024).
+
+For the phylogenetic analysis, we generated partial constraints for all of the clades and taxa included in the Bellini et al (2023) analysis. The generated constraints are in the file `collembola_constraints.nex`. We also generated hard constraints for families and for well-established relationships among outgroup taxa. This is controlled in the script `generate_entognatha_outgroup_nexus_files.R`.
+
+We ran the MrBayes analysis for 10 M generations using a strict clock model with a codon-partitioned GTR+Gamma model (see `mb_runs/run1/run.nex`).
+
