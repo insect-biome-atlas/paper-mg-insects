@@ -17,7 +17,7 @@ out_file <- "mb_runs/zoraptera_constraints.nex"
 taxa <- read.delim("zoraptera_taxonomy.tsv")
 
 # Print block header to output file
-cat("\nbegin mrbayes;\n", file=out_file, append=TRUE)
+cat("NEXUS\n\nbegin mrbayes;\n", file=out_file)
 
 # Output constraint partitions for orders
 for (order in unique(taxa$Order)) {
