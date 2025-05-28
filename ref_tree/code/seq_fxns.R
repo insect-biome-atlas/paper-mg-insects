@@ -23,6 +23,9 @@ rename_seqs <- function(seqs, meta) {
 
     if (sum(is.na(match(w,meta$GenBank)))!=0) {
         cat("ERROR: There are sequences that do not match GenBank column entries in the metadata file\n")
+        cat("The non-matching sequences are:\n")
+        cat(w[is.na(match(w,meta$GenBank))],sep=",")
+        cat("\n")
         return (NULL)
     }
 
