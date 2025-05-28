@@ -83,9 +83,3 @@ write.FASTA(chesters_seqs, out_file)
 write.FASTA(extra_seqs, out_file, append=TRUE)
 write.FASTA(sikora_seqs, out_file, append=TRUE)
 
-
-############## NB!!!!! ###############
-
-
-# Extract biology information and augment with comment from Mathias Jaschhof
-# namely that the species-rich clade Lestodiplosini of Cecidomyiidi is predatory
