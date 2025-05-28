@@ -1,0 +1,5 @@
+
+begin mrbayes;
+   constraint Zoraptera = Zorotypus_medoensis Zorotypus_delamarei Spiralizoros_caudelli Spiralizoros_magnicaudelli Spiralizoros_sp3 Spiralizoros_sp4 Spiralizoros_cervicornis Centrozoros_neotropicus Latinozoros_sp1 Latinozoros_sp2 Spermozoros_weiweii Spermozoros_asymmetricus;
+   constraint Dermaptera = Forficula_mikado Anisolabis_maritima Challia_fletcheri;
+end;
