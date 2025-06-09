@@ -5,7 +5,7 @@
 # The script starts from data extracted from Sundh et al (2024)
 
 # Update the Chesters taxonomy using NCBI taxonomy data
-Rscript --vanilla update_chesters_taxonomy.R
+Rscript --vanilla update_chesters_cecidomyiidae_taxonomy.R
 
 # Generate sikora data
 R --no-save < generate_sikora_data.R
