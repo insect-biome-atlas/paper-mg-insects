@@ -52,7 +52,7 @@ The orders with less than 10 representatives in Chesters 2017:
 ## Data and scripts
 The files `chesters_new_outgroups_taxonomy.tsv`, `chesters_new_outgroups.fasta` and `chesters_new_outgroups.nwk` contain the taxonomy, sequences and tree from Sundh et al (2024).
 
-The files `misof_2014_fig1_insecta_orders.nwk` and `misof_2014_fig1_insecta_orders_dated.nwk` contain order-level backbone trees with and without branch lengths in terms of time units (Myr). These trees were hand-coded from Misof et al (2014) Fig. 1 and the median age estimates given in Fig. 2, as specified in the Supplementary Material.
+The files `misof_2014_fig1_insecta_orders.nwk` and `misof_2014_fig1_insecta_orders_dated.nwk` contain order-level backbone trees with and without branch lengths in terms of time units (Myr). These trees were hand-coded from Misof et al (2014) Fig. 1 and the median age estimates given in Fig. 2, as specified in the Supplementary Material (see file `misof_2014_node_age_medians.tsv`).
 
 The script `backbone_info.R` analyzes the Sundh et al (2024) tree in light of the Misof et al (2014) tree as specified above.
 
