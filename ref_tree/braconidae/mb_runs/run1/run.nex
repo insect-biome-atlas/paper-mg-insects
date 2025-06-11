@@ -1,0 +1,26 @@
+#NEXUS
+
+begin mrbayes;
+    set autoclose=yes nowarn=yes;
+
+    set dir="../";
+    exe braconidae.nex;
+    exe braconidae_constraints.nex;
+    set dir="";
+
+    charset 1st = 1-. \3;
+    charset 2nd = 2-. \3;
+    charset 3rd = 3-. \3;
+    partition cod = 3: 1st, 2nd, 3rd;
+    set partition=cod;
+ 
+    prset brlenspr=clock:uniform clockvarpr=strict;
+    prset topologypr=constraints(1-67);
+
+    lset rates=gamma nst=mixed;
+    prset ratepr=variable;
+    unlink shape=(all) statefreq=(all) revmat=(all);
+
+    mcmc nruns=16 nchains=4 ngen=10000000;
+end;
+
