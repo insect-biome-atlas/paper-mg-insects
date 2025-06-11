@@ -32,3 +32,15 @@ get_subfam <- function(sci_id) {
     list(Subfamily=subfam)
 }
 
+get_tribe <- function(sci_id) {
+
+    tribe <- character(length(sci_id))
+
+    x <- classification(sci_id=sci_id, db="ncbi")
+
+    for (i in 1:length(sci_id)) {
+        idx <- which(x[[i]]$rank=="tribe")
+        tribe[i] <- x[[i]]$name[idx]
+    }
+}
+
