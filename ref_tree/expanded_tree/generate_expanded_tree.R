@@ -308,7 +308,7 @@ entognatha_outgroup_seqs <- read.FASTA("../entognatha_outgroup/entognatha_outgro
 # --------------------------------------------------
 
 write.tree(expanded_tree,"chesters_expanded.nwk")
-write.table(expanded_taxonomy, "chesters_expanded_taxonomy.tsv")
+write.table(expanded_taxonomy, "chesters_expanded_taxonomy.tsv", sep="\t", row.names=FALSE)
 write.FASTA(expanded_seqs, "chesters_expanded.fasta")
 write.FASTA(entognatha_outgroup_seqs, "chesters_expanded.fasta", append=TRUE)
 
