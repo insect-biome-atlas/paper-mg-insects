@@ -41,7 +41,7 @@ T$Subfamily[T$Genus=="Atrenis"] <- "Tersilochinae"
 
 # Seleucus is now in Ctenopelmatinae in its own tribe
 T$Subfamily[T$Genus=="Seleucus"] <- "Ctenopelmatinae"
-T$Trube[T$Genus=="Seleucus"] <- "Seleucini"
+T$Tribe[T$Genus=="Seleucus"] <- "Seleucini"
 
 # Echthrus is in Cryptini
 T$Tribe[T$Genus=="Echthrus"] <- "Cryptini"
