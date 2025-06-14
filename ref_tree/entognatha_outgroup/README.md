@@ -1,5 +1,7 @@
 # entognatha_outgroup
+Data and scripts for generating a tree for Entognatha and outgroups, to replace the outgroups in the Chesters (2017) tree.
 
+## Details
 For Entognatha and outgroups, we used the data from Sundh et al (2024). Briefly, it consists of data assembled from Bellini et al (2023) on Collembola, and missing data on other Entognatha groups and on suitable outgroups from GenBank. As far as possible, in this process, data from mitochondrial genomes was favored, as the Bellini et al (2023) paper is based on mitogenomes. The data are in the files `collembola_CO1.fasta`, `missing_entognatha_CO1.fasta` and `root_mt_genomes.fasta`.
 
 The corresponding taxonomy files are `collembola_taxonomy.tsv`, `missing_entognatha_taxonomy.tsv` and `root_taxonomy.tsv`. They contain data on the start and stop of the CO1 sequences (in frame).
@@ -14,3 +16,7 @@ For the phylogenetic analysis, we generated partial constraints for all of the c
 
 We ran the MrBayes analysis for 10 M generations using a strict clock model with a codon-partitioned GTR+Gamma model (see `mb_runs/run1/run.nex`).
 
+## References
+Bellini BC, Zhang F, Cavalcante de Souza PG, Clicia dos Santos-Costa R, da Silva Medeiros G, Godeiro NN (2023) The Evolution of Collembola Higher Taxa (Arthropoda, Hexapoda) Based on Mitogenome Data. Diversity 15: 7. https://doi.org/10.3390/d15010007.
+
+For additional references, see the README in the parent folder.

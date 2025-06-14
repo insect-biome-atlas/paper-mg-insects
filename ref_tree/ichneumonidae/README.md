@@ -1,5 +1,7 @@
 # ichneumonidae
+Data and scripts for generating an expanded tree for the Ichneumonidae.
 
+## Details
 The taxonomic info for the Ichneumonidae in the Sundh et al (2024) tree was first complemented with subfamily, tribe and subtribe ranks from the NCBI taxonomy, and this information was then corrected or updated to reflect current classification. This was accomplished using the script `update_chesters_ichneumonidae_taxonomy.R`, generating the file `chesters_ichneumonidae_taxonomy_updated.tsv`.
 
 CO1 sequences for missing ichneumonid taxa that would be valuable to have in the analysis because they were likely to be encountered in Madagascar but were missing from the original Chesters (2017) tree were assembled from GenBank. These data are given in the files `missing_ichneumonidae_CO1.fasta` and `missing_ichneumonidae_taxonomy.tsv`. The files also include a couple of braconid outgroups to root the tree.
@@ -12,3 +14,5 @@ For the phylogenetic analysis, as there is no comprehensive analysis of ichneumo
 
 We ran the MrBayes analysis for 10 M generations using a strict clock model with a codon-partitioned GTR+Gamma model (see `mb_runs/run1/run.nex`).
 
+## References
+See the README in the parent folder.

@@ -1,5 +1,7 @@
 # braconidae
+Scripts and output data for generating an expanded and more accurate tree for braconids.
 
+## Details
 For Braconidae, we retrieved the original subfamily classification from NCBI and updated it using information from the UCE analysis of Jasso-Martínez et al. (2022; Figs. 3-8). The updated classification is in the file `Chesters_Braconidae_taxonomy_updated.xlsx` and exported in ';'-delimited format in `Chesters_Braconidae_taxonomy_updated.csv`.
 
 We then manually added the available CO1 sequences of the  missing subfamilies. The information about these taxa and the corresponding fasta sequences is in the files:
@@ -28,4 +30,9 @@ The sequences were then aligned as amino acid sequences and the alignment conver
 For the phylogenetic analysis, we used all higher clades (subfamily or above) with more than 95% bootstrap support in the UCE analysis as partial constraints. We added hard constraints for the families. The data and constraint files are generated in the script `generate_braconidae_nexus_files.R`, and the output files are `braconidae.nex` and `braconidae_constraints.nex`. They are placed in the `mb_runs` folder.
 
 We ran the MrBayes analysis for 100 M generations using a strict clock model with a codon-partitioned GTR+Gamma model (see `mb_runs/run2/run.nex`).
+
+## References
+Jasso-Martínez JM, Santos BF, Zaldívar-Riverón A, Fernández-Triana JL, Sharanowski BJ, Richter R et al. (2022) Phylogenomics of braconid wasps (Hymenoptera, Braconidae) sheds light on classification and the evolution of parasitoid life history traits. Molecular Phylogenetics and Evolution 173: 107452. https://doi.org/10.1016/j.ympev.2022.107452.
+
+Chesters D (2025) Where are the biggest gaps in phylogenetic coverage of insect diversity? Systematic Entomology 50: 221–36. https://doi.org/10.1111/syen.12652.
 
