@@ -58,8 +58,11 @@ replace_clade <- function(tree, ingroup, new_tree, new_ingroup) {
     new_tree$edge.length <- new_tree$edge.length * scale_factor
 
 #    cat("Dropping tips in new_tree\n")
-    new_tree <- keep.tip(new_tree, new_ingroup)
-    new_tree$root.edge <- new_tree_stalk * scale_factor
+    new_tree <- keep.tip(new_tree, new_ingroup) # This also drops the "stalk", so the stalk needs to be reinserted
+    if (length(new_ingroup) > 1)  
+      new_tree$root.edge <- new_tree_stalk * scale_factor
+    else
+      new_tree$root.edge <- 0.0   # Avoid adding stalk twice if new tree has only one taxon
     
 #    cat("Binding trees\n")
     if (length(sistergroup)==1)

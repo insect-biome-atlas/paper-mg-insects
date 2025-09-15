@@ -31,7 +31,7 @@ Contains data and scripts to generate a tree from scratch for Entognatha and out
 Contains bash and R scripts used to generate the new trees
 
 ## `expanded_tree`
-Contains a script used to replace the old subtrees in the corrected Insecta tree from the folder `chesters_2017` with the new trees generated for the target taxa above. The sscript then adds in the root part of the tree, comprising Entognatha representatives and outgroups.
+Contains a script used to replace the old subtrees in the corrected Insecta tree from the folder `chesters_2017` with the new trees generated for the target taxa above. The script then adds in the root part of the tree, comprising Entognatha representatives and outgroups.
 
 ## References
 Chesters D (2017) Construction of a Species-Level Tree of Life for the Insects and Utility in Taxonomic Profiling. Systematic Biology 66: 426–39. https://doi.org/10.1093/sysbio/syw099.
