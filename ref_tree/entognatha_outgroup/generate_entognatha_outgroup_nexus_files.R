@@ -55,8 +55,16 @@ for (order in unique(taxa$Order)) {
 # Add special constraints
 # -----------------------
 
+# Eukaryota
+ingroup <- taxa$TipLabel[taxa$Kingdom!="Pseudomonadati"]
+add_hard_constraint("Eukaryota", ingroup, out_file)
+
+# Diphoda sensu lato (this should also include Viridiplantae)
+ingroup <- taxa$TipLabel[taxa$Kingdom %in% c("Diphoda","Viridiplantae")]
+add_hard_constraint("Diphoda_sensu_lato", ingroup, out_file)
+
 # Opisthokonta
-ingroup <- taxa$TipLabel[taxa$Kingdom!="Diphoda"]
+ingroup <- taxa$TipLabel[!(taxa$Kingdom %in% c("Diphoda","Viridiplantae","Pseudomonadati"))]
 add_hard_constraint("Opisthokonta", ingroup, out_file)
 
 # Protostomia (Deuterostomia only includes Chordata, so not needed)
