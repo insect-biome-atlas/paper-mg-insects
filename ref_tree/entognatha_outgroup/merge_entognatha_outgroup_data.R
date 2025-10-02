@@ -13,11 +13,13 @@ T3 <- read.delim(paste0(data_path,"root_taxonomy.tsv"))
 
 T1$Kingdom <- "Animalia"
 T1$Phylum <- "Arthropoda"
+T1$TranslationTable <- 5
 
 T2$Kingdom <- "Animalia"
 T2$Phylum <- "Arthropoda"
+T2$TranslationTable <- 5
 
-cols <- c("TipLabel","Kingdom","Phylum","Class","Order","Family","Genus","Species")
+cols <- c("TipLabel","Kingdom","Phylum","Class","Order","Family","Genus","Species","TranslationTable")
 
 T <- rbind(T1[,cols],T2[,cols],T3[,cols])
 
@@ -27,7 +29,7 @@ T <- rbind(T1[,cols],T2[,cols],T3[,cols])
 T$Clade <- T$Family
 
 # Reorganize taxonomic info
-cols <- c("TipLabel","Kingdom","Phylum","Class","Order","Family","Clade","Genus","Species")
+cols <- c("TipLabel","Kingdom","Phylum","Class","Order","Family","Clade","Genus","Species","TranslationTable")
 T <- T[,cols]
 
 # Write merged taxonomy file
