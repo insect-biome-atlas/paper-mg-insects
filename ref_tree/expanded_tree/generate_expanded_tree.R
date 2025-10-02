@@ -268,7 +268,7 @@ expanded_seqs <- update_sequences(expanded_seqs, ingroup, mantophasmatodea_seqs,
 cat("Adding in outgroup\n")
 
 # Read entognathan and outgroup tree
-trees <- read.nexus("../entognatha_outgroup/mb_runs/run1/tree_sample.tre")
+trees <- read.nexus("../entognatha_outgroup/mb_runs/local_run1/tree_sample.tre")
 entognatha_outgroup_tree <- trees[[length(trees)]]
 entognatha_outgroup_taxonomy <- read.delim("../entognatha_outgroup/entognatha_outgroup_taxonomy.tsv")
 
@@ -300,11 +300,14 @@ receptor_tree <- drop.tip(entognatha_outgroup_tree, insecta)
 insert_node <- getMRCA(receptor_tree, diplura)  # Node number of diplura node might have changed
 expanded_tree <- bind.tree(receptor_tree, donor_tree, where=insert_node, position=insert_pos)
 
-# Finally add the taxonomy info
+# Finally add the taxonomy info (and info on translation table)
+cols <- c(cols,"TranslationTable")
+expanded_taxonomy$TranslationTable <- 5
 expanded_taxonomy <- rbind(expanded_taxonomy, entognatha_outgroup_taxonomy[entognatha_outgroup_taxonomy$Class!="Insecta",cols])
 
 # Read root sequences
 entognatha_outgroup_seqs <- read.FASTA("../entognatha_outgroup/entognatha_outgroup.fasta")
+entognatha_outgroup_seqs <- entognatha_outgroup_seqs[!names(entognatha_outgroup_seqs) %in% insecta]
 
 
 # Write resulting tree, taxonomy info, and sequences
