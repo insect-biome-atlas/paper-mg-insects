@@ -8,9 +8,15 @@ The corresponding taxonomy files are `collembola_taxonomy.tsv`, `missing_entogna
 
 The preferred tree in Bellini et al (2023; Figure 1) is given in the file collembola_tree.nwk.
 
-We merged the sequence data and taxonomy from these sources (in `merge_entognatha_outgroup_data.R`).
+During the reanalysis, it was discovered that the sequence attributed to Fujientomon (Protura) in NCBI is likely to be a fungal sequence. The sequence was removed and replaced with the CO1 sequence from the mitochondrial genome of Sinentomon erythranum, which belongs to the same order.
 
-The merged sequences were aligned as amino acid sequences and the alignment converted back to a nucleotide alignment, and sites with 90% or more gaps were trimmed away (see `make_mb_data.sh` for the scripts used to achieve this). The resulting alignment is in `expanded_cecidomyiidae_aligned_trimmed.fasta`. Note that this alignment is slightly trimmed compared to the one used in Sundh et al (2024).
+The order classification of Andinentulus and Yamatentomon was also corrected from Sinentomata to Acerentomata.
+
+Finally, two bacterial sequences were added to help in the capture of bacterial sequences, from the genera Wolbachia (a common insect symbiont in the alphaproteobacteria) and Burkholderia (representative of a ubiquitous group of betaproteobacteria). Also, a plant sequence was added (from the mitochondrial genome of Oryza), representing grass pollen that is often found in Malaise trap samples.
+
+We merged the sequence data and taxonomy from these corrected sources (in `merge_entognatha_outgroup_data.R`).
+
+The merged sequences were aligned as amino acid sequences and the alignment converted back to a nucleotide alignment, and sites with 90% or more gaps were trimmed away (see `make_mb_data.sh` for the scripts used to achieve this). The resulting alignment is in `entognatha_outgroup_aligned_trimmed.fasta`. Note that this alignment is slightly trimmed compared to the one used in Sundh et al (2024).
 
 For the phylogenetic analysis, we generated partial constraints for all of the clades and taxa included in the Bellini et al (2023) analysis. The generated constraints are in the file `collembola_constraints.nex`. We also generated hard constraints for families and for well-established relationships among outgroup taxa. This is controlled in the script `generate_entognatha_outgroup_nexus_files.R`.
 
