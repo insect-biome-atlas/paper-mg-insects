@@ -20,7 +20,7 @@ We merged the sequence data and taxonomy from these corrected sources (in `merge
 
 The merged sequences were aligned as amino acid sequences and the alignment converted back to a nucleotide alignment, and sites with 90% or more gaps were trimmed away (see `make_mb_data.sh` for the scripts used to achieve this). The resulting alignment is in `entognatha_outgroup_aligned_trimmed.fasta`. Note that this alignment is slightly trimmed compared to the one used in Sundh et al (2024).
 
-For the conversion from aa to nucleotide alignment, we used translation table 5 throughout, which generates a number of warnings for taxa with other translation table. However, the resulting nucleotide alignments are not affected by this, so we did not attempt to remove these warnings.
+For the conversion from aa to nucleotide alignment with pal2nal, we used translation table 5 throughout, which generates a number of warnings for taxa with other translation tables. However, the resulting nucleotide alignments are not affected by this, so we did not attempt to remove these warnings.
 
 For the phylogenetic analysis, we generated partial constraints for all of the clades and taxa included in the Bellini et al (2023) analysis. The generated constraints are in the file `collembola_constraints.nex`. We also generated hard constraints for families and for well-established relationships among outgroup taxa. This is controlled in the script `generate_entognatha_outgroup_nexus_files.R`.
 
