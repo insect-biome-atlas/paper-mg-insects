@@ -6,7 +6,7 @@
 R --no-save < merge_entognatha_outgroup_data.R
 
 # Align sequences
-../code/align_seqs.sh entognatha_outgroup.fasta
+../code/align_root_seqs.sh entognatha_outgroup.fasta
 
 # Delete sites with 90% or more gaps
 Rscript --vanilla ../code/trim_gaps.R entognatha_outgroup_aligned.fasta entognatha_outgroup_aligned_trimmed.fasta 0.9
