@@ -43,8 +43,9 @@ extract_coding <- function(seqs, meta) {
     }
     x <- names(seqs)
 
+    # Here are the standard stop codons in binary format. Note that APE uses 18, 28, 48 and 88 for T, C, G and A, respectively.
     stop_codon1 <- c("18","88","88")   # TAA in DNAbin
-    stop_codon2 <- c("18","88","28")   # TAG in DNAbin
+    stop_codon2 <- c("18","88","48")   # TAG in DNAbin
 
     for (i in 1:length(x)) {
         
@@ -53,8 +54,13 @@ extract_coding <- function(seqs, meta) {
             cat("ERROR: No match for ",x[i],"\n")
             return (NULL)
         }
-        
+
         len <- meta$Stop[meta_idx] - meta$Start[meta_idx] + 1
+
+        if (meta$Stop[meta_idx] > length(seqs[[i]])) {
+            cat ("ERROR: Length of sequence", names(seqs)[i], "shorter than specified stop site. Please correct!\n")
+            return (NULL)
+        }
         if (len %% 3 != 0) {
             cat ("ERROR: Length for sequence", names(seqs)[i], "not divisible by 3. Please correct!\n")
             return (NULL)
