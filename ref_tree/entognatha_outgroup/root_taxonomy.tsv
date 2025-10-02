@@ -1,7 +1,7 @@
 "TipLabel"	"Kingdom"	"Phylum"	"Class"	"Order"	"Family"	"Genus"	"Species"	"GenBank"	"Start"	"Stop"	"Stop_codon_included"	"Type"	"TranslationTable"
 "Peronospora_tabacina"	"Chromista"	"Oomycota"	"Peronosporea"	"Peronosporales"	"Peronosporacea"	"Peronospora"	"Peronospora tabacina"	"NC_028331.1"	14066	15553	TRUE	"Mt genome"	1
 "Aphanomyces_astaci"	"Chromista"	"Oomycota"	"Peronosporea"	"Saprolegniales"	"Saprolegniaceae"	"Aphanomyces"	"Aphanomyces astaci"	"KX405004.1"	47998	49485	TRUE	"Mt genome"	1
-"Oryza_sativa"	"Viridiplantae"	"Streptophyta"	"Magnoliopsida"	"Poales"	"Poaceae"	"Oryza"	"Oryza sativa"	"JF281154.1"	20594	22168	TRUE	"Mt genome"	1
+"Oryza_sativa"	"Viridiplantae"	"Streptophyta"	"Magnoliopsida"	"Poales"	"Poaceae"	"Oryza"	"Oryza sativa"	"JF281154.1"	235359	236933	TRUE	"Mt genome"	1
 "Steinernema_carpocapsae"	"Animalia"	"Nematoda"	"Chromadorea"	"Rhabditida"	"Steinernematidae"	"Steinernema"	"Steinernema carpocapsae"	"NC_005941.1"	8420	9994	TRUE	"Mt genome"	5
 "Epipenaeon_fissurae"	"Animalia"	"Arthropoda"	"Malacostraca"	"Isopoda"	"Bopyridae"	"Epipenaeon"	"Epipenaeon fissurae"	"NC_070272.1"	1088	2623	FALSE	"Mt genome"	5
 "Hypsibius_dujardini"	"Animalia"	"Tardigrada"	"Eutardigrada"	"Parachela"	"Hypsibiidae"	"Hypsibius"	"Hypsibius dujardini"	"NC_014848.1"	31	1563	TRUE	"Mt genome"	5
@@ -21,4 +21,3 @@
 "Sylvia_borin"	"Animalia"	"Chordata"	"Aves"	"Passeriformes"	"Sylviidae"	"Sylvia"	"Sylvia borin"	"NC_053054.1"	5416	6966	FALSE	"Mt genome"	2
 "Caloglyphus_berlesei"	"Animalia"	"Arthropoda"	"Arachnida"	"Sarcoptiformes"	"Acaridae"	"Caloglyphus"	"Caloglyphus berlesei"	"NC_024637.1"	1	1551	TRUE	"Mt genome"	5
 "Wolbachia_sp"	"Pseudomonadati"	"Pseudomonadota"	"Alphaproteobacteria"	"Ricketsiales"	"Anaplasmataceae"	"Wolbachia"	"Wolbachia sp"	"OX384529.1"	280179	281729	TRUE	"Genome"	11
-"Burkholderia_pseudomallei"	"Pseudomonadati"	"Pseudomonadota"	"Betaproteobacteria"	"Burkholderiales"	"Burkholderiaceae"	"Burkholderia"	"Burkholderia sp"	"CP190013.1"	3004221	3005828	TRUE	"Genome"	11
