@@ -3,6 +3,9 @@
 # Supertribe, Tribe and Species group information for the
 # genera of arthropods.
 
+# We are also interested in Class and Order information for scoring
+# trait information.
+
 # Early experiments showed that the nodes.dmp file does not contain the full
 # tree; it contains tribe and subtribe but not supertribe. Go figure...
 
@@ -30,7 +33,8 @@ rm(X)
 
 # Assemble new data frame with info about ranks between Genus and Family
 genera <- unique(D$Genus[D$Genus!=""])
-E <- data.frame(list(TaxonID=D$TaxonID[match(genera,D$Scientific.Name)], Genus=genera, Family=D$Family[match(genera,D$Scientific.Name)]))
+idx <- match(genera,D$Scientific.Name)
+E <- data.frame(list(TaxonID=D$TaxonID[idx], Genus=genera, Class=D$Class[idx], Order=D$Order[idx], Family=D$Family[idx]))
 E$Subfamily <- ""
 E$Supertribe <- ""
 E$Tribe <- ""
