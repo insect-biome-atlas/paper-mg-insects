@@ -1,0 +1,156 @@
+
+Results for batch13
+No. samples: 265
+No. asvs: 110082
+No. pos control samples: 3
+No. pos control asvs: 2776
+
+After removing all control asvs
+Asvs shared with pos_con: 60
+Prop asvs shared with pos_con: 0.0005451522
+Mean reads of asvs shared with pos_con: 1474.75
+Median reads of asvs shared with pos_con: 24
+Asvs shared with se: 452
+Prop asvs shared with se: 0.004106813
+Mean reads of asvs shared with se: 17299.1
+Median reads of asvs shared with se: 33
+
+Without removing any asvs
+Asvs shared with pos_con: 63
+Prop asvs shared with pos_con: 0.0005723006
+Mean reads of asvs shared with pos_con: 3691.603
+Median reads of asvs shared with pos_con: 37
+Asvs shared with se: 472
+Prop asvs shared with se: 0.004287713
+Mean reads of asvs shared with se: 16891.89
+Median reads of asvs shared with se: 37
+
+Results for batch14
+No. samples: 436
+No. asvs: 175658
+No. pos control samples: 4
+No. pos control asvs: 4075
+
+After removing all control asvs
+Asvs shared with pos_con: 36
+Prop asvs shared with pos_con: 0.0002049682
+Mean reads of asvs shared with pos_con: 6208.306
+Median reads of asvs shared with pos_con: 642.5
+Asvs shared with se: 554
+Prop asvs shared with se: 0.003154233
+Mean reads of asvs shared with se: 35322.4
+Median reads of asvs shared with se: 34
+
+Without removing any asvs
+Asvs shared with pos_con: 44
+Prop asvs shared with pos_con: 0.0002504867
+Mean reads of asvs shared with pos_con: 11052.61
+Median reads of asvs shared with pos_con: 786.5
+Asvs shared with se: 568
+Prop asvs shared with se: 0.003233556
+Mean reads of asvs shared with se: 34950.62
+Median reads of asvs shared with se: 35
+
+Results for batch15
+No. samples: 701
+No. asvs: 265578
+No. pos control samples: 8
+No. pos control asvs: 4430
+
+After removing all control asvs
+Asvs shared with pos_con: 66
+Prop asvs shared with pos_con: 0.0002485361
+Mean reads of asvs shared with pos_con: 574323.8
+Median reads of asvs shared with pos_con: 151.5
+Asvs shared with se: 787
+Prop asvs shared with se: 0.002963605
+Mean reads of asvs shared with se: 52016.27
+Median reads of asvs shared with se: 45
+
+Without removing any asvs
+Asvs shared with pos_con: 75
+Prop asvs shared with pos_con: 0.0002824029
+Mean reads of asvs shared with pos_con: 513576.6
+Median reads of asvs shared with pos_con: 175
+Asvs shared with se: 804
+Prop asvs shared with se: 0.003027359
+Mean reads of asvs shared with se: 51696.87
+Median reads of asvs shared with se: 47
+
+Results for batch16
+No. samples: 525
+No. asvs: 175530
+No. pos control samples: 6
+No. pos control asvs: 3395
+
+After removing all control asvs
+Asvs shared with pos_con: 49
+Prop asvs shared with pos_con: 0.0002791927
+Mean reads of asvs shared with pos_con: 3684.959
+Median reads of asvs shared with pos_con: 66
+Asvs shared with se: 612
+Prop asvs shared with se: 0.00348706
+Mean reads of asvs shared with se: 27850.73
+Median reads of asvs shared with se: 46
+
+Without removing any asvs
+Asvs shared with pos_con: 54
+Prop asvs shared with pos_con: 0.0003076397
+Mean reads of asvs shared with pos_con: 7033.537
+Median reads of asvs shared with pos_con: 64.5
+Asvs shared with se: 630
+Prop asvs shared with se: 0.00358913
+Mean reads of asvs shared with se: 27423.94
+Median reads of asvs shared with se: 47.5
+
+Results for batch19
+No. samples: 189
+No. asvs: 148584
+No. pos control samples: 3
+No. pos control asvs: 2522
+
+After removing all control asvs
+Asvs shared with pos_con: 196
+Prop asvs shared with pos_con: 0.001323019
+Mean reads of asvs shared with pos_con: 61.85204
+Median reads of asvs shared with pos_con: 28
+Asvs shared with se: 1936
+Prop asvs shared with se: 0.01306819
+Mean reads of asvs shared with se: 64.64308
+Median reads of asvs shared with se: 25
+
+Without removing any asvs
+Asvs shared with pos_con: 293
+Prop asvs shared with pos_con: 0.001971949
+Mean reads of asvs shared with pos_con: 32137.55
+Median reads of asvs shared with pos_con: 38
+Asvs shared with se: 2339
+Prop asvs shared with se: 0.01574194
+Mean reads of asvs shared with se: 4121.311
+Median reads of asvs shared with se: 29
+
+Results for batch16 with merged control samples
+No. samples: 525
+No. asvs: 175530
+No. pos control samples: 7
+No. pos control asvs: 3462
+
+After removing all control asvs
+Asvs shared with pos_con: 0
+Prop asvs shared with pos_con: 0
+Mean reads of asvs shared with pos_con: NaN
+Median reads of asvs shared with pos_con: NA
+Asvs shared with se: 612
+Prop asvs shared with se: 0.00348706
+Mean reads of asvs shared with se: 27850.73
+Median reads of asvs shared with se: 46
+
+Without removing any asvs
+Asvs shared with pos_con: 24
+Prop asvs shared with pos_con: 0.0001367288
+Mean reads of asvs shared with pos_con: 48688.92
+Median reads of asvs shared with pos_con: 591
+Asvs shared with se: 630
+Prop asvs shared with se: 0.00358913
+Mean reads of asvs shared with se: 27423.94
+Median reads of asvs shared with se: 47.5

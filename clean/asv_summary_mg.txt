@@ -1,0 +1,20 @@
+Batch batch19 
+Buffer blank asvs: 818 
+Extraction neg asvs: 345 
+PCR neg asvs: 273 
+Batch batch14 
+Buffer blank asvs: 19 
+Extraction neg asvs: 17 
+PCR neg asvs: 10 
+Batch batch13 
+Buffer blank asvs: 14 
+Extraction neg asvs: 14 
+PCR neg asvs: 15 
+Batch batch16 
+Buffer blank asvs: 24 
+Extraction neg asvs: 7 
+PCR neg asvs: 11 
+Batch batch15 
+Buffer blank asvs: 21 
+Extraction neg asvs: 28 
+PCR neg asvs: 19 

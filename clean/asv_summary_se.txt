@@ -1,0 +1,44 @@
+Results for batch10 
+Buffer blank asvs: 30 
+Extraction neg asvs: 9 
+PCR neg asvs: 7 
+Results for batch16 
+Buffer blank asvs: 2 
+Extraction neg asvs: 3 
+PCR neg asvs: 1 
+Results for batch04 
+Buffer blank asvs: 91 
+Extraction neg asvs: 15 
+PCR neg asvs: 7 
+Results for batch09 
+Buffer blank asvs: 39 
+Extraction neg asvs: 45 
+PCR neg asvs: 13 
+Results for batch11 
+Buffer blank asvs: 44 
+Extraction neg asvs: 21 
+PCR neg asvs: 13 
+Results for batch05 
+Buffer blank asvs: 21 
+Extraction neg asvs: 6 
+PCR neg asvs: 3 
+Results for batch06 
+Buffer blank asvs: 255 
+Extraction neg asvs: 1480 
+PCR neg asvs: 10 
+Results for batch07 
+Buffer blank asvs: 13 
+Extraction neg asvs: 10 
+PCR neg asvs: 12 
+Results for batch08 
+Buffer blank asvs: 148 
+Extraction neg asvs: 16 
+PCR neg asvs: 15 
+Results for batch17 
+Buffer blank asvs: 67 
+Extraction neg asvs: 4 
+PCR neg asvs: 5 
+Results for batch18 
+Buffer blank asvs: 21 
+Extraction neg asvs: 1274 
+PCR neg asvs: 3 
