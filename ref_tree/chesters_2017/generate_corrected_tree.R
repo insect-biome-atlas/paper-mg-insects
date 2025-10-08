@@ -41,8 +41,8 @@ M14 <- read.tree("misof_2014_fig1_insecta_orders_dated.nwk")
 # Read in Sundh et al version of Chesters 2017 tree
 S24 <- read.tree("chesters_new_outgroups.nwk")
 
-# Read in the taxonomy data for Sundh et al
-D <- read.delim("chesters_new_outgroups_taxonomy.tsv")
+# Read in the corrected taxonomy data for Sundh et al
+D <- read.delim("chesters_new_outgroups_taxonomy_updated.tsv")
 
 # Psocodea: combine Psocoptera and Phthiraptera
 # in the S24 tree.
