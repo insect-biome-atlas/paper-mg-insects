@@ -3,10 +3,12 @@
 
 D <- read.delim("chesters_new_outgroups_taxonomy.tsv")
 
-# Correct family names
+# Correct family names (errors discovered when processing trait data)
 D$Family[D$Family=="Xylophagaidae"] <- "Xylophagidae"
 D$Family[D$Family=="Pemphigidae"] <- "Aphididae"
 D$Family[D$Family=="Kerriidae"] <- "Tachardiidae"
+D$Family[D$Family=="Synneuridae"] <- "Canthyloscelidae"
+
 
 # Update family names for Cynipoidea
 D$Family[D$Genus=="Diplolepis"] <- "Diplolepididae"

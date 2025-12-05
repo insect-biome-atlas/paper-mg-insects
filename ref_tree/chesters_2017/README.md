@@ -15,10 +15,10 @@ is due to the fact that Lilaea_fuliginosa, a tabanid, is placed in Orthoptera.
 It is an obvious error and this species should be removed from the tree. When this
 is done, Orthoptera and Diptera both become monophyletic.
 
-Second, even after this fix is introduced, it is evident that many of the higher
+Second, even after this fix is introduced, it is evident that several of the higher
 clades in the preferred backbone tree (Fig. 3 in the paper) are not
 retained in the published tree. This is true for the order Hemiptera, as well as
-for a number of higher interorder clades, especially in the Exopterygota.
+for several higher interorder clades, especially in the Exopterygota.
 The text also conflicts with the figure in that the text suggests monophyly of
 Mantodea and Isoptera, while the depicted tree (Fig. 3) groups Blattodea and
 Isoptera. The name "Condylognatha" is applied incorrectly in the text of the paper;
@@ -29,18 +29,24 @@ et al (2024), removes Lilaea_fuliginosa, and then systematically tests the
 monohyly of the orders and higher clades in the preferred backbone tree shown in
 Chesters (2017; Fig. 3).
 
-The results are summarized below.
+The results are summarized below:
 - Neuropterida is monophyletic.
 - Psocodea is monophyletic. Psocoptera without Phthiraptera is not (as expected).
 - Hemiptera is not monophyletic. However, Homoptera, Heteroptera (ex Fulgoromorpha)
 and Fulgoromorpha are all monophyletic. If hemipterans are extracted from the tree, the relationship is (Homoptera,(Fulgoromorpha,Heteroptera)),
 which makes sense.
 
-With respect to fixing these problems, we made the following observations:
+To fix these problems, we chose to accept the within-order relationships in the Chesters
+tree, but forced the interordinal relationships to follow those suggested by the
+phylogenomic (trancsriptomic) analysis by Misof et al (2014). Essentially, this was
+accomplished by extracting ordinal clades from the Chesters tree and pasting them
+into the interordinal backbone in the Misof et al tree.
+
+In applying this idea, we made the following observations:
 - The extracted Hemiptera subtree from Chesters can be pasted in by matching the root
-with the root of the Hemiptera in the Misof tree.
+with the root of the Hemiptera in the Misof et al (2014) insect tree.
 - The Grylloblattodea + Mantophasmatodea can be pasted in by similar root matching.
-- All others can be pasted in by enforcing the "stalk" length with respect to other insect
+- All other orders can be pasted in by enforcing the "stalk" length with respect to other insect
 groups in the Chesters tree to remain the same after the clade has been pasted in.
 
 The orders with less than 10 representatives in Chesters 2017:
@@ -49,6 +55,7 @@ The orders with less than 10 representatives in Chesters 2017:
 - Zoraptera 1, 8 spp in BOLD
 - Embioptera 2, 72 spp in BOLD
 These should be expanded to facilitate correct placement in the backbone tree, and increase the chances of picking up barcodes of these taxa.
+This was also done in the following expansion of the resulting tree.
 
 ## Taxonomic annotation errors
 In analyzing the original taxonomic annotations from the Sundh et al (2024) paper, we discovered the following mismatches to the current NCBI taxonomy at the family level. These mismatches must be corrected to match the family names in the trait data files, which follow the current NCBI taxonomy.
@@ -60,7 +67,7 @@ Also, it was discovered that the Cynipoidea families were not annotated accordin
 - Cecinothofagus is now placed in Paraulacidae
 - Diplolepis and Liebelia are now placed in Diplolepididae
 
-We created a script correcting these family annotations in the taxonomic annotation data file from the Sundh et al (2024) paper.
+We created a script `correct_taxonomic_annotations.R`, which corrects these family annotations in the taxonomic annotation data file from the Sundh et al (2024) paper.
 
 We also discovered that the following families are missing from the NCBI classification, but we have trait data for them so this causes no problem in the analysis.
 - Projapygidae 
@@ -69,7 +76,7 @@ We also discovered that the following families are missing from the NCBI classif
 Note also that the NCBI classification treats Diplura as an order, but it is now elevated to a Class. We are using the updated classification, as in Sundh et al. (2024).
 
 ## Data and scripts
-The files `chesters_new_outgroups_taxonomy.tsv`, `chesters_new_outgroups.fasta` and `chesters_new_outgroups.nwk` contain the taxonomy, sequences and tree from Sundh et al (2024). Note, however, that the family annotation has been corrected for the four cases mentioned above.
+The files `chesters_new_outgroups_taxonomy.tsv`, `chesters_new_outgroups.fasta` and `chesters_new_outgroups.nwk` contain the taxonomy, sequences and tree from Sundh et al (2024). Note, however, that the family annotation has been corrected for the cases mentioned above.
 
 The script `correct_taxonomic_annotations.R` will correct the annotations (see above) in the `chesters_new_outgroups_taxonomy.tsv` file to create the updated file `chesters_new_outgroups_taxonomy_updated.tsv`.
 
