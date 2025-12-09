@@ -1,506 +1,506 @@
-"TipLabel"	"Kingdom"	"Phylum"	"Class"	"Order"	"Family"	"Genus"	"Species"	"Start"	"Stop"
-"Ecphysis_robiginosa"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ecphysis"	"Ecphysis robiginosa"	1	618
-"Syrphophilus_tricinctorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphophilus"	"Syrphophilus tricinctorius"	1	624
-"Syrphophilus_bizonarius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphophilus"	"Syrphophilus bizonarius"	1	624
-"Campocraspedon_annulitarsis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campocraspedon"	"Campocraspedon annulitarsis"	1	618
-"Dolichomitus_terebrans"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dolichomitus"	"Dolichomitus terebrans"	1	621
-"Syrphoctonus_melanogaster"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus melanogaster"	1	624
-"Syrphophilus_asperatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphophilus"	"Syrphophilus asperatus"	1	615
-"Syrphoctonus_subopacus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus subopacus"	1	624
-"Syrphoctonus_nigritarsus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus nigritarsus"	1	624
-"Syrphoctonus_elegans"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus elegans"	1	624
-"Syrphoctonus_longiventris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus longiventris"	1	624
-"Xestopelta_gracillima"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Xestopelta"	"Xestopelta gracillima"	1	618
-"Scambus_pterophori"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scambus"	"Scambus pterophori"	1	618
-"Erromenus_punctulatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Erromenus"	"Erromenus punctulatus"	1	624
-"Syrphoctonus_pallipes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus pallipes"	1	624
-"Woldstedtius_citropectoralis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Woldstedtius"	"Woldstedtius citropectoralis"	1	621
-"Woldstedtius_holarcticus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Woldstedtius"	"Woldstedtius holarcticus"	1	621
-"Itoplectis_conquisitor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Itoplectis"	"Itoplectis conquisitor"	1	624
-"Syrphoctonus_signatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus signatus"	1	624
-"Syrphoctonus_tarsatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus tarsatorius"	1	624
-"Woldstedtius_flavolineatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Woldstedtius"	"Woldstedtius flavolineatus"	1	624
-"Syrphophilus_tricinctus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphophilus"	"Syrphophilus tricinctus"	1	618
-"Pimpla_croceipes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pimpla"	"Pimpla croceipes"	1	624
-"Sussaba_cultriformis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sussaba"	"Sussaba cultriformis"	1	624
-"Rhyssa_amoena"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Rhyssa"	"Rhyssa amoena"	1	615
-"Homotropus_pacificus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Homotropus"	"Homotropus pacificus"	1	618
-"Woldstedtius_biguttatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Woldstedtius"	"Woldstedtius biguttatus"	1	621
-"Mesoleptidea_stalii"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mesoleptidea"	"Mesoleptidea stalii"	1	615
-"Tromatobia_notator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tromatobia"	"Tromatobia notator"	1	621
-"Clistopyga_canadensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Clistopyga"	"Clistopyga canadensis"	1	624
-"Pimpla_sodalis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pimpla"	"Pimpla sodalis"	1	615
-"Scambus_vesicarius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scambus"	"Scambus vesicarius"	1	621
-"Enizemum_ornatum"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enizemum"	"Enizemum ornatum"	1	624
-"Tymmophorus_suspiciosus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tymmophorus"	"Tymmophorus suspiciosus"	1	618
-"Diplazon_pallicoxa"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon pallicoxa"	1	618
-"Syrphoctonus_fissorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus fissorius"	1	618
-"Glypta_arctica"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Glypta"	"Glypta arctica"	1	624
-"Liotryphon_caudatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Liotryphon"	"Liotryphon caudatus"	1	621
-"Phthorima_xanthaspis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Phthorima"	"Phthorima xanthaspis"	1	624
-"Polyblastus_pumilus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Polyblastus"	"Polyblastus pumilus"	1	624
-"Sussaba_flavipes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sussaba"	"Sussaba flavipes"	1	618
-"Tymmophorus_erythrozonus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tymmophorus"	"Tymmophorus erythrozonus"	1	618
-"Syrphoctonus_borealis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus borealis"	1	615
-"Collyria_trichophthalma"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Collyria"	"Collyria trichophthalma"	1	615
-"Pimpla_pedalis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pimpla"	"Pimpla pedalis"	1	621
-"Glypta_macra"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Glypta"	"Glypta macra"	1	624
-"Phytodietus_vulgaris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Phytodietus"	"Phytodietus vulgaris"	1	624
-"Meniscomorpha_pensita"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Meniscomorpha"	"Meniscomorpha pensita"	1	624
-"Chorinaeus_funebris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Chorinaeus"	"Chorinaeus funebris"	1	621
-"Pantisarthrus_lubricus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pantisarthrus"	"Pantisarthrus lubricus"	1	618
-"Tymmophorus_obscuripes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tymmophorus"	"Tymmophorus obscuripes"	1	618
-"Syrphoctonus_desvignesii"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus desvignesii"	1	618
-"Woldstedtius_flavicauda"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Woldstedtius"	"Woldstedtius flavicauda"	1	624
-"Diplazon_annulatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon annulatus"	1	624
-"Sussaba_punctiventris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sussaba"	"Sussaba punctiventris"	1	618
-"Stenomacrus_groenlandicus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Stenomacrus"	"Stenomacrus groenlandicus"	1	615
-"Glypta_fumiferanae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Glypta"	"Glypta fumiferanae"	1	624
-"Chiloplatys_dmitrii"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Chiloplatys"	"Chiloplatys dmitrii"	1	624
-"Syrphoctonus_crassicrus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus crassicrus"	1	621
-"Sussaba_aciculata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sussaba"	"Sussaba aciculata"	1	618
-"Diplazon_tetragonus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon tetragonus"	1	624
-"Diplazon_laetatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon laetatorius"	1	624
-"Sussaba_cognata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sussaba"	"Sussaba cognata"	1	618
-"Scambus_hispae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scambus"	"Scambus hispae"	1	612
-"Homotropus_hygrobius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Homotropus"	"Homotropus hygrobius"	1	618
-"Dusona_gracilis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dusona"	"Dusona gracilis"	1	618
-"Scambus_decorus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scambus"	"Scambus decorus"	1	606
-"Absyrtus_vicinator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Absyrtus"	"Absyrtus vicinator"	1	624
-"Adelognathus_cubiceps"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Adelognathus"	"Adelognathus cubiceps"	1	618
-"Bathythrix_longiceps"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Bathythrix"	"Bathythrix longiceps"	1	618
-"Woldstedtius_nigrolineatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Woldstedtius"	"Woldstedtius nigrolineatus"	1	618
-"Diplazon_hyperboreus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon hyperboreus"	1	624
-"Dusona_minor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dusona"	"Dusona minor"	1	624
-"Gnotus_chionops"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Gnotus"	"Gnotus chionops"	1	618
-"Crypteffigies_confusus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Crypteffigies"	"Crypteffigies confusus"	1	624
-"Campocraspedon_caudatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campocraspedon"	"Campocraspedon caudatus"	1	618
-"Dolichomitus_imperator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dolichomitus"	"Dolichomitus imperator"	1	612
-"Diplazon_pectoratorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon pectoratorius"	1	612
-"Chiloplatys_mexicanus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Chiloplatys"	"Chiloplatys mexicanus"	1	624
-"Asthenara_socia"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Asthenara"	"Asthenara socia"	1	618
-"Endasys_plagiator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Endasys"	"Endasys plagiator"	1	624
-"Procinetus_decimator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Procinetus"	"Procinetus decimator"	1	624
-"Mesoleptidea_cingulata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mesoleptidea"	"Mesoleptidea cingulata"	1	618
-"Woldstedtius_isidroi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Woldstedtius"	"Woldstedtius isidroi"	1	624
-"Picrostigeus_obscurus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Picrostigeus"	"Picrostigeus obscurus"	1	624
-"Gregopimpla_ussuriensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Gregopimpla"	"Gregopimpla ussuriensis"	1	618
-"Chiloplatys_fasciatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Chiloplatys"	"Chiloplatys fasciatus"	1	624
-"Aperileptus_tricinctus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Aperileptus"	"Aperileptus tricinctus"	1	609
-"Barycnemis_gravipes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Barycnemis"	"Barycnemis gravipes"	1	618
-"Diplazon_neoalpinus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon neoalpinus"	1	612
-"Dusona_auriculator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dusona"	"Dusona auriculator"	1	615
-"Sussaba_tertia"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sussaba"	"Sussaba tertia"	1	618
-"Aperileptus_albipalpus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Aperileptus"	"Aperileptus albipalpus"	1	612
-"Syrphoctonus_lissosoma"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus lissosoma"	1	618
-"Scambus_calobatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scambus"	"Scambus calobatus"	1	618
-"Orthocentrus_fulvipes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Orthocentrus"	"Orthocentrus fulvipes"	1	615
-"Acrolyta_glacialis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Acrolyta"	"Acrolyta glacialis"	1	618
-"Syrphoctonus_crassicornis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus crassicornis"	1	618
-"Lissonota_lineolaris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lissonota"	"Lissonota lineolaris"	1	624
-"Lapton_femoralis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lapton"	"Lapton femoralis"	1	624
-"Neotheronia_tacubaya"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Neotheronia"	"Neotheronia tacubaya"	1	624
-"Physotarsus_fabioi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Physotarsus"	"Physotarsus fabioi"	1	615
-"Stenomacrus_exserens"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Stenomacrus"	"Stenomacrus exserens"	1	615
-"Scambus_planatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scambus"	"Scambus planatus"	1	618
-"Sussaba_pulchella"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sussaba"	"Sussaba pulchella"	1	624
-"Diplazon_bradleyi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon bradleyi"	1	618
-"Catastenus_femoralis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Catastenus"	"Catastenus femoralis"	1	618
-"Hyposoter_frigidus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hyposoter"	"Hyposoter frigidus"	1	624
-"Ctenochira_propinqua"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ctenochira"	"Ctenochira propinqua"	1	615
-"Tromatobia_variabilis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tromatobia"	"Tromatobia variabilis"	1	615
-"Polyblastus_varitarsus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Polyblastus"	"Polyblastus varitarsus"	1	615
-"Dolichomitus_dolichosoma"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dolichomitus"	"Dolichomitus dolichosoma"	1	621
-"Monoblastus_macer"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Monoblastus"	"Monoblastus macer"	1	615
-"Aclastus_gracilis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Aclastus"	"Aclastus gracilis"	1	618
-"Zatypota_percontatoria"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Zatypota"	"Zatypota percontatoria"	1	618
-"Mastrus_ridibundus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mastrus"	"Mastrus ridibundus"	1	624
-"Lissonota_recurvariae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lissonota"	"Lissonota recurvariae"	1	615
-"Lathrolestes_nigricollis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lathrolestes"	"Lathrolestes nigricollis"	1	624
-"Euryproctus_nemoralis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Euryproctus"	"Euryproctus nemoralis"	1	615
-"Enytus_apostata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enytus"	"Enytus apostata"	1	615
-"Syrphoctonus_idari"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus idari"	1	615
-"Dolichomitus_irritator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dolichomitus"	"Dolichomitus irritator"	1	609
-"Synodites_lineiger"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Synodites"	"Synodites lineiger"	1	615
-"Apechthis_quadridentata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Apechthis"	"Apechthis quadridentata"	1	618
-"Monoblastus_innumerabilis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Monoblastus"	"Monoblastus innumerabilis"	1	624
-"Ctenochira_sphaerocephalus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ctenochira"	"Ctenochira sphaerocephalus"	1	615
-"Enizemum_nigricorne"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enizemum"	"Enizemum nigricorne"	1	618
-"Stictopisthus_lanceolatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Stictopisthus"	"Stictopisthus lanceolatus"	1	606
-"Pimpla_aequalis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pimpla"	"Pimpla aequalis"	1	624
-"Cubocephalus_anatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cubocephalus"	"Cubocephalus anatorius"	1	624
-"Trachyarus_fuscipes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Trachyarus"	"Trachyarus fuscipes"	1	624
-"Aclastus_solutus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Aclastus"	"Aclastus solutus"	1	609
-"Phthorima_compressa"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Phthorima"	"Phthorima compressa"	1	618
-"Pimpla_nuda"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pimpla"	"Pimpla nuda"	1	606
-"Pimpla_molesta"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pimpla"	"Pimpla molesta"	1	615
-"Deuteroxorides_elevator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Deuteroxorides"	"Deuteroxorides elevator"	1	624
-"Tryphon_signator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tryphon"	"Tryphon signator"	1	609
-"Campodorus_patagiatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campodorus"	"Campodorus patagiatus"	1	624
-"Tryphon_mystax"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tryphon"	"Tryphon mystax"	1	618
-"Megastylus_caseyi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Megastylus"	"Megastylus caseyi"	1	615
-"Atractodes_alpestris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Atractodes"	"Atractodes alpestris"	1	618
-"Cryptus_arcticus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cryptus"	"Cryptus arcticus"	1	618
-"Coelichneumonops_occidentalis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Coelichneumonops"	"Coelichneumonops occidentalis"	1	624
-"Atractodes_gravidus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Atractodes"	"Atractodes gravidus"	1	618
-"Syrphoctonus_vitreus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus vitreus"	1	615
-"Gelis_maesticolor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Gelis"	"Gelis maesticolor"	1	618
-"Promethes_melanaspis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Promethes"	"Promethes melanaspis"	1	615
-"Sussaba_placita"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sussaba"	"Sussaba placita"	1	615
-"Phygadeuon_melanopygus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Phygadeuon"	"Phygadeuon melanopygus"	1	615
-"Mesoleius_aulicus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mesoleius"	"Mesoleius aulicus"	1	621
-"Rhorus_neustriae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Rhorus"	"Rhorus neustriae"	1	624
-"Hadrodactylus_vulneratus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hadrodactylus"	"Hadrodactylus vulneratus"	1	618
-"Erromenus_caelator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Erromenus"	"Erromenus caelator"	1	609
-"Anoncus_marginellus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Anoncus"	"Anoncus marginellus"	1	624
-"Gnotus_tenuipes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Gnotus"	"Gnotus tenuipes"	1	618
-"Leptobatopsis_appendiculata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Leptobatopsis"	"Leptobatopsis appendiculata"	1	624
-"Mesochorus_unicarinatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mesochorus"	"Mesochorus unicarinatus"	1	618
-"Ichneumon_discoensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon discoensis"	1	612
-"Orthizema_flavicorne"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Orthizema"	"Orthizema flavicorne"	1	618
-"Rhorus_substitutor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Rhorus"	"Rhorus substitutor"	1	615
-"Sphelodon_wardae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sphelodon"	"Sphelodon wardae"	1	618
-"Proclitus_praetor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Proclitus"	"Proclitus praetor"	1	618
-"Campoletis_horstmanni"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campoletis"	"Campoletis horstmanni"	1	624
-"Cratichneumon_viator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cratichneumon"	"Cratichneumon viator"	1	618
-"Enicospilus_ramidulus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus ramidulus"	1	618
-"Bathyplectes_curculionis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Bathyplectes"	"Bathyplectes curculionis"	1	624
-"Netelia_sayi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Netelia"	"Netelia sayi"	1	612
-"Trachyarus_brevipennis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Trachyarus"	"Trachyarus brevipennis"	1	624
-"Ichneumon_macilentus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon macilentus"	1	612
-"Cryptus_viduatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cryptus"	"Cryptus viduatorius"	1	618
-"Diplazon_scutatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon scutatorius"	1	615
-"Ctenochira_genalis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ctenochira"	"Ctenochira genalis"	1	624
-"Coelichneumon_navus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Coelichneumon"	"Coelichneumon navus"	1	612
-"Hyposoter_horticola"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hyposoter"	"Hyposoter horticola"	1	624
-"Promethes_sulcator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Promethes"	"Promethes sulcator"	1	621
-"Trachyarus_solyanikovi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Trachyarus"	"Trachyarus solyanikovi"	1	624
-"Mesochorus_prolatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mesochorus"	"Mesochorus prolatus"	1	606
-"Astrenis_paradoxa"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Astrenis"	"Astrenis paradoxa"	1	624
-"Trychosis_tristator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Trychosis"	"Trychosis tristator"	1	612
-"Promethes_nigriventris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Promethes"	"Promethes nigriventris"	1	615
-"Diadegma_incompletum"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadegma"	"Diadegma incompletum"	1	624
-"Alexeter_multicolor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Alexeter"	"Alexeter multicolor"	1	621
-"Dusona_ellopiae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dusona"	"Dusona ellopiae"	1	624
-"Microcharops_longiterebra"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Microcharops"	"Microcharops longiterebra"	1	624
-"Proclitus_ardentis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Proclitus"	"Proclitus ardentis"	1	609
-"Enicospilus_maculipennis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus maculipennis"	1	624
-"Ophion_brevipunctatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion brevipunctatus"	1	624
-"Campodorus_viduus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campodorus"	"Campodorus viduus"	1	624
-"Dirophanes_hariolus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dirophanes"	"Dirophanes hariolus"	1	624
-"Agrothereutes_abbreviatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Agrothereutes"	"Agrothereutes abbreviatus"	1	612
-"Orthopelma_mediator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Orthopelma"	"Orthopelma mediator"	1	618
-"Mesoleius_affinis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mesoleius"	"Mesoleius affinis"	1	621
-"Podoschistus_vittifrons"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Podoschistus"	"Podoschistus vittifrons"	1	612
-"Ophion_dombroskii"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion dombroskii"	1	624
-"Bioblapsis_cultiformis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Bioblapsis"	"Bioblapsis cultiformis"	1	600
-"Tranosema_tenuifemur"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tranosema"	"Tranosema tenuifemur"	1	615
-"Barycnemis_harpura"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Barycnemis"	"Barycnemis harpura"	1	618
-"Seleucus_cuneiformis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Seleucus"	"Seleucus cuneiformis"	1	624
-"Plectiscidea_venusta"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Plectiscidea"	"Plectiscidea venusta"	1	609
-"Diadegma_semiclausum"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadegma"	"Diadegma semiclausum"	1	624
-"Ichneumon_minutorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon minutorius"	1	612
-"Helictes_conspicuus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Helictes"	"Helictes conspicuus"	1	618
-"Diadegma_mollipla"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadegma"	"Diadegma mollipla"	1	624
-"Isadelphus_gallicola"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Isadelphus"	"Isadelphus gallicola"	1	603
-"Buathra_laborator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Buathra"	"Buathra laborator"	1	618
-"Alexeter_coxalis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Alexeter"	"Alexeter coxalis"	1	624
-"Ichneumon_formosus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon formosus"	1	612
-"Patroclus_homocerus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Patroclus"	"Patroclus homocerus"	1	618
-"Zaplethocornia_procurator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Zaplethocornia"	"Zaplethocornia procurator"	1	618
-"Enicospilus_nigropectus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus nigropectus"	1	618
-"Tranosema_rostrale"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tranosema"	"Tranosema rostrale"	1	624
-"Alexeter_nebulator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Alexeter"	"Alexeter nebulator"	1	624
-"Agrypon_flexorium"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Agrypon"	"Agrypon flexorium"	1	624
-"Panteles_schuetzeanus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Panteles"	"Panteles schuetzeanus"	1	621
-"Ophion_aureus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion aureus"	1	624
-"Meniscomorpha_astrema"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Meniscomorpha"	"Meniscomorpha astrema"	1	624
-"Diadegma_majale"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadegma"	"Diadegma majale"	1	624
-"Trachyarus_borealis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Trachyarus"	"Trachyarus borealis"	1	618
-"Diplazon_tibiatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon tibiatorius"	1	621
-"Hyposoter_pectinatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hyposoter"	"Hyposoter pectinatus"	1	615
-"Coelichneumon_eximius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Coelichneumon"	"Coelichneumon eximius"	1	612
-"Echthromorpha_agrestoria"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Echthromorpha"	"Echthromorpha agrestoria"	1	612
-"Stictopisthus_flaviceps"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Stictopisthus"	"Stictopisthus flaviceps"	1	603
-"Apechthis_ontario"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Apechthis"	"Apechthis ontario"	1	624
-"Lissonota_acrobasidis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lissonota"	"Lissonota acrobasidis"	1	603
-"Diadegma_exareolator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadegma"	"Diadegma exareolator"	1	612
-"Enicospilus_pescadori"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus pescadori"	1	624
-"Acrodactyla_quadrisculpta"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Acrodactyla"	"Acrodactyla quadrisculpta"	1	609
-"Meniscomorpha_venusia"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Meniscomorpha"	"Meniscomorpha venusia"	1	609
-"Ophion_idoneus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion idoneus"	1	624
-"Diacritus_aciculatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diacritus"	"Diacritus aciculatus"	1	612
-"Ichneumon_lariae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon lariae"	1	612
-"Gunomeria_sordida"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Gunomeria"	"Gunomeria sordida"	1	624
-"Perilissus_albitarsis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Perilissus"	"Perilissus albitarsis"	1	618
-"Ophion_clave"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion clave"	1	624
-"Diadegma_insulare"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadegma"	"Diadegma insulare"	1	615
-"Hemichneumon_subdolus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hemichneumon"	"Hemichneumon subdolus"	1	618
-"Dyspetes_luteomarginatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dyspetes"	"Dyspetes luteomarginatus"	1	624
-"Echthrus_reluctator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Echthrus"	"Echthrus reluctator"	1	624
-"Lathrostizus_forticanda"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lathrostizus"	"Lathrostizus forticanda"	1	624
-"Diradops_mexicana"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diradops"	"Diradops mexicana"	1	615
-"Aoplus_groenlandicus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Aoplus"	"Aoplus groenlandicus"	1	612
-"Thrybius_brevispina"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Thrybius"	"Thrybius brevispina"	1	624
-"Bathythrix_decipiens"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Bathythrix"	"Bathythrix decipiens"	1	609
-"Mesoleptus_congener"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mesoleptus"	"Mesoleptus congener"	1	609
-"Diadromus_collaris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadromus"	"Diadromus collaris"	1	618
-"Ophion_keala"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion keala"	1	624
-"Ophion_importunus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion importunus"	1	624
-"Enytus_montanus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enytus"	"Enytus montanus"	1	609
-"Ichneumon_ligatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon ligatorius"	1	597
-"Acrotaphus_latifasciatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Acrotaphus"	"Acrotaphus latifasciatus"	1	624
-"Leptobatopsis_nigricapitis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Leptobatopsis"	"Leptobatopsis nigricapitis"	1	624
-"Ichneumon_alpinator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon alpinator"	1	609
-"Ichneumon_lautareti"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon lautareti"	1	609
-"Promethes_bridgmani"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Promethes"	"Promethes bridgmani"	1	618
-"Bathythrix_pellucidator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Bathythrix"	"Bathythrix pellucidator"	1	612
-"Helictes_borealis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Helictes"	"Helictes borealis"	1	609
-"Cylloceria_melancholica"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cylloceria"	"Cylloceria melancholica"	1	618
-"Achaius_oratorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Achaius"	"Achaius oratorius"	1	609
-"Ophion_obscuratus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion obscuratus"	1	621
-"Lamachus_dispar"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lamachus"	"Lamachus dispar"	1	615
-"Campodorus_liosternus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campodorus"	"Campodorus liosternus"	1	621
-"Diradops_tamaska"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diradops"	"Diradops tamaska"	1	615
-"Ichneumon_cerinthius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon cerinthius"	1	606
-"Exochus_prosopius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Exochus"	"Exochus prosopius"	1	618
-"Ichneumon_albiger"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon albiger"	1	594
-"Monoblastus_brachyacanthus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Monoblastus"	"Monoblastus brachyacanthus"	1	606
-"Enicospilus_cameronii"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus cameronii"	1	624
-"Tromatobia_ovivora"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tromatobia"	"Tromatobia ovivora"	1	600
-"Ophion_minutus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion minutus"	1	624
-"Ophion_scutellaris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion scutellaris"	1	612
-"Cryptus_albitarsis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cryptus"	"Cryptus albitarsis"	1	612
-"Parmortha_pleuralis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Parmortha"	"Parmortha pleuralis"	1	606
-"Monoblastus_davisi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Monoblastus"	"Monoblastus davisi"	1	606
-"Enicospilus_hacha"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus hacha"	1	621
-"Campodorus_scapularis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campodorus"	"Campodorus scapularis"	1	615
-"Hyposoter_bicolor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hyposoter"	"Hyposoter bicolor"	1	624
-"Rictichneumon_curtiventris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Rictichneumon"	"Rictichneumon curtiventris"	1	612
-"Patrocloides_montanus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Patrocloides"	"Patrocloides montanus"	1	609
-"Scopesis_fraterna"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scopesis"	"Scopesis fraterna"	1	621
-"Gelis_fuscicornis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Gelis"	"Gelis fuscicornis"	1	615
-"Afrophion_hynnis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Afrophion"	"Afrophion hynnis"	1	615
-"Lycorina_mirandai"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lycorina"	"Lycorina mirandai"	1	621
-"Neostroblia_ruficollis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Neostroblia"	"Neostroblia ruficollis"	1	621
-"Cratichneumon_panzeri"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cratichneumon"	"Cratichneumon panzeri"	1	612
-"Alexeter_gracilentus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Alexeter"	"Alexeter gracilentus"	1	621
-"Scopesis_polita"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scopesis"	"Scopesis polita"	1	609
-"Ichneumon_simulans"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon simulans"	1	597
-"Excavarus_velox"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Excavarus"	"Excavarus velox"	1	624
-"Syspasis_scutellator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syspasis"	"Syspasis scutellator"	1	612
-"Rictichneumon_lombardi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Rictichneumon"	"Rictichneumon lombardi"	1	612
-"Lathrolestes_orbitalis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lathrolestes"	"Lathrolestes orbitalis"	1	618
-"Labena_grallator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Labena"	"Labena grallator"	1	624
-"Lathrostizus_flexicauda"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lathrostizus"	"Lathrostizus flexicauda"	1	618
-"Ophion_flavidus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion flavidus"	1	621
-"Venturia_canescens"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Venturia"	"Venturia canescens"	1	624
-"Ichneumon_dilleri"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon dilleri"	1	597
-"Occia_jereza"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Occia"	"Occia jereza"	1	615
-"Neotheronia_charli"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Neotheronia"	"Neotheronia charli"	1	612
-"Cryptus_leechi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cryptus"	"Cryptus leechi"	1	609
-"Diadromus_troglodytes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadromus"	"Diadromus troglodytes"	1	609
-"Enicospilus_kleini"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus kleini"	1	624
-"Diadromus_subtilicornis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadromus"	"Diadromus subtilicornis"	1	612
-"Pleolophus_basizonus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pleolophus"	"Pleolophus basizonus"	1	609
-"Hyposoter_annulipes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hyposoter"	"Hyposoter annulipes"	1	609
-"Echthronomas_facialis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Echthronomas"	"Echthronomas facialis"	1	618
-"Synomelix_faciator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Synomelix"	"Synomelix faciator"	1	594
-"Enicospilus_simoni"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus simoni"	1	621
-"Ichneumon_submarginatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon submarginatus"	1	597
-"Diadromus_pulchellus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadromus"	"Diadromus pulchellus"	1	612
-"Leurus_caeruliventris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Leurus"	"Leurus caeruliventris"	1	615
-"Lagarotis_ustulata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lagarotis"	"Lagarotis ustulata"	1	615
-"Ichneumon_pseudocaloscelis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon pseudocaloscelis"	1	597
-"Ichneumon_confusor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon confusor"	1	597
-"Ischnus_inquisitorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ischnus"	"Ischnus inquisitorius"	1	624
-"Ichneumon_bucculentus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon bucculentus"	1	597
-"Demopheles_corruptor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Demopheles"	"Demopheles corruptor"	1	621
-"Synosis_ugaldei"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Synosis"	"Synosis ugaldei"	1	618
-"Metopius_dolenus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Metopius"	"Metopius dolenus"	1	624
-"Exochus_ravetus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Exochus"	"Exochus ravetus"	1	615
-"Enicospilus_ugaldei"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus ugaldei"	1	618
-"Bathythrix_laminata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Bathythrix"	"Bathythrix laminata"	1	591
-"Scopesis_macropus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scopesis"	"Scopesis macropus"	1	615
-"Ichneumon_picticollis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon picticollis"	1	597
-"Ichneumon_gracilicornis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon gracilicornis"	1	591
-"Phobocampe_bicingulata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Phobocampe"	"Phobocampe bicingulata"	1	618
-"Ichneumon_inquinatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon inquinatus"	1	591
-"Ctenopelma_nigrum"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ctenopelma"	"Ctenopelma nigrum"	1	618
-"Trichomma_enecator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Trichomma"	"Trichomma enecator"	1	624
-"Ichneumon_delator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon delator"	1	597
-"Ichneumon_grandicornis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon grandicornis"	1	591
-"Campodorus_humerellus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campodorus"	"Campodorus humerellus"	1	615
-"Xanthopimpla_aurita"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Xanthopimpla"	"Xanthopimpla aurita"	1	624
-"Diplazon_orientalis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon orientalis"	1	615
-"Enicospilus_umbratus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus umbratus"	1	618
-"Ichneumon_primatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon primatorius"	1	597
-"Diphyus_palliatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diphyus"	"Diphyus palliatorius"	1	612
-"Ichneumon_computatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon computatorius"	1	591
-"Chasmias_lugens"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Chasmias"	"Chasmias lugens"	1	591
-"Campoletis_flavicincta"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campoletis"	"Campoletis flavicincta"	1	615
-"Plectiscidea_monticola"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Plectiscidea"	"Plectiscidea monticola"	1	600
-"Ichneumon_alius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon alius"	1	591
-"Ichneumon_tuberculipes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon tuberculipes"	1	591
-"Ichneumon_caloscelis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon caloscelis"	1	591
-"Lymeon_orbus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lymeon"	"Lymeon orbus"	1	615
-"Ichneumon_parengensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon parengensis"	1	597
-"Ichneumon_suspiciosus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon suspiciosus"	1	597
-"Lagarotis_semicaligata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lagarotis"	"Lagarotis semicaligata"	1	615
-"Ichneumon_fulvicornis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon fulvicornis"	1	591
-"Mokajoppa_respinozai"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mokajoppa"	"Mokajoppa respinozai"	1	615
-"Leurus_discus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Leurus"	"Leurus discus"	1	624
-"Scopesis_rufonotata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scopesis"	"Scopesis rufonotata"	1	621
-"Ichneumon_stramentor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon stramentor"	1	591
-"Ichneumon_spurius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon spurius"	1	597
-"Thyreodon_atriventris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Thyreodon"	"Thyreodon atriventris"	1	615
-"Rhimphoctona_longicauda"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Rhimphoctona"	"Rhimphoctona longicauda"	1	615
-"Ichneumon_karpaticus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon karpaticus"	1	591
-"Thyreodon_erythrocera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Thyreodon"	"Thyreodon erythrocera"	1	618
-"Erythrodolius_griffithsorum"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Erythrodolius"	"Erythrodolius griffithsorum"	1	609
-"Ichneumon_amphibolus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon amphibolus"	1	591
-"Ichneumon_ignobilis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon ignobilis"	1	591
-"Rhimphoctona_macrocephala"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Rhimphoctona"	"Rhimphoctona macrocephala"	1	624
-"Enicospilus_madrigalae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus madrigalae"	1	615
-"Enicospilus_bozai"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus bozai"	1	609
-"Enicospilus_kelloggae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus kelloggae"	1	612
-"Ischnus_alternator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ischnus"	"Ischnus alternator"	1	624
-"Ichneumon_stramentarius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon stramentarius"	1	591
-"Ichneumon_melanosomus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon melanosomus"	1	600
-"Cidaphus_occidentalis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cidaphus"	"Cidaphus occidentalis"	1	618
-"Seticornuta_altamirae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Seticornuta"	"Seticornuta altamirae"	1	618
-"Plectiscidea_prolata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Plectiscidea"	"Plectiscidea prolata"	1	597
-"Thyreodon_walkerae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Thyreodon"	"Thyreodon walkerae"	1	624
-"Metachorischizus_unicolor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Metachorischizus"	"Metachorischizus unicolor"	1	588
-"Enicospilus_fogdenorum"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus fogdenorum"	1	612
-"Diadegma_fenestrale"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadegma"	"Diadegma fenestrale"	1	603
-"Scolobates_auriculatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scolobates"	"Scolobates auriculatus"	1	618
-"Enicospilus_lacsa"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus lacsa"	1	612
-"Ichneumon_stigmatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon stigmatorius"	1	591
-"Enicospilus_randalli"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus randalli"	1	621
-"Barylypa_broweri"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Barylypa"	"Barylypa broweri"	1	621
-"Polyblastus_melanostigmus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Polyblastus"	"Polyblastus melanostigmus"	1	594
-"Hellwigiella_dichromoptera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hellwigiella"	"Hellwigiella dichromoptera"	1	606
-"Ichneumon_extensorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon extensorius"	1	591
-"Coelichneumon_deliratorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Coelichneumon"	"Coelichneumon deliratorius"	1	588
-"Pristomerus_vulnerator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pristomerus"	"Pristomerus vulnerator"	1	615
-"Campodorus_ignavus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campodorus"	"Campodorus ignavus"	1	615
-"Aritranis_director"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Aritranis"	"Aritranis director"	1	609
-"Enicospilus_echeverri"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus echeverri"	1	612
-"Coelichneumon_similior"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Coelichneumon"	"Coelichneumon similior"	1	603
-"Enicospilus_chiriquensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus chiriquensis"	1	618
-"Oresbius_taeniatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Oresbius"	"Oresbius taeniatus"	1	597
-"Pristomerus_sulci"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pristomerus"	"Pristomerus sulci"	1	618
-"Hyperacmus_crassicornis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hyperacmus"	"Hyperacmus crassicornis"	1	615
-"Coelichneumon_cyaniventris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Coelichneumon"	"Coelichneumon cyaniventris"	1	591
-"Xiphosomella_falsata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Xiphosomella"	"Xiphosomella falsata"	1	615
-"Barytatocephalus_mocsaryi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Barytatocephalus"	"Barytatocephalus mocsaryi"	1	609
-"Plectiscidea_communis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Plectiscidea"	"Plectiscidea communis"	1	600
-"Thyreodon_santarosae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Thyreodon"	"Thyreodon santarosae"	1	615
-"Eiphosoma_tantalium"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Eiphosoma"	"Eiphosoma tantalium"	1	615
-"Thyreodon_whitfieldi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Thyreodon"	"Thyreodon whitfieldi"	1	624
-"Zagryphus_nasutus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Zagryphus"	"Zagryphus nasutus"	1	624
-"Bathyplectes_anurus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Bathyplectes"	"Bathyplectes anurus"	1	591
-"Enicospilus_major"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus major"	1	612
-"Mesochorus_suomiensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mesochorus"	"Mesochorus suomiensis"	1	585
-"Casinaria_grandis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Casinaria"	"Casinaria grandis"	1	624
-"Lycorina_luzae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lycorina"	"Lycorina luzae"	1	624
-"Enicospilus_fernaldi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus fernaldi"	1	597
-"Olesicampe_melanogaster"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Olesicampe"	"Olesicampe melanogaster"	1	591
-"Enicospilus_leoni"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus leoni"	1	612
-"Arotes_moiwanus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Arotes"	"Arotes moiwanus"	1	576
-"Acrodactyla_degener"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Acrodactyla"	"Acrodactyla degener"	1	594
-"Alomya_debellator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Alomya"	"Alomya debellator"	1	621
-"Eiphosoma_pyralidis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Eiphosoma"	"Eiphosoma pyralidis"	1	621
-"Ophion_bilineatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion bilineatus"	1	603
-"Euceros_madecassus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Euceros"	"Euceros madecassus"	1	600
-"Enicospilus_glabratus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus glabratus"	1	609
-"Arotes_sugiharai"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Arotes"	"Arotes sugiharai"	1	576
-"Chlorocryptus_purpuratus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Chlorocryptus"	"Chlorocryptus purpuratus"	1	594
-"Laticoleus_unicolor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Laticoleus"	"Laticoleus unicolor"	1	609
-"Spilopteron_mucronatum"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Spilopteron"	"Spilopteron mucronatum"	1	585
-"Dreisbachia_slossonae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dreisbachia"	"Dreisbachia slossonae"	1	576
-"Dolichomitus_foxleei"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dolichomitus"	"Dolichomitus foxleei"	1	570
-"Cymodusa_distincta"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cymodusa"	"Cymodusa distincta"	1	615
-"Thyreodon_laticinctus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Thyreodon"	"Thyreodon laticinctus"	1	615
-"Enicospilus_abessyniensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus abessyniensis"	1	591
-"Scambus_brevicornis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scambus"	"Scambus brevicornis"	1	567
-"Stenichneumon_militarius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Stenichneumon"	"Stenichneumon militarius"	1	588
-"Yamatarotes_bicolor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Yamatarotes"	"Yamatarotes bicolor"	1	576
-"Jezarotes_tamanukii"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Jezarotes"	"Jezarotes tamanukii"	1	576
-"Eiphosoma_dolopon"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Eiphosoma"	"Eiphosoma dolopon"	1	618
-"Pedinopelte_latipennis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pedinopelte"	"Pedinopelte latipennis"	1	621
-"Arotes_japonicus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Arotes"	"Arotes japonicus"	1	576
-"Creagrura_nigripes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Creagrura"	"Creagrura nigripes"	1	624
-"Yamatarotes_chishimensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Yamatarotes"	"Yamatarotes chishimensis"	1	585
-"Pimpla_stricklandi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pimpla"	"Pimpla stricklandi"	1	573
-"Dusona_egregia"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dusona"	"Dusona egregia"	1	624
-"Ichneumon_memorator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon memorator"	1	582
-"Spilopteron_luteum"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Spilopteron"	"Spilopteron luteum"	1	585
-"Orthocentrus_winnertzii"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Orthocentrus"	"Orthocentrus winnertzii"	1	576
-"Spilopteron_pyrrhonae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Spilopteron"	"Spilopteron pyrrhonae"	1	576
-"Plectiscus_impurator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Plectiscus"	"Plectiscus impurator"	1	570
-"Pimpla_contemplator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pimpla"	"Pimpla contemplator"	1	558
-"Glypta_exartemae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Glypta"	"Glypta exartemae"	1	573
-"Enicospilus_sanchezi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus sanchezi"	1	585
-"Ishigakia_exetasea"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ishigakia"	"Ishigakia exetasea"	1	579
-"Proclitus_paganus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Proclitus"	"Proclitus paganus"	1	564
-"Dusona_texana"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dusona"	"Dusona texana"	1	570
-"Stauropoctonus_bicarinatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Stauropoctonus"	"Stauropoctonus bicarinatus"	1	594
-"Plectiscidea_bistriata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Plectiscidea"	"Plectiscidea bistriata"	1	570
-"Atractodes_ambiguus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Atractodes"	"Atractodes ambiguus"	1	594
-"Apechthis_compunctor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Apechthis"	"Apechthis compunctor"	1	570
-"Spilopteron_apicale"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Spilopteron"	"Spilopteron apicale"	1	567
-"Bathythrix_claviger"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Bathythrix"	"Bathythrix claviger"	1	567
-"Theronia_hilaris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Theronia"	"Theronia hilaris"	1	585
-"Sphelodon_phoxopteridis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sphelodon"	"Sphelodon phoxopteridis"	1	570
-"Gelis_liparae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Gelis"	"Gelis liparae"	1	558
-"Phytodietus_pleuralis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Phytodietus"	"Phytodietus pleuralis"	1	564
-"Hypomecus_quadriannulatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hypomecus"	"Hypomecus quadriannulatus"	1	570
-"Dusona_vitticollis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dusona"	"Dusona vitticollis"	1	573
-"Hyposoter_ebeninus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hyposoter"	"Hyposoter ebeninus"	1	552
-"Cryptanura_spinaria"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cryptanura"	"Cryptanura spinaria"	1	588
-"Hyposoter_didymator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hyposoter"	"Hyposoter didymator"	1	573
-"Spilopteron_tosaense"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Spilopteron"	"Spilopteron tosaense"	1	564
-"Mesochorus_curvulus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mesochorus"	"Mesochorus curvulus"	1	570
-"Dolichomitus_nakamurai"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dolichomitus"	"Dolichomitus nakamurai"	1	546
-"Stenomacrus_nemoralis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Stenomacrus"	"Stenomacrus nemoralis"	1	558
-"Campoletis_sonorensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campoletis"	"Campoletis sonorensis"	1	576
-"Phygadeuon_nanus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Phygadeuon"	"Phygadeuon nanus"	1	576
-"Chiloplatys_lucens"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Chiloplatys"	"Chiloplatys lucens"	1	549
-"Dusona_laticincta"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dusona"	"Dusona laticincta"	1	570
-"Temelucha_recta"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Temelucha"	"Temelucha recta"	1	588
-"Tranosemella_praerogator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tranosemella"	"Tranosemella praerogator"	1	570
-"Diadegma_pendulum"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadegma"	"Diadegma pendulum"	1	573
-"Rhynchophion_flammipennis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Rhynchophion"	"Rhynchophion flammipennis"	1	582
-"Coelichneumon_nobilis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Coelichneumon"	"Coelichneumon nobilis"	1	564
-"Exochus_washingtonensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Exochus"	"Exochus washingtonensis"	1	576
-"Allomacrus_arcticus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Allomacrus"	"Allomacrus arcticus"	1	552
-"Gelis_festinans"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Gelis"	"Gelis festinans"	1	561
-"Eutanyacra_glaucatoria"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Eutanyacra"	"Eutanyacra glaucatoria"	1	558
-"Coelichneumon_neocretatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Coelichneumon"	"Coelichneumon neocretatus"	1	552
-"Ophion_costatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion costatus"	1	564
-"Thyreodon_schauffi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Thyreodon"	"Thyreodon schauffi"	1	600
-"Exochus_nigripalpis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Exochus"	"Exochus nigripalpis"	1	564
-"Trathala_recurvariae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Trathala"	"Trathala recurvariae"	1	594
-"Exochus_pictus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Exochus"	"Exochus pictus"	1	558
-"Plectiscidea_collaris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Plectiscidea"	"Plectiscidea collaris"	1	537
-"Dialipsis_dissimilis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dialipsis"	"Dialipsis dissimilis"	1	573
-"Agriotypus_armatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Agriotypus"	"Agriotypus armatus"	1	522
-"Colpotrochia_catania"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Colpotrochia"	"Colpotrochia catania"	1	570
-"Euceros_coxalis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Euceros"	"Euceros coxalis"	1	528
-"Eurypterna_cremieri"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Eurypterna"	"Eurypterna cremieri"	1	549
-"Holcojoppa_mactator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Holcojoppa"	"Holcojoppa mactator"	1	543
-"Triclistus_xodius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Triclistus"	"Triclistus xodius"	1	537
-"Eiphosoma_nigrum"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Eiphosoma"	"Eiphosoma nigrum"	1	534
-"Colpotrochia_pesada"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Colpotrochia"	"Colpotrochia pesada"	1	537
-"Mesochorus_ottawaensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mesochorus"	"Mesochorus ottawaensis"	1	492
-"Atractodes_aterrimus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Atractodes"	"Atractodes aterrimus"	1	507
-"Sycaonia_foersteri"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sycaonia"	"Sycaonia foersteri"	1	522
-"Isadelphus_inimicus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Isadelphus"	"Isadelphus inimicus"	1	525
-"Carria_fortipes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Carria"	"Carria fortipes"	1	525
-"Exenterus_confusus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Exenterus"	"Exenterus confusus"	1	483
-"Trachysphyrus_agenor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Trachysphyrus"	"Trachysphyrus agenor"	1	501
-"Phytodietus_obscurus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Phytodietus"	"Phytodietus obscurus"	1	450
-"Atractodes_pauxillus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Atractodes"	"Atractodes pauxillus"	1	441
-"Vulgichneumon_deceptor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Vulgichneumon"	"Vulgichneumon deceptor"	1	474
+"TipLabel"	"Kingdom"	"Phylum"	"Class"	"Order"	"Family"	"Genus"	"Species"
+"Ecphysis_robiginosa"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ecphysis"	"Ecphysis robiginosa"
+"Syrphophilus_tricinctorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphophilus"	"Syrphophilus tricinctorius"
+"Syrphophilus_bizonarius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphophilus"	"Syrphophilus bizonarius"
+"Campocraspedon_annulitarsis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campocraspedon"	"Campocraspedon annulitarsis"
+"Dolichomitus_terebrans"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dolichomitus"	"Dolichomitus terebrans"
+"Syrphoctonus_melanogaster"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus melanogaster"
+"Syrphophilus_asperatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphophilus"	"Syrphophilus asperatus"
+"Syrphoctonus_subopacus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus subopacus"
+"Syrphoctonus_nigritarsus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus nigritarsus"
+"Syrphoctonus_elegans"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus elegans"
+"Syrphoctonus_longiventris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus longiventris"
+"Xestopelta_gracillima"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Xestopelta"	"Xestopelta gracillima"
+"Scambus_pterophori"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scambus"	"Scambus pterophori"
+"Erromenus_punctulatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Erromenus"	"Erromenus punctulatus"
+"Syrphoctonus_pallipes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus pallipes"
+"Woldstedtius_citropectoralis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Woldstedtius"	"Woldstedtius citropectoralis"
+"Woldstedtius_holarcticus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Woldstedtius"	"Woldstedtius holarcticus"
+"Itoplectis_conquisitor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Itoplectis"	"Itoplectis conquisitor"
+"Syrphoctonus_signatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus signatus"
+"Syrphoctonus_tarsatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus tarsatorius"
+"Woldstedtius_flavolineatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Woldstedtius"	"Woldstedtius flavolineatus"
+"Syrphophilus_tricinctus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphophilus"	"Syrphophilus tricinctus"
+"Pimpla_croceipes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pimpla"	"Pimpla croceipes"
+"Sussaba_cultriformis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sussaba"	"Sussaba cultriformis"
+"Rhyssa_amoena"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Rhyssa"	"Rhyssa amoena"
+"Homotropus_pacificus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Homotropus"	"Homotropus pacificus"
+"Woldstedtius_biguttatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Woldstedtius"	"Woldstedtius biguttatus"
+"Mesoleptidea_stalii"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mesoleptidea"	"Mesoleptidea stalii"
+"Tromatobia_notator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tromatobia"	"Tromatobia notator"
+"Clistopyga_canadensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Clistopyga"	"Clistopyga canadensis"
+"Pimpla_sodalis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pimpla"	"Pimpla sodalis"
+"Scambus_vesicarius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scambus"	"Scambus vesicarius"
+"Enizemum_ornatum"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enizemum"	"Enizemum ornatum"
+"Tymmophorus_suspiciosus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tymmophorus"	"Tymmophorus suspiciosus"
+"Diplazon_pallicoxa"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon pallicoxa"
+"Syrphoctonus_fissorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus fissorius"
+"Glypta_arctica"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Glypta"	"Glypta arctica"
+"Liotryphon_caudatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Liotryphon"	"Liotryphon caudatus"
+"Phthorima_xanthaspis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Phthorima"	"Phthorima xanthaspis"
+"Polyblastus_pumilus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Polyblastus"	"Polyblastus pumilus"
+"Sussaba_flavipes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sussaba"	"Sussaba flavipes"
+"Tymmophorus_erythrozonus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tymmophorus"	"Tymmophorus erythrozonus"
+"Syrphoctonus_borealis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus borealis"
+"Collyria_trichophthalma"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Collyria"	"Collyria trichophthalma"
+"Pimpla_pedalis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pimpla"	"Pimpla pedalis"
+"Glypta_macra"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Glypta"	"Glypta macra"
+"Phytodietus_vulgaris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Phytodietus"	"Phytodietus vulgaris"
+"Meniscomorpha_pensita"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Meniscomorpha"	"Meniscomorpha pensita"
+"Chorinaeus_funebris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Chorinaeus"	"Chorinaeus funebris"
+"Pantisarthrus_lubricus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pantisarthrus"	"Pantisarthrus lubricus"
+"Tymmophorus_obscuripes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tymmophorus"	"Tymmophorus obscuripes"
+"Syrphoctonus_desvignesii"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus desvignesii"
+"Woldstedtius_flavicauda"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Woldstedtius"	"Woldstedtius flavicauda"
+"Diplazon_annulatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon annulatus"
+"Sussaba_punctiventris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sussaba"	"Sussaba punctiventris"
+"Stenomacrus_groenlandicus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Stenomacrus"	"Stenomacrus groenlandicus"
+"Glypta_fumiferanae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Glypta"	"Glypta fumiferanae"
+"Chiloplatys_dmitrii"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Chiloplatys"	"Chiloplatys dmitrii"
+"Syrphoctonus_crassicrus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus crassicrus"
+"Sussaba_aciculata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sussaba"	"Sussaba aciculata"
+"Diplazon_tetragonus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon tetragonus"
+"Diplazon_laetatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon laetatorius"
+"Sussaba_cognata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sussaba"	"Sussaba cognata"
+"Scambus_hispae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scambus"	"Scambus hispae"
+"Homotropus_hygrobius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Homotropus"	"Homotropus hygrobius"
+"Dusona_gracilis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dusona"	"Dusona gracilis"
+"Scambus_decorus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scambus"	"Scambus decorus"
+"Absyrtus_vicinator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Absyrtus"	"Absyrtus vicinator"
+"Adelognathus_cubiceps"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Adelognathus"	"Adelognathus cubiceps"
+"Bathythrix_longiceps"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Bathythrix"	"Bathythrix longiceps"
+"Woldstedtius_nigrolineatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Woldstedtius"	"Woldstedtius nigrolineatus"
+"Diplazon_hyperboreus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon hyperboreus"
+"Dusona_minor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dusona"	"Dusona minor"
+"Gnotus_chionops"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Gnotus"	"Gnotus chionops"
+"Crypteffigies_confusus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Crypteffigies"	"Crypteffigies confusus"
+"Campocraspedon_caudatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campocraspedon"	"Campocraspedon caudatus"
+"Dolichomitus_imperator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dolichomitus"	"Dolichomitus imperator"
+"Diplazon_pectoratorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon pectoratorius"
+"Chiloplatys_mexicanus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Chiloplatys"	"Chiloplatys mexicanus"
+"Asthenara_socia"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Asthenara"	"Asthenara socia"
+"Endasys_plagiator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Endasys"	"Endasys plagiator"
+"Procinetus_decimator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Procinetus"	"Procinetus decimator"
+"Mesoleptidea_cingulata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mesoleptidea"	"Mesoleptidea cingulata"
+"Woldstedtius_isidroi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Woldstedtius"	"Woldstedtius isidroi"
+"Picrostigeus_obscurus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Picrostigeus"	"Picrostigeus obscurus"
+"Gregopimpla_ussuriensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Gregopimpla"	"Gregopimpla ussuriensis"
+"Chiloplatys_fasciatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Chiloplatys"	"Chiloplatys fasciatus"
+"Aperileptus_tricinctus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Aperileptus"	"Aperileptus tricinctus"
+"Barycnemis_gravipes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Barycnemis"	"Barycnemis gravipes"
+"Diplazon_neoalpinus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon neoalpinus"
+"Dusona_auriculator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dusona"	"Dusona auriculator"
+"Sussaba_tertia"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sussaba"	"Sussaba tertia"
+"Aperileptus_albipalpus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Aperileptus"	"Aperileptus albipalpus"
+"Syrphoctonus_lissosoma"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus lissosoma"
+"Scambus_calobatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scambus"	"Scambus calobatus"
+"Orthocentrus_fulvipes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Orthocentrus"	"Orthocentrus fulvipes"
+"Acrolyta_glacialis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Acrolyta"	"Acrolyta glacialis"
+"Syrphoctonus_crassicornis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus crassicornis"
+"Lissonota_lineolaris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lissonota"	"Lissonota lineolaris"
+"Lapton_femoralis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lapton"	"Lapton femoralis"
+"Neotheronia_tacubaya"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Neotheronia"	"Neotheronia tacubaya"
+"Physotarsus_fabioi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Physotarsus"	"Physotarsus fabioi"
+"Stenomacrus_exserens"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Stenomacrus"	"Stenomacrus exserens"
+"Scambus_planatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scambus"	"Scambus planatus"
+"Sussaba_pulchella"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sussaba"	"Sussaba pulchella"
+"Diplazon_bradleyi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon bradleyi"
+"Catastenus_femoralis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Catastenus"	"Catastenus femoralis"
+"Hyposoter_frigidus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hyposoter"	"Hyposoter frigidus"
+"Ctenochira_propinqua"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ctenochira"	"Ctenochira propinqua"
+"Tromatobia_variabilis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tromatobia"	"Tromatobia variabilis"
+"Polyblastus_varitarsus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Polyblastus"	"Polyblastus varitarsus"
+"Dolichomitus_dolichosoma"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dolichomitus"	"Dolichomitus dolichosoma"
+"Monoblastus_macer"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Monoblastus"	"Monoblastus macer"
+"Aclastus_gracilis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Aclastus"	"Aclastus gracilis"
+"Zatypota_percontatoria"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Zatypota"	"Zatypota percontatoria"
+"Mastrus_ridibundus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mastrus"	"Mastrus ridibundus"
+"Lissonota_recurvariae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lissonota"	"Lissonota recurvariae"
+"Lathrolestes_nigricollis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lathrolestes"	"Lathrolestes nigricollis"
+"Euryproctus_nemoralis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Euryproctus"	"Euryproctus nemoralis"
+"Enytus_apostata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enytus"	"Enytus apostata"
+"Syrphoctonus_idari"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus idari"
+"Dolichomitus_irritator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dolichomitus"	"Dolichomitus irritator"
+"Synodites_lineiger"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Synodites"	"Synodites lineiger"
+"Apechthis_quadridentata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Apechthis"	"Apechthis quadridentata"
+"Monoblastus_innumerabilis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Monoblastus"	"Monoblastus innumerabilis"
+"Ctenochira_sphaerocephalus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ctenochira"	"Ctenochira sphaerocephalus"
+"Enizemum_nigricorne"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enizemum"	"Enizemum nigricorne"
+"Stictopisthus_lanceolatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Stictopisthus"	"Stictopisthus lanceolatus"
+"Pimpla_aequalis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pimpla"	"Pimpla aequalis"
+"Cubocephalus_anatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cubocephalus"	"Cubocephalus anatorius"
+"Trachyarus_fuscipes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Trachyarus"	"Trachyarus fuscipes"
+"Aclastus_solutus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Aclastus"	"Aclastus solutus"
+"Phthorima_compressa"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Phthorima"	"Phthorima compressa"
+"Pimpla_nuda"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pimpla"	"Pimpla nuda"
+"Pimpla_molesta"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pimpla"	"Pimpla molesta"
+"Deuteroxorides_elevator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Deuteroxorides"	"Deuteroxorides elevator"
+"Tryphon_signator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tryphon"	"Tryphon signator"
+"Campodorus_patagiatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campodorus"	"Campodorus patagiatus"
+"Tryphon_mystax"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tryphon"	"Tryphon mystax"
+"Megastylus_caseyi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Megastylus"	"Megastylus caseyi"
+"Atractodes_alpestris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Atractodes"	"Atractodes alpestris"
+"Cryptus_arcticus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cryptus"	"Cryptus arcticus"
+"Coelichneumonops_occidentalis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Coelichneumonops"	"Coelichneumonops occidentalis"
+"Atractodes_gravidus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Atractodes"	"Atractodes gravidus"
+"Syrphoctonus_vitreus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syrphoctonus"	"Syrphoctonus vitreus"
+"Gelis_maesticolor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Gelis"	"Gelis maesticolor"
+"Promethes_melanaspis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Promethes"	"Promethes melanaspis"
+"Sussaba_placita"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sussaba"	"Sussaba placita"
+"Phygadeuon_melanopygus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Phygadeuon"	"Phygadeuon melanopygus"
+"Mesoleius_aulicus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mesoleius"	"Mesoleius aulicus"
+"Rhorus_neustriae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Rhorus"	"Rhorus neustriae"
+"Hadrodactylus_vulneratus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hadrodactylus"	"Hadrodactylus vulneratus"
+"Erromenus_caelator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Erromenus"	"Erromenus caelator"
+"Anoncus_marginellus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Anoncus"	"Anoncus marginellus"
+"Gnotus_tenuipes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Gnotus"	"Gnotus tenuipes"
+"Leptobatopsis_appendiculata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Leptobatopsis"	"Leptobatopsis appendiculata"
+"Mesochorus_unicarinatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mesochorus"	"Mesochorus unicarinatus"
+"Ichneumon_discoensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon discoensis"
+"Orthizema_flavicorne"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Orthizema"	"Orthizema flavicorne"
+"Rhorus_substitutor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Rhorus"	"Rhorus substitutor"
+"Sphelodon_wardae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sphelodon"	"Sphelodon wardae"
+"Proclitus_praetor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Proclitus"	"Proclitus praetor"
+"Campoletis_horstmanni"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campoletis"	"Campoletis horstmanni"
+"Cratichneumon_viator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cratichneumon"	"Cratichneumon viator"
+"Enicospilus_ramidulus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus ramidulus"
+"Bathyplectes_curculionis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Bathyplectes"	"Bathyplectes curculionis"
+"Netelia_sayi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Netelia"	"Netelia sayi"
+"Trachyarus_brevipennis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Trachyarus"	"Trachyarus brevipennis"
+"Ichneumon_macilentus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon macilentus"
+"Cryptus_viduatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cryptus"	"Cryptus viduatorius"
+"Diplazon_scutatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon scutatorius"
+"Ctenochira_genalis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ctenochira"	"Ctenochira genalis"
+"Coelichneumon_navus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Coelichneumon"	"Coelichneumon navus"
+"Hyposoter_horticola"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hyposoter"	"Hyposoter horticola"
+"Promethes_sulcator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Promethes"	"Promethes sulcator"
+"Trachyarus_solyanikovi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Trachyarus"	"Trachyarus solyanikovi"
+"Mesochorus_prolatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mesochorus"	"Mesochorus prolatus"
+"Astrenis_paradoxa"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Astrenis"	"Astrenis paradoxa"
+"Trychosis_tristator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Trychosis"	"Trychosis tristator"
+"Promethes_nigriventris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Promethes"	"Promethes nigriventris"
+"Diadegma_incompletum"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadegma"	"Diadegma incompletum"
+"Alexeter_multicolor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Alexeter"	"Alexeter multicolor"
+"Dusona_ellopiae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dusona"	"Dusona ellopiae"
+"Microcharops_longiterebra"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Microcharops"	"Microcharops longiterebra"
+"Proclitus_ardentis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Proclitus"	"Proclitus ardentis"
+"Enicospilus_maculipennis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus maculipennis"
+"Ophion_brevipunctatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion brevipunctatus"
+"Campodorus_viduus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campodorus"	"Campodorus viduus"
+"Dirophanes_hariolus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dirophanes"	"Dirophanes hariolus"
+"Agrothereutes_abbreviatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Agrothereutes"	"Agrothereutes abbreviatus"
+"Orthopelma_mediator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Orthopelma"	"Orthopelma mediator"
+"Mesoleius_affinis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mesoleius"	"Mesoleius affinis"
+"Podoschistus_vittifrons"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Podoschistus"	"Podoschistus vittifrons"
+"Ophion_dombroskii"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion dombroskii"
+"Bioblapsis_cultiformis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Bioblapsis"	"Bioblapsis cultiformis"
+"Tranosema_tenuifemur"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tranosema"	"Tranosema tenuifemur"
+"Barycnemis_harpura"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Barycnemis"	"Barycnemis harpura"
+"Seleucus_cuneiformis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Seleucus"	"Seleucus cuneiformis"
+"Plectiscidea_venusta"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Plectiscidea"	"Plectiscidea venusta"
+"Diadegma_semiclausum"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadegma"	"Diadegma semiclausum"
+"Ichneumon_minutorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon minutorius"
+"Helictes_conspicuus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Helictes"	"Helictes conspicuus"
+"Diadegma_mollipla"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadegma"	"Diadegma mollipla"
+"Isadelphus_gallicola"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Isadelphus"	"Isadelphus gallicola"
+"Buathra_laborator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Buathra"	"Buathra laborator"
+"Alexeter_coxalis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Alexeter"	"Alexeter coxalis"
+"Ichneumon_formosus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon formosus"
+"Patroclus_homocerus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Patroclus"	"Patroclus homocerus"
+"Zaplethocornia_procurator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Zaplethocornia"	"Zaplethocornia procurator"
+"Enicospilus_nigropectus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus nigropectus"
+"Tranosema_rostrale"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tranosema"	"Tranosema rostrale"
+"Alexeter_nebulator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Alexeter"	"Alexeter nebulator"
+"Agrypon_flexorium"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Agrypon"	"Agrypon flexorium"
+"Panteles_schuetzeanus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Panteles"	"Panteles schuetzeanus"
+"Ophion_aureus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion aureus"
+"Meniscomorpha_astrema"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Meniscomorpha"	"Meniscomorpha astrema"
+"Diadegma_majale"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadegma"	"Diadegma majale"
+"Trachyarus_borealis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Trachyarus"	"Trachyarus borealis"
+"Diplazon_tibiatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon tibiatorius"
+"Hyposoter_pectinatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hyposoter"	"Hyposoter pectinatus"
+"Coelichneumon_eximius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Coelichneumon"	"Coelichneumon eximius"
+"Echthromorpha_agrestoria"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Echthromorpha"	"Echthromorpha agrestoria"
+"Stictopisthus_flaviceps"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Stictopisthus"	"Stictopisthus flaviceps"
+"Apechthis_ontario"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Apechthis"	"Apechthis ontario"
+"Lissonota_acrobasidis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lissonota"	"Lissonota acrobasidis"
+"Diadegma_exareolator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadegma"	"Diadegma exareolator"
+"Enicospilus_pescadori"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus pescadori"
+"Acrodactyla_quadrisculpta"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Acrodactyla"	"Acrodactyla quadrisculpta"
+"Meniscomorpha_venusia"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Meniscomorpha"	"Meniscomorpha venusia"
+"Ophion_idoneus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion idoneus"
+"Diacritus_aciculatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diacritus"	"Diacritus aciculatus"
+"Ichneumon_lariae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon lariae"
+"Gunomeria_sordida"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Gunomeria"	"Gunomeria sordida"
+"Perilissus_albitarsis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Perilissus"	"Perilissus albitarsis"
+"Ophion_clave"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion clave"
+"Diadegma_insulare"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadegma"	"Diadegma insulare"
+"Hemichneumon_subdolus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hemichneumon"	"Hemichneumon subdolus"
+"Dyspetes_luteomarginatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dyspetes"	"Dyspetes luteomarginatus"
+"Echthrus_reluctator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Echthrus"	"Echthrus reluctator"
+"Lathrostizus_forticanda"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lathrostizus"	"Lathrostizus forticanda"
+"Diradops_mexicana"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diradops"	"Diradops mexicana"
+"Aoplus_groenlandicus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Aoplus"	"Aoplus groenlandicus"
+"Thrybius_brevispina"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Thrybius"	"Thrybius brevispina"
+"Bathythrix_decipiens"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Bathythrix"	"Bathythrix decipiens"
+"Mesoleptus_congener"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mesoleptus"	"Mesoleptus congener"
+"Diadromus_collaris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadromus"	"Diadromus collaris"
+"Ophion_keala"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion keala"
+"Ophion_importunus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion importunus"
+"Enytus_montanus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enytus"	"Enytus montanus"
+"Ichneumon_ligatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon ligatorius"
+"Acrotaphus_latifasciatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Acrotaphus"	"Acrotaphus latifasciatus"
+"Leptobatopsis_nigricapitis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Leptobatopsis"	"Leptobatopsis nigricapitis"
+"Ichneumon_alpinator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon alpinator"
+"Ichneumon_lautareti"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon lautareti"
+"Promethes_bridgmani"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Promethes"	"Promethes bridgmani"
+"Bathythrix_pellucidator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Bathythrix"	"Bathythrix pellucidator"
+"Helictes_borealis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Helictes"	"Helictes borealis"
+"Cylloceria_melancholica"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cylloceria"	"Cylloceria melancholica"
+"Achaius_oratorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Achaius"	"Achaius oratorius"
+"Ophion_obscuratus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion obscuratus"
+"Lamachus_dispar"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lamachus"	"Lamachus dispar"
+"Campodorus_liosternus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campodorus"	"Campodorus liosternus"
+"Diradops_tamaska"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diradops"	"Diradops tamaska"
+"Ichneumon_cerinthius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon cerinthius"
+"Exochus_prosopius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Exochus"	"Exochus prosopius"
+"Ichneumon_albiger"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon albiger"
+"Monoblastus_brachyacanthus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Monoblastus"	"Monoblastus brachyacanthus"
+"Enicospilus_cameronii"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus cameronii"
+"Tromatobia_ovivora"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tromatobia"	"Tromatobia ovivora"
+"Ophion_minutus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion minutus"
+"Ophion_scutellaris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion scutellaris"
+"Cryptus_albitarsis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cryptus"	"Cryptus albitarsis"
+"Parmortha_pleuralis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Parmortha"	"Parmortha pleuralis"
+"Monoblastus_davisi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Monoblastus"	"Monoblastus davisi"
+"Enicospilus_hacha"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus hacha"
+"Campodorus_scapularis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campodorus"	"Campodorus scapularis"
+"Hyposoter_bicolor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hyposoter"	"Hyposoter bicolor"
+"Rictichneumon_curtiventris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Rictichneumon"	"Rictichneumon curtiventris"
+"Patrocloides_montanus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Patrocloides"	"Patrocloides montanus"
+"Scopesis_fraterna"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scopesis"	"Scopesis fraterna"
+"Gelis_fuscicornis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Gelis"	"Gelis fuscicornis"
+"Afrophion_hynnis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Afrophion"	"Afrophion hynnis"
+"Lycorina_mirandai"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lycorina"	"Lycorina mirandai"
+"Neostroblia_ruficollis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Neostroblia"	"Neostroblia ruficollis"
+"Cratichneumon_panzeri"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cratichneumon"	"Cratichneumon panzeri"
+"Alexeter_gracilentus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Alexeter"	"Alexeter gracilentus"
+"Scopesis_polita"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scopesis"	"Scopesis polita"
+"Ichneumon_simulans"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon simulans"
+"Excavarus_velox"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Excavarus"	"Excavarus velox"
+"Syspasis_scutellator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Syspasis"	"Syspasis scutellator"
+"Rictichneumon_lombardi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Rictichneumon"	"Rictichneumon lombardi"
+"Lathrolestes_orbitalis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lathrolestes"	"Lathrolestes orbitalis"
+"Labena_grallator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Labena"	"Labena grallator"
+"Lathrostizus_flexicauda"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lathrostizus"	"Lathrostizus flexicauda"
+"Ophion_flavidus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion flavidus"
+"Venturia_canescens"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Venturia"	"Venturia canescens"
+"Ichneumon_dilleri"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon dilleri"
+"Occia_jereza"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Occia"	"Occia jereza"
+"Neotheronia_charli"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Neotheronia"	"Neotheronia charli"
+"Cryptus_leechi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cryptus"	"Cryptus leechi"
+"Diadromus_troglodytes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadromus"	"Diadromus troglodytes"
+"Enicospilus_kleini"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus kleini"
+"Diadromus_subtilicornis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadromus"	"Diadromus subtilicornis"
+"Pleolophus_basizonus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pleolophus"	"Pleolophus basizonus"
+"Hyposoter_annulipes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hyposoter"	"Hyposoter annulipes"
+"Echthronomas_facialis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Echthronomas"	"Echthronomas facialis"
+"Synomelix_faciator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Synomelix"	"Synomelix faciator"
+"Enicospilus_simoni"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus simoni"
+"Ichneumon_submarginatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon submarginatus"
+"Diadromus_pulchellus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadromus"	"Diadromus pulchellus"
+"Leurus_caeruliventris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Leurus"	"Leurus caeruliventris"
+"Lagarotis_ustulata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lagarotis"	"Lagarotis ustulata"
+"Ichneumon_pseudocaloscelis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon pseudocaloscelis"
+"Ichneumon_confusor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon confusor"
+"Ischnus_inquisitorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ischnus"	"Ischnus inquisitorius"
+"Ichneumon_bucculentus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon bucculentus"
+"Demopheles_corruptor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Demopheles"	"Demopheles corruptor"
+"Synosis_ugaldei"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Synosis"	"Synosis ugaldei"
+"Metopius_dolenus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Metopius"	"Metopius dolenus"
+"Exochus_ravetus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Exochus"	"Exochus ravetus"
+"Enicospilus_ugaldei"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus ugaldei"
+"Bathythrix_laminata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Bathythrix"	"Bathythrix laminata"
+"Scopesis_macropus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scopesis"	"Scopesis macropus"
+"Ichneumon_picticollis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon picticollis"
+"Ichneumon_gracilicornis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon gracilicornis"
+"Phobocampe_bicingulata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Phobocampe"	"Phobocampe bicingulata"
+"Ichneumon_inquinatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon inquinatus"
+"Ctenopelma_nigrum"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ctenopelma"	"Ctenopelma nigrum"
+"Trichomma_enecator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Trichomma"	"Trichomma enecator"
+"Ichneumon_delator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon delator"
+"Ichneumon_grandicornis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon grandicornis"
+"Campodorus_humerellus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campodorus"	"Campodorus humerellus"
+"Xanthopimpla_aurita"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Xanthopimpla"	"Xanthopimpla aurita"
+"Diplazon_orientalis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diplazon"	"Diplazon orientalis"
+"Enicospilus_umbratus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus umbratus"
+"Ichneumon_primatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon primatorius"
+"Diphyus_palliatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diphyus"	"Diphyus palliatorius"
+"Ichneumon_computatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon computatorius"
+"Chasmias_lugens"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Chasmias"	"Chasmias lugens"
+"Campoletis_flavicincta"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campoletis"	"Campoletis flavicincta"
+"Plectiscidea_monticola"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Plectiscidea"	"Plectiscidea monticola"
+"Ichneumon_alius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon alius"
+"Ichneumon_tuberculipes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon tuberculipes"
+"Ichneumon_caloscelis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon caloscelis"
+"Lymeon_orbus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lymeon"	"Lymeon orbus"
+"Ichneumon_parengensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon parengensis"
+"Ichneumon_suspiciosus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon suspiciosus"
+"Lagarotis_semicaligata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lagarotis"	"Lagarotis semicaligata"
+"Ichneumon_fulvicornis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon fulvicornis"
+"Mokajoppa_respinozai"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mokajoppa"	"Mokajoppa respinozai"
+"Leurus_discus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Leurus"	"Leurus discus"
+"Scopesis_rufonotata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scopesis"	"Scopesis rufonotata"
+"Ichneumon_stramentor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon stramentor"
+"Ichneumon_spurius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon spurius"
+"Thyreodon_atriventris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Thyreodon"	"Thyreodon atriventris"
+"Rhimphoctona_longicauda"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Rhimphoctona"	"Rhimphoctona longicauda"
+"Ichneumon_karpaticus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon karpaticus"
+"Thyreodon_erythrocera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Thyreodon"	"Thyreodon erythrocera"
+"Erythrodolius_griffithsorum"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Erythrodolius"	"Erythrodolius griffithsorum"
+"Ichneumon_amphibolus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon amphibolus"
+"Ichneumon_ignobilis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon ignobilis"
+"Rhimphoctona_macrocephala"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Rhimphoctona"	"Rhimphoctona macrocephala"
+"Enicospilus_madrigalae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus madrigalae"
+"Enicospilus_bozai"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus bozai"
+"Enicospilus_kelloggae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus kelloggae"
+"Ischnus_alternator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ischnus"	"Ischnus alternator"
+"Ichneumon_stramentarius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon stramentarius"
+"Ichneumon_melanosomus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon melanosomus"
+"Cidaphus_occidentalis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cidaphus"	"Cidaphus occidentalis"
+"Seticornuta_altamirae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Seticornuta"	"Seticornuta altamirae"
+"Plectiscidea_prolata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Plectiscidea"	"Plectiscidea prolata"
+"Thyreodon_walkerae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Thyreodon"	"Thyreodon walkerae"
+"Metachorischizus_unicolor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Metachorischizus"	"Metachorischizus unicolor"
+"Enicospilus_fogdenorum"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus fogdenorum"
+"Diadegma_fenestrale"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadegma"	"Diadegma fenestrale"
+"Scolobates_auriculatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scolobates"	"Scolobates auriculatus"
+"Enicospilus_lacsa"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus lacsa"
+"Ichneumon_stigmatorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon stigmatorius"
+"Enicospilus_randalli"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus randalli"
+"Barylypa_broweri"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Barylypa"	"Barylypa broweri"
+"Polyblastus_melanostigmus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Polyblastus"	"Polyblastus melanostigmus"
+"Hellwigiella_dichromoptera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hellwigiella"	"Hellwigiella dichromoptera"
+"Ichneumon_extensorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon extensorius"
+"Coelichneumon_deliratorius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Coelichneumon"	"Coelichneumon deliratorius"
+"Pristomerus_vulnerator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pristomerus"	"Pristomerus vulnerator"
+"Campodorus_ignavus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campodorus"	"Campodorus ignavus"
+"Aritranis_director"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Aritranis"	"Aritranis director"
+"Enicospilus_echeverri"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus echeverri"
+"Coelichneumon_similior"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Coelichneumon"	"Coelichneumon similior"
+"Enicospilus_chiriquensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus chiriquensis"
+"Oresbius_taeniatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Oresbius"	"Oresbius taeniatus"
+"Pristomerus_sulci"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pristomerus"	"Pristomerus sulci"
+"Hyperacmus_crassicornis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hyperacmus"	"Hyperacmus crassicornis"
+"Coelichneumon_cyaniventris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Coelichneumon"	"Coelichneumon cyaniventris"
+"Xiphosomella_falsata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Xiphosomella"	"Xiphosomella falsata"
+"Barytatocephalus_mocsaryi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Barytatocephalus"	"Barytatocephalus mocsaryi"
+"Plectiscidea_communis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Plectiscidea"	"Plectiscidea communis"
+"Thyreodon_santarosae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Thyreodon"	"Thyreodon santarosae"
+"Eiphosoma_tantalium"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Eiphosoma"	"Eiphosoma tantalium"
+"Thyreodon_whitfieldi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Thyreodon"	"Thyreodon whitfieldi"
+"Zagryphus_nasutus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Zagryphus"	"Zagryphus nasutus"
+"Bathyplectes_anurus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Bathyplectes"	"Bathyplectes anurus"
+"Enicospilus_major"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus major"
+"Mesochorus_suomiensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mesochorus"	"Mesochorus suomiensis"
+"Casinaria_grandis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Casinaria"	"Casinaria grandis"
+"Lycorina_luzae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Lycorina"	"Lycorina luzae"
+"Enicospilus_fernaldi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus fernaldi"
+"Olesicampe_melanogaster"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Olesicampe"	"Olesicampe melanogaster"
+"Enicospilus_leoni"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus leoni"
+"Arotes_moiwanus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Arotes"	"Arotes moiwanus"
+"Acrodactyla_degener"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Acrodactyla"	"Acrodactyla degener"
+"Alomya_debellator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Alomya"	"Alomya debellator"
+"Eiphosoma_pyralidis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Eiphosoma"	"Eiphosoma pyralidis"
+"Ophion_bilineatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion bilineatus"
+"Euceros_madecassus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Euceros"	"Euceros madecassus"
+"Enicospilus_glabratus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus glabratus"
+"Arotes_sugiharai"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Arotes"	"Arotes sugiharai"
+"Chlorocryptus_purpuratus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Chlorocryptus"	"Chlorocryptus purpuratus"
+"Laticoleus_unicolor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Laticoleus"	"Laticoleus unicolor"
+"Spilopteron_mucronatum"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Spilopteron"	"Spilopteron mucronatum"
+"Dreisbachia_slossonae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dreisbachia"	"Dreisbachia slossonae"
+"Dolichomitus_foxleei"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dolichomitus"	"Dolichomitus foxleei"
+"Cymodusa_distincta"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cymodusa"	"Cymodusa distincta"
+"Thyreodon_laticinctus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Thyreodon"	"Thyreodon laticinctus"
+"Enicospilus_abessyniensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus abessyniensis"
+"Scambus_brevicornis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Scambus"	"Scambus brevicornis"
+"Stenichneumon_militarius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Stenichneumon"	"Stenichneumon militarius"
+"Yamatarotes_bicolor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Yamatarotes"	"Yamatarotes bicolor"
+"Jezarotes_tamanukii"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Jezarotes"	"Jezarotes tamanukii"
+"Eiphosoma_dolopon"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Eiphosoma"	"Eiphosoma dolopon"
+"Pedinopelte_latipennis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pedinopelte"	"Pedinopelte latipennis"
+"Arotes_japonicus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Arotes"	"Arotes japonicus"
+"Creagrura_nigripes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Creagrura"	"Creagrura nigripes"
+"Yamatarotes_chishimensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Yamatarotes"	"Yamatarotes chishimensis"
+"Pimpla_stricklandi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pimpla"	"Pimpla stricklandi"
+"Dusona_egregia"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dusona"	"Dusona egregia"
+"Ichneumon_memorator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ichneumon"	"Ichneumon memorator"
+"Spilopteron_luteum"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Spilopteron"	"Spilopteron luteum"
+"Orthocentrus_winnertzii"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Orthocentrus"	"Orthocentrus winnertzii"
+"Spilopteron_pyrrhonae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Spilopteron"	"Spilopteron pyrrhonae"
+"Plectiscus_impurator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Plectiscus"	"Plectiscus impurator"
+"Pimpla_contemplator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Pimpla"	"Pimpla contemplator"
+"Glypta_exartemae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Glypta"	"Glypta exartemae"
+"Enicospilus_sanchezi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	"Enicospilus sanchezi"
+"Ishigakia_exetasea"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ishigakia"	"Ishigakia exetasea"
+"Proclitus_paganus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Proclitus"	"Proclitus paganus"
+"Dusona_texana"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dusona"	"Dusona texana"
+"Stauropoctonus_bicarinatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Stauropoctonus"	"Stauropoctonus bicarinatus"
+"Plectiscidea_bistriata"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Plectiscidea"	"Plectiscidea bistriata"
+"Atractodes_ambiguus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Atractodes"	"Atractodes ambiguus"
+"Apechthis_compunctor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Apechthis"	"Apechthis compunctor"
+"Spilopteron_apicale"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Spilopteron"	"Spilopteron apicale"
+"Bathythrix_claviger"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Bathythrix"	"Bathythrix claviger"
+"Theronia_hilaris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Theronia"	"Theronia hilaris"
+"Sphelodon_phoxopteridis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sphelodon"	"Sphelodon phoxopteridis"
+"Gelis_liparae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Gelis"	"Gelis liparae"
+"Phytodietus_pleuralis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Phytodietus"	"Phytodietus pleuralis"
+"Hypomecus_quadriannulatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hypomecus"	"Hypomecus quadriannulatus"
+"Dusona_vitticollis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dusona"	"Dusona vitticollis"
+"Hyposoter_ebeninus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hyposoter"	"Hyposoter ebeninus"
+"Cryptanura_spinaria"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Cryptanura"	"Cryptanura spinaria"
+"Hyposoter_didymator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Hyposoter"	"Hyposoter didymator"
+"Spilopteron_tosaense"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Spilopteron"	"Spilopteron tosaense"
+"Mesochorus_curvulus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mesochorus"	"Mesochorus curvulus"
+"Dolichomitus_nakamurai"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dolichomitus"	"Dolichomitus nakamurai"
+"Stenomacrus_nemoralis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Stenomacrus"	"Stenomacrus nemoralis"
+"Campoletis_sonorensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Campoletis"	"Campoletis sonorensis"
+"Phygadeuon_nanus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Phygadeuon"	"Phygadeuon nanus"
+"Chiloplatys_lucens"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Chiloplatys"	"Chiloplatys lucens"
+"Dusona_laticincta"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dusona"	"Dusona laticincta"
+"Temelucha_recta"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Temelucha"	"Temelucha recta"
+"Tranosemella_praerogator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Tranosemella"	"Tranosemella praerogator"
+"Diadegma_pendulum"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Diadegma"	"Diadegma pendulum"
+"Rhynchophion_flammipennis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Rhynchophion"	"Rhynchophion flammipennis"
+"Coelichneumon_nobilis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Coelichneumon"	"Coelichneumon nobilis"
+"Exochus_washingtonensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Exochus"	"Exochus washingtonensis"
+"Allomacrus_arcticus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Allomacrus"	"Allomacrus arcticus"
+"Gelis_festinans"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Gelis"	"Gelis festinans"
+"Eutanyacra_glaucatoria"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Eutanyacra"	"Eutanyacra glaucatoria"
+"Coelichneumon_neocretatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Coelichneumon"	"Coelichneumon neocretatus"
+"Ophion_costatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion costatus"
+"Thyreodon_schauffi"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Thyreodon"	"Thyreodon schauffi"
+"Exochus_nigripalpis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Exochus"	"Exochus nigripalpis"
+"Trathala_recurvariae"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Trathala"	"Trathala recurvariae"
+"Exochus_pictus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Exochus"	"Exochus pictus"
+"Plectiscidea_collaris"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Plectiscidea"	"Plectiscidea collaris"
+"Dialipsis_dissimilis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Dialipsis"	"Dialipsis dissimilis"
+"Agriotypus_armatus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Agriotypus"	"Agriotypus armatus"
+"Colpotrochia_catania"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Colpotrochia"	"Colpotrochia catania"
+"Euceros_coxalis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Euceros"	"Euceros coxalis"
+"Eurypterna_cremieri"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Eurypterna"	"Eurypterna cremieri"
+"Holcojoppa_mactator"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Holcojoppa"	"Holcojoppa mactator"
+"Triclistus_xodius"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Triclistus"	"Triclistus xodius"
+"Eiphosoma_nigrum"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Eiphosoma"	"Eiphosoma nigrum"
+"Colpotrochia_pesada"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Colpotrochia"	"Colpotrochia pesada"
+"Mesochorus_ottawaensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Mesochorus"	"Mesochorus ottawaensis"
+"Atractodes_aterrimus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Atractodes"	"Atractodes aterrimus"
+"Sycaonia_foersteri"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Sycaonia"	"Sycaonia foersteri"
+"Isadelphus_inimicus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Isadelphus"	"Isadelphus inimicus"
+"Carria_fortipes"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Carria"	"Carria fortipes"
+"Exenterus_confusus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Exenterus"	"Exenterus confusus"
+"Trachysphyrus_agenor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Trachysphyrus"	"Trachysphyrus agenor"
+"Phytodietus_obscurus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Phytodietus"	"Phytodietus obscurus"
+"Atractodes_pauxillus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Atractodes"	"Atractodes pauxillus"
+"Vulgichneumon_deceptor"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Vulgichneumon"	"Vulgichneumon deceptor"
