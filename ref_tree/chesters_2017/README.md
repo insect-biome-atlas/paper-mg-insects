@@ -42,7 +42,7 @@ phylogenomic (trancsriptomic) analysis by Misof et al (2014). Essentially, this 
 accomplished by extracting ordinal clades from the Chesters tree and pasting them
 into the interordinal backbone in the Misof et al tree.
 
-In applying this idea, we made the following observations:
+In design a method to apply this idea, we made the following observations:
 - The extracted Hemiptera subtree from Chesters can be pasted in by matching the root
 with the root of the Hemiptera in the Misof et al (2014) insect tree.
 - The Grylloblattodea + Mantophasmatodea can be pasted in by similar root matching.
@@ -58,7 +58,9 @@ These should be expanded to facilitate correct placement in the backbone tree, a
 This was also done in the following expansion of the resulting tree.
 
 ## Taxonomic annotation errors
-In analyzing the original taxonomic annotations from the Sundh et al (2024) paper, we discovered the following mismatches to the current NCBI taxonomy at the family level. These mismatches must be corrected to match the family names in the trait data files, which follow the current NCBI taxonomy.
+In analyzing the original taxonomic annotations from the Sundh et al (2024) paper, we discovered
+the following mismatches to the current NCBI taxonomy at the family level. These mismatches must
+be corrected to match the family names in the trait data files, which follow the current NCBI taxonomy.
 - Xylophagaidae should be corrected to Xylophagidae
 - Pemphigidae is now treated as a subfamily within Aphididae
 - Kerriidae is now called Tachardiidae
@@ -75,10 +77,18 @@ We also discovered that the following families are missing from the NCBI classif
 
 Note also that the NCBI classification treats Diplura as an order, but it is now elevated to a Class. We are using the updated classification, as in Sundh et al. (2024).
 
-## Data and scripts
-The files `chesters_new_outgroups_taxonomy.tsv`, `chesters_new_outgroups.fasta` and `chesters_new_outgroups.nwk` contain the taxonomy, sequences and tree from Sundh et al (2024). Note, however, that the family annotation has been corrected for the cases mentioned above.
+Finally, we checked all Sundh et al sequences for errors by blasting each of them against the NCBI 'nucleotide' database.
+See the folder `clean_seq_data` for more info on this analysis. The analysis identified around 40 sequences that represented
+various types of errors (human sequences, bacterial symbiont sequences, other insect sequences than the entries were supposed
+to represent). 
 
-The script `correct_taxonomic_annotations.R` will correct the annotations (see above) in the `chesters_new_outgroups_taxonomy.tsv` file to create the updated file `chesters_new_outgroups_taxonomy_updated.tsv`.
+## Data and scripts
+The files `chesters_new_outgroups_taxonomy.tsv`, `chesters_new_outgroups.fasta` and `chesters_new_outgroups.nwk` contain the taxonomy, sequences and tree from Sundh et al (2024).
+
+The script `correct_sundh_et_al.R` will correct the annotations and remove the erroneous sequences (see above) in these files, generating the output files:
+ - `chesters_new_outgroups_taxonomy_updated.tsv`
+ - `chesters_new_outgroups_updated.fasta`
+ - `chesters_new_outgroups_updated.nwk`
 
 The files `misof_2014_fig1_insecta_orders.nwk` and `misof_2014_fig1_insecta_orders_dated.nwk` contain order-level backbone trees with and without branch lengths in terms of time units (Myr). These trees were hand-coded from Misof et al (2014) Fig. 1 and the median age estimates given in Fig. 2, as specified in the Supplementary Material (see file `misof_2014_node_age_medians.tsv`).
 
@@ -86,5 +96,4 @@ The script `backbone_info.R` analyzes the Sundh et al (2024) tree in light of th
 
 The script `generate_corrected_tree.R` will generate an Insecta tree based on the Misof et al (2014) backbone, and order-level trees based on Sundh et al (2024). The resulting tree is written to the file `s24insecta_m14backbone.nwk` and the taxonomy info to the file `s24insecta_m14backbone_taxonomy.tsv`.
 
-The script `extract_clades.R` extracts the info relating to the families Ichneumonidae, Braconidae and Cecidomyiidae. The info is written to the directories `../ichneumonidae/`, `../braconidae/` and `../cecidomyiidae`. It uses the Sundh et al (2024) data but the result should be the same if it were to be applied to the corrected Insecta tree.
-
+The script `extract_clades.R` extracts the info relating to the families Ichneumonidae, Braconidae and Cecidomyiidae. The info is written to the directories `../ichneumonidae/`, `../braconidae/` and `../cecidomyiidae`.
