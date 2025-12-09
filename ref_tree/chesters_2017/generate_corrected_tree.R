@@ -15,10 +15,11 @@
 # appropriate taxa for phylogenetic placement of hexapod
 # sequences.
 
-# We first remove Lilaea_fuliginosa from the starting
-# tree, since we discovered that this tabanid (Diptera)
-# sequence is placed in Orthoptera, which is clearly
-# incorrect.
+# We use a modified version of this tree, in which some
+# erroneous sequences have been removed using the script
+# 'correct_sundh_et_al.R' contained in this directory.
+# The corrected tree is in the file named
+# 'chesters_new_outgroups_updated.nwk".
 
 # We remove Psocoptera + Phthiraptera (=Psocodea) as one
 # clade from the original tree, as Psocoptera is not
@@ -39,7 +40,8 @@ library(ape)
 M14 <- read.tree("misof_2014_fig1_insecta_orders_dated.nwk")
 
 # Read in Sundh et al version of Chesters 2017 tree
-S24 <- read.tree("chesters_new_outgroups.nwk")
+# with erroneous or problematic sequences removed.
+S24 <- read.tree("chesters_new_outgroups_updated.nwk")
 
 # Read in the corrected taxonomy data for Sundh et al
 D <- read.delim("chesters_new_outgroups_taxonomy_updated.tsv")
