@@ -2,7 +2,7 @@
 Data and scripts for generating an expanded tree for Cecidomyiidae.
 
 ## Details
-For Cecidomyiidae, we first updated the Sundh et al (2024) taxonomy information with subfamily and supertribe information from NCBI taxonomy (in `update_chesters_taxonomy.R`).
+For Cecidomyiidae, we first updated the Sundh et al (2024) taxonomy information with subfamily and supertribe information from NCBI taxonomy (in `update_chesters_taxonomy.R`). The result is in `chesters_cecidomyiidae_taxonomy_detailed.tsv`.
 
 We then retrieved the CO1 sequences from Sikora et al (2019), including outgroups (in `generate_sikora_data.R`).
 
@@ -12,7 +12,7 @@ We then merged the sequence data and taxonomy from these sources (in `merge_ceci
 
 The merged sequences were aligned as amino acid sequences and the alignment converted back to a nucleotide alignment, and sites with 90% or more gaps were trimmed away (see `make_mb_data.sh` for the scripts used to achieve this). The resulting alignment is in `expanded_cecidomyiidae_aligned_trimmed.fasta`.
 
-For the phylogenetic analysis, we constrained all clades with > PP 95% in the Bayesian analysis (their Fig. 1C) using soft constraints (in `generate_cecidomyiidae_nexus_files.R`). We then added hard constraints for the families included in the analysis, leaving the three taxa that were _incertae sedis_ in Sikora et al (2019).
+For the phylogenetic analysis, we constrained all clades with > PP 95% in the Bayesian analysis of Sikora et al (2019) (their Fig. 1C) using soft constraints (in `generate_cecidomyiidae_nexus_files.R`). We then added hard constraints for the families included in the analysis, leaving the three taxa that were _incertae sedis_ in Sikora et al (2019) unconstrained.
 
 We ran the MrBayes analysis for 10 M generations using a strict clock model with a codon-partitioned GTR+Gamma model (see `mb_runs/run1/run.nex`).
 
