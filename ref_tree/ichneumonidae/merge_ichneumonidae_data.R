@@ -11,7 +11,7 @@ T2$TipLabel<-sub(" ","_",T2$Species)
 T2$Kingdom <- "Animalia"
 T2$Phylum <- "Arthropoda"
 T2$Class <- "Insecta"
-T2$Order <- "Ichneumonidae"
+T2$Order <- "Hymenoptera"
 
 cols <- c("TipLabel","Kingdom","Phylum","Class","Order","Family","Subfamily","Tribe","Genus","Species")
 
