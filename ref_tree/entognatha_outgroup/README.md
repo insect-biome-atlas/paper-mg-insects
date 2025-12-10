@@ -8,7 +8,7 @@ The corresponding taxonomy files are `collembola_taxonomy.tsv`, `missing_entogna
 
 The preferred tree in Bellini et al (2023; Figure 1) is given in the file collembola_tree.nwk.
 
-During the reanalysis, it was discovered that the sequence attributed to Fujientomon (Protura) in NCBI is likely to be a fungal sequence. The sequence was removed and replaced with the CO1 sequence from the mitochondrial genome of Sinentomon erythranum, which belongs to the same order.
+During the reanalysis, two errors were discovered. See the info in the 'clean_seq_data' directory. First, it was discovered that the sequence attributed to Fujientomon (Protura) in NCBI is likely to be a yeast sequence. The sequence was removed and replaced with the CO1 sequence from the mitochondrial genome of Sinentomon erythranum, which belongs to the same order. We also discovered that the sequence attributed to Neocondeellum brachytarsum is a human sequence. The other Neocondeellum sequence does not have any close blastn hits beyond itself, so we refrained from using this sequence and simply deleted Necondeellum from the analysis.
 
 The order classification of Andinentulus and Yamatentomon was also corrected from Sinentomata to Acerentomata.
 
