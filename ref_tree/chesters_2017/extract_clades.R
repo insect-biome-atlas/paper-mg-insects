@@ -1,53 +1,75 @@
 library(ape)
 
-# Function to extract clean family data from Chesters
-extract_clean_fam_data <- function(taxonomy, tree, seqs, family, path=paste0("../",tolower(family),"/")) {
+# Function to extract family data from Chesters
+# We also add start and stop (=1 and sequence length)
+# positions for translation, for use in downstream
+# analyses.
+extract_data <- function(taxonomy, tree, seqs, family) {
 
-    tips <- taxonomy$TipLabel[taxonomy$Family==family]
-    if (length(tips)>2)
-        tree <- extract.clade(tree,getMRCA(tree,tips))
+    tips <- taxonomy$TipLabel[taxonomy$Family %in% family]
+    if (length(tips)<=2) {
+        cat("ERROR: There should be more than 3 tips; found only",length(tips),"tips\n")
+        return (list())
+    }
+    tree <- extract.clade(tree,getMRCA(tree,tips))
     seqs <- seqs[tips]
-
-    start1 <- no_stop_codons(seqs, 1)
-    start2 <- no_stop_codons(seqs, 2)
-    start3 <- no_stop_codons(seqs, 3)
-    keep <- (start1 | start2 | start3)
-
-    start1_tips <- names(seqs)[start1]
-    start2_tips <- names(seqs)[start2]
-    start3_tips <- names(seqs)[start3]
-    drop_tips <- names(seqs)[!keep]
-    keep_tips <- names(seqs)[keep]
-
-    if (length(tips)>2)
-        tree <- drop.tip(tree, drop_tips)
-    seqs <- seqs[keep]
-    meta <- taxonomy[match(keep_tips, taxonomy$TipLabel),]
-    meta$Start <- 3
-    meta$Start[match(start2_tips,meta$TipLabel)] <- 2
-    meta$Start[match(start1_tips,meta$TipLabel)] <- 1
-    # Make sure length is divisible by 3
+    meta <- taxonomy[match(tips, taxonomy$TipLabel),]
+    meta$Start <- 1
     meta$Stop <- 0
-    for (i in 1:nrow(meta)) {
-        len <- length(seqs[[i]])
-        meta$Stop[i] <- len - (meta$Start[i] - 1)
+    for (i in 1:length(seqs)) {
+        meta$Stop[i] <- length(seqs[[i]])
     }
 
-    write.FASTA(seqs,paste0(path,"chesters_",tolower(family),".fasta"))
-    write.tree(tree,paste0(path,"chesters_",tolower(family),".nwk"))
-    write.table(meta,row.names=FALSE,sep="\t",paste0(path,"chesters_",tolower(family),"_taxonomy.tsv"))
+    list(tree=tree, seqs=seqs, taxonomy=meta)
 }
 
 # Read in seq functions
 source("../code/seq_fxns.R")
 
 # Read data
-taxonomy <- read.delim("chesters_new_outgroups_taxonomy.tsv")
-tree <- read.tree("chesters_new_outgroups.nwk")
-seqs <- read.FASTA("chesters_new_outgroups.fasta")
+taxonomy <- read.delim("chesters_new_outgroups_taxonomy_updated.tsv")
+tree <- read.tree("chesters_new_outgroups_updated.nwk")
+seqs <- read.FASTA("chesters_new_outgroups_updated.fasta")
 
-# Extract clean data
-extract_clean_data(taxonomy, tree, seqs, "Ichneumonidae", "Family")
-extract_clean_data(taxonomy, tree, seqs, "Braconidae", "Family")
-extract_clean_data(taxonomy, tree, seqs, "Cecidomyiidae", "Family")
+# Extract and write clade-specific data
+write.tsv <- function(x, file_name) { write.table(x, file=file_name, row.names=FALSE, sep="\t") }
+
+res <- extract_data(taxonomy, tree, seqs, "Ichneumonidae")
+write.FASTA(res$seqs,  "../ichneumonidae/chesters_ichneumonidae.fasta")
+write.tree(res$tree,   "../ichneumonidae/chesters_ichneumonidae.nwk")
+write.tsv(res$taxonomy,"../ichneumonidae/chesters_ichneumonidae_taxonomy.tsv")
+
+res <- extract_data(taxonomy, tree, seqs, "Braconidae")
+write.FASTA(res$seqs,  "../braconidae/chesters_braconidae.fasta")
+write.tree(res$tree,   "../braconidae/chesters_braconidae.nwk")
+write.tsv(res$taxonomy,"../braconidae/chesters_braconidae_taxonomy.tsv")
+
+res <- extract_data(taxonomy, tree, seqs, "Cecidomyiidae")
+write.FASTA(res$seqs,  "../cecidomyiidae/chesters_cecidomyiidae.fasta")
+write.tree(res$tree,   "../cecidomyiidae/chesters_cecidomyiidae.nwk")
+write.tsv(res$taxonomy,"../cecidomyiidae/chesters_cecidomyiidae_taxonomy.tsv")
+
+# Define chalcidoid families
+chalcidoids <- c("Pteromalidae",
+                "Aphelinidae",
+                "Perilampidae",
+                "Eulophidae",
+                "Encyrtidae",
+                "Eupelmidae",
+                "Trichogrammatidae",
+                "Chalcididae",
+                "Ormyridae",
+                "Megastigmidae",
+                "Eurytomidae",
+                "Torymidae",
+                "Leucospidae",
+                "Mymaridae",
+                "Eucharitidae",
+                "Agaonidae",
+                "Tetracampidae",
+                "Rotoitidae")
+res <- extract_data(taxonomy, tree, seqs, chalcidoids)
+write.FASTA(res$seqs,  "../chalcidoidea/chesters_chalcidoidea.fasta")
+write.tree(res$tree,   "../chalcidoidea/chesters_chalcidoidea.nwk")
+write.tsv(res$taxonomy,"../chalcidoidea/chesters_chalcidoidea_taxonomy.tsv")
 
