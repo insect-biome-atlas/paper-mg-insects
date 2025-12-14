@@ -50,6 +50,7 @@ write.tree(res$tree,   "../cecidomyiidae/chesters_cecidomyiidae.nwk")
 write.tsv(res$taxonomy,"../cecidomyiidae/chesters_cecidomyiidae_taxonomy.tsv")
 
 # Define chalcidoid families
+# Include Mymarommatidae outgroup
 chalcidoids <- c("Pteromalidae",
                 "Aphelinidae",
                 "Perilampidae",
@@ -64,6 +65,7 @@ chalcidoids <- c("Pteromalidae",
                 "Torymidae",
                 "Leucospidae",
                 "Mymaridae",
+                "Mymarommatidae",
                 "Eucharitidae",
                 "Agaonidae",
                 "Tetracampidae",
