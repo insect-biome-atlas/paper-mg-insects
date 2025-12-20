@@ -1,0 +1,2 @@
+"aln_query"	"aln_target"	"aln_pct_id"	"aln_len"	"aln_mis"	"aln_gaps"	"aln_q_start"	"aln_q_end"	"aln_t_start"	"aln_t_end"	"aln_evalue"	"aln_bits"	"aln_q_neg"	"TipLabel"
+"BOLD:CDROM067-20.COI-5P"	"JN292346.1"	85.3	600	88	0	1	600	41	640	-1	0	FALSE	"PERI_Perilampus_MERG00219_0101"

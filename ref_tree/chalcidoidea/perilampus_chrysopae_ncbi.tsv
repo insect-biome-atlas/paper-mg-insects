@@ -1,0 +1,2 @@
+"gb_accn"	"gb_uid"	"gb_genus"	"gb_species"	"cds_info"	"cds_complement"	"cds_start"	"cds_end"	"cds_len"	"cds_codon_start"	"cds_transl_table"	"aln_query"	"aln_target"	"aln_pct_id"	"aln_len"	"aln_mis"	"aln_gaps"	"aln_q_start"	"aln_q_end"	"aln_t_start"	"aln_t_end"	"aln_evalue"	"aln_bits"	"aln_q_neg"	"TipLabel"
+"KM566788.1"	893664124	"Perilampus"	"chrysopae"	TRUE	FALSE	1	652	652	2	5	"KM566788.1"	"JN292346.1"	83.6	652	107	0	1	652	1	652	-1	0	FALSE	"PERI_Perilampus_MERG00218_0101"
