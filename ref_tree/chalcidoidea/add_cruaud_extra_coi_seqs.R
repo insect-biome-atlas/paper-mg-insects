@@ -10,10 +10,10 @@ source("select_ref_seq_fxn.R")
 tree <- read.tree("IQ_COMBINED.tre")
 
 # Read in metadata on sequences that have been found so far
-D <- read.delim("cruaud_coi_extension_min_bc_overlap_300_seq_meta.tsv")
+D <- read.delim("cruaud_coi_extension_min_bc_overlap_300.tsv")
 
 # Read in data frame for previous results
-P <- read.delim("cruaud_coi_extension_taxonomy_step2.tsv")
+P <- read.delim("cruaud_ncbi_coi_survey_steps1-2.tsv")
 
 # Create data fram for new results
 E <- data.frame()
@@ -23,7 +23,7 @@ seq_file <- "cruaud_coi_extension_step3.fasta"
 cat(file=seq_file,"") # Make sure we start from scratch
 
 # 0. Eplore all sequences of taxa with >=50 hits and no previously found COI sequences
-# Identified manually based on previous results, so we now the taxa and that the relevant
+# Identified manually based on previous results, so we know the taxa and that the relevant
 # search is a genus-level search
 taxa <- c("Tetrapus","Dirphys","Otitesella")
 for (taxon in taxa) {
@@ -149,6 +149,6 @@ for (i in 1:nrow(D)) {
     }
 }
 
-write.table(D,"cruaud_coi_extension_min_bc_overlap_300_seq_meta_step3.tsv")
-write.table(E,"cruaud_coi_extension_taxonomy_step3.tsv", sep="\t",row.names=FALSE)
+write.table(D,"cruaud_coi_extension_min_bc_overlap_300_step3.tsv")
+write.table(E,"cruaud_ncbi_coi_survey_step3.tsv", sep="\t",row.names=FALSE)
 

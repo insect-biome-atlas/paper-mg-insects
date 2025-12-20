@@ -208,6 +208,8 @@ get_aln_info <- function(aln_file) {
 }
 
 # Define function for fetching coi sequences
+# An earlier version missed old coi sequences tagged with
+# "cytochrome oxidase" in TITL and not "coi" or "cox1" in GENE
 fetch_coi_sequences <- function(taxa, seq_file) {
 
     df <- data.frame()
@@ -230,6 +232,17 @@ fetch_coi_sequences <- function(taxa, seq_file) {
 
         res <- entrez_search(db="nucleotide", term=paste0("((coi[GENE] OR cox1[GENE]) AND ",taxon,"[ORGN]) NOT UNVERIFIED[TITL]"), retmax=50)
         df <- rbind(df, fetch_sequences(res$ids, gene_names=c("coi","cox1"), seq_file=seq_file))
+    }
+
+    for (i in 1:length(taxa)) {
+
+        taxon <- taxa[i]
+        cat("Fetching cytochrome oxidase sequences for taxon:",taxon,"\n")
+
+        res <- entrez_search(db="nucleotide", term=paste0("(\"cytochrome oxidase\"[TITL] AND ",taxon,"[ORGN]) NOT UNVERIFIED[TITL] NOT (coi[GENE] OR cox1[GENE])"))
+
+        gb_uids <- res$ids[!res$ids %in% df$gb_uids]
+        df <- rbind(df, fetch_sequences(gb_uids, gene_names=c("coi","cox1"), seq_file=seq_file))
     }
 
     return (df)
@@ -280,18 +293,18 @@ fetch_cytochrome_oxidase_sequences <- function(taxa, seq_file, P) {
 }
 
 # Define function for fetching specific sequence accession numbers
-fetch_coi_gb_accsns <- function(gb_accsns, seq_file) {
+fetch_coi_gb_accns <- function(gb_accns, seq_file) {
 
     df <- data.frame()
-    if (length(gb_accsn)==0)
+    if (length(gb_accns)==0)
         return (df)
 
-    for (i in 1:length(gb_accsn)) {
+    for (i in 1:length(gb_accns)) {
 
-        gb_accsn <- gb_accsns[i]
-        cat("Fetching genbank accsn:",gb_accsn,"\n")
+        gb_accn <- gb_accns[i]
+        cat("Fetching genbank accn:",gb_accn,"\n")
 
-        res <- entrez_search(db="nucleotide", term=paste0(gb_accsn,"[ACCN]"))
+        res <- entrez_search(db="nucleotide", term=paste0(gb_accn,"[ACCN]"))
         df <- rbind(df, fetch_sequences(res$ids, gene_names=c("coi","cox1"), seq_file=seq_file))
     }
 

@@ -1,9 +1,11 @@
 # Script for matching the cruaud et al tree with suitable coi
 # reference sequences in GenBank
 
+# This script was run in several batches; it has been
+# post-edited to run in a single batch.
+
 # Read in libraries and functions needed
 source("gb_fxns.R")
-source("search_chalcidoid_coi_seqs_ncbi.R")
 source("select_ref_seq_fxn.R")
 
 # Read in Cruaud et al tree
@@ -12,31 +14,32 @@ tree <- read.tree("IQ_COMBINED.tre")
 # Read in base taxonomy for tips in the Cruaud et al tree
 D <- read.delim("cruaud_taxonomy.tsv")
 
-# Restrict to ingroups
-D <- D[D$IN.OUT=="INGROUP",]
+# Restrict to ingroups and Mymarommatidae
+D <- D[D$IN.OUT=="INGROUP" | D$Familycode=="MYMO",]
+# D <- D[D$Familycode=="MYMO",] # Step 4
 D$gb_accn <- ""
 
 # Create data frame for results
-# E <- data.frame()
-E <- read.delim("cruaud_coi_extension_taxonomy_step2_part1.tsv")
+E <- data.frame()
 
 # Create fresh file for sequences
-seq_file <- "cruaud_coi_extension_step2.fasta"
+seq_file <- "cruaud_ncbi_coi_survey_step4.fasta"
 cat(file=seq_file,"") # Make sure we start from scratch
 
 # Mark the taxa that already have suitable sequences
-for (i in 1:nrow(D)) {
+# Only needed if continuing from previous run (E not empty)
+if (nrow(E) > 0) {
+    for (i in 1:nrow(D)) {
 
-    if (D$TipLabel[i] %in% E$TipLabel) {
-        F <- E[E$TipLabel==D$TipLabel[i],]
-        D$gb_accn[i] <- select_best_ref_seq(F)
+        if (D$TipLabel[i] %in% E$TipLabel) {
+            F <- E[E$TipLabel==D$TipLabel[i],]
+            D$gb_accn[i] <- select_best_ref_seq(F)
+        }
     }
 }
 
 # 1. Get all species-level sequences
 for (i in 1:nrow(D)) {
-
-    next
 
     res <- data.frame()
 
@@ -66,11 +69,10 @@ for (i in 1:nrow(D)) {
 }
 
 # 2. Get all singleton genus sequences
-for (i in 280:nrow(D)) {
+for (i in 1:nrow(D)) {
 
     res <- data.frame()
 
-    cat("Processing genus",genus,"\n")
     genus <- D$Genus[i]
     if (sum(D$Genus==genus)==1 && D$gb_accn[i] == "") {
         cat("Fetching missing singleton genus",genus,"\n")
@@ -94,11 +96,10 @@ for (i in 1:nrow(D)) {
 
 # 3. Fill in missing genera if monophyletic
 multi_genera <- unique(D$Genus[duplicated(D$Genus)])
-for (genus in multi_genera[15:length(multi_genera)]) {
+for (genus in multi_genera) {
 
     res <- data.frame()
 
-    cat("Processing multigenus",genus,"\n")
     idx <- which(D$Genus==genus)
     if (sum(D$gb_accn[idx]!="")==0 && is.monophyletic(tree,D$TipLabel[idx])) {
         cat("Fetching missing monophyletic multigenus",genus,"\n")
@@ -111,5 +112,10 @@ for (genus in multi_genera[15:length(multi_genera)]) {
     }
 }
 
-write.table(D,"cruaud_coi_taxonomy_step2.tsv")
-write.table(E,"cruaud_coi_extension_taxonomy_step2.tsv", sep="\t",row.names=FALSE)
+# The following lines show how to do this in steps
+# write.table(D,"cruaud_taxonomy_coi_min_bc_cov_300_step4.tsv",sep="\t",row.names=FALSE)
+# write.table(E,"cruaud_ncbi_coi_survey_step4.tsv", sep="\t",row.names=FALSE)
+
+# This assumes a single serial batch
+write.table(D,"cruaud_taxonomy_coi_min_bc_cov_300.tsv",sep="\t",row.names=FALSE)
+write.table(E,"cruaud_ncbi_coi_survey_steps1-4.tsv", sep="\t",row.names=FALSE)
