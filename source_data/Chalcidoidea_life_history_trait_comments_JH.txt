@@ -1,0 +1,30 @@
+Hi Fredrik,
+
+I have filled out the table…hopefully my codes are correct.
+
+1) there is Chalcididae1 (Cratocentrinae) and Chalcididae2 (the rest of Chalcididae). Eurytomidae renders Chalcididae paraphyletic. You could collapse this into the Chalcididae-Eurytomidae clade.
+
+2) the planidal clade includes all members that have a true or pseudo planidial larva. Monophyly is always supported. Not sure if you wanted to lump things this much, but that is what I did.
+
+3) eupelmid clade… Eupelmidae is not monophyletic, so I included those members that are in that clade.
+
+4) Neanastatidae Clade - Neanastatidae paraphyletic.
+
+5) Azotidae-Signiphoridae - a good clade. Azotidae includes some hypers, but not clear if they do both so just phytophage-parasitoid.
+
+6) gall clade - a good clade of a few families.
+
+7) I think the families in the ‘weird clade’, other than chalcidids and eurytomids all need to be treated separately.
+
+8) I treated eucharitids as soil, but still don’t like it.
+
+9) I red with question marks, I am unsure. Note that I was pretty liberal in my assignment of niche or habitat… that is there may not be published records for the taxon, but the group they are in have some evidence. Some that are phytophage-parasitoid? are more than likely that.
+
+10 Spalangia habitat - I will leave that up to you… their habitat attacking fly pupae does not fit a model… same as Nasonia. I don’t think 'temporary habitats' works, but up to you.
+
+11. Still no confirmation from Astrid, but I just checked my file (the one I sent you) against the published tree and they are the same, although tip names are more informative on my file, but still using the old family group names. I could update the names in the newick file, but I can only do it manually… if you have another way, let me know (I know that Astrid could do it more easily).
+
+I hope this is what you were after.
+
+:-) John
+
