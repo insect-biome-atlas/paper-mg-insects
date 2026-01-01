@@ -35,6 +35,9 @@ for (i in 1:nrow(T)) {
         T$Clade[i] <- "Chirotica_group"
     }
 }
+T$Clade[T$Clade=="Ephialtinae"] <- "Ephialtinae_s_str"
+T$Clade[T$Clade=="Polysphinctinae"] <- "Polysphinctinae_s_str"
+
 
 cols <- c("TipLabel","Kingdom","Phylum","Class","Order","Family","Subfamily","Tribe","Clade","Genus","Species")
 write.table(T[,cols],paste0(data_path,"expanded_ichneumonidae_taxonomy.tsv"),sep="\t",row.names=FALSE)
