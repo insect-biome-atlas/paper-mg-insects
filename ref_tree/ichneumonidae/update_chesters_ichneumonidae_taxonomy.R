@@ -15,7 +15,7 @@ T$Subfamily <- ncbi$Subfamily[match(T$Genus,ncbi$Genus)]
 T$Tribe <- ncbi$Tribe[match(T$Genus,ncbi$Genus)]
 T$Subtribe <- ncbi$Subtribe[match(T$Genus,ncbi$Genus)]
 
-# Corrections in the NCBI classification (see mail from Gavin Broad 20204-03-29)
+# Corrections in the NCBI classification (see mail from Gavin Broad 2024-03-29)
 
 # Ecphysis now in Claseinae.
 T$Subfamily[T$Genus=="Ecphysis"] <- "Claseinae"
