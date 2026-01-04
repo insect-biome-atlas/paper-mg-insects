@@ -33,11 +33,7 @@ T <- T[!duplicated(T$TipLabel),]    # Need to remove info for duplicated tip lab
 # Add info on Clade, matching life history data file
 T$Clade <- T$Family
 for (i in 1:nrow(T)) {
-    if (grepl(T$Genus[i],"Odontodiplosis|Lestodiplosis|Feltiella")) {
-        T$Clade[i] <- "Lestodiplosini"
-    } else if (!is.na(T$Supertribe[i]) && T$Supertribe[i]!="") {
-        T$Clade[i] <- T$Supertribe[i]
-    } else if (!is.na(T$Subfamily[i]) && T$Subfamily[i]!="") {
+    if (!is.na(T$Subfamily[i]) && T$Subfamily[i]!="") {
         T$Clade[i] <- T$Subfamily[i]
     }
 }
