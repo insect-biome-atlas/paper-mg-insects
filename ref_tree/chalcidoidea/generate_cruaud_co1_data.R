@@ -90,9 +90,12 @@ for (i in 1:length(seqs)) {
     # info (aln_q_neg) is TRUE, so that it is the complement of
     # the sequence that we need. Thus, we only need to complement
     # it afterwards.
-    seqs[[i]] <- seqs[[i]][D$aln_q_start[idx[i]]:D$aln_q_end[idx[i]]]
-    if (D$aln_q_neg[idx[i]])
+    if (D$aln_q_neg[idx[i]]==FALSE)
+        seqs[[i]] <- seqs[[i]][D$aln_q_start[idx[i]]:D$aln_q_end[idx[i]]]
+    else {
+        seqs[[i]] <- seqs[[i]][D$aln_q_end[idx[i]]:D$aln_q_start[idx[i]]]
         seqs[[i]] <- as.raw(complement(seqs[[i]]))
+    }
 
     cat("For tip label:",D$TipLabel[idx[i]],"length is",length(seqs[[i]]),"\n")
 
@@ -127,6 +130,9 @@ write.tree(tree, "cruaud_CO1.nwk")
 
 # Update taxonomy
 # ===============
+
+# Read in manually curated annotations
+T <- read.delim("cruaud_taxonomy_coi_min_bc_cov_300_seq_meta_updated.csv", sep=";")
 
 # Start with base assumptions
 D$Family <- D$OldFamily
