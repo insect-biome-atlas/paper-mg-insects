@@ -7,9 +7,9 @@ source("../code/constraint_fxns.R")
 
 # Generate nexus data file
 # ========================
-fasta2nexus("expanded_chalcidoidea1_aligned_trimmed.fasta","mb_runs/chalcidoidea1.nex")
-fasta2nexus("expanded_chalcidoidea2_aligned_trimmed.fasta","mb_runs/chalcidoidea2.nex")
-fasta2nexus("expanded_chalcidoidea3_aligned_trimmed.fasta","mb_runs/chalcidoidea3.nex")
+fasta2nexus("expanded_chalcidoidea1_aligned.fasta","mb_runs/chalcidoidea1.nex")
+fasta2nexus("expanded_chalcidoidea2_aligned.fasta","mb_runs/chalcidoidea2.nex")
+fasta2nexus("expanded_chalcidoidea3_aligned.fasta","mb_runs/chalcidoidea3.nex")
 
 # Generate chalcidoidea partial constraints
 # =========================================
@@ -56,21 +56,21 @@ make_run_file <- function(ver) {
     
     output("\tset autoclose=yes nowarn=yes;")
     output('\tset dir="../";')
-    exe_nex_file <- paste0("\texe expanded_chalcidoidea",ver,".nex;")
+    exe_nex_file <- paste0("\texe chalcidoidea",ver,".nex;")
     output(exe_nex_file)
     output("\texe cruaud_constraints.nex;")
     exe_higher_file <- paste0("\texe higher_constraints",ver,".nex;")
     output(exe_higher_file)
     output('\tset dir="";')
     output("")
-    output("\tcharset 1st = 1-. \3;")
-    output("\tcharset 2nd = 2-. \3;")
-    output("\tcharset 3rd = 3-. \3;")
+    output("\tcharset 1st = 1-. \\3;")
+    output("\tcharset 2nd = 2-. \\3;")
+    output("\tcharset 3rd = 3-. \\3;")
     output("\tpartition cod = 3: 1st, 2nd, 3rd;")
     output("\tset partition=cod;")
     output("")
     output("\tprset brlenspr=clock:uniform clockvarpr=strict;")
-    output("\tprset topologypr=constraints(1-505);")
+    output("\tprset topologypr=constraints(1-205);")
     output("")
     output("\tlset rates=gamma nst=mixed;")
     output("\tprset ratepr=variable;")
