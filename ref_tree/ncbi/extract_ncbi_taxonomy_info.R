@@ -1,10 +1,13 @@
 # Script for extracting relevant classification information from
-# NCBI taxonomy dump files. We are interested in the Subfamily,
-# Supertribe, Tribe and Species group information for the
-# genera of arthropods.
+# NCBI taxonomy dump files.
 
-# We are also interested in Class and Order information for scoring
-# trait information.
+# We need name info with classification to major ranks for
+# interpreting ncbi matches.
+
+# We are interested in the Subfamily, Supertribe, Tribe and
+# Species group information for the genera of arthropods, for
+# taxonomic annotation purposes and for scoring trait data.
+# We also need Class and Order information.
 
 # Early experiments showed that the nodes.dmp file does not contain the full
 # tree; it contains tribe and subtribe but not supertribe. Go figure...
@@ -20,8 +23,45 @@ cat("Reading 'ncbi_taxonomy_dump/rankedlineage.dmp'\n")
 X <- fread("ncbi_taxonomy_dump/rankedlineage.dmp")
 X <- X[,c(1,3,5,7,9,11,13,15,17,21)]
 colnames(X) <- c("TaxonID","Scientific.Name","Species","Genus","Family","Order","Class","Phylum","Kingdom","Domain")
+
+# Solve problem with escaped double quotes (replace with single quotes)
+X[] <- lapply(X, function(col) {
+  if (is.character(col))
+    gsub('\\"', "'", col, perl = TRUE) else col
+})
+
+# Get info on rank of each scientific name
+cat("Reading 'ncbi_taxonomy_dump/nodes.dmp'\n")
+Y <- fread("ncbi_taxonomy_dump/nodes.dmp")
+Y <- Y[,c(1,5)]
+colnames(Y) <- c("TaxonID","Rank")
+
+# Complement the table with these
+name_rank <- Y$Rank[match(X$TaxonID,Y$TaxonID)]
+idx <- which(name_rank=="domain")
+X$Domain[idx]<-X$Scientific.Name[idx]
+idx <- which(name_rank=="kingdom")
+X$Kingdom[idx]<-X$Scientific.Name[idx]
+idx <- which(name_rank=="phylum")
+X$Phylum[idx]<-X$Scientific.Name[idx]
+idx <- which(name_rank=="class")
+X$Class[idx]<-X$Scientific.Name[idx]
+idx <- which(name_rank=="order")
+X$Order[idx]<-X$Scientific.Name[idx]
+idx <- which(name_rank=="family")
+X$Family[idx]<-X$Scientific.Name[idx]
+idx <- which(name_rank=="genus")
+X$Genus[idx]<-X$Scientific.Name[idx]
+idx <- which(name_rank=="species")
+X$Species[idx]<-X$Scientific.Name[idx]
+
+# Save full name table with ranked classification
+write.table(X,"ncbi_name_ranked_classification.tsv", sep="\t", row.names=FALSE)
+
+# Extract arthropod part
 D <- data.frame(X[X$Phylum=="Arthropoda",])
 rm(X)
+rm(Y)
 
 # Read in the full lineage information
 cat("Reading 'ncbi_taxonomy_dump/fullnamelineage.dmp'\n")
