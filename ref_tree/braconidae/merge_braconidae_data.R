@@ -17,7 +17,7 @@ merged_seqs <- seqs
 # with TipLabel and shortened to the coding part
 seqs <- read.FASTA("chesters_braconidae.fasta")
 seqs_meta <- read.delim("chesters_braconidae_taxonomy.tsv")
-temp <- read.delim("Chesters_Braconidae_taxonomy_updated.csv",sep=";")
+temp <- read.delim("chesters_braconidae_taxonomy_updated.csv",sep=";")
 seqs_meta$Subfamily <- temp$Subfamily_updated[match(seqs_meta$TipLabel, temp$TipLabel)]
 
 merged_tax <- rbind(merged_tax, seqs_meta[,c("TipLabel","Family","Subfamily","Genus","Species")])
