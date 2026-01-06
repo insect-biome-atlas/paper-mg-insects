@@ -50,13 +50,16 @@ for (i in 1:nrow(E)) {
     }
 }
 
-# Fix some erroenous GenBank entries
-idx <- which(T$GenBank=="JN288652.1")
+# Fix some erroenous or erroneously parsed GenBank entries
+idx <- which(T$GenBank=="JN288652.1") # Species name not in title
 T$Genus[idx] <- "Histeromerus"
 T$Species[idx] <- "canadensis"
-idx <- which(T$GenBank=="JN288574.1")
+idx <- which(T$GenBank=="JN288574.1") # Species name not in title
 T$Genus[idx] <- "Neothlipsis"
 T$Species[idx] <- "cincta"
+idx <- which(T$GenBank=="MF935868.1") # Given as "... Eubazus (Aliolus) sp. ..." 
+T$Species[idx] <- "sp"
+
 
 write.table(T,"missing_braconidae_genera_taxonomy.tsv", sep="\t",row.names=FALSE)
 write.table(P,"missing_braconidae_genera_check_needed.tsv", sep="\t",row.names=FALSE)
