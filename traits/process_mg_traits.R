@@ -1,32 +1,8 @@
 # Script for correcting and extending raw family traits for MG coded by
 # Greg Lamarre (see binary file 'MG_Hexapoda_Family_traits.xlsx')
 
-# Functions for checking the coding
-# =================================
-
-check_coding <- function(D,key="Clade") {
-    
-    cat("Checking the coding\n")
-    E <- D[,c(key,"Niche","Habitat")]
-
-    if (sum(duplicated(E[,key])) != 0) {
-        cat("WARNING: Inconsistent entries:\n")
-        print(E[duplicated(E[,key]),])
-    } else {
-        cat("Passed the check\n")
-    }
-}
-
-check_family <- function(D) {
-
-    cat("Checking the uniqueness of Family entries\n")
-    if (sum(!grepl("idae",D$Family))!=0) {
-        cat("WARNING: Non-family entries:\n")
-        print(D[!grepl("idae",D$Family),])
-    } else {
-        cat("Passed the check\n")
-    }
-}
+# Read in help functions
+source("trait_fxns.R")
 
 
 # Read in original data from csv file exported from Excel
@@ -268,14 +244,14 @@ for (i in 1:nrow(E)) {
 # Bruno and Neri code this family as "Water/Soil" for habitat. However, it appears
 # that soil is by far the most common feeding habitat.
 idx <- match("Sminthuridae",E$Family)
-E$Niche[idx] <- "Soil"
+E$Habitat[idx] <- "Soil"
 
 # Dicyrtomidae
 # ============
 # Bruno and Neri code this family as "Plant/Soil" for habitat. It appears that soil
 # is the most common feeding habitat. This also agrees with the coding in R20 for SE.
 idx <- match("Dicyrtomidae",E$Family)
-E$Niche[idx] <- "Soil"
+E$Habitat[idx] <- "Soil"
 
 # Add the clean data
 E <- E[,column_names]
@@ -352,26 +328,20 @@ check_coding(D)
 # Add entries for additional families detected in most recent annotation effort
 # =============================================================================
 
+
+# Remove NAs
+# ==========
+D$Niche[is.na(D$Niche)] <- ""
+D$Habitat[is.na(D$Habitat)] <- ""
+D$Niche[D$Niche=="?"] <- ""
+D$Habitat[D$Habitat=="?"] <- ""
+
+
 # Keep essential columns
 D <- D[,c("Clade","Niche","Habitat")]
 
-# Functions deriving community and primary - parasitoid info
-community <- function(x) {
-    if (grepl("Predator",x))
-        return ("Predator")
-    else if (grepl("Saprophage",x))
-        return ("Saprophage")
-    else if (grepl("Phytophage",x))
-        return ("Phytophage")
-    else return ("Unknown")
-}
-level <- function(x) {
-    if (grepl("-parasitoid", x))
-        return ("Parasitoid")
-    else
-        return ("Primary")
-}
 
+# Compute info on community and trophic level
 D$Community <- unlist(lapply(D$Niche, FUN=community))
 D$Trophic_level <- unlist(lapply(D$Niche, FUN=level))
 
