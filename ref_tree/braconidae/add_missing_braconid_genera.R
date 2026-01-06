@@ -1,6 +1,6 @@
 library(rentrez)
 
-D <- read.delim("Chesters_Braconidae_taxonomy_updated.csv", sep=";")
+D <- read.delim("chesters_braconidae_taxonomy_updated.csv", sep=";")
 
 E <- read.delim("uce_braconidae_genera_taxonomy.tsv")
 E <- E[!duplicated(E$Genus),]   # Just in case
