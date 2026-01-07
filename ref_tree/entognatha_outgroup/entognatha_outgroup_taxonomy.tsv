@@ -81,16 +81,16 @@
 "Orchesella_cincta"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Orchesellidae"	"Orchesellidae"	"Orchesella"	"Orchesella cincta"	5
 "Orchesella_villosa"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Orchesellidae"	"Orchesellidae"	"Orchesella"	"Orchesella villosa"	5
 "Orchesellides_sinensis"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Orchesellidae"	"Orchesellidae"	"Orchesellides"	"Orchesellides sinensis"	5
-"Cyphoderus_albinus"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Paronellidae"	"Paronellidae"	"Cyphoderus"	"Cyphoderus albinus"	5
-"Paronellides_praefectus"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Paronellidae"	"Paronellidae"	"Paronellides"	"Paronellides praefectus"	5
-"Troglopedetes_dispersus"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Paronellidae"	"Paronellidae"	"Troglopedetes"	"Troglopedetes dispersus"	5
-"Trogolaphysa_sp_AM47"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Paronellidae"	"Paronellidae"	"Trogolaphysa"	"Trogolaphysa sp. AM47"	5
-"Trogolaphysa_sp"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Paronellidae"	"Paronellidae"	"Trogolaphysa"	"Trogolaphysa sp."	5
-"Zhuqinia_jingwanae"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Paronellidae"	"Paronellidae"	"Zhuqinia"	"Zhuqinia jingwanae"	5
-"Akabosia_matsudoensis"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Paronellidae"	"Paronellidae"	"Akabosia"	"Akabosia matsudoensis"	5
-"Callyntrura_guangdongensis"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Paronellidae"	"Paronellidae"	"Callyntrura"	"Callyntrura guangdongensis"	5
-"Callyntrura_sp"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Paronellidae"	"Paronellidae"	"Callyntrura"	"Callyntrura sp."	5
-"Salina_celebensis"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Paronellidae"	"Paronellidae"	"Salina"	"Salina celebensis"	5
+"Cyphoderus_albinus"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Entomobryidae"	"Entomobryidae"	"Cyphoderus"	"Cyphoderus albinus"	5
+"Paronellides_praefectus"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Entomobryidae"	"Entomobryidae"	"Paronellides"	"Paronellides praefectus"	5
+"Troglopedetes_dispersus"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Entomobryidae"	"Entomobryidae"	"Troglopedetes"	"Troglopedetes dispersus"	5
+"Trogolaphysa_sp_AM47"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Entomobryidae"	"Entomobryidae"	"Trogolaphysa"	"Trogolaphysa sp. AM47"	5
+"Trogolaphysa_sp"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Entomobryidae"	"Entomobryidae"	"Trogolaphysa"	"Trogolaphysa sp."	5
+"Zhuqinia_jingwanae"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Entomobryidae"	"Entomobryidae"	"Zhuqinia"	"Zhuqinia jingwanae"	5
+"Akabosia_matsudoensis"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Entomobryidae"	"Entomobryidae"	"Akabosia"	"Akabosia matsudoensis"	5
+"Callyntrura_guangdongensis"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Entomobryidae"	"Entomobryidae"	"Callyntrura"	"Callyntrura guangdongensis"	5
+"Callyntrura_sp"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Entomobryidae"	"Entomobryidae"	"Callyntrura"	"Callyntrura sp."	5
+"Salina_celebensis"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Entomobryidae"	"Entomobryidae"	"Salina"	"Salina celebensis"	5
 "Plutomurus_gul"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Tomoceridae"	"Tomoceridae"	"Plutomurus"	"Plutomurus gul"	5
 "Pogonognathelus_flavensis"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Tomoceridae"	"Tomoceridae"	"Pogonognathelus"	"Pogonognathelus flavensis"	5
 "Pogonognathelus_longicornis"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Tomoceridae"	"Tomoceridae"	"Pogonognathelus"	"Pogonognathelus longicornis"	5
@@ -117,7 +117,6 @@
 "Tetrodontophora_bielanensis"	"Animalia"	"Arthropoda"	"Collembola"	"Poduromorpha"	"Onychiuridae"	"Onychiuridae"	"Tetrodontophora"	"Tetrodontophora bielanensis"	5
 "Podura_aquatica"	"Animalia"	"Arthropoda"	"Collembola"	"Poduromorpha"	"Poduridae"	"Poduridae"	"Podura"	"Podura aquatica"	5
 "Acerentomon_microrhinus"	"Animalia"	"Arthropoda"	"Protura"	"Acerentomata"	"Acerentomidae"	"Acerentomidae"	"Acerentomon"	"Acerentomon microrhinus"	5
-"Sinentomon_erythranum"	"Animalia"	"Arthropoda"	"Protura"	"Sinentomata"	"Sinentomidae"	"Sinentomidae"	"Sinentomon"	"Sinentomon erythranum"	5
 "Bourletiella_arvalis"	"Animalia"	"Arthropoda"	"Collembola"	"Symphypleona"	"Bourletiellidae"	"Bourletiellidae"	"Bourletiella"	"Bourletiella arvalis"	5
 "Pseudobourletiella_spinata"	"Animalia"	"Arthropoda"	"Collembola"	"Symphypleona"	"Bourletiellidae"	"Bourletiellidae"	"Pseudobourletiella"	"Pseudobourletiella spinata"	5
 "Dicyrtomina_saundersi"	"Animalia"	"Arthropoda"	"Collembola"	"Symphypleona"	"Dicyrtomidae"	"Dicyrtomidae"	"Dicyrtomina"	"Dicyrtomina saundersi"	5
@@ -150,14 +149,12 @@
 "Hesperentomon_chinghaiense"	"Animalia"	"Arthropoda"	"Protura"	"Acerentomata"	"Hesperentomidae"	"Hesperentomidae"	"Hesperentomon"	"Hesperentomon chinghaiense"	5
 "Huhentomon_plicatunguis"	"Animalia"	"Arthropoda"	"Protura"	"Acerentomata"	"Hesperentomidae"	"Hesperentomidae"	"Huhentomon"	"Huhentomon plicatunguis"	5
 "Condeellum_ishiianum"	"Animalia"	"Arthropoda"	"Protura"	"Acerentomata"	"Protentomidae"	"Protentomidae"	"Condeellum"	"Condeellum ishiianum"	5
-"Neocondeellum_brachytarsum"	"Animalia"	"Arthropoda"	"Protura"	"Acerentomata"	"Protentomidae"	"Protentomidae"	"Neocondeellum"	"Neocondeellum brachytarsum"	5
 "Proturentomon_chinense"	"Animalia"	"Arthropoda"	"Protura"	"Acerentomata"	"Protentomidae"	"Protentomidae"	"Proturentomon"	"Proturentomon chinense"	5
 "Andinentulus_rapoporti"	"Animalia"	"Arthropoda"	"Protura"	"Acerentomata"	"Acerentomidae"	"Acerentomidae"	"Andinentulus"	"Andinentulus rapoporti"	5
 "Acerentulus_charrieri"	"Animalia"	"Arthropoda"	"Protura"	"Acerentomata"	"Acerentomidae"	"Acerentomidae"	"Acerentulus"	"Acerentulus charrieri"	5
 "Yamatentomon_guoi"	"Animalia"	"Arthropoda"	"Protura"	"Acerentomata"	"Acerentomidae"	"Acerentomidae"	"Yamatentomon"	"Yamatentomon guoi"	5
 "Eosentomon_nivoculum"	"Animalia"	"Arthropoda"	"Protura"	"Eosentomata"	"Eosentomidae"	"Eosentomidae"	"Eosentomon"	"Eosentomon nivoculum"	5
 "Anisentomon_chinense"	"Animalia"	"Arthropoda"	"Protura"	"Eosentomata"	"Eosentomidae"	"Eosentomidae"	"Anisentomon"	"Anisentomon chinense"	5
-"Fujientomon_dicestum"	"Animalia"	"Arthropoda"	"Protura"	"Sinentomata"	"Fujientomidae"	"Fujientomidae"	"Fujientomon"	"Fujientomon dicestum"	5
 "Sinentomon_erythranum"	"Animalia"	"Arthropoda"	"Protura"	"Sinentomata"	"Sinentomidae"	"Sinentomidae"	"Sinentomon"	"Sinentomon erythranum"	5
 "Occasjapyx_japonicus"	"Animalia"	"Arthropoda"	"Diplura"	"Dicellurata"	"Japygidae"	"Japygidae"	"Occasjapyx"	"Occasjapyx japonicus"	5
 "Lepidocampa_weberi"	"Animalia"	"Arthropoda"	"Diplura"	"Rhabdura"	"Campodeidae"	"Campodeidae"	"Lepidocampa"	"Lepidocampa weberi"	5
@@ -182,4 +179,4 @@
 "Drosophila_melanogaster"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Drosophilidae"	"Drosophilidae"	"Drosophila"	"Drosophila melanogaster"	5
 "Sylvia_borin"	"Animalia"	"Chordata"	"Aves"	"Passeriformes"	"Sylviidae"	"Sylviidae"	"Sylvia"	"Sylvia borin"	2
 "Caloglyphus_berlesei"	"Animalia"	"Arthropoda"	"Arachnida"	"Sarcoptiformes"	"Acaridae"	"Acaridae"	"Caloglyphus"	"Caloglyphus berlesei"	5
-"Wolbachia_sp"	"Pseudomonadati"	"Pseudomonadota"	"Alphaproteobacteria"	"Ricketsiales"	"Anaplasmataceae"	"Anaplasmataceae"	"Wolbachia"	"Wolbachia sp"	11
+"Wolbachia_sp"	"Pseudomonadati"	"Pseudomonadota"	"Alphaproteobacteria"	"Rickettsiales"	"Anaplasmataceae"	"Anaplasmataceae"	"Wolbachia"	"Wolbachia sp"	11
