@@ -51,29 +51,30 @@ print(Ecec[!(Ecec$Clade %in% D2$Clade),])
 
 # List clades in trait data missing in tree
 # =========================================
-cols <- c("Order","Family","Clade")
-foo <- function(D) {
+cols1 <- c("Order","Family","Clade","Niche","Habitat")
+foo1 <- function(D) {
     D <- D[!(D$Order %in% EE$Order),]
-    D <- D[!(D$Clade %in% EI$Clade),cols]
+    D <- D[!(D$Clade %in% EI$Clade),cols1]
     cat("There are",nrow(D),"missing entries\n")
-    print(D[order(D$Order),])
+    print(D[order(D$Order,D$Family),])
 }
 cat("SE trait clades missing in tree\n")
-foo(D1)
+foo1(D1)
 cat("MG trait clades missing in tree\n")
-foo(D2)
+foo1(D2)
 
 # List clades in tree missing in trait data
 # =========================================
-foo <- function(D) {
+cols2 <- c("Order","Family","Clade")
+foo2 <- function(D) {
     D <- D[!(D$Order %in% EE$Order),]
-    EI <- EI[!(EI$Clade %in% D$Clade),cols]
+    EI <- EI[!(EI$Clade %in% D$Clade),cols2]
     cat("There are",nrow(EI),"missing entries\n")
-    print(EI[order(EI$Order),])
+    print(EI[order(EI$Order,EI$Family),])
 }
 cat("Clades in tree missing SE trait data\n")
-foo(D1)
+foo2(D1)
 cat("Clades in tree missing MG trait data\n")
-foo(D2)
+foo2(D2)
 
 
