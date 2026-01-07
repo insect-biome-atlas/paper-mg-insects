@@ -1,0 +1,27 @@
+Ecological composition
+======================
+
+In the analysis of life-history traits, we focused on two traits that are conservative enough that they can be reasonably assumed, in most cases, to be homogeneous within the clades (mostly at the family or subfamily level) recognized here in the taxonomic annotation of the OTUs: the main feeding niche and the main feeding (micro-)habitat. This is the niche and habitat of the immature stages (the main feeding stages), and may or may not be the same as the niche and habitat of more short-lived adult stages.
+
+Traits were defined as in Ronquist et al. (2020), with minor modifications or clarifications as detailed below. Specifically, we defined the feeding niches as follows:
+ Parasite. This includes bloodsuckers, endoparasites (botflies) and exoparasites (lice).
+ Phytophage (plant feeder). This includes both chewers and sap suckers, as well as stem borers, leaf miners, root feeders and gall inducers.
+ Phytophage-parasitoid. This is restricted to all primary parasitoids of plant feeders.
+ Predator. This is restricted to free-living predators; it does not include parasitoids.
+ Predator-parasitoid. This includes both primary parasitoids of predators and all hyperparasitoids (parasitoids of parasitoids).
+ Saprophage (decomposer). This includes scavengers, decomposers, fungivores and microflora/bacterial grazers.
+ Saprophage-parasitoid. This is restricted to all primary parasitoids of decomposers.
+
+The (micro-)habitats of the main feeding stages (larvae, nymphs) were defined as follows:
+ Fungi. Within fruiting bodies of macrofungi.
+ Homeothermic animals. On homeothermic animals (birds, mammals). The habitat of parasites (bloodsuckers, endoparasites and exoparasites).
+ Plants. In or on aerial parts of living plants, excluding wood.
+ Soil. In soil, including ground litter as well as living roots.
+ Temporary habitats. In or on ephemeral resources of rich nutrients, such as bird nests, carrion, dung and fermenting sap. Also includes indoors habitats.
+ Water. In or on water.
+ Wood. In wood.
+
+Groups were coded for the dominant trait; notable exceptions and other comments are given in the supplementary tables. Traits were coded separately for Sweden and for Madagascar.
+
+The sources are given in the supplementary tables. For the Swedish data, the original sources are given in Ronquist et al. (2020).
+
