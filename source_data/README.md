@@ -16,10 +16,10 @@ Then files are as follows:
  - 
 
 
-# References
+# References (see also `ref_tree` subdirectories for specific taxa)
 
 ## Ichneumonidae traits
-Achterberg, Kees van, and Ewald Altenhofer. 2013. Notes on the biology of Seleucus cuneiformis Holmgren (Hymenoptera, Ichneumonidae, Ctenopelmatinae). Journal of Hymenoptera Research 31: 97–104. https://doi.org/10.3897/jhr.31.4204.
+Achterberg, Kees van, and Ewald Altenhofer. 2013. Notes on the biology of Seleucus cuneiformis Holmgren (Hymenoptera, Ichneumonidae, Ctenopelmatinae). Journal of Hymenoptera Research 31: 97-104. https://doi.org/10.3897/jhr.31.4204.
 
 ## Entognatha traits
 Anonymous. 2024. Protura. htts://soilbugs.massey.ac.nz/protura.php retrieved on 2024-04-19.
