@@ -97,14 +97,14 @@ for (i in 1:length(seqs)) {
         seqs[[i]] <- as.raw(complement(seqs[[i]]))
     }
 
-    cat("For tip label:",D$TipLabel[idx[i]],"length is",length(seqs[[i]]),"\n")
+#    cat("For tip label:",D$TipLabel[idx[i]],"length is",length(seqs[[i]]),"\n")
 
     # The following code should ensure that the sequence start and
     # stop are set in frame
     start <- 1 + ((3 - ((D$aln_t_start[idx[i]] + 1) %% 3)) %% 3)
     stop  <- length(seqs[[i]]) - ((D$aln_t_end[idx[i]] + 2) %% 3)
 
-    cat("start:",start," -- stop:",stop,"\n")
+#    cat("start:",start," -- stop:",stop,"\n")
 
     seqs[[i]] <- seqs[[i]][start:stop]
 
