@@ -19,8 +19,15 @@ T2$Kingdom <- "Animalia"
 T2$Phylum <- "Arthropoda"
 T2$TranslationTable <- 5
 
+# Remove Sinentomon from the Collembola files, as it is given in more detail in the missing Entognatha files.
+T1 <- T1[T1$Genus!="Sinentomon",]
+
+# Synonymize Paronellidae with Entomobryidae (see comment in the traits source file)
+T1$Family[T1$Family=="Paronellidae"] <- "Entomobryidae"
+
 cols <- c("TipLabel","Kingdom","Phylum","Class","Order","Family","Genus","Species","TranslationTable")
 
+# Merge taxon info files
 T <- rbind(T1[,cols],T2[,cols],T3[,cols])
 
 # Add info on Clade, matching life history data file
@@ -73,6 +80,9 @@ seqs <- read.FASTA(paste0(data_path,"collembola_CO1.fasta"))
 meta <- read.delim(paste0(data_path,"collembola_taxonomy.tsv"))
 
 # Sequences should already be named correctly with tip labels
+
+# Remove the Sinentomon sequence (also in missing Entognatha sequence file)
+seqs <- seqs[names(seqs)!="Sinentomon_erythranum"]
 
 # Extract the coding part
 seqs <- extract_coding(seqs, meta)
