@@ -514,6 +514,7 @@
 "Strepsiptera"	"Xenidae"	"Phytophage-parasitoid"	"Plants"	"Xenidae"	"Phytophage"	"Secondary"
 "Hymenoptera"	"Diplolepididae"	"Phytophage"	"Plants"	"Diplolepididae"	"Phytophage"	"Primary"
 "Hymenoptera"	"Athaliidae"	"Phytophage"	"Plants"	"Athaliidae"	"Phytophage"	"Primary"
+"Blattodea"	"Ectobiidae"	"Saprophage"	"Temporary habitats"	"Ectobiidae"	"Saprophage"	"Primary"
 "Neelipleona"	"Neelidae"	"Saprophage"	"Soil"	"Neelidae"	"Saprophage"	"Primary"
 "Symphypleona"	"Sminthurididae"	"Saprophage"	"Water/Soil"	"Sminthurididae"	"Saprophage"	"Primary"
 "Symphypleona"	"Katiannidae"	"Saprophage"	"Soil"	"Katiannidae"	"Saprophage"	"Primary"

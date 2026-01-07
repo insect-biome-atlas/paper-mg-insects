@@ -65,8 +65,9 @@ D$Habitat[idx] <- "Wood"
 
 # Xylophagaidae
 # =============
-# Should be corrected in the Chesters tree to Xylophagidae
+# Should be corrected to Xylophagidae (see note by Lamarre)
 # Trait data OK.
+D$Family[D$Family=="Xylophagaidae"] <- "Xylophagidae"
 
 # Hormaphidinae
 # =============

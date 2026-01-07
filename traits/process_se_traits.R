@@ -191,6 +191,14 @@ D <- rbind(D,list(
     Niche = "Phytophage",
     Habitat = "Plants"))
 
+# Ectobius now placed in a family separate from Blattellidae (Ectobiidae)
+D <- rbind(D,list(
+    Order = "Blattodea",
+    Family = "Ectobiidae",
+    Niche = "Saprophage",
+    Habitat = "Temporary habitats"))
+
+
 # Add Clade with default being family
 D$Clade <- D$Family
 
