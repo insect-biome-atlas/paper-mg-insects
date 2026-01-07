@@ -1,8 +1,5 @@
 # Script for updating the taxonomy for the Chesters Ichneumonidae sequences
 
-# Read in needed functions
-source("../code/taxonomy_fxns.R")
-
 # Read in original taxonomy
 T <- read.delim("chesters_ichneumonidae_taxonomy.tsv")
 
@@ -37,7 +34,7 @@ T$Tribe[T$Tribe=="Heresiarchini"] <- "Ichneumonini"
 T$Subfamily[T$Genus=="Proclitus"] <- "Orthocentrinae"
 
 # Astrenis is now in Tersilochinae (Phrudinae synonymised)
-T$Subfamily[T$Genus=="Atrenis"] <- "Tersilochinae"
+T$Subfamily[T$Genus=="Astrenis"] <- "Tersilochinae"
 
 # Seleucus is now in Ctenopelmatinae in its own tribe
 T$Subfamily[T$Genus=="Seleucus"] <- "Ctenopelmatinae"

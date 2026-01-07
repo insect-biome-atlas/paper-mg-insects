@@ -35,8 +35,8 @@ for (i in 1:nrow(T)) {
         T$Clade[i] <- "Chirotica_group"
     }
 }
-T$Clade[T$Clade=="Ephialtinae"] <- "Ephialtinae_s_str"
-T$Clade[T$Clade=="Polysphinctinae"] <- "Polysphinctinae_s_str"
+T$Clade[T$Clade=="Pimplinae"] <- "Pimplinae_s_str"
+T$Clade[T$Clade=="Phygadeuontinae"] <- "Phygadeuontinae_s_str"
 
 
 cols <- c("TipLabel","Kingdom","Phylum","Class","Order","Family","Subfamily","Tribe","Clade","Genus","Species")
