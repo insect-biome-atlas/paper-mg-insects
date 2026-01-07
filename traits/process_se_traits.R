@@ -184,6 +184,13 @@ D <- rbind(D,list(
 # included otherwise in the data
 D$Family[D$Family=="Eriaporidae"] <- "Pirenidae"
 
+# A new family Athaliidae is now recognized in the Tenthredinoidea
+D <- rbind(D,list(
+    Order = "Hymenoptera",
+    Family = "Athaliidae",
+    Niche = "Phytophage",
+    Habitat = "Plants"))
+
 # Add Clade with default being family
 D$Clade <- D$Family
 
@@ -197,7 +204,7 @@ check_coding(D,"Family")
 cat("Replacing Entognatha data\n")
 entognatha <- c("Collembola","Diplura","Protura")
 D <- D[!(D$Order %in% entognatha),]
-E <- read.delim("entognatha_traits.csv",sep=";")
+E <- read.delim("entognatha_taxonomy_traits.csv",sep=";")
 E <- E[1:44,2:5]
 colnames(E) <- c("Order","Family","Niche","Habitat")
 E$Clade <- E$Family
@@ -271,7 +278,7 @@ check_coding(D)
 # ================================================
 cat("Extending Chalcidoidea data\n")
 # Hand code the Chalcidoidea fams in R2020
-chalc_fams <- c("Aphelinidae",
+chalcidoid_fams <- c("Aphelinidae",
                 "Azotidae",
                 "Chalcididae",
                 "Encyrtidae",

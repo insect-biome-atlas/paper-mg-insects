@@ -222,7 +222,7 @@ check_coding(D,"Family")
 # ===========================================
 cat("Replacing Entognatha data\n")
 D <- D[D$Class!="Collembola",]
-E <- read.delim("entognatha_traits.csv",sep=";")
+E <- read.delim("entognatha_taxonomy_traits.csv",sep=";")
 E <- E[1:44,1:7]
 colnames(E) <- c("Class","Order","Family","Niche","Habitat","Soil_depth","Size_range")
 E$Niche[E$Niche=="Saprophagous"]<-"Saprophage"
@@ -262,7 +262,7 @@ D <- rbind(D,E)
 # Clade is the same as family for all taxa treated so far
 # but this may not be true for the groups below
 D$Clade <- D$Family
-D <- D[,c("Family","Clade","Niche","Habitat")]
+D <- D[,c("Order","Family","Clade","Niche","Habitat")]
 check_coding(D)
 
 
@@ -272,6 +272,7 @@ cat("Extending Ichneumonidae data\n")
 D <- D[D$Family!="Ichneumonidae",]
 E <- read.delim("ichneumonidae_traits.csv",sep=";")
 E <- E[E$Family!="",]
+E$Order <- "Hymenoptera"
 E$Niche <- E[,which(colnames(E)=="Main.feeding.niche.MG")]
 E$Habitat <- E[,which(colnames(E)=="Main.feeding.habitat.MG")]
 E <- E[,colnames(D)]
@@ -286,6 +287,7 @@ cat("Extending Braconidae data\n")
 D <- D[D$Family!="Braconidae",]
 E <- read.delim("braconidae_traits.csv",sep=";")
 E <- E[E$Family!="",]
+E$Order <- "Hymenoptera"
 E$Niche <- E[,which(colnames(E)=="Main.feeding.niche.MG")]
 E$Habitat <- E[,which(colnames(E)=="Main.feeding.habitat.MG")]
 E <- E[,colnames(D)]
@@ -300,6 +302,7 @@ cat("Extending Cecidomyiidae data\n")
 D <- D[D$Family!="Cecidomyiidae",]
 E <- read.delim("cecidomyiidae_taxonomy_traits.csv",sep=";")
 E <- E[E$Family!="",]
+E$Order <- "Diptera"
 E$Niche <- E[,which(colnames(E)=="Feeding.niche")]
 E$Habitat <- E[,which(colnames(E)=="Feeding.habitat")]
 E <- E[,colnames(D)]
@@ -331,6 +334,7 @@ chalcidoid_fams <- c(
 D <- D[!(D$Family %in% chalcidoid_fams),]
 E <- read.delim("chalcidoidea_life_history_traits.csv",sep=";")
 E <- E[E$Clade!="",]
+E$Order <- "Hymenoptera"
 E$Niche <- E[,which(colnames(E)=="Feeding.niche")]
 E$Habitat <- E[,which(colnames(E)=="Feeding.microhabitat")]
 E <- E[,colnames(D)]
