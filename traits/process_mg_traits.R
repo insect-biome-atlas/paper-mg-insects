@@ -311,12 +311,26 @@ check_coding(D)
 # Replace Chalcidoidea data with updated information
 # ================================================
 cat("Extending Chalcidoidea data\n")
-C <- read.delim("../ref_tree/chalcidoidea/expanded_chalcidoidea3_taxonomy.tsv")
-chalcidoid_fams <- unique(C$Family[!C$Family=="Mymarommatidae"])
+# Hand code Chalcidoidea families in raw data
+chalcidoid_fams <- c(
+                    "Agaonidae",
+                    "Aphelinidae",
+                    "Chalcididae",
+                    "Encyrtidae",
+                    "Eucharitidae",
+                    "Eulophidae",
+                    "Eupelmidae",
+                    "Eurytomidae",
+                    "Megastigmidae",
+                    "Mymaridae",
+                    "Ormyridae",
+                    "Perilampidae",
+                    "Pteromalidae",
+                    "Torymidae",
+                    "Trichogrammatidae")
 D <- D[!(D$Family %in% chalcidoid_fams),]
 E <- read.delim("chalcidoidea_life_history_traits.csv",sep=";")
 E <- E[E$Clade!="",]
-E$Family <- C$Family[match(E$Clade,C$Clade)]
 E$Niche <- E[,which(colnames(E)=="Feeding.niche")]
 E$Habitat <- E[,which(colnames(E)=="Feeding.microhabitat")]
 E <- E[,colnames(D)]
@@ -337,13 +351,9 @@ D$Niche[D$Niche=="?"] <- ""
 D$Habitat[D$Habitat=="?"] <- ""
 
 
-# Keep essential columns
-D <- D[,c("Clade","Niche","Habitat")]
-
-
 # Compute info on community and trophic level
 D$Community <- unlist(lapply(D$Niche, FUN=community))
 D$Trophic_level <- unlist(lapply(D$Niche, FUN=level))
 
-write.table(D, "mg_clade_trait_data.tsv")
+write.table(D, "clade_trait_data_mg.tsv", row.names=FALSE, sep="\t")
 
