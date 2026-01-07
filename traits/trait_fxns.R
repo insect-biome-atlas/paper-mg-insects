@@ -10,7 +10,8 @@ check_coding <- function(D,key="Clade") {
 
     if (sum(duplicated(E[,key])) != 0) {
         cat("WARNING: Inconsistent entries:\n")
-        print(E[duplicated(E[,key]),])
+        dup_key <- E[,key][duplicated(E[,key])]
+        print(E[E[,key] %in% dup_key,])
     } else {
         cat("Passed the check\n")
     }
