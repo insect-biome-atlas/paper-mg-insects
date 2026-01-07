@@ -130,7 +130,7 @@ expanded_seqs <- update_sequences(expanded_seqs, ingroup, ichneumonidae_seqs, ne
 cat("Replacing Braconidae\n")
 
 # Read new braconid tree (pick the last tree as a sample from the posterior)
-trees <- read.nexus("../braconidae/mb_runs/run2/tree_sample.tre")
+trees <- read.nexus("../braconidae/mb_runs/local_run1/tree_sample.tre")
 braconidae_tree <- trees[[length(trees)]]
 
 # Read in new braconid taxonomy and sequences
@@ -262,13 +262,44 @@ expanded_taxonomy <- update_taxonomy(expanded_taxonomy, ingroup, mantophasmatode
 expanded_seqs <- update_sequences(expanded_seqs, ingroup, mantophasmatodea_seqs, new_ingroup)
 
 
+# Replace Chalcidoidea
+# --------------------
+
+cat("Replacing Chalcidoidea\n")
+
+# Set version paths
+ver <- 1
+tree_path <- paste0("../chalcidoidea/mb_runs/run",ver,"/tree_sample.tre")
+tax_path  <- paste0("../chalcidoidea/expanded_chalcidoidea",ver,"_taxonomy.tsv")
+seq_path  <- paste0("../chalcidoidea/expanded_chalcidoidea",ver,".fasta")
+
+# Read new chalcid tree (pick the last tree as a sample from the posterior)
+trees <- read.nexus(tree_path)
+chalcidoidea_tree <- trees[[length(trees)]]
+
+# Read in new chalcidoidea taxonomy and sequences
+chalcidoidea_taxonomy <- read.delim(tax_path)
+chalcidoidea_seqs <- read.FASTA(seq_path)
+
+# Get respective ingroup taxa
+X <- read.delim("../chalcidoidea/chesters_chalcidoidea_taxonomy.tsv")
+chesters_chalcidoidea <- unique(X$Family[X$Family!="Mymarommatidae"])
+ingroup <- expanded_taxonomy$TipLabel[expanded_taxonomy$Family %in% chesters_chalcidoidea]
+new_ingroup <- chalcidoidea_taxonomy$TipLabel[chalcidoidea_taxonomy$Family!="Mymarommatidae"]
+
+# Update tree, taxonomy and sequences
+expanded_tree <- replace_clade(expanded_tree, ingroup, chalcidoidea_tree, new_ingroup)
+expanded_taxonomy <- update_taxonomy(expanded_taxonomy, ingroup, chalcidoidea_taxonomy, new_ingroup, cols)
+expanded_seqs <- update_sequences(expanded_seqs, ingroup, chalcidoidea_seqs, new_ingroup)
+
+
 # Add in outgroup
 # ---------------
 
 cat("Adding in outgroup\n")
 
 # Read entognathan and outgroup tree
-trees <- read.nexus("../entognatha_outgroup/mb_runs/local_run1/tree_sample.tre")
+trees <- read.nexus("../entognatha_outgroup/mb_runs/run1/tree_sample.tre")
 entognatha_outgroup_tree <- trees[[length(trees)]]
 entognatha_outgroup_taxonomy <- read.delim("../entognatha_outgroup/entognatha_outgroup_taxonomy.tsv")
 
