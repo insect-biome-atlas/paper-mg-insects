@@ -75,6 +75,52 @@ extract_coding <- function(seqs, meta) {
     seqs
 }
 
+# Function for extracting barcode sequences in DNAbin format (ape)
+# based on alignment with a target barcode
+extract_barcode <- function(seqs, meta) {
+
+    if (class(seqs)!="DNAbin") {
+        cat("ERROR: Expecting sequences in DNAbin format and not",class(seqs),"format\n")
+        return (NULL)
+    }
+    x <- names(seqs)
+
+    # Here are the standard stop codons in binary format.
+    # Note that APE uses 18, 28, 48 and 88 for T, C, G and A, respectively.
+    stop_codon1 <- c("18","88","88")   # TAA in DNAbin
+    stop_codon2 <- c("18","88","48")   # TAG in DNAbin
+
+    for (i in 1:length(x)) {
+        
+        meta_idx <- match(x[i],meta$TipLabel,nomatch=NA)
+        if (is.na(meta_idx)) {
+            cat("ERROR: No match for ",x[i],"\n")
+            return (NULL)
+        }
+
+        len <- meta$aln_q_end[meta_idx] - meta$aln_q_start[meta_idx] + 1
+
+        if (len > length(seqs[[i]])) {
+            cat ("ERROR: Length of sequence", names(seqs)[i], "shorter than specified alignment. Please correct!\n")
+            return (NULL)
+        }
+
+        # Find out codon start (assuming the number is the codon position of the first site
+        codon_start <- ((meta$aln_t_start[meta_idx]+1) %% 3) + 1    ## target coordinate 652 == codon site 3
+        if (codon_start == 2) len <- len - 2
+        if (codon_start == 3) len <- len - 1
+        len <- floor(len / 3)
+
+        last_codon <- as.character(seqs[[i]][(meta$Stop[meta_idx]-2):meta$Stop[meta_idx]])
+        if (identical(last_codon,stop_codon1) || identical(last_codon,stop_codon2))
+            seqs[[i]] <- seqs[[i]][meta$Start[meta_idx]:(meta$Stop[meta_idx]-3)]
+        else
+            seqs[[i]] <- seqs[[i]][codon_start:(codon_start+len)]
+    }
+
+    seqs
+}
+
 # Function for converting aligned fasta sequences to nexus data block
 fasta2nexus <- function(infile, outfile) {
 
