@@ -26,3 +26,6 @@ Anonymous. 2024. Protura. htts://soilbugs.massey.ac.nz/protura.php retrieved on 
 Anonymous. 2024. Diplura. http://soilbugs.massey.ac.nz/diplura.php retrieved on 2024-04-19.
 Hopkin SP. The Biology of the Collembola (Springtails). https://www.nhm.ac.uk/resources-rx/files/35feat_springtails_most_abundent-3056.pdf retrieved on 2024-04-18.
 
+## Hymenoptera classification and traits
+Wutke, Saskia, Stephan M. Blank, Jean-Luc Boevé, et al. ‘Phylogenomics and Biogeography of Sawflies and Woodwasps (Hymenoptera, Symphyta)’. Molecular Phylogenetics and Evolution 199 (October 2024): 108144. https://doi.org/10.1016/j.ympev.2024.108144.
+
