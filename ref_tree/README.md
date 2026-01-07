@@ -1,4 +1,4 @@
-# ref-tree
+# ref_tree
 This repo contains all data and scripts used to construct the reference tree used for taxonomic annotation
 
 The folders are as follows:
