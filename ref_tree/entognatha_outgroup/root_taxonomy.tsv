@@ -20,4 +20,4 @@
 "Drosophila_melanogaster"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Drosophilidae"	"Drosophila"	"Drosophila melanogaster"	"NC_024511.2"	1474	3009	TRUE	"Mt genome"	5
 "Sylvia_borin"	"Animalia"	"Chordata"	"Aves"	"Passeriformes"	"Sylviidae"	"Sylvia"	"Sylvia borin"	"NC_053054.1"	5416	6966	FALSE	"Mt genome"	2
 "Caloglyphus_berlesei"	"Animalia"	"Arthropoda"	"Arachnida"	"Sarcoptiformes"	"Acaridae"	"Caloglyphus"	"Caloglyphus berlesei"	"NC_024637.1"	1	1551	TRUE	"Mt genome"	5
-"Wolbachia_sp"	"Pseudomonadati"	"Pseudomonadota"	"Alphaproteobacteria"	"Ricketsiales"	"Anaplasmataceae"	"Wolbachia"	"Wolbachia sp"	"OX384529.1"	280179	281729	TRUE	"Genome"	11
+"Wolbachia_sp"	"Pseudomonadati"	"Pseudomonadota"	"Alphaproteobacteria"	"Rickettsiales"	"Anaplasmataceae"	"Wolbachia"	"Wolbachia sp"	"OX384529.1"	280179	281729	TRUE	"Genome"	11
