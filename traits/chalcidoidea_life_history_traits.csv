@@ -28,7 +28,8 @@ Idioporidae;Idioporidae;Phytophage-parasitoid;Plants;
 "Leucospidae;Ooderidae";Leucospidae-Ooderidae;Phytophage-parasitoid;Plants;Ooderini associated with hosts in wood
 Lyciscidae;Lyciscidae;Phytophage-parasitoid;Wood;
 Macromesidae;Macromesidae;Phytophage-parasitoid;Wood;
-"Metapelmatidae;Megastigmidae";megastigmid_clade;Phytophage-parasitoid;Plants;Some Megastigmus are phytophagous. The life history of Keiraninae is unknown
+Megastigmidae_s_lat;megastigmid_clade;Phytophage-parasitoid;Plants;Some Megastigmus are phytophagous. The life history of Keiraninae is unknown
+Metapelmatidae;Metapelmatidae;Phytophage-parasitoid;Wood;
 Micradellinae_i_s;Micradellinae;Phytophage-parasitoid?;?;?Needs to be commented and resolved
 Moranilidae;Moranilidae;Phytophage-parasitoid;Plants;
 Mymaridae;Mymaridae;Phytophage-parasitoid;Plants;
