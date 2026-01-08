@@ -19,6 +19,12 @@ D$gb_accn[match("Ormyrulus",D$Genus)] <- ""
 # Merge with sequence metadata
 D <- merge(D, E, all.x=TRUE)
 
+# Capture species names when Cruaud taxonomy is inconclusive
+for (i in 1:nrow(D)) {
+    if (D$Species_epithet[i]=="sp" && !(D$gb_species[i] %in% c("","sp")))
+        D$Species[i] <- paste(D$gb_genus[i],D$gb_species[i],sep=" ")
+}
+
 # Manually add Perilampus sequences
 # John Heraty indicates that Perilampus hyalinus sequences
 # are on BOLD but not published to NCBI yet, and
