@@ -52,16 +52,23 @@ print(Ecec[!(Ecec$Clade %in% D2$Clade),])
 # List clades in trait data missing in tree
 # =========================================
 cols1 <- c("Order","Family","Clade","Niche","Habitat")
-foo1 <- function(D) {
+foo1 <- function(D,cols) {
     D <- D[!(D$Order %in% EE$Order),]
-    D <- D[!(D$Clade %in% EI$Clade),cols1]
+    D <- D[!(D$Clade %in% EI$Clade),cols]
     cat("There are",nrow(D),"missing entries\n")
     print(D[order(D$Order,D$Family),])
 }
 cat("SE trait clades missing in tree\n")
-foo1(D1)
+S <- read.delim("ronquist_2020_SE_traits_ncbi_taxonomy.tsv")
+D1$SE_estimated_spp <- 0
+for (i in 1:nrow(D1)) {
+    if (grepl("idae",D1$Clade[i]))
+        D1$SE_estimated_spp[i] <- S$Sweden.estimated.total[match(D1$Clade[i],S$NCBI_Family)][1]
+}
+cols <- c("Order","Family","Clade","Niche","Habitat","SE_estimated_spp")
+foo1(D1,cols)
 cat("MG trait clades missing in tree\n")
-foo1(D2)
+foo1(D2,cols1)
 
 # List clades in tree missing in trait data
 # =========================================
