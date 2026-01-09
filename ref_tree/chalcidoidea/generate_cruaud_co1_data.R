@@ -16,6 +16,9 @@ E <- read.delim("cruaud_ncbi_coi_survey_steps1-4.tsv")
 D$gb_accn[match("Dirphys",D$Genus)] <- ""
 D$gb_accn[match("Ormyrulus",D$Genus)] <- ""
 
+# Remove an erroneous sequence (a Diptera sequence)
+D$gb_accn[match("Cyrtogaster",D$Genus)] <- ""
+
 # Merge with sequence metadata
 D <- merge(D, E, all.x=TRUE)
 
