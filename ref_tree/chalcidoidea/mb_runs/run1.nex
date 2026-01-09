@@ -15,7 +15,7 @@ begin mrbayes;
 	set partition=cod;
 
 	prset brlenspr=clock:uniform clockvarpr=strict;
-	prset topologypr=constraints(1-205);
+	prset topologypr=constraints(1-204);
 
 	lset rates=gamma nst=mixed;
 	prset ratepr=variable;
