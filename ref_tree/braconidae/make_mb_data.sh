@@ -4,9 +4,6 @@
 # file in Nexus format for Braconidae analysis
 # with MrBayes
 
-# Fetch missing braconid analysis sequences
-R --no-save < fetch_braconidae_sequences.R
-
 # Merge DNA sequences and taxonomic info
 R --no-save < merge_braconidae_data.R
 
