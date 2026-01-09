@@ -268,8 +268,8 @@ expanded_seqs <- update_sequences(expanded_seqs, ingroup, mantophasmatodea_seqs,
 cat("Replacing Chalcidoidea\n")
 
 # Set version paths
-ver <- 1
-tree_path <- paste0("../chalcidoidea/mb_runs/run",ver,"/tree_sample.tre")
+ver <- 2
+tree_path <- paste0("../chalcidoidea/mb_runs/local_run",ver,"/tree_sample.tre")
 tax_path  <- paste0("../chalcidoidea/expanded_chalcidoidea",ver,"_taxonomy.tsv")
 seq_path  <- paste0("../chalcidoidea/expanded_chalcidoidea",ver,".fasta")
 
