@@ -9,7 +9,6 @@ source("../code/constraint_fxns.R")
 # ========================
 fasta2nexus("expanded_chalcidoidea1_aligned.fasta","mb_runs/chalcidoidea1.nex")
 fasta2nexus("expanded_chalcidoidea2_aligned.fasta","mb_runs/chalcidoidea2.nex")
-fasta2nexus("expanded_chalcidoidea3_aligned.fasta","mb_runs/chalcidoidea3.nex")
 
 # Generate chalcidoidea partial constraints
 # =========================================
@@ -19,30 +18,30 @@ gen_mb_con_file("cruaud_CO1.nwk", "mb_runs/cruaud_constraints.nex")
 # ===========================
 out_file1 <- "mb_runs/higher_constraints1.nex"
 out_file2 <- "mb_runs/higher_constraints2.nex"
-out_file3 <- "mb_runs/higher_constraints3.nex"
 
 # Read in taxonomy metadata
 T1 <- read.delim("expanded_chalcidoidea1_taxonomy.tsv")
 T2 <- read.delim("expanded_chalcidoidea2_taxonomy.tsv")
-T3 <- read.delim("expanded_chalcidoidea3_taxonomy.tsv")
 
 # Print header to output file
 cat("#NEXUS\n\nbegin mrbayes;\n",file=out_file1)
 cat("#NEXUS\n\nbegin mrbayes;\n",file=out_file2)
-cat("#NEXUS\n\nbegin mrbayes;\n",file=out_file3)
 
 # Assemble all tip labels and higher classification info
 ingroup1 <- T1$TipLabel[T1$Family!="Mymarommatidae"]
 ingroup2 <- T2$TipLabel[T2$Family!="Mymarommatidae"]
-ingroup3 <- T3$TipLabel[T3$Family!="Mymarommatidae"]
 add_hard_constraint("Chalcidoidea",ingroup1,out_file1)
 add_hard_constraint("Chalcidoidea",ingroup2,out_file2)
-add_hard_constraint("Chalcidoidea",ingroup3,out_file3)
+
+# Add constraints for all clades
+for (clade in unique(T2$Clade)) {
+    ingroup <- T2$TipLabel[T2$Clade==clade]
+    add_hard_constraint(clade,ingroup,out_file2)
+}
 
 # Print tail to output file
 cat ("end;\n", file=out_file1, append=TRUE)
 cat ("end;\n", file=out_file2, append=TRUE)
-cat ("end;\n", file=out_file3, append=TRUE)
 
 # Generate run files
 # ==================
@@ -82,4 +81,3 @@ make_run_file <- function(ver) {
 
 make_run_file(1)
 make_run_file(2)
-make_run_file(3)
