@@ -29,8 +29,9 @@ problem_seqs <- c("Aphytis_africanus",         # This sequence now deleted (like
                   "Brachymeria_compsilurae",   # (Chalcididae2) -- an ant sequence
                   "Pediobomyia_canaliculata",  # (Eulophidae) -- No close match in eulophids
                   "Rhynchentedon_maximus",     # (Eulophidae) -- No close match in eulophids
-                  "Acerophagus_papayae")       # (Encyrtidae) -- No close match in encyrtids, odd sequence
-T_ch <- [!(T_ch$TipLabel %in% problem_seqs),]
+                  "Acerophagus_papayae"        # (Encyrtidae) -- No close match in encyrtids, odd sequence
+                  )
+T_ch <- T_ch[!(T_ch$TipLabel %in% problem_seqs),]
 
 # Update taxonomy information at genus and species level for two cases
 T_ch$Genus[T_ch$TipLabel=="Valisia_esquirolianae"] <- "Valisia"

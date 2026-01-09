@@ -13,6 +13,8 @@ fasta2nexus("expanded_chalcidoidea2_aligned.fasta","mb_runs/chalcidoidea2.nex")
 # Generate chalcidoidea partial constraints
 # =========================================
 gen_mb_con_file("cruaud_CO1.nwk", "mb_runs/cruaud_constraints.nex")
+num_constraints1 <- 203 # Interior nodes in the Cruaud CO1-matched tree
+num_constraints2 <- 203
 
 # Generate higher constraints
 # ===========================
@@ -32,11 +34,16 @@ ingroup1 <- T1$TipLabel[T1$Family!="Mymarommatidae"]
 ingroup2 <- T2$TipLabel[T2$Family!="Mymarommatidae"]
 add_hard_constraint("Chalcidoidea",ingroup1,out_file1)
 add_hard_constraint("Chalcidoidea",ingroup2,out_file2)
+num_constraints1 <- num_constraints1 + 1
+num_constraints2 <- num_constraints2 + 1
 
 # Add constraints for all clades
 for (clade in unique(T2$Clade)) {
     ingroup <- T2$TipLabel[T2$Clade==clade]
-    add_hard_constraint(clade,ingroup,out_file2)
+    if (length(ingroup)>1) {
+        add_hard_constraint(clade,ingroup,out_file2)
+        num_constraints2 <- num_constraints2 + 1
+    }
 }
 
 # Print tail to output file
@@ -45,7 +52,7 @@ cat ("end;\n", file=out_file2, append=TRUE)
 
 # Generate run files
 # ==================
-make_run_file <- function(ver) {
+make_run_file <- function(ver, num_constraints) {
 
     out_file <- paste0("mb_runs/run",ver,".nex")
     
@@ -69,7 +76,8 @@ make_run_file <- function(ver) {
     output("\tset partition=cod;")
     output("")
     output("\tprset brlenspr=clock:uniform clockvarpr=strict;")
-    output("\tprset topologypr=constraints(1-205);")
+    constraint_stmt <- paste0("\tprset topologypr=constraints(1-",num_constraints,");")
+    output(constraint_stmt)
     output("")
     output("\tlset rates=gamma nst=mixed;")
     output("\tprset ratepr=variable;")
@@ -79,5 +87,5 @@ make_run_file <- function(ver) {
     output("end;")
 }
 
-make_run_file(1)
-make_run_file(2)
+make_run_file(1, num_constraints1)
+make_run_file(2, num_constraints2)
