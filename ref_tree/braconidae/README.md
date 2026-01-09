@@ -4,6 +4,8 @@ Scripts and output data for generating an expanded and more accurate tree for br
 ## Details
 For Braconidae, we retrieved the original subfamily classification from NCBI and updated it using information from the UCE analysis of Jasso-Martínez et al. (2022; Figs. 3-8). The updated classification is in the file `Chesters_Braconidae_taxonomy_updated.xlsx` in the `source_data` directory, and exported in ';'-delimited format in `chesters_braconidae_taxonomy_updated.csv`.
 
+For a few Doryctinae taxa, the placement into the Doryctinae_s_str or Doryctinae_South_America clades was based on preliminary analyses where they were allowed to float in the tree to find their affinities based on the CO1 data. See comments in the xlsx file `Chesters_Braconidae_taxonomy_updated.xlsx`.
+
 We then manually added the available CO1 sequences of the  missing subfamilies. The information about these taxa and the corresponding fasta sequences is in the files:
  - `missing_braconidae_subfamilies_CO1.fasta`
  - `missing_braconidae_subfamilies_taxonomy.tsv`
