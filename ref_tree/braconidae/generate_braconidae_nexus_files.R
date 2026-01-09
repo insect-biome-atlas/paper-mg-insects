@@ -37,7 +37,10 @@ for (fam in fams) {
 }
 
 # Generate partial constraints for subfamilies
-placed_taxa <- D$TipLabel[D$Family=="Braconidae" & !grepl("?",D$Subfamily, fixed=TRUE)]
+# We do not place Ontsira because it is uncertain if the included sequence matches
+# the species analyzed by Jasso-Martinez et al, and our preliminary analyses did
+# not clarify its placement
+placed_taxa <- D$TipLabel[D$Family=="Braconidae" & !grepl("Doryctinae_Ontsira",D$Subfamily, fixed=TRUE)]
 for (subfam in subfams) {
     ingroup <- D$TipLabel[D$Subfamily==subfam]
     outgroup <- placed_taxa[!(placed_taxa %in% ingroup)]
@@ -88,7 +91,7 @@ clades[[34]] <- c(clades[[33]], "Meteorideinae")            # non_cyclostomes_s_
 # Generate partial constraints for well supported (>50%) higher clades in UCE tree
 for (i in 1:length(clades)) {
     ingroup <- clades[[i]]
-    outgroup <- subfams[!(subfams %in% ingroup)]
+    outgroup <- subfams[!(subfams %in% ingroup) & subfams!="Doryctinae_Ontsira"]
     add_soft_constraint(paste0("clade",i), ingroup, outgroup, constraints_file)
 }
 

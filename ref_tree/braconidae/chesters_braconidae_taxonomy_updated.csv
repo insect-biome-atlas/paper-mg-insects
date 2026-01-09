@@ -130,10 +130,10 @@ Evaniodes_areolatus;Eukaryota;Arthropoda;Insecta;Braconidae;Doryctinae;Evaniodes
 Evaniodes_palikuri;Eukaryota;Arthropoda;Insecta;Braconidae;Doryctinae;Evaniodes;Evaniodes palikuri;Doryctinae_South_America;Based on our analysis
 Evaniodes_spathiiformis;Eukaryota;Arthropoda;Insecta;Braconidae;Doryctinae;Evaniodes;Evaniodes spathiiformis;Doryctinae_South_America;Based on our analysis
 Evaniodes_wayampisi;Eukaryota;Arthropoda;Insecta;Braconidae;Doryctinae;Evaniodes;Evaniodes wayampisi;Doryctinae_South_America;Based on our analysis
-Monarea_fridae;Eukaryota;Arthropoda;Insecta;Braconidae;Doryctinae;Monarea;Monarea fridae;Doryctinae_Monarea;In Holcobraconini (Belokobylskij et al. 2014), a separate clade in Zaldivar-Riverón et al. 2008
-Nervellius_exquisitor;Eukaryota;Arthropoda;Insecta;Braconidae;Doryctinae;Nervellius;Nervellius exquisitor;Doryctinae_Nervellius;Separate clade in Zaldivar-Riverón et al. 2008
-Ontsira_imperator;Eukaryota;Arthropoda;Insecta;Braconidae;Doryctinae;Ontsira;Ontsira imperator;Doryctinae_Ontsira;Ontsira is polyphyletic in Zaldivar-Riverón et al. 2008, and the representative in Jasso-Martínez et al (2022) is not identified to species
-Syngaster_lepidus;Eukaryota;Arthropoda;Insecta;Braconidae;Doryctinae;Syngaster;Syngaster lepidus;Doryctinae_Syngaster;Separate clade in Zaldivar-Riverón et al. 2008
+Monarea_fridae;Eukaryota;Arthropoda;Insecta;Braconidae;Doryctinae;Monarea;Monarea fridae;Doryctinae_South_America;"In Holcobraconini (Belokobylskij et al. 2014), a separate clade in Zaldivar-Riverón et al. 2008; classification here based on our analysis"
+Nervellius_exquisitor;Eukaryota;Arthropoda;Insecta;Braconidae;Doryctinae;Nervellius;Nervellius exquisitor;Doryctinae_South_America;"Separate clade in Zaldivar-Riverón et al. 2008; classification here based on our analysis"
+Ontsira_imperator;Eukaryota;Arthropoda;Insecta;Braconidae;Doryctinae;Ontsira;Ontsira imperator;Doryctinae_Ontsira;"Ontsira is polyphyletic in Zaldivar-Riverón et al. 2008, and the representative in Jasso-Martínez et al (2022) is not identified to species (placed in Doryctinae s. str.); our analysis suggests the included Ontsira sequence has affinities to Rhysopolinae; not included in constraints"
+Syngaster_lepidus;Eukaryota;Arthropoda;Insecta;Braconidae;Doryctinae;Syngaster;Syngaster lepidus;Doryctinae_South_America;"Separate clade in Zaldivar-Riverón et al. 2008; classification here based on our analysis"
 Whitfieldiellus_variegata;Eukaryota;Arthropoda;Insecta;Braconidae;Doryctinae;Whitfieldiellus;Whitfieldiellus variegata;Doryctinae_South_America;Based on our analysis
 Caenopachys_hartigii;Eukaryota;Arthropoda;Insecta;Braconidae;Doryctinae;Caenopachys;Caenopachys hartigii;Doryctinae_s_str;Zaldivar-Riverón et al. 2008
 Doryctes_gyljak;Eukaryota;Arthropoda;Insecta;Braconidae;Doryctinae;Doryctes;Doryctes gyljak;Doryctinae_s_str;Jasso-Martínez et al. 2022
