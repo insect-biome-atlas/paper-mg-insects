@@ -7,54 +7,45 @@ source("../code/constraint_fxns.R")
 
 # Generate nexus data file
 # ========================
-fasta2nexus("expanded_chalcidoidea1_aligned.fasta","mb_runs/chalcidoidea1.nex")
-fasta2nexus("expanded_chalcidoidea2_aligned.fasta","mb_runs/chalcidoidea2.nex")
+fasta2nexus("expanded_chalcidoidea_aligned.fasta","mb_runs/chalcidoidea.nex")
 
 # Generate chalcidoidea partial constraints
 # =========================================
 gen_mb_con_file("cruaud_CO1.nwk", "mb_runs/cruaud_constraints.nex")
-num_constraints1 <- 203 # Interior nodes in the Cruaud CO1-matched tree
-num_constraints2 <- 203
+num_constraints <- 203 # Interior nodes in the Cruaud CO1-matched tree
 
 # Generate higher constraints
 # ===========================
-out_file1 <- "mb_runs/higher_constraints1.nex"
-out_file2 <- "mb_runs/higher_constraints2.nex"
+out_file <- "mb_runs/higher_constraints.nex"
 
 # Read in taxonomy metadata
-T1 <- read.delim("expanded_chalcidoidea1_taxonomy.tsv")
-T2 <- read.delim("expanded_chalcidoidea2_taxonomy.tsv")
+T <- read.delim("expanded_chalcidoidea_taxonomy.tsv")
 
 # Print header to output file
-cat("#NEXUS\n\nbegin mrbayes;\n",file=out_file1)
-cat("#NEXUS\n\nbegin mrbayes;\n",file=out_file2)
+cat("#NEXUS\n\nbegin mrbayes;\n",file=out_file)
 
 # Assemble all tip labels and higher classification info
-ingroup1 <- T1$TipLabel[T1$Family!="Mymarommatidae"]
-ingroup2 <- T2$TipLabel[T2$Family!="Mymarommatidae"]
-add_hard_constraint("Chalcidoidea",ingroup1,out_file1)
-add_hard_constraint("Chalcidoidea",ingroup2,out_file2)
-num_constraints1 <- num_constraints1 + 1
-num_constraints2 <- num_constraints2 + 1
+ingroup <- T$TipLabel[T$Family!="Mymarommatidae"]
+add_hard_constraint("Chalcidoidea",ingroup,out_file)
+num_constraints <- num_constraints + 1
 
 # Add constraints for all clades
-for (clade in unique(T2$Clade)) {
-    ingroup <- T2$TipLabel[T2$Clade==clade]
+for (clade in unique(T$Clade)) {
+    ingroup <- T$TipLabel[T$Clade==clade]
     if (length(ingroup)>1) {
-        add_hard_constraint(clade,ingroup,out_file2)
-        num_constraints2 <- num_constraints2 + 1
+        add_hard_constraint(clade,ingroup,out_file)
+        num_constraints <- num_constraints + 1
     }
 }
 
 # Print tail to output file
-cat ("end;\n", file=out_file1, append=TRUE)
-cat ("end;\n", file=out_file2, append=TRUE)
+cat ("end;\n", file=out_file, append=TRUE)
 
-# Generate run files
-# ==================
-make_run_file <- function(ver, num_constraints) {
+# Generate run file
+# =================
+make_run_file <- function(num_constraints) {
 
-    out_file <- paste0("mb_runs/run",ver,".nex")
+    out_file <- paste0("mb_runs/run.nex")
     
     cat("#NEXUS\n\nbegin mrbayes;\n",file=out_file)
     
@@ -62,11 +53,9 @@ make_run_file <- function(ver, num_constraints) {
     
     output("\tset autoclose=yes nowarn=yes;")
     output('\tset dir="../";')
-    exe_nex_file <- paste0("\texe chalcidoidea",ver,".nex;")
-    output(exe_nex_file)
+    output("\texe chalcidoidea.nex;")
     output("\texe cruaud_constraints.nex;")
-    exe_higher_file <- paste0("\texe higher_constraints",ver,".nex;")
-    output(exe_higher_file)
+    output("\texe higher_constraints.nex;")
     output('\tset dir="";')
     output("")
     output("\tcharset 1st = 1-. \\3;")
@@ -87,5 +76,4 @@ make_run_file <- function(ver, num_constraints) {
     output("end;")
 }
 
-make_run_file(1, num_constraints1)
-make_run_file(2, num_constraints2)
+make_run_file(num_constraints)

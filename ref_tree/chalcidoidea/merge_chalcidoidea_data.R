@@ -1,13 +1,9 @@
 # Merge Chalcidoidea taxonomy data and sequences
 
-# We work with two scenarios:
-#
-# 1. Match sequences to tips in Cruaud et al, drop unmatched tips.
-#    Add Mymaromella mira as extra outgroup.
-#
-# 2. As above, but add all Chesters sequences of species that
-#    are not present in the Cruaud-derived dataset.
-#
+# To the Cruaud-derived dataset, we add an extra
+# outgroup sequence (Mymaromella mira) and
+# all Chesters sequences of species that are not
+# present in the Cruaud-derived dataset.
 
 library(ape)
 
@@ -52,14 +48,11 @@ T_ch$Order <- "Hymenoptera"
 
 cols <- c("TipLabel","Kingdom","Phylum","Class","Order","Family","Subfamily","Tribe","Genus","Species","Clade")
 
-T_ch1 <- T_ch[T_ch$Family=="Mymarommatidae",]
-T_ch2 <- T_ch[!(T_ch$TipLabel %in% T_cr$TipLabel),]
+T_ch <- T_ch[!(T_ch$TipLabel %in% T_cr$TipLabel),]
 
-T1 <- rbind(T_cr[,cols], T_ch1[,cols])
-T2 <- rbind(T_cr[,cols], T_ch2[,cols])
+T <- rbind(T_cr[,cols], T_ch[,cols])
 
-write.table(T1,"expanded_chalcidoidea1_taxonomy.tsv",sep="\t",row.names=FALSE)
-write.table(T2,"expanded_chalcidoidea2_taxonomy.tsv",sep="\t",row.names=FALSE)
+write.table(T,"expanded_chalcidoidea_taxonomy.tsv",sep="\t",row.names=FALSE)
 
 
 # 2. Merge sequence files
@@ -76,13 +69,10 @@ cruaud_seqs <- read.FASTA("cruaud_CO1.fasta")
 names(chesters_seqs)[which(names(chesters_seqs)=="Blastophaga_esquirolianae")] <- "Valisia_esquirolianae"
 names(chesters_seqs)[which(names(chesters_seqs)=="Cirrospilus_vittatus")] <- "Burkseus_vittatus"
 
-chesters_seqs1 <- chesters_seqs[names(chesters_seqs) %in% T_ch1$TipLabel]
-chesters_seqs2 <- chesters_seqs[names(chesters_seqs) %in% T_ch2$TipLabel]
+chesters_seqs <- chesters_seqs[names(chesters_seqs) %in% T_ch$TipLabel]
 
-seqs1 <- c(cruaud_seqs, chesters_seqs1)
-seqs2 <- c(cruaud_seqs, chesters_seqs2)
+seqs <- c(cruaud_seqs, chesters_seqs)
 
 # Write merged sequence files
-write.FASTA(seqs1,"expanded_chalcidoidea1.fasta")
-write.FASTA(seqs2,"expanded_chalcidoidea2.fasta")
+write.FASTA(seqs,"expanded_chalcidoidea.fasta")
 
