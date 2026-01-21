@@ -240,11 +240,11 @@ for (i in 1:nrow(E)) {
         E$Length_max[i] <- a[[i]][2]
 }
 
-# Sminthuridae
-# ============
+# Sminthurididae
+# ==============
 # Bruno and Neri code this family as "Water/Soil" for habitat. However, it appears
 # that soil is by far the most common feeding habitat.
-idx <- match("Sminthuridae",E$Family)
+idx <- match("Sminthurididae",E$Family)
 E$Habitat[idx] <- "Soil"
 
 # Dicyrtomidae

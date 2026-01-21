@@ -218,11 +218,11 @@ colnames(E) <- c("Order","Family","Niche","Habitat")
 E$Clade <- E$Family
 E$Niche[E$Niche=="Saprophagous"]<-"Saprophage"
 
-# Sminthuridae
-# ============
+# Sminthurididae
+# ==============
 # Bruno and Neri code this family as "Water/Soil" for habitat. However, it appears
 # that soil is by far the most common feeding habitat.
-idx <- match("Sminthuridae",E$Family)
+idx <- match("Sminthurididae",E$Family)
 E$Habitat[idx] <- "Soil"
 
 # Dicyrtomidae
