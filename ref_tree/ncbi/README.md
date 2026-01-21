@@ -6,5 +6,5 @@ The script generates a table for use in obtaining detailed NCBI classification o
 
 To regenerate the table, first download a local dump of the NCBI taxonomy and unpack it. Then run the R script (uses the dump files `nodes.dmp` and `rankedlineage.dmp`).
 
-The script also generates a more extensive table for use in certain downstream scripts, `ncbi_name_ranked_classification.tsv`. DO NOT commit this file to github, as it is too large; regenerate it instead.
+The script also generates a more extensive table for use in certain downstream scripts, `ncbi_name_ranked_classification.tsv`. A compressed version of this file is provided in the repo.
 
