@@ -130,7 +130,7 @@ expanded_seqs <- update_sequences(expanded_seqs, ingroup, ichneumonidae_seqs, ne
 cat("Replacing Braconidae\n")
 
 # Read new braconid tree (pick the last tree as a sample from the posterior)
-trees <- read.nexus("../braconidae/mb_runs/local_run1/tree_sample.tre")
+trees <- read.nexus("../braconidae/mb_runs/run1/tree_sample.tre")
 braconidae_tree <- trees[[length(trees)]]
 
 # Read in new braconid taxonomy and sequences
@@ -267,11 +267,10 @@ expanded_seqs <- update_sequences(expanded_seqs, ingroup, mantophasmatodea_seqs,
 
 cat("Replacing Chalcidoidea\n")
 
-# Set version paths
-ver <- 2
-tree_path <- paste0("../chalcidoidea/mb_runs/local_run",ver,"/tree_sample.tre")
-tax_path  <- paste0("../chalcidoidea/expanded_chalcidoidea",ver,"_taxonomy.tsv")
-seq_path  <- paste0("../chalcidoidea/expanded_chalcidoidea",ver,".fasta")
+# Set paths
+tree_path <- paste0("../chalcidoidea/mb_runs/run1/tree_sample.tre")
+tax_path  <- paste0("../chalcidoidea/expanded_chalcidoidea_taxonomy.tsv")
+seq_path  <- paste0("../chalcidoidea/expanded_chalcidoidea.fasta")
 
 # Read new chalcid tree (pick the last tree as a sample from the posterior)
 trees <- read.nexus(tree_path)
