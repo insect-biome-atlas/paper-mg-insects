@@ -7,5 +7,5 @@
 ../code/align_seqs.sh chesters_expanded.fasta
 
 # Delete sites with 90% or more gaps
-Rscript --vanilla ../code/trim_gaps.R chesters_expanded_aligned.fasta chesters_expanded_aligned_trimmed.fasta 0.1
+Rscript --vanilla ../code/trim_gaps.R chesters_expanded_aligned.fasta chesters_expanded_aligned_trimmed.fasta 0.9
 
