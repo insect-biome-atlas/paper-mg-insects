@@ -47505,7 +47505,7 @@
 "Lestodiplosis_polypori"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Cecidomyiinae"	"Lestodiplosis"	"Lestodiplosis polypori"	5
 "Loewiola_centaureae"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Cecidomyiinae"	"Loewiola"	"Loewiola centaureae"	5
 "Obolodiplosis_robinae"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Cecidomyiinae"	"Obolodiplosis"	"Obolodiplosis robinae"	5
-"Odontodiplosis_sp."	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Cecidomyiinae"	"Odontodiplosis"	"Odontodiplosis sp."	5
+"Odontodiplosis_sp"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Cecidomyiinae"	"Odontodiplosis"	"Odontodiplosis sp"	5
 "Placochela_nigripes"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Cecidomyiinae"	"Placochela"	"Placochela nigripes"	5
 "Schizomyia_galiorum"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Cecidomyiinae"	"Schizomyia"	"Schizomyia galiorum"	5
 "Dasineura_kellneri"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Cecidomyiinae"	"Dasineura"	"Dasineura kellneri"	5
@@ -47523,7 +47523,7 @@
 "Anaretella_iola"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Lestremiinae"	"Anaretella"	"Anaretella iola"	5
 "Lestremia_cinerea"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Lestremiinae"	"Lestremia"	"Lestremia cinerea"	5
 "Lestremia_leucophaea"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Lestremiinae"	"Lestremia"	"Lestremia leucophaea"	5
-"Wasmanniella_sp."	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Lestremiinae"	"Wasmanniella"	"Wasmanniella sp."	5
+"Wasmanniella_sp"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Lestremiinae"	"Wasmanniella"	"Wasmanniella sp"	5
 "Acoenonia_europaea"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Micromyinae"	"Acoenonia"	"Acoenonia europaea"	5
 "Aprionus_brachypterus"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Micromyinae"	"Aprionus"	"Aprionus brachypterus"	5
 "Aprionus_spiniger"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Micromyinae"	"Aprionus"	"Aprionus spiniger"	5
@@ -47532,24 +47532,24 @@
 "Catocha_angulata"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Micromyinae"	"Catocha"	"Catocha angulata"	5
 "Catocha_incisa"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Micromyinae"	"Catocha"	"Catocha incisa"	5
 "Heterogenella_bigibbata"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Micromyinae"	"Heterogenella"	"Heterogenella bigibbata"	5
-"unclassified.Micromyini"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Micromyinae"	"unclassified.Micromyini"	"unclassified.Micromyini"	5
+"Micromyini_gen_sp"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Micromyinae"	"Micromyini_gen"	"Micromyini_gen sp"	5
 "Monardia_abnormis"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Micromyinae"	"Monardia"	"Monardia abnormis"	5
 "Neurolyga_excavata"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Micromyinae"	"Neurolyga"	"Neurolyga excavata"	5
 "Peromyia_fungicola"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Micromyinae"	"Peromyia"	"Peromyia fungicola"	5
-"Peromyia_sp."	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Micromyinae"	"Peromyia"	"Peromyia sp."	5
+"Peromyia_sp"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Micromyinae"	"Peromyia"	"Peromyia sp"	5
 "Polyardis_silvalis"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Micromyinae"	"Polyardis"	"Polyardis silvalis"	5
 "Skuhraviana_triangulifera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Micromyinae"	"Skuhraviana"	"Skuhraviana triangulifera"	5
-"Tropaprionus_sp."	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Micromyinae"	"Tropaprionus"	"Tropaprionus sp."	5
+"Tropaprionus_sp"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Micromyinae"	"Tropaprionus"	"Tropaprionus sp"	5
 "Camptomyia_flavocinerea"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Porricondylinae"	"Camptomyia"	"Camptomyia flavocinerea"	5
-"Claspettomyia_sp."	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Porricondylinae"	"Claspettomyia"	"Claspettomyia sp."	5
+"Claspettomyia_sp"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Porricondylinae"	"Claspettomyia"	"Claspettomyia sp"	5
 "Dicerura_dentata"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Porricondylinae"	"Dicerura"	"Dicerura dentata"	5
-"Dicerura_sp."	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Porricondylinae"	"Dicerura"	"Dicerura sp."	5
+"Dicerura_sp"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Porricondylinae"	"Dicerura"	"Dicerura sp"	5
 "Dirhiza_lateritia"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Porricondylinae"	"Dirhiza"	"Dirhiza lateritia"	5
 "Porricondyla_nigripennis"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Porricondylinae"	"Porricondyla"	"Porricondyla nigripennis"	5
 "Svenartia_spungisi"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Porricondylinae"	"Svenartia"	"Svenartia spungisi"	5
 "Tetraneuromyia_hirticornis"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Porricondylinae"	"Tetraneuromyia"	"Tetraneuromyia hirticornis"	5
 "Zaitzeviola_rufocinerea"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Porricondylinae"	"Zaitzeviola"	"Zaitzeviola rufocinerea"	5
-"unclassified.Diallactiini"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Winnertziinae"	"unclassified.Diallactiini"	"unclassified.Diallactiini"	5
+"Diallactiini_gen_sp"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Winnertziinae"	"Diallactiini_gen"	"Diallactiini_gen sp"	5
 "Heteropeza_pygmea"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Winnertziinae"	"Heteropeza"	"Heteropeza pygmea"	5
 "Leptosyna_nervosa"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Winnertziinae"	"Leptosyna"	"Leptosyna nervosa"	5
 "Winnertzia_nigripennis"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	"Winnertziinae"	"Winnertzia"	"Winnertzia nigripennis"	5
@@ -47649,7 +47649,7 @@
 "Idarnes_sp"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Pteromalidae"	"Pteromalidae"	"Idarnes"	"Idarnes sp"	5
 "Pseudidarnes_minerva"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Pteromalidae"	"Pteromalidae"	"Pseudidarnes"	"Pseudidarnes minerva"	5
 "Sycophaga_agraensis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Pteromalidae"	"Pteromalidae"	"Sycophaga"	"Sycophaga agraensis"	5
-"Tetrapus_n."	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Agaonidae"	"Agaonidae"	"Tetrapus"	"Tetrapus n."	5
+"Tetrapus_sp"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Agaonidae"	"Agaonidae"	"Tetrapus"	"Tetrapus sp"	5
 "Aphelinus_abdominalis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Aphelinidae"	"Aphelinidae"	"Aphelinus"	"Aphelinus abdominalis"	5
 "Aphelinus_atriplicis"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Aphelinidae"	"Aphelinidae"	"Aphelinus"	"Aphelinus atriplicis"	5
 "Aphytis_melinus"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Aphelinidae"	"Aphelinidae"	"Aphytis"	"Aphytis melinus"	5
