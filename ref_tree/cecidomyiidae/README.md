@@ -16,6 +16,8 @@ For the phylogenetic analysis, we constrained all clades with > PP 95% in the Ba
 
 We ran the MrBayes analysis for 10 M generations using a strict clock model with a codon-partitioned GTR+Gamma model (see `mb_runs/run1/run.nex`).
 
+NB! The MrBayes analysis was completed before the final edit of taxonomic annotations and tip labels. The tip labels in the final tree_sample.tre file were post-edited to reflect these changes.
+
 ## References
 Sikora T, Jaschhof M, Mantič M, Kaspřák D, and Sevčík J (2019) Considerable congruence, enlightening conflict: molecular analysis largely supports morphology-based hypotheses on Cecidomyiidae (Diptera) phylogeny. Zoological Journal of the Linnean Society 185: 98–110. https://doi.org/10.1093/zoolinnean/zly029.
 
