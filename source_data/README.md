@@ -34,6 +34,8 @@ The files are as follows:
 ## Ichneumonidae traits
 Achterberg, Kees van, and Ewald Altenhofer. 2013. Notes on the biology of Seleucus cuneiformis Holmgren (Hymenoptera, Ichneumonidae, Ctenopelmatinae). Journal of Hymenoptera Research 31: 97-104. https://doi.org/10.3897/jhr.31.4204.
 
+Gauld, Ian D., and David B. Wahl. 2000. The Labeninae (Hymenoptera: Ichneumonidae): a study in phylogenetic reconstruction and evolutionary biology. Zoological Journal of the Linnean Society 129: 271-347. https://doi.org/10.1006/zjls.1999.0212.
+
 ## Entognatha traits
 Anonymous. 2024. Protura. htts://soilbugs.massey.ac.nz/protura.php retrieved on 2024-04-19.
 Anonymous. 2024. Diplura. http://soilbugs.massey.ac.nz/diplura.php retrieved on 2024-04-19.
