@@ -35,6 +35,12 @@ T_ch$Genus[T_ch$TipLabel=="Burkseus_vittatus"] <- "Burkseus"
 T_ch$Species[T_ch$TipLabel=="Valisia_esquirolianae"] <- "Valisia esquirolianae"
 T_ch$Species[T_ch$TipLabel=="Burkseus_vittatus"] <- "Burkseus vittatus"
 
+# Correct a species-level annotation retrieved from GenBank in the
+# COI data matched to Cruaud et al.
+idx <- which(T_cr$TipLabel=="Tetrapus_n.")
+T_cr$TipLabel[idx] <- "Tetrapus_sp"
+T_cr$Species[idx] <- "Tetrapus sp"
+
 # Add higher level taxonomic info
 T_cr$Kingdom <- "Animalia"
 T_cr$Phylum <- "Arthropoda"
@@ -68,6 +74,7 @@ cruaud_seqs <- read.FASTA("cruaud_CO1.fasta")
 # Correct sequence names
 names(chesters_seqs)[which(names(chesters_seqs)=="Blastophaga_esquirolianae")] <- "Valisia_esquirolianae"
 names(chesters_seqs)[which(names(chesters_seqs)=="Cirrospilus_vittatus")] <- "Burkseus_vittatus"
+names(cruaud_seqs)[which(names(cruaud_seqs)=="Tetrapus_n.")] <- "Tetrapus_sp"
 
 chesters_seqs <- chesters_seqs[names(chesters_seqs) %in% T_ch$TipLabel]
 
