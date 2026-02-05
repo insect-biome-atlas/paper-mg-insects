@@ -22,7 +22,7 @@
 "MG684800.1"	"Cecidomyiidae"	"Cecidomyiinae"	"Cecidomyiidi"	"Lestodiplosis"	"Lestodiplosis polypori"	2	658
 "MG684834.1"	"Cecidomyiidae"	"Cecidomyiinae"	"Cecidomyiidi"	"Loewiola"	"Loewiola centaureae"	2	634
 "MG684821.1"	"Cecidomyiidae"	"Cecidomyiinae"	"Cecidomyiidi"	"Obolodiplosis"	"Obolodiplosis robinae"	2	658
-"MG684802.1"	"Cecidomyiidae"	"Cecidomyiinae"	"Cecidomyiidi"	"Odontodiplosis"	"Odontodiplosis sp."	2	658
+"MG684802.1"	"Cecidomyiidae"	"Cecidomyiinae"	"Cecidomyiidi"	"Odontodiplosis"	"Odontodiplosis sp"	2	658
 "MG684803.1"	"Cecidomyiidae"	"Cecidomyiinae"	"Cecidomyiidi"	"Placochela"	"Placochela nigripes"	2	658
 "MG684801.1"	"Cecidomyiidae"	"Cecidomyiinae"	"Cecidomyiidi"	"Schizomyia"	"Schizomyia galiorum"	2	634
 "MG684791.1"	"Cecidomyiidae"	"Cecidomyiinae"	"Lasiopteridi"	"Dasineura"	"Dasineura kellneri"	2	658
@@ -43,7 +43,7 @@
 "MG684829.1"	"Cecidomyiidae"	"Lestremiinae"	""	"Anaretella"	"Anaretella iola"	2	658
 "KT316850.1"	"Cecidomyiidae"	"Lestremiinae"	""	"Lestremia"	"Lestremia cinerea"	2	619
 "MG684830.1"	"Cecidomyiidae"	"Lestremiinae"	""	"Lestremia"	"Lestremia leucophaea"	2	658
-"MG684835.1"	"Cecidomyiidae"	"Lestremiinae"	""	"Wasmanniella"	"Wasmanniella sp."	2	634
+"MG684835.1"	"Cecidomyiidae"	"Lestremiinae"	""	"Wasmanniella"	"Wasmanniella sp"	2	634
 "MG684790.1"	"Cecidomyiidae"	"Micromyinae"	""	"Acoenonia"	"Acoenonia europaea"	2	634
 "MG684814.1"	"Cecidomyiidae"	"Micromyinae"	""	"Aprionus"	"Aprionus brachypterus"	2	658
 "MG684815.1"	"Cecidomyiidae"	"Micromyinae"	""	"Aprionus"	"Aprionus spiniger"	2	631
@@ -52,24 +52,24 @@
 "KT316837.1"	"Cecidomyiidae"	"Micromyinae"	""	"Catocha"	"Catocha angulata"	2	619
 "MG684811.1"	"Cecidomyiidae"	"Micromyinae"	""	"Catocha"	"Catocha incisa"	2	658
 "MG684817.1"	"Cecidomyiidae"	"Micromyinae"	""	"Heterogenella"	"Heterogenella bigibbata"	2	658
-"MG684839.1"	"Cecidomyiidae"	"Micromyinae"	""	"unclassified.Micromyini"	"unclassified.Micromyini"	2	658
+"MG684839.1"	"Cecidomyiidae"	"Micromyinae"	""	"Micromyini_gen"	"Micromyini_gen sp"	2	658
 "MG684822.1"	"Cecidomyiidae"	"Micromyinae"	""	"Monardia"	"Monardia abnormis"	2	634
 "MG684812.1"	"Cecidomyiidae"	"Micromyinae"	""	"Neurolyga"	"Neurolyga excavata"	2	658
 "MG684841.1"	"Cecidomyiidae"	"Micromyinae"	""	"Peromyia"	"Peromyia fungicola"	2	658
-"MG684842.1"	"Cecidomyiidae"	"Micromyinae"	""	"Peromyia"	"Peromyia sp."	2	634
+"MG684842.1"	"Cecidomyiidae"	"Micromyinae"	""	"Peromyia"	"Peromyia sp"	2	634
 "MG684820.1"	"Cecidomyiidae"	"Micromyinae"	""	"Polyardis"	"Polyardis silvalis"	2	634
 "MG684818.1"	"Cecidomyiidae"	"Micromyinae"	""	"Skuhraviana"	"Skuhraviana triangulifera"	2	658
-"MG684816.1"	"Cecidomyiidae"	"Micromyinae"	""	"Tropaprionus"	"Tropaprionus sp."	2	658
+"MG684816.1"	"Cecidomyiidae"	"Micromyinae"	""	"Tropaprionus"	"Tropaprionus sp"	2	658
 "MG684787.1"	"Cecidomyiidae"	"Porricondylinae"	""	"Camptomyia"	"Camptomyia flavocinerea"	2	655
-"MG684846.1"	"Cecidomyiidae"	"Porricondylinae"	""	"Claspettomyia"	"Claspettomyia sp."	2	628
+"MG684846.1"	"Cecidomyiidae"	"Porricondylinae"	""	"Claspettomyia"	"Claspettomyia sp"	2	628
 "MG684788.1"	"Cecidomyiidae"	"Porricondylinae"	""	"Dicerura"	"Dicerura dentata"	2	658
-"MG684789.1"	"Cecidomyiidae"	"Porricondylinae"	""	"Dicerura"	"Dicerura sp."	2	634
+"MG684789.1"	"Cecidomyiidae"	"Porricondylinae"	""	"Dicerura"	"Dicerura sp"	2	634
 "MG684810.1"	"Cecidomyiidae"	"Porricondylinae"	""	"Dirhiza"	"Dirhiza lateritia"	2	658
 "KT316859.1"	"Cecidomyiidae"	"Porricondylinae"	""	"Porricondyla"	"Porricondyla nigripennis"	2	619
 "MG684823.1"	"Cecidomyiidae"	"Porricondylinae"	""	"Svenartia"	"Svenartia spungisi"	2	658
 "MG684824.1"	"Cecidomyiidae"	"Porricondylinae"	""	"Tetraneuromyia"	"Tetraneuromyia hirticornis"	2	658
 "MG684836.1"	"Cecidomyiidae"	"Porricondylinae"	""	"Zaitzeviola"	"Zaitzeviola rufocinerea"	2	658
-"MG684844.1"	"Cecidomyiidae"	"Winnertziinae"	""	"unclassified.Diallactiini"	"unclassified.Diallactiini"	2	658
+"MG684844.1"	"Cecidomyiidae"	"Winnertziinae"	""	"Diallactiini_gen"	"Diallactiini_gen sp"	2	658
 "MG684827.1"	"Cecidomyiidae"	"Winnertziinae"	""	"Heteropeza"	"Heteropeza pygmea"	2	640
 "MG684826.1"	"Cecidomyiidae"	"Winnertziinae"	""	"Leptosyna"	"Leptosyna nervosa"	2	658
 "MG684832.1"	"Cecidomyiidae"	"Winnertziinae"	""	"Winnertzia"	"Winnertzia nigripennis"	2	658
