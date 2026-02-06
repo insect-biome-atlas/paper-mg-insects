@@ -36,10 +36,26 @@ Achterberg, Kees van, and Ewald Altenhofer. 2013. Notes on the biology of Seleuc
 
 Gauld, Ian D., and David B. Wahl. 2000. The Labeninae (Hymenoptera: Ichneumonidae): a study in phylogenetic reconstruction and evolutionary biology. Zoological Journal of the Linnean Society 129: 271-347. https://doi.org/10.1006/zjls.1999.0212.
 
+## Braconidae traits
+van Achterberg, C., 1979. A revision of the species of Amicrocentrinae, a new subfamily (Hymenoptera, Braconidae), with a description of the final larval instar of Amicrocentrum curvinervis by J.R.T. Short. Tijdschrift Voor Entomologie 122, 1–28.
+van Achterberg, C., 1983. Revisionary notes on the Palaearctic Genera and species of the tribe Exothecini Foerster (Hymenoptera, Braconidae). Zoologische Mededelingen 57, 339–355.
+Arias Penna, D., Whitfield, J., 2012. A taxonomic revision of the Colombian species of Urosigalphus Ashmead (Hymenoptera: Braconidae). Zootaxa 3411, 1–54.
+Belokoblylskij, S., Zaldívar‐riverón, A., Coronado-Blanco, J., 2014. Phylogenetic affinities of Monarea Szépligeti, 1904 (Hymenoptera: Braconidae, Doryctinae, with description of a new species from Mexico. Zootaxa 3795, 421–30. https://doi.org/10.11646/zootaxa.3795.4.2
+Ghahari, H., Quicke, D.L.J., Gadallah, N.S., Shaw, S.R., 2022. Subfamily Brachistinae Foerster, 1863, in: Braconidae of the Middle East (Hymenoptera). Academic Press, pp. 158–176. https://doi.org/10.1016/B978-0-323-96099-1.00018-2
+Ghosh, S., Abdurahiman, U.C., 1984. Bioethology of Meteoridea hutsoni(Nixon)(Hymenoptera :Braconidae) a parasite of Opisina arenosella Walker, the black headed caterpillar pest of coconut. Entomon 9, 31–34.
+Mason, W.R.M., 1976. A revision of Dyscoletes Haliday (Hymenoptera: Braconidae). The Canadian Entomologist 108, 855–858. https://doi.org/10.4039/Ent108855-8
+Quicke, D., Manzari, S., van Achterberg, C., 2002. The systematic placement of Afrocampsis van Achterberg & Quicke (Hymenoptera: Braconidae): molecular and morphological evidence indicate that it belongs to Helconinae s.l. not Sigalphinae. Zoologische Mededelingen 76, 443–450.
+Sharkey, M.J., 1997. Subfamily Apozyginae. In Manual of the New World genera of Braconidae (Hymenoptera). Edited by R.A. Wharton, P.M. Marsh, and M.J. Sharkey. Special Publication of the International Society of Hymenopterists. pp. 132–134
+Sharkey, M.J., Noort, S. van, Whitfield, J.B., 2009. Revision of Khoikhoiinae (Hymenoptera, Braconidae). ZooKeys 20, 299–348. https://doi.org/10.3897/zookeys.20.108
+Shaw, M.R., Huddleston, T., 1991. Classification and biology of braconid wasps (Hymenoptera:Braconidae), Handbooks for the identification of British insects. Royal Entomological Society of London, London.
+Wharton, R.A., Marsh, P.M., Sharkey, M.J., 1997. Manual of the New World Genera of the Family Braconidae (Hymenoptera). International Society of Hymenopterists.
+Whitfield, J., Mason, W., 1994. Mendesellinae, a new subfamily of braconid wasps (Hymenoptera, Braconidae) with a review of relationships within the microgastroid assemblage. Systematic Entomology 19, 61–76. https://doi.org/10.1111/j.1365-3113.1994.tb00579.x
+
 ## Entognatha traits
 Anonymous. 2024. Protura. htts://soilbugs.massey.ac.nz/protura.php retrieved on 2024-04-19.
 Anonymous. 2024. Diplura. http://soilbugs.massey.ac.nz/diplura.php retrieved on 2024-04-19.
 Hopkin SP. The Biology of the Collembola (Springtails). https://www.nhm.ac.uk/resources-rx/files/35feat_springtails_most_abundent-3056.pdf retrieved on 2024-04-18.
+NB! Bruno and Neri have promised to provide a complete list.
 
 ## Hymenoptera classification and traits
 Wutke, Saskia, Stephan M. Blank, Jean-Luc Boevé, et al. ‘Phylogenomics and Biogeography of Sawflies and Woodwasps (Hymenoptera, Symphyta)’. Molecular Phylogenetics and Evolution 199 (October 2024): 108144. https://doi.org/10.1016/j.ympev.2024.108144.
