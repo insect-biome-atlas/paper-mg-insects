@@ -26,6 +26,8 @@ For the phylogenetic analysis, we generated partial constraints for all of the c
 
 We ran the MrBayes analysis for 10 M generations using a strict clock model with a codon-partitioned GTR+Gamma model (see `mb_runs/run1/run.nex`).
 
+Note that the tree sample was post-edited to correct the names of some tips (species in the genus Seira).
+
 ## References
 Bellini BC, Zhang F, Cavalcante de Souza PG, Clicia dos Santos-Costa R, da Silva Medeiros G, Godeiro NN (2023) The Evolution of Collembola Higher Taxa (Arthropoda, Hexapoda) Based on Mitogenome Data. Diversity 15: 7. https://doi.org/10.3390/d15010007.
 
