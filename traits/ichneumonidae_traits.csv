@@ -2,7 +2,7 @@
 Ichneumonidae;Acaenitinae;;Acaenitinae;Phytophage-parasitoid;Wood;Phytophage-parasitoid;Wood;
 Ichneumonidae;Adelognathinae;;Adelognathinae;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;
 Ichneumonidae;Agriotypinae;;Agriotypinae;Saprophage-parasitoid;Water;Saprophage-parasitoid;Water;
-Ichneumonidae;Anomaloninae;Anomalonini;Anomaloninae;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;? also on saprophagous Coleoptera in soil or wood
+Ichneumonidae;Anomaloninae;Anomalonini;Anomaloninae;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;The Coleoptera hosts are typically Tenebrionidae on plants
 Ichneumonidae;Anomaloninae;Gravenhorstiini;Anomaloninae;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;
 Ichneumonidae;Ateleutinae;;Ateleutinae;NA;NA;Phytophage-parasitoid;Plants;
 Ichneumonidae;Banchinae;Glyptini;Banchinae;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;
@@ -22,15 +22,15 @@ Ichneumonidae;Ctenopelmatinae;Pionini;Ctenopelmatinae;Phytophage-parasitoid;Plan
 Ichneumonidae;Ctenopelmatinae;Scolobatini;Ctenopelmatinae;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;
 Ichneumonidae;Ctenopelmatinae;Seleucini;Ctenopelmatinae;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;van Achtenberg & Altenhofer (2013)
 Ichneumonidae;Cylloceriinae;;Cylloceriinae;Saprophage-parasitoid;Soil;Saprophage-parasitoid;Soil;
-Ichneumonidae;Diacritinae;;Diacritinae;;;;;Feeding habits unknown
+Ichneumonidae;Diacritinae;;Diacritinae;Saprophage-parasitoid;Fungi;Saprophage-parasitoid;Fungi;Diacritus aciculatus has been reared from a fungus. Host is unknown but assumed here to be a saprophage.
 Ichneumonidae;Diplazontinae;;Diplazontinae;Predator-parasitoid;Plants;Predator-parasitoid;Plants;
 Ichneumonidae;Eucerotinae;;Eucerotinae;Predator-parasitoid;Plants;Predator-parasitoid;Plants;
-Ichneumonidae;Hybrizoninae;;Hybrizoninae;Saprophage-parasitoid;Soil;Saprophage-parasitoid;Soil;
+Ichneumonidae;Hybrizontinae;;Hybrizontinae;Saprophage-parasitoid;Soil;Saprophage-parasitoid;Soil;
 Ichneumonidae;Ichneumoninae;Alomyini;Ichneumoninae;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;
 Ichneumonidae;Ichneumoninae;Ichneumonini;Ichneumoninae;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;
 Ichneumonidae;Ichneumoninae;Phaeogenini;Ichneumoninae;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;
 Ichneumonidae;Ichneumoninae;Platylabini;Ichneumoninae;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;
-Ichneumonidae;Labeninae;Labenini;Labeninae;NA;NA;Saprophage-parasitoid;Wood;Life history?? (suggestion from Wikipedia, and Gauld & Wahl 2008)
+Ichneumonidae;Labeninae;Labenini;Labeninae;Phytophage-parasitoid;Wood;Phytophage-parasitoid;Wood;Gauld & Wahl (2000)
 Ichneumonidae;Lycorininae;;Lycorininae;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;
 Ichneumonidae;Mesochorinae;;Mesochorinae;Predator-parasitoid;Plants;Predator-parasitoid;Plants;
 Ichneumonidae;Metopiinae;;Metopiinae;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;
@@ -43,14 +43,14 @@ Ichneumonidae;Orthopelmatinae;;Orthopelmatinae;Phytophage-parasitoid;Plants;Phyt
 Ichneumonidae;Oxytorinae;;Oxytorinae;;;;;Feeding habits unknown
 Ichneumonidae;Phygadeuontinae;;Chirotica_group;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;
 Ichneumonidae;Phygadeuontinae;;Phygadeuontinae_s_str;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;
-Ichneumonidae;Pimplinae;Pimplini;Pimplinae_s_str;Phytophage-parasitoid;Wood;Phytophage-parasitoid;Wood;
-Ichneumonidae;Pimplinae;Ephialtini;Pimplinae_s_str;Phytophage-parasitoid;Wood;Phytophage-parasitoid;Wood;
-Ichneumonidae;Pimplinae;Ephialtini;Polysphincta_group;Predator-parasitoid;Plants;Predator-parasitoid;Plants;? habitat classification
+Ichneumonidae;Pimplinae;Pimplini;Pimplinae_s_str;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;Most species attack Lepidoptera cocoons in leaf rolls and in other weakly concealed sites on plants. 
+Ichneumonidae;Pimplinae;Ephialtini;Pimplinae_s_str;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;"Primary association with hosts on plants; some species secondarily associated with hosts in wood."
+Ichneumonidae;Pimplinae;Ephialtini;Polysphincta_group;Predator-parasitoid;Plants;Predator-parasitoid;Plants;Spider parasitoids. Most of the hosts are on vegetation.
 Ichneumonidae;Poemeniinae;Poemeniini;Poemeniinae;Phytophage-parasitoid;Wood;Phytophage-parasitoid;Wood;
 Ichneumonidae;Rhyssinae;;Rhyssinae;Phytophage-parasitoid;Wood;Phytophage-parasitoid;Wood;
 Ichneumonidae;Sisyrostolinae;;Sisyrostolinae;NA;NA;Phytophage-parasitoid;Plants;
 Ichneumonidae;Stilbopinae;;Stilbopinae;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;
-Ichneumonidae;Tersilochinae;;Tersilochinae;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;
+Ichneumonidae;Tersilochinae;;Tersilochinae;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;Some species have secondarily switched to being predator parasitoids.
 Ichneumonidae;Tryphoninae;Oedemopsini;Tryphoninae;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;
 Ichneumonidae;Tryphoninae;Phytodietini;Tryphoninae;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;
 Ichneumonidae;Tryphoninae;Tryphonini;Tryphoninae;Phytophage-parasitoid;Plants;Phytophage-parasitoid;Plants;
