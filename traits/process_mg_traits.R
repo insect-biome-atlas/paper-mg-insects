@@ -226,7 +226,6 @@ D <- D[D$Class!="Collembola",]
 E <- read.delim("entognatha_taxonomy_traits.csv",sep=";")
 E <- E[1:44,1:7]
 colnames(E) <- c("Class","Order","Family","Niche","Habitat","Soil_depth","Size_range")
-E$Niche[E$Niche=="Saprophagous"]<-"Saprophage"
 E$Length_min <- 0.0
 E$Length_max <- 0.0
 a <- strsplit(E$Size_range, split="–")
@@ -239,6 +238,8 @@ for (i in 1:nrow(E)) {
     else
         E$Length_max[i] <- a[[i]][2]
 }
+idx <- match("Gulgastruridae",E$Family)
+E$Habitat[idx] <- "Soil"    # Given as Soil (cave entrance)
 
 # Sminthurididae
 # ==============
@@ -277,7 +278,9 @@ E$Order <- "Hymenoptera"
 E$Niche <- E[,which(colnames(E)=="Main.feeding.niche.MG")]
 E$Habitat <- E[,which(colnames(E)=="Main.feeding.habitat.MG")]
 E <- E[,colnames(D)]
-E <- E[!duplicated(E),]
+E <- E[!duplicated(E),]     # Note that any ambiguous coding of clades will remain
+idx <- match("Hybrizontinae",E$Clade)
+E$Clade[idx] <- "Hybrizoninae"      # Use NCBI name despite being incorrect...
 D <- rbind(D,E)
 check_coding(D)
 
@@ -292,7 +295,7 @@ E$Order <- "Hymenoptera"
 E$Niche <- E[,which(colnames(E)=="Main.feeding.niche.MG")]
 E$Habitat <- E[,which(colnames(E)=="Main.feeding.habitat.MG")]
 E <- E[,colnames(D)]
-E <- E[!duplicated(E),]
+E <- E[!duplicated(E),]     # Note that any ambiguous coding of clades will remain
 D <- rbind(D,E)
 check_coding(D)
 
@@ -307,7 +310,7 @@ E$Order <- "Diptera"
 E$Niche <- E[,which(colnames(E)=="Feeding.niche")]
 E$Habitat <- E[,which(colnames(E)=="Feeding.habitat")]
 E <- E[,colnames(D)]
-E <- E[!duplicated(E),]
+E <- E[!duplicated(E),]     # Note that any ambiguous coding of clades will remain
 D <- rbind(D,E)
 check_coding(D)
 
@@ -336,10 +339,10 @@ D <- D[!(D$Family %in% chalcidoid_fams),]
 E <- read.delim("chalcidoidea_life_history_traits.csv",sep=";")
 E <- E[E$Clade!="",]
 E$Order <- "Hymenoptera"
-E$Niche <- E[,which(colnames(E)=="Feeding.niche")]
-E$Habitat <- E[,which(colnames(E)=="Feeding.microhabitat")]
+E$Niche <- E[,which(colnames(E)=="Feeding.niche.MG")]
+E$Habitat <- E[,which(colnames(E)=="Feeding.microhabitat.MG")]
 E <- E[,colnames(D)]
-E <- E[!duplicated(E),]
+E <- E[!duplicated(E),]     # Note that any ambiguous coding of clades will remain
 D <- rbind(D,E)
 check_coding(D)
 

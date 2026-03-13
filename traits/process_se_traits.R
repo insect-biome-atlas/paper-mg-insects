@@ -216,7 +216,8 @@ E <- read.delim("entognatha_taxonomy_traits.csv",sep=";")
 E <- E[1:44,2:5]
 colnames(E) <- c("Order","Family","Niche","Habitat")
 E$Clade <- E$Family
-E$Niche[E$Niche=="Saprophagous"]<-"Saprophage"
+idx <- match("Gulgastruridae",E$Family)
+E$Habitat[idx] <- "Soil"    # Given as Soil (cave entrance)
 
 # Sminthurididae
 # ==============
@@ -247,7 +248,9 @@ E$Order <- "Hymenoptera"
 E$Niche <- E[,which(colnames(E)=="Main.feeding.niche.SE")]
 E$Habitat <- E[,which(colnames(E)=="Main.feeding.habitat.SE")]
 E <- E[,colnames(D)]
-E <- E[!duplicated(E),]
+E <- E[!duplicated(E),]     # Note that any ambiguous coding of clades will remain
+idx <- match("Hybrizontinae",E$Clade)
+E$Clade[idx] <- "Hybrizoninae"      # Use NCBI name despite being incorrect...
 D <- rbind(D,E)
 check_coding(D)
 
@@ -262,7 +265,7 @@ E$Order <- "Hymenoptera"
 E$Niche <- E[,which(colnames(E)=="Main.feeding.niche.SE")]
 E$Habitat <- E[,which(colnames(E)=="Main.feeding.habitat.SE")]
 E <- E[,colnames(D)]
-E <- E[!duplicated(E),]
+E <- E[!duplicated(E),]     # Note that any ambiguous coding of clades will remain
 D <- rbind(D,E)
 check_coding(D)
 
@@ -277,7 +280,7 @@ E$Order <- "Diptera"
 E$Niche <- E[,which(colnames(E)=="Feeding.niche")]
 E$Habitat <- E[,which(colnames(E)=="Feeding.habitat")]
 E <- E[,colnames(D)]
-E <- E[!duplicated(E),]
+E <- E[!duplicated(E),]     # Note that any ambiguous coding of clades will remain
 D <- rbind(D,E)
 check_coding(D)
 
@@ -306,10 +309,10 @@ D <- D[!(D$Family %in% chalcidoid_fams),]
 E <- read.delim("chalcidoidea_life_history_traits.csv",sep=";")
 E <- E[E$Clade!="",]
 E$Order <- "Hymenoptera"
-E$Niche <- E[,which(colnames(E)=="Feeding.niche")]
-E$Habitat <- E[,which(colnames(E)=="Feeding.microhabitat")]
+E$Niche <- E[,which(colnames(E)=="Feeding.niche.SE")]
+E$Habitat <- E[,which(colnames(E)=="Feeding.microhabitat.SE")]
 E <- E[,colnames(D)]
-E <- E[!duplicated(E),]
+E <- E[!duplicated(E),]     # Note that any ambiguous coding of clades will remain
 D <- rbind(D,E)
 check_coding(D)
 
