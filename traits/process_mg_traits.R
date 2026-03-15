@@ -240,7 +240,7 @@ for (i in 1:nrow(E)) {
 }
 idx <- match("Gulgastruridae",E$Family)
 E$Habitat[idx] <- "Soil"    # Given as Soil (cave entrance)
-idx <- match("Saprophagous",E$Niche)
+idx <- which(E$Niche=="Saprophagous")
 E$Niche[idx] <- "Saprophage"    # Correct to state name used elsewhere
 
 # Sminthurididae
