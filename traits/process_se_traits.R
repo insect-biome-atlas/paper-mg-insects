@@ -218,6 +218,8 @@ colnames(E) <- c("Order","Family","Niche","Habitat")
 E$Clade <- E$Family
 idx <- match("Gulgastruridae",E$Family)
 E$Habitat[idx] <- "Soil"    # Given as Soil (cave entrance)
+idx <- match("Saprophagous",E$Niche)
+E$Niche[idx] <- "Saprophage"    # Correct to state name used elsewhere
 
 # Sminthurididae
 # ==============
