@@ -2,14 +2,16 @@
 library(data.table)
 
 # Read in raw counts data
-malaise_mg <- read.delim("raw_counts_malaise_mg.tsv")
-malaise_se <- read.delim("raw_counts_malaise_se.tsv")
-litter_mg <- read.delim("raw_counts_litter_mg.tsv")
-litter_se <- read.delim("raw_counts_litter_se.tsv")
-malaise_spec_mg <- read.delim("raw_counts_malaise_spec_mg.tsv")
-malaise_spec_se <- read.delim("raw_counts_malaise_spec_se.tsv")
-malaise_litter_mg <- read.delim("raw_counts_uncal_malaise_litter_mg.tsv")
-malaise_litter_se <- read.delim("raw_counts_uncal_malaise_litter_se.tsv")
+malaise_mg <- readRDS("../raw_counts_malaise_mg.rds")
+malaise_se <- readRDS("../raw_counts_malaise_se.rds")
+litter_mg <- readRDS("../raw_counts_litter_mg.rds")
+litter_se <- readRDS("../raw_counts_litter_se.rds")
+malaise_spec_mg <- readRDS("../raw_counts_malaise_spec_mg.rds")
+malaise_spec_se <- readRDS("../raw_counts_malaise_spec_se.rds")
+malaise_litter_mg <- readRDS("../raw_counts_uncal_malaise_litter_mg.rds")
+malaise_litter_se <- readRDS("../raw_counts_uncal_malaise_litter_se.rds")
+homogenate_se <- readRDS("../raw_counts_uncal_homogenate_se.rds")
+lysate_homogenate_se <- readRDS("../raw_counts_uncal_lysate_homogenate_se.rds")
 
 # Remove taxonomy annotations. They are the sintax+
 # annotations, not the phylogenetic annotations, and
@@ -29,11 +31,13 @@ litter_se <- min_columns(litter_se)
 malaise_spec_mg <- min_columns(malaise_spec_mg)
 malaise_spec_se <- min_columns(malaise_spec_se)
 malaise_litter_mg <- min_columns(malaise_litter_mg) 
-malaise_litter_se <- min_columns(malaise_litter_se) 
+malaise_litter_se <- min_columns(malaise_litter_se)
+homogenate_se <- min_columns(homogenate_se)
+lysate_homogenate_se <- min_columns(lysate_homogenate_se)
 
 # Read in taxonomy data
-T1 <- read.delim("cluster_taxonomy_mg.tsv")
-T2 <- read.delim("cluster_taxonomy_se.tsv")
+T1 <- read.delim("../cluster_taxonomy_mg.tsv")
+T2 <- read.delim("../cluster_taxonomy_se.tsv")
 
 # Only keep the hexapod data (the ones in T1,T2)
 malaise_mg <- malaise_mg[malaise_mg$cluster %in% T1$cluster,]
@@ -44,21 +48,24 @@ malaise_spec_mg <- malaise_spec_mg[malaise_spec_mg$cluster %in% T1$cluster,]
 malaise_spec_se <- malaise_spec_se[malaise_spec_se$cluster %in% T2$cluster,]
 malaise_litter_mg <- malaise_litter_mg[malaise_litter_mg$cluster %in% T1$cluster,]
 malaise_litter_se <- malaise_litter_se[malaise_litter_se$cluster %in% T2$cluster,]
+homogenate_se <- homogenate_se[homogenate_se$cluster %in% T2$cluster,]
+lysate_homogenate_se <- lysate_homogenate_se[lysate_homogenate_se$cluster %in% T2$cluster,]
 
 # Convert counts to occurrence
 malaise_litter_mg[,-1] <- (malaise_litter_mg[,-1] > 0)
 malaise_litter_se[,-1] <- (malaise_litter_se[,-1] > 0)
 
-# Write fat tables
-write.tsv <- function(D,file) { write.table(D,file,row.names=FALSE,sep="\t") }
-write.tsv(malaise_mg,"cluster_counts_malaise_mg.tsv")
-write.tsv(malaise_se,"cluster_counts_malaise_se.tsv")
-write.tsv(litter_mg,"cluster_counts_litter_mg.tsv")
-write.tsv(litter_se,"cluster_counts_litter_se.tsv")
-write.tsv(malaise_spec_mg,"cluster_counts_spec_malaise_mg.tsv")
-write.tsv(malaise_spec_se,"cluster_counts_spec_malaise_se.tsv")
-write.tsv(malaise_litter_mg,"cluster_occurrence_malaise_litter_mg.tsv")
-write.tsv(malaise_litter_se,"cluster_occurrence_malaise_litter_se.tsv")
+# Save fat tables
+saveRDS(malaise_mg,"../cluster_counts_malaise_mg.rds")
+saveRDS(malaise_se,"../cluster_counts_malaise_se.rds")
+saveRDS(litter_mg,"../cluster_counts_litter_mg.rds")
+saveRDS(litter_se,"../cluster_counts_litter_se.rds")
+saveRDS(malaise_spec_mg,"../cluster_counts_spec_malaise_mg.rds")
+saveRDS(malaise_spec_se,"../cluster_counts_spec_malaise_se.rds")
+saveRDS(malaise_litter_mg,"../cluster_occurrence_malaise_litter_mg.rds")
+saveRDS(malaise_litter_se,"../cluster_occurrence_malaise_litter_se.rds")
+saveRDS(homogenate_se,"../cluster_occurrence_homogenate_se.rds")
+saveRDS(lysate_homogenate_se,"../cluster_occurrence_lysate_homogenate_se.rds")
 
 # Make long tables (data.table is handy for this)
 malaise_long_mg <- data.table(malaise_mg) |>
@@ -73,10 +80,14 @@ litter_long_mg <- data.table(litter_mg) |>
 litter_long_se <- data.table(litter_se) |>
                   melt(id.vars = 1 , variable.name = "sampleID_NGI" , value.name = "read_count") |>
                   _[read_count > 0,]
+homogenate_long_se <- data.table(homogenate_se) |>
+                      melt(id.vars = 1 , variable.name = "sampleID_NGI" , value.name = "read_count") |>
+                      _[read_count > 0,]
 
-# Write long tables
-write.tsv(malaise_long_mg,"cluster_counts_malaise_long_mg.tsv")
-write.tsv(malaise_long_se,"cluster_counts_malaise_long_se.tsv")
-write.tsv(litter_long_mg,"cluster_counts_litter_long_mg.tsv")
-write.tsv(litter_long_se,"cluster_counts_litter_long_se.tsv")
+# Save long tables
+saveRDS(malaise_long_mg,"../cluster_counts_malaise_long_mg.rds")
+saveRDS(malaise_long_se,"../cluster_counts_malaise_long_se.rds")
+saveRDS(litter_long_mg,"../cluster_counts_litter_long_mg.rds")
+saveRDS(litter_long_se,"../cluster_counts_litter_long_se.rds")
+saveRDS(homogenate_long_se,"../cluster_counts_homogenate_long_se.rds")
 

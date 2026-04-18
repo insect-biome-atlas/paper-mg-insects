@@ -71,6 +71,6 @@ D2 <- D2[!grepl("unclassified",D2$Clade),]
 
 # Write final cluster taxonomy data
 write.tsv <- function(D,file) { write.table(D,file,row.names=FALSE,sep="\t") }
-write.tsv(D1,"cluster_taxonomy_mg.tsv")
-write.tsv(D2,"cluster_taxonomy_se.tsv")
+write.tsv(D1,"../cluster_taxonomy_mg.tsv")
+write.tsv(D2,"../cluster_taxonomy_se.tsv")
 

@@ -14,10 +14,10 @@ sites_mg <- read.delim(paste0(path,"sites_metadata_MG.tsv"))
 sites_se <- read.delim(paste0(path,"sites_metadata_SE.tsv"))
 
 # Read in counts data
-counts_malaise_mg <- read.delim("cluster_counts_malaise_mg.tsv")
-counts_malaise_se <- read.delim("cluster_counts_malaise_se.tsv")
-counts_litter_mg <- read.delim("cluster_counts_litter_mg.tsv")
-counts_litter_se <- read.delim("cluster_counts_litter_se.tsv")
+counts_malaise_mg <- readRDS("../cluster_counts_malaise_mg.rds")
+counts_malaise_se <- readRDS("../cluster_counts_malaise_se.rds")
+counts_litter_mg <- readRDS("../cluster_counts_litter_mg.rds")
+counts_litter_se <- readRDS("../cluster_counts_litter_se.rds")
 
 set1 <- colnames(counts_malaise_mg)[-1]
 set2 <- colnames(counts_malaise_se)[-1]
@@ -48,8 +48,8 @@ D2 <- add_malaise_sample_meta(D2, meta_se, malaise_samples_se, sites_se)
 D1 <- D1[complete.cases(D1),]
 D2 <- D2[complete.cases(D2),]
 write.tsv <- function(D,file) { write.table(D,file,row.names=FALSE,sep="\t") }
-write.tsv(D1,"malaise_sample_meta_mg.tsv")
-write.tsv(D2,"malaise_sample_meta_se.tsv")
+write.tsv(D1,"../malaise_sample_meta_mg.tsv")
+write.tsv(D2,"../malaise_sample_meta_se.tsv")
 
 add_litter_sample_meta <- function(D, meta, samples, sites) {
     D$sampleID_FIELD <- meta$sampleID_FIELD[match(D$sampleID_NGI,meta$sampleID_NGI)]
@@ -69,8 +69,8 @@ D3$date <- mdy(D3$date)     # Note different date format in this dataset
 D4$date <- dmy(D4$date)
 D3[complete.cases(D3),]
 D4[complete.cases(D4),]
-write.tsv(D3,"litter_sample_meta_mg.tsv")
-write.tsv(D4,"litter_sample_meta_se.tsv")
+write.tsv(D3,"../litter_sample_meta_mg.tsv")
+write.tsv(D4,"../litter_sample_meta_se.tsv")
 
 # Aggregate litter and malaise sample metadata
 D1$date <- D1$mid_date
@@ -83,6 +83,6 @@ D1$sample_type <- "malaise"
 D2$sample_type <- "malaise"
 D3$sample_type <- "litter"
 D4$sample_type <- "litter"
-write.tsv(rbind(D1,D3),"malaise_litter_sample_meta_mg.tsv")
-write.tsv(rbind(D2,D4),"malaise_litter_sample_meta_se.tsv")
+write.tsv(rbind(D1,D3),"../malaise_litter_sample_meta_mg.tsv")
+write.tsv(rbind(D2,D4),"../malaise_litter_sample_meta_se.tsv")
 

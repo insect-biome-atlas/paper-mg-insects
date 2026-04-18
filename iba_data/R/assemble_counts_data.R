@@ -58,14 +58,26 @@ malaise_litter_se <- get_iba_co1_data(data_path=data_path,
                                     dataset="lysate|litter",
                                     calibrate=FALSE)
 
-# Write data tables
-write.tsv <- function(D,file) { write.table(D,file,row.names=FALSE,sep="\t") }
-write.tsv(malaise_mg,"raw_counts_malaise_mg.tsv")
-write.tsv(malaise_se,"raw_counts_malaise_se.tsv")
-write.tsv(litter_mg,"raw_counts_litter_mg.tsv")
-write.tsv(litter_se,"raw_counts_litter_se.tsv")
-write.tsv(malaise_spec_mg,"raw_counts_malaise_spec_mg.tsv")
-write.tsv(malaise_spec_se,"raw_counts_malaise_spec_se.tsv")
-write.tsv(malaise_litter_mg,"raw_counts_uncal_malaise_litter_mg.tsv")
-write.tsv(malaise_litter_se,"raw_counts_uncal_malaise_litter_se.tsv")
+homogenate_se <- get_iba_co1_data(data_path=data_path,
+                                  metadata_path=metadata_path,
+                                  country="SE",
+                                  dataset="homogenate",
+                                  calibrate=FALSE)
 
+lysate_homogenate_se <- get_iba_co1_data(data_path=data_path,
+                                        metadata_path=metadata_path,
+                                        country="SE",
+                                        dataset="lysate|homogenate",
+                                        calibrate=FALSE)
+
+# Save data frame versions
+saveRDS(data.frame(malaise_mg),"../raw_counts_malaise_mg.rds")
+saveRDS(data.frame(malaise_se),"../raw_counts_malaise_se.rds")
+saveRDS(data.frame(litter_mg),"../raw_counts_litter_mg.rds")
+saveRDS(data.frame(litter_se),"../raw_counts_litter_se.rds")
+saveRDS(data.frame(malaise_spec_mg),"../raw_counts_malaise_spec_mg.rds")
+saveRDS(data.frame(malaise_spec_se),"../raw_counts_malaise_spec_se.rds")
+saveRDS(data.frame(malaise_litter_mg),"../raw_counts_uncal_malaise_litter_mg.rds")
+saveRDS(data.frame(malaise_litter_se),"../raw_counts_uncal_malaise_litter_se.rds")
+saveRDS(data.frame(homogenate_se),"../raw_counts_uncal_homogenate_se.rds")
+saveRDS(data.frame(lysate_homogenate_se),"../raw_counts_uncal_lysate_homogenate_se.rds")
