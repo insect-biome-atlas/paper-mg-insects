@@ -11,5 +11,3 @@ Note that the generated taxonomy files are filtered on fairly stringent annotati
 Details on the content of each generated data file can be found in the R scripts generating
 them.
 
-To keep the github repo small, the output data files are not committed to the repo.
-
