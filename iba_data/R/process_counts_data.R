@@ -36,8 +36,8 @@ homogenate_se <- min_columns(homogenate_se)
 lysate_homogenate_se <- min_columns(lysate_homogenate_se)
 
 # Read in taxonomy data
-T1 <- read.delim("../cluster_taxonomy_mg.tsv")
-T2 <- read.delim("../cluster_taxonomy_se.tsv")
+T1 <- readRDS("../cluster_taxonomy_mg.rds")
+T2 <- readRDS("../cluster_taxonomy_se.rds")
 
 # Only keep the hexapod data (the ones in T1,T2)
 malaise_mg <- malaise_mg[malaise_mg$cluster %in% T1$cluster,]
@@ -60,12 +60,12 @@ saveRDS(malaise_mg,"../cluster_counts_malaise_mg.rds")
 saveRDS(malaise_se,"../cluster_counts_malaise_se.rds")
 saveRDS(litter_mg,"../cluster_counts_litter_mg.rds")
 saveRDS(litter_se,"../cluster_counts_litter_se.rds")
+saveRDS(homogenate_se,"../cluster_counts_homogenate_se.rds")
+saveRDS(lysate_homogenate_se,"../cluster_counts_lysate_homogenate_se.rds")
 saveRDS(malaise_spec_mg,"../cluster_counts_spec_malaise_mg.rds")
 saveRDS(malaise_spec_se,"../cluster_counts_spec_malaise_se.rds")
 saveRDS(malaise_litter_mg,"../cluster_occurrence_malaise_litter_mg.rds")
 saveRDS(malaise_litter_se,"../cluster_occurrence_malaise_litter_se.rds")
-saveRDS(homogenate_se,"../cluster_occurrence_homogenate_se.rds")
-saveRDS(lysate_homogenate_se,"../cluster_occurrence_lysate_homogenate_se.rds")
 
 # Make long tables (data.table is handy for this)
 malaise_long_mg <- data.table(malaise_mg) |>

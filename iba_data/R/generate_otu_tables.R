@@ -81,8 +81,8 @@ site_otu_malaise_mg <- make_col_rownames(site_otu_malaise_mg,"trapID")
 site_otu_malaise_se <- make_col_rownames(site_otu_malaise_se,"trapID")
 
 # Save OTU site abundance tables for vegan
-saveRDS(site_otu_malaise_mg,"../site_otu_abundance_malaise_mg.tsv")
-saveRDS(site_otu_malaise_se,"../site_otu_abundance_malaise_se.tsv")
+saveRDS(site_otu_malaise_mg,"../site_otu_abundance_malaise_mg.rds")
+saveRDS(site_otu_malaise_se,"../site_otu_abundance_malaise_se.rds")
 
 # Summarize occurrence for sites
 sites_mg <- malaise_litter_sample_meta_mg$trapID[match(rownames(sample_otu_occurrence_combined_mg),malaise_litter_sample_meta_mg$sampleID_NGI)]
