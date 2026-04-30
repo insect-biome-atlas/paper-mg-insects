@@ -116,12 +116,11 @@ site_endemicity$longitude <- trap_meta$longitude[idx]
 site_endemicity$trap_habitat <- trap_meta$trap_habitat[idx]
 
 
-# Generate plots
-# --------------
+# Generate main figure
+# --------------------
 
 p1 <- ggplot(data=site_catch, aes(x=longitude, y=latitude, shape=trap_habitat, colour=OTUs)) +
         geom_point(size=3, position="jitter") +
-#        scale_colour_viridis_c(option="plasma") +
         labs(title = "Richness",
              x = NULL,
              y = NULL,
@@ -130,7 +129,6 @@ p1 <- ggplot(data=site_catch, aes(x=longitude, y=latitude, shape=trap_habitat, c
 
 p2 <- ggplot(data=site_diversity, aes(x=longitude, y=latitude, shape=trap_habitat, colour=shannon_diversity)) +
         geom_point(size=3, position="jitter") +
-#        scale_colour_viridis_c(option="plasma") +
         labs(title = "Diversity",
              x = NULL,
              y = NULL,
@@ -139,7 +137,6 @@ p2 <- ggplot(data=site_diversity, aes(x=longitude, y=latitude, shape=trap_habita
 
 p3 <- ggplot(data=site_uniqueness, aes(x=longitude, y=latitude, shape=trap_habitat, colour=dissimilarity)) +
         geom_point(size=3, position="jitter") +
-#        scale_colour_viridis_c(option="plasma") +
         labs(title = "Uniqueness",
              x = NULL,
              y = NULL,
@@ -148,32 +145,27 @@ p3 <- ggplot(data=site_uniqueness, aes(x=longitude, y=latitude, shape=trap_habit
 
 p4 <- ggplot(data=site_colonizations, aes(x=longitude, y=latitude, shape=trap_habitat, colour=num_clades)) +
         geom_point(size=3, position="jitter") +
-#        scale_colour_viridis_c(option="plasma") +
         labs(title = "Number of MG radiations",
              x = NULL,
              y = NULL,
              shape = "Habitat",
              colour = "# clades")
 
-p5 <- ggplot(data=site_radiation_age, aes(x=longitude, y=latitude, shape=trap_habitat, colour=median_age)) +
+p5 <- ggplot(data=site_endemicity, aes(x=longitude, y=latitude, shape=trap_habitat, colour=mean_radiation)) +
         geom_point(size=3, position="jitter") +
-#        scale_colour_viridis_c(option="plasma") +
-        labs(title = "Median age of MG radiations",
-             x = NULL,
-             y = NULL,
-             shape = "Habitat",
-             colour = "Median age (Ma)")
-
-p6 <- ggplot(data=site_endemicity, aes(x=longitude, y=latitude, shape=trap_habitat, colour=mean_radiation)) +
-        geom_point(size=3, position="jitter") +
-#        scale_colour_viridis_c(option="plasma") +
         labs(title = "Size of MG radiations",
              x = NULL,
              y = NULL,
              shape = "Habitat",
              colour = "Mean # OTUs")
 
-
+p6 <- ggplot(data=site_radiation_age, aes(x=longitude, y=latitude, shape=trap_habitat, colour=median_age)) +
+        geom_point(size=3, position="jitter") +
+        labs(title = "Median age of MG radiations",
+             x = NULL,
+             y = NULL,
+             shape = "Habitat",
+             colour = "Median age (Ma)")
 
 # Put plots together and save
 ggsave("../figs/Fig_mg_maps.jpg",
@@ -181,6 +173,57 @@ ggsave("../figs/Fig_mg_maps.jpg",
        height=14,
        plot = p1 + p2 + p3 + p4 + p5 + p6 +
             plot_layout(axis_titles="collect", ncol=3) +
+            plot_annotation(tag_levels="A") #  & theme(legend.position="bottom")
+       )
+
+
+# Generate supplementary figure
+# -----------------------------
+
+# Add placement age to base data frame
+D$placement_age <- F$placement_age[match(D$placement,F$placement)]
+
+# Generate plot dataset from age subset input
+plot_data <- function(D, trap_meta) {
+    E <- data.frame(table(D$placement,by=D$trapID))
+    colnames(E) <- c("Placement","trapID","num_placements")
+    E <- E[E$num_placements!=0,]
+    res <- data.frame(table(E$trapID))
+    colnames(res) <- c("trapID","num_clades")
+    idx <- match(res$trapID,trap_meta$trapID)
+    res$latitude <- trap_meta$latitude[idx]
+    res$longitude <- trap_meta$longitude[idx]
+    res$trap_habitat <- trap_meta$trap_habitat[idx]
+    return (res)
+}
+
+# Plot function
+plot_numclades <- function(D, plot_title) {
+    ggplot(data=D, aes(x=longitude, y=latitude, shape=trap_habitat, colour=num_clades)) +
+        geom_point(size=3, position="jitter") +
+        labs(title = plot_title,
+             x = NULL,
+             y = NULL,
+             shape = "Habitat",
+             colour = "# clades")
+}
+
+E1 <- plot_data(D[D$placement_age < 23.0,], trap_meta)
+E2 <- plot_data(D[D$placement_age > 23.0,], trap_meta)
+E3 <- plot_data(D[D$placement_age < 34.0,], trap_meta)
+E4 <- plot_data(D[D$placement_age > 34.0,], trap_meta)
+
+supp1 <- plot_numclades(E1, "Number of young clades (< 23.0 Ma)")
+supp2 <- plot_numclades(E2, "Number of old clades (> 23.0 Ma)")
+supp3 <- plot_numclades(E3, "Number of young clades (< 34.0 Ma)")
+supp4 <- plot_numclades(E4, "Number of old clades (> 34.0 Ma)")
+
+# Put plots together and save
+ggsave("../figs/Fig_mg_maps_old_vs_young.jpg",
+       width=12,
+       height=14,
+       plot = supp1 + supp2 + supp3 + supp4 +
+            plot_layout(axis_titles="collect", ncol=2) +
             plot_annotation(tag_levels="A") #  & theme(legend.position="bottom")
        )
 
