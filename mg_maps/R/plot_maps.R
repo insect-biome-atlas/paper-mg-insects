@@ -10,7 +10,7 @@ library(ggplot2)
 # ------------
 
 # Cluster taxonomy (only Hexapoda, and with quality filtering)
-clusters <- read.delim("../../iba_data/cluster_taxonomy_mg.tsv")
+clusters <- readRDS("../../iba_data/cluster_taxonomy_mg.rds")
 
 # Add info on life-history traits
 lht <- read.delim("../../traits/clade_trait_data_mg.tsv")
