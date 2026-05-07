@@ -1,5 +1,10 @@
+# Load required libraries
+library(sf)
+library(units)
+library(betapart)
+library(mgcv)
 
-# Get distances between sample locations -------------------
+# Get spatial distances between sample locations -------------------
 get_dists <- function(IBA_locs){
   # Select distinct trap IDs from the IBA_locs dataset, ensuring no missing trapID values
   IBA_samples <- IBA_locs |> 
