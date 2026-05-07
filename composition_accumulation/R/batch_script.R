@@ -1,0 +1,15 @@
+source("prepare_data.R")
+source("compute_site_accumulation_niche.R")
+source("compute_site_accumulation_habitat.R")
+source("compute_site_accumulation_taxonomic.R")
+source("plot_site_accumulation_niche.R")
+source("plot_site_accumulation_habitat.R")
+source("plot_site_accumulation_taxonomic.R")
+
+source("compute_sample_accumulation_niche.R")
+source("compute_sample_accumulation_habitat.R")
+source("compute_sample_accumulation_taxonomic.R")
+source("plot_sample_accumulation_niche.R")
+source("plot_sample_accumulation_habitat.R")
+source("plot_sample_accumulation_taxonomic.R")
+
