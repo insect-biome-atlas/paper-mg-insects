@@ -14,6 +14,7 @@ plot_filter_res <- function(df) {
               axis.title.x=element_text(margin=margin(t=10, r=0, b=0, l=0),size=12),
               axis.title.y=element_text(margin=margin(t=0, r=10, b=0, l=0),size=12)) +
         scale_color_manual(values = c("green","blue")) +
+        scale_x_continuous(breaks=c(1,2,3,4,5,6,7,8)) +
         guides(
             color = guide_legend(title="Country"),      # Country color legend
             shape = guide_legend(title="Country"),      # Country shape legend
