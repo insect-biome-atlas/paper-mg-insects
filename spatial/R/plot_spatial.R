@@ -81,41 +81,45 @@ p1 <- ggplot(betapart_mad, aes(distance , jaccard)) +
 #    geom_smooth(aes(distance, jaccard), method="loess") +
     scale_colour_viridis_c(option="rocket") +
     scale_y_continuous(limits=c(0.4, 1)) +
+    scale_x_continuous(limits=c(0,1510)) +
     labs(x="Distance (km)", y="Dissimilarity (J)", colour="Distance (km)") 
 
 p2 <- ggplot(betapart_swe, aes(distance, jaccard)) +
-    geom_point(alpha=0.1, size=2, aes(colour=distance), show.legend=FALSE) +
+    geom_point(alpha=0.1, size=2, aes(colour=distance), show.legend=TRUE) +
     theme_linedraw(base_size=20) +
     geom_line(data=mono_se, aes(distance, pred_fit), lwd=2) +
 #    geom_smooth(aes(distance, jaccard), method="loess") +
     scale_colour_viridis_c(option="rocket") +
     scale_y_continuous(limits=c(0.4, 1)) +
-    labs(x="Distance (km)", y="Dissimilarity (J)", colour="Distance (km)") 
+    scale_x_continuous(limits=c(0,1510)) +
+    labs(x="Distance (km)", y=NULL, colour="Distance (km)") 
 
 p3 <- ggplot(betapart_rf, aes(distance, jaccard)) +
-    geom_point(alpha=0.1, size=2, aes(colour=distance), show.legend=FALSE) +
+    geom_point(alpha=0.4, size=2, aes(colour=distance), show.legend=FALSE) +
     theme_linedraw(base_size=20) +
     geom_line(data=mono_rf, aes(distance, pred_fit), lwd=2) +
 #    geom_smooth(aes(distance, jaccard), method="loess") +
     scale_colour_viridis_c(option="rocket") +
     scale_y_continuous(limits=c(0.4, 1)) +
+    scale_x_continuous(limits=c(0,1510)) +
     labs(x="Distance (km)", y="Dissimilarity (J)", colour="Distance (km)") 
 
 p4 <- ggplot(betapart_df, aes(distance , jaccard)) +
-    geom_point(alpha=0.2, size=2, aes(colour=distance), show.legend=FALSE) +
+    geom_point(alpha=0.4, size=2, aes(colour=distance), show.legend=FALSE) +
     theme_linedraw(base_size=20) +
     geom_line(data=mono_df, aes(distance, pred_fit), lwd=2) +
 #    geom_smooth(aes(distance, jaccard), method="loess") +
     scale_colour_viridis_c(option="rocket") +
     scale_y_continuous(limits=c(0.4, 1)) +
-    labs(x="Distance (km)", y="Dissimilarity (J)", colour="Distance (km)") 
+    scale_x_continuous(limits=c(0,1510)) +
+    labs(x="Distance (km)", y=NULL, colour="Distance (km)") 
 
 # Save plots
 ggsave( file = "../figs/Fig_spatial.jpg",
-        width = 14.0,
+        width = 16.0,
         height = 14.0,
         plot = p1 + p2 + p3 + p4 +
             plot_annotation(tag_levels="A") +
-            plot_layout(ncol=2, axis_titles="collect", guides="collect")
+            plot_layout(ncol=2, axis_titles="collect_x")
       )
 
