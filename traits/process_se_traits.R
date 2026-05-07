@@ -158,11 +158,12 @@ D$Main.feeding.habitat[match("Aulacigastridae",D$NCBI_Family)] <- "Water"
 D$Main.feeding.niche[match("Staphylinidae",D$NCBI_Family)] <- "Predator"
 D$Main.feeding.habitat[match("Staphylinidae",D$NCBI_Family)] <- "Soil"
 
+# Write updated table (temporary result)
+# This is the complete table, needed for some downstream analyses
+write.table(D, "ronquist_2020_SE_traits_ncbi_taxonomy.tsv",row.names=FALSE,sep="\t")
+
 # Only keep first NCBI family record
 D <- D[!duplicated(D$NCBI_Family),]
-
-# Write updated table (temporary result)
-write.table(D, "ronquist_2020_SE_traits_ncbi_taxonomy.tsv",row.names=FALSE,sep="\t")
 
 # Prune down to essential columns
 D <- D[,c("Order","NCBI_Family","Main.feeding.niche","Main.feeding.habitat")]
