@@ -1,4 +1,4 @@
-# Script for generating violin plots of parasitoid loads per trap site
+# Script for generating box plots of parasitoid loads per trap site
 
 library(ggplot2)
 library(patchwork)
@@ -25,11 +25,11 @@ box_plot <- function(D, plot_title = NULL) {
 
 
 # Read in and aggregate data
-D1 <- read.delim("../iba_data/cluster_counts_malaise_long_mg.tsv")
-D2 <- read.delim("../iba_data/cluster_counts_malaise_long_se.tsv")
+D1 <- readRDS("../../iba_data/cluster_counts_malaise_long_mg.rds")
+D2 <- readRDS("../../iba_data/cluster_counts_malaise_long_se.rds")
 
-meta1 <- read.delim("../iba_data/malaise_sample_meta_mg.tsv")
-meta2 <- read.delim("../iba_data/malaise_sample_meta_se.tsv")
+meta1 <- read.delim("../../iba_data/malaise_sample_meta_mg.tsv")
+meta2 <- read.delim("../../iba_data/malaise_sample_meta_se.tsv")
 
 D1$trapID <- meta1$trapID[match(D1$sampleID_NGI,meta1$sampleID_NGI)]
 D2$trapID <- meta2$trapID[match(D2$sampleID_NGI,meta2$sampleID_NGI)]
@@ -46,14 +46,14 @@ D2$trap_habitat <- "Temperate forest"
 D1$trap_habitat[D1$trap_habitat=="Dry_Forest"] <- "Tropical dry forest"
 D1$trap_habitat[D1$trap_habitat=="Montane_Rainforest"] <- "Rainforest"
 
-T1 <- read.delim("../iba_data/cluster_taxonomy_mg.tsv")
-T2 <- read.delim("../iba_data/cluster_taxonomy_se.tsv")
+T1 <- readRDS("../../iba_data/cluster_taxonomy_mg.rds")
+T2 <- readRDS("../../iba_data/cluster_taxonomy_se.rds")
 
 D1$Clade <- T1$Clade[match(D1$cluster,T1$cluster)]
 D2$Clade <- T2$Clade[match(D2$cluster,T2$cluster)]
 
-lht1 <- read.delim("../traits/clade_trait_data_mg.tsv")
-lht2 <- read.delim("../traits/clade_trait_data_se.tsv")
+lht1 <- read.delim("../../traits/clade_trait_data_mg.tsv")
+lht2 <- read.delim("../../traits/clade_trait_data_se.tsv")
 
 D1$Niche <- lht1$Niche[match(D1$Clade,lht1$Clade)]
 D2$Niche <- lht2$Niche[match(D2$Clade,lht2$Clade)]
@@ -65,7 +65,7 @@ X1 <- aggregate(read_count~trapID+Niche+trap_habitat,data=D1,FUN=sum)
 X2 <- aggregate(read_count~trapID+Niche+trap_habitat,data=D2,FUN=sum)
 X <- rbind(X1,X2)
 
-# Generate violin plot data for saprophage communities
+# Generate box plot data for saprophage communities
 B1 <- X[X$Niche=="Saprophage",]
 B2 <- X[X$Niche=="Saprophage-parasitoid",]
 sapro <- data.frame(trapID=B1$trapID)
@@ -76,7 +76,7 @@ sapro$p_reads <- B2$read_count[match(sapro$trapID,B2$trapID)]
 sapro$p_reads[is.na(sapro$p_reads)] <- 0
 sapro$ph_ratio <- sapro$p_reads/sapro$h_reads
 
-# Generate violin plot data for phytophage communities
+# Generate box plot data for phytophage communities
 B1 <- X[X$Niche=="Phytophage",]
 B2 <- X[X$Niche=="Phytophage-parasitoid",]
 phyto <- data.frame(trapID=B1$trapID)
@@ -87,7 +87,7 @@ phyto$p_reads <- B2$read_count[match(phyto$trapID,B2$trapID)]
 phyto$p_reads[is.na(phyto$p_reads)] <- 0
 phyto$ph_ratio <- phyto$p_reads/phyto$h_reads
 
-# Generate violin plot data for predator communities
+# Generate box plot data for predator communities
 B1 <- X[X$Niche=="Predator",]
 B2 <- X[X$Niche=="Predator-parasitoid",]
 pred <- data.frame(trapID=B1$trapID)
@@ -102,7 +102,7 @@ p1 <- box_plot(sapro, "Saprophage community")
 p2 <- box_plot(phyto, "Phytophage community")
 p3 <- box_plot(pred, "Predator community")
 
-ggsave(file = "Fig_parasitoid_load.jpg",
+ggsave(file = "../figs/Fig_parasitoid_load.jpg",
        width = 12,
        height = 4,
        plot = p1 + p2 + p3 +
