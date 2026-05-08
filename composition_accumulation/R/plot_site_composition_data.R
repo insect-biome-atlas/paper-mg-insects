@@ -74,17 +74,17 @@ for (niche in hosts)
 y_limits1 <- c(0.0,0.8)
 y_limits2 <- c(0.0,1.05)
 p1 <- box_plot(res, "Saprophage", "Saprophage", "Proportion of major-niche OTUs", y_limits1)
-p2 <- box_plot(res, "Saprophage-parasitoid", "Saprophage parasitoid", "Parasitoid:host OTU ratio", y_limits2)
-p3 <- box_plot(res, "Phytophage", "Phytophage", "Proportion of major-niche OTUs", y_limits1)
-p4 <- box_plot(res, "Phytophage-parasitoid", "Phytophage parasitoid", "Parasitoid:host OTU ratio", y_limits2)
-p5 <- box_plot(res, "Predator", "Predator", "Proportion of major-niche OTUs", y_limits1)
+p2 <- box_plot(res, "Phytophage", "Phytophage", "Proportion of major-niche OTUs", y_limits1)
+p3 <- box_plot(res, "Predator", "Predator", "Proportion of major-niche OTUs", y_limits1)
+p4 <- box_plot(res, "Saprophage-parasitoid", "Saprophage parasitoid", "Parasitoid:host OTU ratio", y_limits2)
+p5 <- box_plot(res, "Phytophage-parasitoid", "Phytophage parasitoid", "Parasitoid:host OTU ratio", y_limits2)
 p6 <- box_plot(res, "Predator-parasitoid", "Predator parasitoid", "Parasitoid:host OTU ratio", y_limits2)
 
 ggsave(file = "../figs/Fig_composition_by_forest_type_niche.jpg",
-       width = 7,
-       height = 10.5,
+       width = 10,
+       height = 7.5,
        plot = p1 + p2 + p3 + p4 + p5 + p6 +
-           plot_layout(axis_titles="collect_y", guides="collect", ncol=2) +
+           plot_layout(axis_titles="collect_y", guides="collect", ncol=3) +
            plot_annotation(tag_levels="A") &
            theme(legend.position="bottom")
        )
@@ -107,15 +107,17 @@ y_limits <- c(0.0,0.7)
 p1 <- box_plot(res, "Plants", "Plants", "Proportion of OTUs", y_limits)
 p2 <- box_plot(res, "Soil", "Soil", "Proportion of OTUs", y_limits)
 p3 <- box_plot(res, "Water", "Water", "Proportion of OTUs", y_limits)
+
+y_limits <- c(0.0,0.25)
 p4 <- box_plot(res, "Wood", "Wood", "Proportion of OTUs", y_limits)
 p5 <- box_plot(res, "Temporary", "Temporary", "Proportion of OTUs", y_limits)
 p6 <- box_plot(res, "Fungi", "Fungi", "Proportion of OTUs", y_limits)
 
 ggsave(file = "../figs/Fig_composition_by_forest_type_habitat.jpg",
-       width = 7,
-       height = 10.5,
+       width = 10,
+       height = 7.5,
        plot = p1 + p2 + p3 + p4 + p5 + p6 +
-           plot_layout(axis_titles="collect_y", guides="collect", ncol=2) +
+           plot_layout(axis_titles="collect_y", guides="collect", ncol=3) +
            plot_annotation(tag_levels="A") &
            theme(legend.position="bottom")
        )
@@ -142,15 +144,17 @@ y_limits <- c(0.0,0.65)
 p1 <- box_plot(res, "Diptera", "Diptera", "Proportion of OTUs", y_limits)
 p2 <- box_plot(res, "Hymenoptera", "Hymenoptera", "Proportion of OTUs", y_limits)
 p3 <- box_plot(res, "Coleoptera", "Coleoptera", "Proportion of OTUs", y_limits)
+
+y_limits <- c(0.0,0.25)
 p4 <- box_plot(res, "Lepidoptera", "Lepidoptera", "Proportion of OTUs", y_limits)
 p5 <- box_plot(res, "Hemiptera", "Hemiptera", "Proportion of OTUs", y_limits)
 p6 <- box_plot(res, "Other", "Other", "Proportion of OTUs", y_limits)
 
 ggsave(file = "../figs/Fig_composition_by_forest_type_taxonomic.jpg",
-       width = 7,
-       height = 10.5,
+       width = 10,
+       height = 7.5,
        plot = p1 + p2 + p3 + p4 + p5 + p6 +
-           plot_layout(axis_titles="collect_y", guides="collect", ncol=2) +
+           plot_layout(axis_titles="collect_y", guides="collect", ncol=3) +
            plot_annotation(tag_levels="A") &
            theme(legend.position="bottom")
        )

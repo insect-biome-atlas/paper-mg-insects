@@ -24,17 +24,7 @@ p1 <- ggplot(data=sapro, aes(x=samples, y=niche_otu_prop, group=country)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. sites" , y = "Proportion of major-niche OTUs")
 
-p2 <- ggplot(data=sapro_ph, aes(x=samples, y=ph_otu_ratio, group=country)) +
-  ggtitle("Saprophage parasitoids") +
-  geom_point(alpha=.05 , size=2 , show.legend=FALSE, aes(colour=country)) +
-  theme_linedraw(base_size=20) +
-  geom_smooth(method="loess", se=TRUE, lwd=1) +
-  xlim(c(1,50)) +
-  ylim(c(0.0,1.05)) +
-  scale_color_manual(values=c("Green","Blue")) +
-  labs(x = "No. sites" , y = "Parasitoid:host OTU ratio")
-
-p3 <- ggplot(data=phyto, aes(x=samples, y=niche_otu_prop, group=country)) +
+p2 <- ggplot(data=phyto, aes(x=samples, y=niche_otu_prop, group=country)) +
   ggtitle("Phytophages") +
   geom_point(alpha=.05 , size=2 , show.legend=FALSE, aes(colour=country)) +
   theme_linedraw(base_size=20) +
@@ -44,17 +34,7 @@ p3 <- ggplot(data=phyto, aes(x=samples, y=niche_otu_prop, group=country)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. sites" , y = "Proportion of major-niche OTUs")
 
-p4 <- ggplot(data=phyto_ph, aes(x=samples, y=ph_otu_ratio, group=country)) +
-  ggtitle("Phytophage parasitoids") +
-  geom_point(alpha=.05 , size=2 , show.legend=FALSE, aes(colour=country)) +
-  theme_linedraw(base_size=20) +
-  geom_smooth(method="loess", se=TRUE, lwd=1) +
-  xlim(c(1,50)) +
-  ylim(c(0.0,1.05)) +
-  scale_color_manual(values=c("Green","Blue")) +
-  labs(x = "No. sites" , y = "Parasitoid:host OTU ratio")
-
-p5 <- ggplot(data=pred, aes(x=samples, y=niche_otu_prop, group=country)) +
+p3 <- ggplot(data=pred, aes(x=samples, y=niche_otu_prop, group=country)) +
   ggtitle("Predators") +
   geom_point(alpha=.05 , size=2 , show.legend=FALSE, aes(colour=country)) +
   theme_linedraw(base_size=20) +
@@ -63,6 +43,26 @@ p5 <- ggplot(data=pred, aes(x=samples, y=niche_otu_prop, group=country)) +
   ylim(c(0.0,0.8)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. sites" , y = "Proportion of major-niche OTUs")
+
+p4 <- ggplot(data=sapro_ph, aes(x=samples, y=ph_otu_ratio, group=country)) +
+  ggtitle("Saprophage parasitoids") +
+  geom_point(alpha=.05 , size=2 , show.legend=FALSE, aes(colour=country)) +
+  theme_linedraw(base_size=20) +
+  geom_smooth(method="loess", se=TRUE, lwd=1) +
+  xlim(c(1,50)) +
+  ylim(c(0.0,1.05)) +
+  scale_color_manual(values=c("Green","Blue")) +
+  labs(x = "No. sites" , y = "Parasitoid:host OTU ratio")
+
+p5 <- ggplot(data=phyto_ph, aes(x=samples, y=ph_otu_ratio, group=country)) +
+  ggtitle("Phytophage parasitoids") +
+  geom_point(alpha=.05 , size=2 , show.legend=FALSE, aes(colour=country)) +
+  theme_linedraw(base_size=20) +
+  geom_smooth(method="loess", se=TRUE, lwd=1) +
+  xlim(c(1,50)) +
+  ylim(c(0.0,1.05)) +
+  scale_color_manual(values=c("Green","Blue")) +
+  labs(x = "No. sites" , y = "Parasitoid:host OTU ratio")
 
 p6 <- ggplot(data=pred_ph, aes(x=samples, y=ph_otu_ratio, group=country)) +
   ggtitle("Predator parasitoids") +
@@ -76,10 +76,10 @@ p6 <- ggplot(data=pred_ph, aes(x=samples, y=ph_otu_ratio, group=country)) +
 
 # Print Plots
 ggsave( "../figs/Fig_site_acc_niche.jpg",
-        width=14,
-        height=21,
+        width=21,
+        height=14,
         plot=p1 + p2 + p3 + p4 + p5 + p6 +
-            plot_layout(axis_titles="collect", ncol=2) +
+            plot_layout(axis_titles="collect", ncol=3) +
             plot_annotation(tag_levels="A")
       )
 

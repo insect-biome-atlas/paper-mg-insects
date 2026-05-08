@@ -20,6 +20,7 @@ p1 <- ggplot(data=dipt, aes(x=samples, y=taxon_otu_prop, group=country)) +
   theme_linedraw(base_size=20) +
   geom_smooth(method="loess", se=TRUE, lwd=1) +
   xlim(c(1,50)) +
+  ylim(c(0.0,0.65)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. sites" , y = "Proportion of OTUs")
 
@@ -29,6 +30,7 @@ p2 <- ggplot(data=hyme, aes(x=samples, y=taxon_otu_prop, group=country)) +
   theme_linedraw(base_size=20) +
   geom_smooth(method="loess", se=TRUE, lwd=1) +
   xlim(c(1,50)) +
+  ylim(c(0.0,0.65)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. sites" , y = "Proportion of OTUs")
 
@@ -38,6 +40,7 @@ p3 <- ggplot(data=cole, aes(x=samples, y=taxon_otu_prop, group=country)) +
   theme_linedraw(base_size=20) +
   geom_smooth(method="loess", se=TRUE, lwd=1) +
   xlim(c(1,50)) +
+  ylim(c(0.0,0.65)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. sites" , y = "Proportion of OTUs")
 
@@ -47,6 +50,7 @@ p4 <- ggplot(data=lepi, aes(x=samples, y=taxon_otu_prop, group=country)) +
   theme_linedraw(base_size=20) +
   geom_smooth(method="loess", se=TRUE, lwd=1) +
   xlim(c(1,50)) +
+  ylim(c(0.0,0.25)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. sites" , y = "Proportion of OTUs")
 
@@ -56,6 +60,7 @@ p5 <- ggplot(data=hemi, aes(x=samples, y=taxon_otu_prop, group=country)) +
   theme_linedraw(base_size=20) +
   geom_smooth(method="loess", se=TRUE, lwd=1) +
   xlim(c(1,50)) +
+  ylim(c(0.0,0.25)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. sites" , y = "Proportion of OTUs")
 
@@ -65,15 +70,16 @@ p6 <- ggplot(data=other, aes(x=samples, y=taxon_otu_prop, group=country)) +
   theme_linedraw(base_size=20) +
   geom_smooth(method="loess", se=TRUE, lwd=1) +
   xlim(c(1,50)) +
+  ylim(c(0.0,0.25)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. sites" , y = "Proportion of OTUs")
 
 # Print Plots
 ggsave("../figs/Fig_site_acc_taxonomic.jpg",
-       width = 14,
-       height = 21,
+       width = 21,
+       height = 14,
        plot = p1 + p2 + p3 + p4 + p5 + p6 +
-              plot_layout(axis_titles="collect", ncol=2) +
+              plot_layout(axis_titles="collect", ncol=3) +
               plot_annotation(tag_levels="A")
        )
 

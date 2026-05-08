@@ -4,8 +4,8 @@
 # ------------
 
 # Cluster taxonomy (only Hexapoda, and with quality filtering)
-mg_clusters <- read.delim("../../iba_data/cluster_taxonomy_mg.tsv")
-se_clusters <- read.delim("../../iba_data/cluster_taxonomy_se.tsv")
+mg_clusters <- readRDS("../../iba_data/cluster_taxonomy_mg.rds")
+se_clusters <- readRDS("../../iba_data/cluster_taxonomy_se.rds")
 
 # Add info on life-history traits
 lht_mg <- read.delim("../../traits/clade_trait_data_mg.tsv")
@@ -16,10 +16,10 @@ mg_clusters <- merge(mg_clusters, lht_mg)
 se_clusters <- merge(se_clusters, lht_se)
 
 # Read in cluster read numbers for malaise traps and litter samples
-mg_malaise_counts_long <- read.delim("../../iba_data/cluster_counts_malaise_long_mg.tsv")
-se_malaise_counts_long <- read.delim("../../../iba_data/cluster_counts_malaise_long_se.tsv")
-mg_litter_counts_long <- read.delim("../../iba_data/cluster_counts_litter_long_mg.tsv")
-se_litter_counts_long <- read.delim("../../iba_data/cluster_counts_litter_long_se.tsv")
+mg_malaise_counts_long <- readRDS("../../iba_data/cluster_counts_malaise_long_mg.rds")
+se_malaise_counts_long <- readRDS("../../../iba_data/cluster_counts_malaise_long_se.rds")
+mg_litter_counts_long <- readRDS("../../iba_data/cluster_counts_litter_long_mg.rds")
+se_litter_counts_long <- readRDS("../../iba_data/cluster_counts_litter_long_se.rds")
 
 # Merge cluster read numbers
 mg_counts_long <- rbind(mg_malaise_counts_long, mg_litter_counts_long)

@@ -68,10 +68,10 @@ p6 <- ggplot(data=other, aes(x=samples, y=taxon_otu_prop, group=country)) +
 
 # Print Plots
 ggsave("../figs/Fig_sample_acc_taxonomic.jpg",
-       width=14,
-       height=21,
+       width=21,
+       height=14,
        plot=p1 + p2 + p3 + p4 + p5 + p6 +
-       plot_layout(axis_titles="collect",ncol=2) +
+       plot_layout(axis_titles="collect",ncol=3) +
        plot_annotation(tag_levels="A")
        )
 
