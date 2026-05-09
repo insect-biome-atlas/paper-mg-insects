@@ -50,7 +50,7 @@ p4 <- ggplot(data=lepi, aes(x=samples, y=taxon_otu_prop, group=country)) +
   theme_linedraw(base_size=20) +
   geom_smooth(method="loess", se=TRUE, lwd=1) +
   xlim(c(1,50)) +
-  ylim(c(0.0,0.25)) +
+  ylim(c(0.0,0.65)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. sites" , y = "Proportion of OTUs")
 
@@ -60,7 +60,7 @@ p5 <- ggplot(data=hemi, aes(x=samples, y=taxon_otu_prop, group=country)) +
   theme_linedraw(base_size=20) +
   geom_smooth(method="loess", se=TRUE, lwd=1) +
   xlim(c(1,50)) +
-  ylim(c(0.0,0.25)) +
+  ylim(c(0.0,0.65)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. sites" , y = "Proportion of OTUs")
 
@@ -70,7 +70,7 @@ p6 <- ggplot(data=other, aes(x=samples, y=taxon_otu_prop, group=country)) +
   theme_linedraw(base_size=20) +
   geom_smooth(method="loess", se=TRUE, lwd=1) +
   xlim(c(1,50)) +
-  ylim(c(0.0,0.25)) +
+  ylim(c(0.0,0.65)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. sites" , y = "Proportion of OTUs")
 

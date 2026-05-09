@@ -103,12 +103,10 @@ sum_habitats <- rowSums(res[,habitats])
 for (habitat in habitats)
     res[,habitat] <- res[,habitat]/sum_habitats
 
-y_limits <- c(0.0,0.7)
+y_limits <- c(0.0,0.65)
 p1 <- box_plot(res, "Plants", "Plants", "Proportion of OTUs", y_limits)
 p2 <- box_plot(res, "Soil", "Soil", "Proportion of OTUs", y_limits)
 p3 <- box_plot(res, "Water", "Water", "Proportion of OTUs", y_limits)
-
-y_limits <- c(0.0,0.25)
 p4 <- box_plot(res, "Wood", "Wood", "Proportion of OTUs", y_limits)
 p5 <- box_plot(res, "Temporary", "Temporary", "Proportion of OTUs", y_limits)
 p6 <- box_plot(res, "Fungi", "Fungi", "Proportion of OTUs", y_limits)
@@ -144,8 +142,6 @@ y_limits <- c(0.0,0.65)
 p1 <- box_plot(res, "Diptera", "Diptera", "Proportion of OTUs", y_limits)
 p2 <- box_plot(res, "Hymenoptera", "Hymenoptera", "Proportion of OTUs", y_limits)
 p3 <- box_plot(res, "Coleoptera", "Coleoptera", "Proportion of OTUs", y_limits)
-
-y_limits <- c(0.0,0.25)
 p4 <- box_plot(res, "Lepidoptera", "Lepidoptera", "Proportion of OTUs", y_limits)
 p5 <- box_plot(res, "Hemiptera", "Hemiptera", "Proportion of OTUs", y_limits)
 p6 <- box_plot(res, "Other", "Other", "Proportion of OTUs", y_limits)

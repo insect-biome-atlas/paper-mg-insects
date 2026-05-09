@@ -18,6 +18,7 @@ p1 <- ggplot(data=plants, aes(x=samples, y=habitat_otu_prop, group=country)) +
   theme_linedraw(base_size=20) +
   geom_smooth(method="loess", se=TRUE, lwd=1) +
   xlim(c(1,40)) +
+  ylim(c(0,0.65)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. samples" , y = "Proportion of OTUs")
 
@@ -27,6 +28,7 @@ p2 <- ggplot(data=soil, aes(x=samples, y=habitat_otu_prop, group=country)) +
   theme_linedraw(base_size=20) +
   geom_smooth(method="loess", se=TRUE, lwd=1) +
   xlim(c(1,40)) +
+  ylim(c(0,0.65)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. samples" , y = "Proportion of OTUs")
 
@@ -36,6 +38,7 @@ p3 <- ggplot(data=water, aes(x=samples, y=habitat_otu_prop, group=country)) +
   theme_linedraw(base_size=20) +
   geom_smooth(method="loess", se=TRUE, lwd=1) +
   xlim(c(1,40)) +
+  ylim(c(0,0.65)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. samples" , y = "Proportion of OTUs")
 
@@ -45,6 +48,7 @@ p4 <- ggplot(data=wood, aes(x=samples, y=habitat_otu_prop, group=country)) +
   theme_linedraw(base_size=20) +
   geom_smooth(method="loess", se=TRUE, lwd=1) +
   xlim(c(1,40)) +
+  ylim(c(0,0.65)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. samples" , y = "Proportion of OTUs")
 
@@ -54,6 +58,7 @@ p5 <- ggplot(data=temporary, aes(x=samples, y=habitat_otu_prop, group=country)) 
   theme_linedraw(base_size=20) +
   geom_smooth(method="loess", se=TRUE, lwd=1) +
   xlim(c(1,40)) +
+  ylim(c(0,0.65)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. samples" , y = "Proportion of OTUs")
 
@@ -63,6 +68,7 @@ p6 <- ggplot(data=fungi, aes(x=samples, y=habitat_otu_prop, group=country)) +
   theme_linedraw(base_size=20) +
   geom_smooth(method="loess", se=TRUE, lwd=1) +
   xlim(c(1,40)) +
+  ylim(c(0,0.65)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. samples" , y = "Proportion of OTUs")
 

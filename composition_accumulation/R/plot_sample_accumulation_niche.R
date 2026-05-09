@@ -20,6 +20,7 @@ p1 <- ggplot(data=sapro, aes(x=samples, y=niche_otu_prop, group=country)) +
   theme_linedraw(base_size=20) +
   geom_smooth(method="loess", se=TRUE, lwd=1) +
   xlim(c(1,40)) +
+  ylim(c(0,0.8)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. samples" , y = "Proportion of major-niche OTUs")
 
@@ -29,6 +30,7 @@ p2 <- ggplot(data=phyto, aes(x=samples, y=niche_otu_prop, group=country)) +
   theme_linedraw(base_size=20) +
   geom_smooth(method="loess", se=TRUE, lwd=1) +
   xlim(c(1,40)) +
+  ylim(c(0,0.8)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. samples" , y = "Proportion of major-niche OTUs")
 
@@ -38,6 +40,7 @@ p3 <- ggplot(data=pred, aes(x=samples, y=niche_otu_prop, group=country)) +
   theme_linedraw(base_size=20) +
   geom_smooth(method="loess", se=TRUE, lwd=1) +
   xlim(c(1,40)) +
+  ylim(c(0,0.8)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. samples" , y = "Proportion of major-niche OTUs")
 
@@ -47,6 +50,7 @@ p4 <- ggplot(data=sapro_ph, aes(x=samples, y=ph_otu_ratio, group=country)) +
   theme_linedraw(base_size=20) +
   geom_smooth(method="loess", se=TRUE, lwd=1) +
   xlim(c(1,40)) +
+  ylim(c(0,1.05)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. samples" , y = "Parasitoid:host OTU ratio")
 
@@ -56,6 +60,7 @@ p5 <- ggplot(data=phyto_ph, aes(x=samples, y=ph_otu_ratio, group=country)) +
   theme_linedraw(base_size=20) +
   geom_smooth(method="loess", se=TRUE, lwd=1) +
   xlim(c(1,40)) +
+  ylim(c(0,1.05)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. samples" , y = "Parasitoid:host OTU ratio")
 
@@ -65,6 +70,7 @@ p6 <- ggplot(data=pred_ph, aes(x=samples, y=ph_otu_ratio, group=country)) +
   theme_linedraw(base_size=20) +
   geom_smooth(method="loess", se=TRUE, lwd=1) +
   xlim(c(1,40)) +
+  ylim(c(0,1.05)) +
   scale_color_manual(values=c("Green","Blue")) +
   labs(x = "No. samples" , y = "Parasitoid:host OTU ratio")
 
