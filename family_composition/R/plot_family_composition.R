@@ -25,8 +25,8 @@ idx <- which(combined_mg$trap_habitat=="Montane_Rainforest")
 combined_mg$trap_habitat[idx] <- "Rainforest"
 
 # Add family and clade
-tax_mg <- read.delim("../../iba_data/cluster_taxonomy_mg.tsv")
-tax_se <- read.delim("../../iba_data/cluster_taxonomy_se.tsv")
+tax_mg <- readRDS("../../iba_data/cluster_taxonomy_mg.rds")
+tax_se <- readRDS("../../iba_data/cluster_taxonomy_se.rds")
 combined_mg$Family <- tax_mg$Family[match(combined_mg$cluster,tax_mg$cluster)]
 combined_se$Family <- tax_se$Family[match(combined_se$cluster,tax_se$cluster)]
 combined_mg$Clade <- tax_mg$Clade[match(combined_mg$cluster,tax_mg$cluster)]
@@ -95,15 +95,13 @@ mg_families$OTUs <- -mg_families$OTUs
 mg_rainforest_families$OTUs <- -mg_rainforest_families$OTUs
 p1 <- plot_family(mg_families, num_top, "Tropical forest (Madagascar)")
 p2 <- plot_family(se_families, num_top, "Temperate forest (Sweden)")
-p3 <- plot_family(mg_rainforest_families, num_top, "Rainforest (Madagascar)")
-p4 <- plot_family(mg_dryforest_families, num_top, "Dry forest (Madagascar)")
 
 # Put plots together
 ggsave(
        file = "../figs/Fig_family_composition.jpg",
        width = 14.0,
-       height = 21.0,
-       plot = p1 + p2 + p3 + p4 +
+       height = 10.5,
+       plot = p1 + p2  +
               plot_layout(ncol=2, axis_titles="collect") +
               plot_annotation(tag_levels="A") & theme(legend.position="bottom")
        )
