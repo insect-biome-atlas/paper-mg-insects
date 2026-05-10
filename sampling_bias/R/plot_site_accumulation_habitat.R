@@ -45,10 +45,10 @@ p6 <- plot_prop(fungi, fungi_estimate, "Fungi")
 
 # Save plots
 ggsave( "../figs/Fig_site_acc_habitat_complete_se.jpg",
-        width=14,
-        height=21,
+        width=21,
+        height=14,
         plot=p1 + p2 + p3 + p4 + p5 + p6 +
-            plot_layout(axis_titles="collect", ncol=2) +
+            plot_layout(axis_titles="collect", ncol=3) +
             plot_annotation(tag_levels="A")
       )
 

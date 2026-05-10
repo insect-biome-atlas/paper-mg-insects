@@ -17,7 +17,7 @@ sp_matrix_se <- readRDS("../../iba_data/site_otu_occurrence_combined_complete_se
 site_meta_se <- read.delim("../../iba_data/malaise_litter_sample_meta_se.tsv")
 
 # Read in cluster taxonomy
-cluster_taxonomy_se <- read.delim("../../iba_data/cluster_taxonomy_se.tsv")
+cluster_taxonomy_se <- readRDS("../../iba_data/cluster_taxonomy_se.rds")
 
 # Generate taxonomy subsets
 niches <- c("Saprophage","Saprophage-parasitoid","Phytophage","Phytophage-parasitoid","Predator","Predator-parasitoid")
@@ -75,10 +75,10 @@ p6 <- plot_accum(spDF[[6]], poolDF[[6]], other_estimate, "Other")
 
 # Save plots
 ggsave( "../figs/Fig_site_pool_acc_taxonomic_complete_se.jpg",
-        width=14,
-        height=21,
+        width=21,
+        height=14,
         plot=p1 + p2 + p3 + p4 + p5 + p6 +
-            plot_layout(axis_titles="collect", ncol=2) +
+            plot_layout(axis_titles="collect", ncol=3) +
             plot_annotation(tag_levels="A")
       )
 

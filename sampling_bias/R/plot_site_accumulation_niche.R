@@ -49,19 +49,19 @@ plot_ph_ratio <- function(D, estimated_val, plot_title) {
 }
 
 p1 <- plot_prop(sapro, sapro_estimate, "Saprophages")
-p2 <- plot_ph_ratio(sapro_ph, sapro_ph_estimate, "Saprophage parasitoids")
-p3 <- plot_prop(phyto, phyto_estimate, "Phytophages")
-p4 <- plot_ph_ratio(phyto_ph, phyto_ph_estimate, "Phytophage parasitoids")
-p5 <- plot_prop(pred, pred_estimate, "Predators")
+p2 <- plot_prop(phyto, phyto_estimate, "Phytophages")
+p3 <- plot_prop(pred, pred_estimate, "Predators")
+p4 <- plot_ph_ratio(sapro_ph, sapro_ph_estimate, "Saprophage parasitoids")
+p5 <- plot_ph_ratio(phyto_ph, phyto_ph_estimate, "Phytophage parasitoids")
 p6 <- plot_ph_ratio(pred_ph, pred_ph_estimate, "Predator parasitoids")
 
 
 # Save plots
 ggsave( "../figs/Fig_site_acc_niche_complete_se.jpg",
-        width=14,
-        height=21,
+        width=21,
+        height=14,
         plot=p1 + p2 + p3 + p4 + p5 + p6 +
-            plot_layout(axis_titles="collect", ncol=2) +
+            plot_layout(axis_titles="collect", ncol=3) +
             plot_annotation(tag_levels="A")
       )
 

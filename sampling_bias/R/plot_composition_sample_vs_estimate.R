@@ -1,5 +1,5 @@
 # Script generating bar charts showing taxonomic and ecological composition
-# of the sampled and estimated SE faunas
+# of the sampled and estimated SE faunas for three target orders
 
 library(ggplot2)
 library(patchwork)
@@ -33,7 +33,7 @@ D2$otu_prop <- D2$species / sum_total2$species[match(D2$order,sum_total2$order)]
 # -----------------------------
 
 # Read in taxonomy data
-T <- read.delim("../../iba_data/cluster_taxonomy_se.tsv")
+T <- readRDS("../../iba_data/cluster_taxonomy_se.rds")
 
 # Read in life history trait data
 lht <- read.delim("../../traits/clade_trait_data_se.tsv") 
@@ -95,6 +95,8 @@ niche_comp <- rbind(D1,E1)
 habitat_comp <- rbind(D2,E2)
 niche_comp$study <- factor(niche_comp$study, levels=c("Current study","2020 estimate"))
 habitat_comp$study <- factor(habitat_comp$study, levels=c("Current study","2020 estimate"))
+niche_comp$niche <- factor(niche_comp$niche, levels=niches[6:1])
+habitat_comp$habitat <- factor(habitat_comp$habitat, levels=habitats[6:1])
 
 
 # Generate plots
@@ -105,11 +107,11 @@ plot_Niche <- function(df, plot_title) {
     ggplot(data=df, aes(x=niche, y=otu_prop, group=study, fill=study)) +
         geom_col(position="dodge") +
         coord_flip() +
-        scale_fill_manual(values = c("blue","linen")) +
+        scale_fill_manual(values = c("blue","skyblue")) +
         labs(title = plot_title,
              x = NULL,
              y = "Proportion of OTUs",
-             fill = "Study") +
+             fill = "Data source") +
         theme_minimal(base_size=17)
 }
 
@@ -117,29 +119,29 @@ plot_Habitat <- function(df, plot_title) {
     ggplot(data=df, aes(x=habitat, y=otu_prop, group=study, fill=study)) +
         geom_col(position="dodge") +
         coord_flip() +
-        scale_fill_manual(values = c("blue","linen")) +
+        scale_fill_manual(values = c("blue","skyblue")) +
         labs(title = plot_title,
              x = NULL,
              y = "Proportion of OTUs",
-             fill = "Study") +
+             fill = "Data source") +
         theme_minimal(base_size=17)
 }
 
 # Render plots
 p1 <- plot_Niche(niche_comp[niche_comp$order=="Coleoptera",], "Coleoptera niches")
-p2 <- plot_Habitat(habitat_comp[habitat_comp$order=="Coleoptera",], "Coleoptera microhabitats")
-p3 <- plot_Niche(niche_comp[niche_comp$order=="Diptera",], "Diptera niches")
-p4 <- plot_Habitat(habitat_comp[habitat_comp$order=="Diptera",], "Diptera microhabitats")
-p5 <- plot_Niche(niche_comp[niche_comp$order=="Hymenoptera",], "Hymenoptera niches")
+p2 <- plot_Niche(niche_comp[niche_comp$order=="Diptera",], "Diptera niches")
+p3 <- plot_Niche(niche_comp[niche_comp$order=="Hymenoptera",], "Hymenoptera niches")
+p4 <- plot_Habitat(habitat_comp[habitat_comp$order=="Coleoptera",], "Coleoptera microhabitats")
+p5 <- plot_Habitat(habitat_comp[habitat_comp$order=="Diptera",], "Diptera microhabitats")
 p6 <- plot_Habitat(habitat_comp[habitat_comp$order=="Hymenoptera",], "Hymenoptera microhabitats")
 
 # Put plots together
 ggsave(
        file = "../figs/Fig_composition_sample_vs_estimate.jpg",
-       width = 14.0,
-       height = 18.0,
+       width = 18.0,
+       height = 14.0,
        plot = p1 + p2 + p3 + p4 + p5 + p6 +
-              plot_layout(ncol=2, axis_titles="collect", guides="collect") +
+              plot_layout(ncol=3, axis_titles="collect", guides="collect") +
               plot_annotation(tag_levels="A") & theme(legend.position="bottom")
        )
 

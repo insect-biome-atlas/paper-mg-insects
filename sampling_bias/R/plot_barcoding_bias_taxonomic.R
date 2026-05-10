@@ -1,10 +1,10 @@
-# Plot barcoding bias
+# Plot metabarcoding bias
 
 library(ggplot2)
 library(patchwork)
 
-# Read in barcoding data (15 samples)
-D <- read.delim("../Barcoding_cleaned_matched_corrected.csv",sep=";")
+# Read in barcoding data (from Iwaszkiewicz-Eggebrecht et al, 2026, "Accuracy of occurrence and abundance estimates from insect metabarcoding")
+D <- read.delim("../source/Barcoding_cleaned_matched_corrected.csv",sep=";")
 
 # Restrict to hexapods
 hexapods <- c("Insecta","Protura","Diplura","Collembola")
@@ -41,24 +41,24 @@ E2$Niche <- factor(E2$Niche,levels=c("Predator-parasitoid","Predator","Saprophag
 E3 <- generate_plot_data(D, "Habitat", "Habitat")
 E3$Habitat <- factor(E3$Habitat,levels=c("Fungi","Temporary habitats","Wood","Water","Soil","Plants"))
 
-p1 <- ggplot(E1, aes(x=Order, y=success_rate)) +
-        geom_col(width=0.7) +
-        coord_flip() +
-        xlab("Order") +
-        ylab("Success rate") +
-        theme_minimal(base_size=15)
-
-p2 <- ggplot(E2, aes(x=Niche, y=success_rate)) +
+p1 <- ggplot(E2, aes(x=Niche, y=success_rate)) +
         geom_col(width=0.7) +
         coord_flip() +
         xlab("Niche") +
         ylab("Success rate") +
         theme_minimal(base_size=15)
 
-p3 <- ggplot(E3, aes(x=Habitat, y=success_rate)) +
+p2 <- ggplot(E3, aes(x=Habitat, y=success_rate)) +
         geom_col(width=0.7) +
         coord_flip() +
         xlab("Microhabitat") +
+        ylab("Success rate") +
+        theme_minimal(base_size=15)
+
+p3 <- ggplot(E1, aes(x=Order, y=success_rate)) +
+        geom_col(width=0.7) +
+        coord_flip() +
+        xlab("Order") +
         ylab("Success rate") +
         theme_minimal(base_size=15)
 
