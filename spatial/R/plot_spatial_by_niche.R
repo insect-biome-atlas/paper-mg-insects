@@ -95,7 +95,7 @@ ggsave( file = "../figs/Fig_spatial_niche_se.jpg",
 ggsave( file = "../figs/Fig_spatial_phytopage_community_mg.jpg",
         width = 16.0,
         height = 7.0,
-        plot = p2 + p4 +
+        plot = p2 + p5 +
             plot_annotation(tag_levels="A") +
             plot_layout(ncol=2, axis_titles="collect")
       )
