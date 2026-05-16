@@ -1,9 +1,0 @@
-"step"	"clusters"	"remaining_frac"
-"after_chimera_removal"	121836	1
-"after_clean_filter"	35850	0.294248005515611
-"after_spike_removal"	35844	0.294198758987491
-"hexapods"	33238	0.272809350274139
-"placement_robust"	28375	0.232895039233067
-"sintax_BOLD_conflict_removed"	27550	0.226123641616599
-"vsearch_phylum_conflict_removed"	26521	0.217677862044059
-"assigned_to_clade"	24637	0.202214452214452

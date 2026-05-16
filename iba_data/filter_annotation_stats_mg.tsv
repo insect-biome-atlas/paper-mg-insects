@@ -1,5 +1,6 @@
 "step"	"clusters"	"remaining_frac"
 "after_chimera_removal"	230559	1
+"after_neeat_filter"	83277	0.361196049601187
 "after_clean_filter"	83259	0.361117978478394
 "after_spike_removal"	83254	0.361096292055396
 "hexapods"	81295	0.352599551524772
