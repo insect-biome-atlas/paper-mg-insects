@@ -1,5 +1,5 @@
-# Script for generating box plots of method bias in microhabitat sampling
-# of the MG fauna
+# Script for generating box plots of dataset contribution to
+# microhabitat sampling of the MG fauna
 
 library(ggplot2)
 library(patchwork)
@@ -8,19 +8,21 @@ library(patchwork)
 # Define plot function
 # --------------------
 
-box_plot <- function(D, acc_vals, plot_title) {
+box_plot <- function(D, acc_vals, plot_title, ylab=NULL) {
   ggplot(D, aes(x=dataset, y=otu_prop, fill=dataset)) +
     theme_minimal(base_size=20) +
     geom_boxplot() +
-    geom_point(data=acc_vals, aes(x=dataset, y=otu_prop), shape=23, size=5, fill="red") +
+    geom_point(data=acc_vals, aes(x=dataset, y=otu_prop), shape=23, size=7, fill="red") +
     scale_x_discrete(name = NULL, labels = NULL) +  # drop x labels
-    scale_fill_manual(values = c("deepskyblue","linen","blue"),
-#                      labels = c("Lysate", "Litter", "Lysate + litter"),
+    scale_y_continuous(name=ylab, limits=c(0.0,0.65)) +
+    scale_fill_manual(values = c("deepskyblue","goldenrod4","blue"),
+                      labels = c("Malaise", "Litter", "Combined"),
                       name   = "Dataset") +
     ylab("Proportion of OTUs") +
     ggtitle(plot_title) +
     theme(
         legend.position = "bottom",
+        legend.key.size=unit(1.5,"cm")
 #        legend.title = element_text(size = 10),
 #        legend.text = element_text(size = 9)
 #        plot.title = element_text(hjust = 0.5, face = "bold", size = 11),
@@ -46,7 +48,7 @@ lysate <- readRDS("../../iba_data/cluster_counts_malaise_long_mg.rds")
 litter <- readRDS("../../iba_data/cluster_counts_litter_long_mg.rds")
 
 # Read in cluster taxonomy info
-cluster_taxonomy_mg <- read.delim("../../iba_data/cluster_taxonomy_mg.tsv")
+cluster_taxonomy_mg <- readRDS("../../iba_data/cluster_taxonomy_mg.rds")
 
 # Read in traits data
 lht_mg <- read.delim("../../traits/clade_trait_data_mg.tsv")
@@ -126,19 +128,19 @@ D3 <- generate_plot_data("Water")
 D4 <- generate_plot_data("Wood")
 D5 <- generate_plot_data("Temporary habitats")
 D6 <- generate_plot_data("Fungi")
-p1 <- box_plot(D1, acc_vals[acc_vals$Habitat=="Plants",], "Plants")
+p1 <- box_plot(D1, acc_vals[acc_vals$Habitat=="Plants",], "Plants", "Proportion of OTUs")
 p2 <- box_plot(D2, acc_vals[acc_vals$Habitat=="Soil",], "Soil")
 p3 <- box_plot(D3, acc_vals[acc_vals$Habitat=="Water",],  "Water")
-p4 <- box_plot(D4, acc_vals[acc_vals$Habitat=="Wood",], "Wood")
+p4 <- box_plot(D4, acc_vals[acc_vals$Habitat=="Wood",], "Wood", "Proportion of OTUs")
 p5 <- box_plot(D5, acc_vals[acc_vals$Habitat=="Temporary habitats",], "Temporary habitats")
 p6 <- box_plot(D6, acc_vals[acc_vals$Habitat=="Fungi",], "Fungi")
 
 # Save plots
-ggsave(file = "../figs/Fig_sampling_bias_mg_habitat.jpg",
-       width = 14,
-       height = 21,
+ggsave(file = "../figs/Fig_dataset_contribution_habitat_mg.jpg",
+       width = 21,
+       height = 14,
        plot = p1 + p2 + p3 + p4 + p5 + p6 +
-           plot_layout(axis_titles="collect_y", guides="collect", ncol=2) +
+           plot_layout(guides="collect", ncol=3) +
            plot_annotation(tag_levels="A") &
            theme(legend.position="bottom")
        )
