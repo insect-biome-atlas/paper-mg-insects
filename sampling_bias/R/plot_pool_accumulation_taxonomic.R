@@ -60,7 +60,7 @@ plot_accum <- function(spDF, poolDF, spp_estimate, plot_title) {
         ggtitle(plot_title) +
         geom_line(linewidth=2) +
         geom_ribbon(aes(ymin=species-sd, ymax=species+sd), alpha=0.2, fill="blue") +
-        geom_line(data=poolDF, linewidth=2, aes(x=N, y=Chao), linetype="dashed") +
+        geom_line(data=poolDF, linewidth=1.5, aes(x=N, y=Chao), linetype="dashed") +
         geom_hline(yintercept=spp_estimate, colour="red", linetype="dotted", linewidth=1) +
         theme_linedraw(base_size=20) +
         labs(x="Number of sites", y="Number of OTUs")
