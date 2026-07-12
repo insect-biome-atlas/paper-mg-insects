@@ -6,6 +6,9 @@ library(tidyverse)
 library(shadowtext)
 library(scales)
 
+source("plot_family_fxn.R")
+
+
 # Prepare stacked bar chart for totals
 # ------------------------------------
 
@@ -37,10 +40,6 @@ D <- data.frame(list(habitat=c("Rainforest","Dry forest","Shared"),
                 )
 D$habitat <- factor(D$habitat,levels=c("Dry forest","Shared","Rainforest"))
 
-
-# Make the plot
-# -------------
-
 # Render the plot
 p1 <- ggplot(data=D, aes(x=dataset, y=OTUs, group=habitat, fill=habitat)) +
         geom_col(width=1.0) +
@@ -69,6 +68,65 @@ p1 <- ggplot(data=D, aes(x=dataset, y=OTUs, group=habitat, fill=habitat)) +
         labs(title = NULL,
              fill = "Habitat") +
        
+        # This refers to original y axis...
+        theme(axis.title.x = element_text(size=17, margin=margin(t=15, r=0, b=0, l=0)))
+
+
+# Prepare stacked bar chart for Madagascan radiations
+# ---------------------------------------------------
+
+# Read in and prepare data
+P <- readRDS("../../placements/data/placement_stats.rds")
+X <- table(P$edge_num)
+P <- P[P$edge_num %in% names(X[X>4]),]
+T <- readRDS("../../iba_data/cluster_taxonomy_mg.rds")
+P$cluster <- T$cluster[match(P$cluster_rep,T$ASV)]
+
+# Get forest contributions
+get_radiations_by_habitat <- function(P, C) {
+    x <- numeric()
+    set1 <- unique(P$edge_num[P$cluster %in% C$cluster[C$trap_habitat=="Rainforest"]])
+    set2 <- unique(P$edge_num[P$cluster %in% C$cluster[C$trap_habitat=="Dry_Forest"]])
+    x[3] <- sum(set1 %in% set2)
+    x[1] <- length(set1) - x[3]
+    x[2] <- length(set2) - x[3]
+    return (x)
+}
+D <- data.frame(list(habitat=c("Rainforest","Dry forest","Shared"),
+                     Radiations=get_radiations_by_habitat(P, combined_mg),
+                     dataset=rep("Combined",times=3)
+                    )
+                )
+D$habitat <- factor(D$habitat,levels=c("Dry forest","Shared","Rainforest"))
+
+# Render the plot
+p2 <- ggplot(data=D, aes(x=dataset, y=Radiations, group=habitat, fill=habitat)) +
+        geom_col(width=1.0) +
+        coord_flip() +
+        scale_fill_manual(name = "Habitat",
+                          values = c("Dry forest"="lightgreen","Shared"="gray","Rainforest"="forestgreen"),
+                          breaks = c("Rainforest","Shared","Dry forest"),
+                          labels = c("Rainforest"="Rainforest","Shared"="Shared","Dry forest"="Dry forest")) +
+
+        # Set basic theme
+        theme_minimal(base_size=17) +
+
+        # Get rid of title and category label on y axis (this refers to original x axis, go figure...)
+        theme(axis.text.y = element_blank()) +
+        theme(axis.title.y = element_blank()) +
+        theme(legend.position = "none") +
+
+        # Customize y axis (now displayed as x axis because of coord_flip)
+        scale_y_continuous(
+            name = "Number of radiations",
+            limits = c(0, sum(D$Radiations)),
+            breaks = seq(0, 1250, by = 250)
+            ) +
+
+        # Set the titles
+        labs(title = NULL,
+             fill = NULL) +
+
         # This refers to original y axis...
         theme(axis.title.x = element_text(size=17, margin=margin(t=15, r=0, b=0, l=0)))
 
@@ -119,73 +177,9 @@ mg_dryforest_families$Order <- factor(mg_dryforest_families$Order, levels=orders
 # Generate plots
 # --------------
 
-my_colors <- viridis_pal()(6)
-
-# Simple plot rendering function
-plot_family <- function(D, num_top, max_tick, div, plot_title) {
-   
-    D <- D[1:num_top,]
-    D$Family <- factor(D$Family,levels=c(D$Family[num_top:1]))
-    max_x <- max(D$OTUs)
-    D$label_cutoff <- max_x * as.numeric(sapply(as.character(D$Family),nchar)) / 40
-
-    ggplot(data=D, aes(x=OTUs, y=Family, fill=Order)) +
-        geom_col(width=0.8) +
-        theme_minimal(base_size=17) +
-        labs(title = plot_title,
-             x = "Number of OTUs") +
-        scale_fill_manual(
-            name = "Order",
-            values = c("Diptera" = my_colors[1], "Hymenoptera" = my_colors[2], "Coleoptera" = my_colors[3],
-                       "Lepidoptera" = my_colors[4], "Hemiptera" = my_colors[5], "Other" = my_colors[6])) +
-        theme(legend.position="bottom") +
-        scale_x_continuous(
-#            limits = c(0, max_x),
-            breaks = seq(0, max_tick, by=max_tick/div),
-            position = "top"
-        ) +
-        # The vertical axis extends upwards and downwards
-        scale_y_discrete(expand = expansion(add = c(0.5, 0.5))) +
-        theme(
-            # Set the color and the width of the grid lines for the horizontal axis
-            panel.grid.major.x = element_line(color = "#A8BAC4", linewidth = 0.3),
-            panel.grid.minor.x = element_line(color = "white", linewidth = 0.3),
-            panel.grid.major.y = element_line(color = "white", linewidth = 0.3),
-            # Remove tick marks by setting their length to 0
-            axis.ticks.length = unit(0, "mm"),
-            # Remove the title for the y axis, keep the x axis label
-            axis.title.y = element_text(color="white"),
-            axis.title.x = element_text(color="white"),
-            # Remove labels from the vertical axis
-            axis.text.y = element_blank(),
-            # But customize labels for the horizontal axis
-            axis.text.x = element_text(family = "Helvetica", size = 14)
-        ) +
-        # Add labels back in, into the plot
-        geom_shadowtext(
-            data = subset(D, OTUs < label_cutoff),
-            aes(OTUs, y = Family, label = Family),
-            hjust = 0,
-            nudge_x = max_x/100,
-            colour = "black",
-            bg.colour = "white",
-            bg.r = 0.2,
-            family = "Helvetica",
-            size = 6) +
-        geom_text(
-            data = subset(D, OTUs >= label_cutoff),
-            aes(0.3*max_x, y = Family, label = Family),
-            hjust = 0,
-            nudge_x = max_x/100,
-            colour = "white",
-            family = "Helvetica",
-            size = 6)
-}
-
-
 # Make plots
-p2 <- plot_family(mg_rainforest_families, 20, 9000, 6, "Rainforest")
-p3 <- plot_family(mg_dryforest_families, 20, 3500, 7, "Dry forest")
+p3 <- plot_family(mg_rainforest_families, 20, 9000, 6, "Rainforest", 0.3)
+p4 <- plot_family(mg_dryforest_families, 20, 3500, 7, "Dry forest", 0.3)
 
 
 # Put plots together
@@ -193,8 +187,8 @@ ggsave(
        file = "../figs/Fig_family_composition_mg_forests.jpg",
        width = 14.0,
        height = 21.0,
-       plot = p1 / (p2 + p3) +
-              plot_layout(axis_titles="collect", heights=c(0.05,1.0)) +
+       plot = p1 / p2 / (p3 + p4) +
+              plot_layout(axis_titles="collect", heights=c(0.05,0.05,1.0)) +
               plot_annotation(tag_levels="A")
        )
 

@@ -4,6 +4,8 @@
 library(ggplot2)
 library(patchwork)
 
+source("plot_family_fxn.R")
+
 
 # Get values we need
 # ------------------
@@ -24,28 +26,41 @@ combined_se$trap_habitat <- meta_se$trap_habitat[match(combined_se$sampleID_NGI,
 idx <- which(combined_mg$trap_habitat=="Montane_Rainforest")
 combined_mg$trap_habitat[idx] <- "Rainforest"
 
-# Add family and clade
+# Add order, family and clade
 tax_mg <- readRDS("../../iba_data/cluster_taxonomy_mg.rds")
 tax_se <- readRDS("../../iba_data/cluster_taxonomy_se.rds")
+combined_mg$Order <- tax_mg$Order[match(combined_mg$cluster,tax_mg$cluster)]
+combined_se$Order <- tax_se$Order[match(combined_se$cluster,tax_se$cluster)]
 combined_mg$Family <- tax_mg$Family[match(combined_mg$cluster,tax_mg$cluster)]
 combined_se$Family <- tax_se$Family[match(combined_se$cluster,tax_se$cluster)]
 combined_mg$Clade <- tax_mg$Clade[match(combined_mg$cluster,tax_mg$cluster)]
 combined_se$Clade <- tax_se$Clade[match(combined_se$cluster,tax_se$cluster)]
 
-mg_otus <- unique(combined_mg[,c("cluster","Family","Clade")])
-se_otus <- unique(combined_se[combined_se$trap_habitat=="forest",c("cluster","Family","Clade")])
-mg_rainforest_otus <- unique(combined_mg[combined_mg$trap_habitat=="Rainforest",c("cluster","Family","Clade")])
-mg_dryforest_otus <- unique(combined_mg[combined_mg$trap_habitat=="Dry_Forest",c("cluster","Family","Clade")])
+# Group minor orders
+big_five <- c("Diptera","Hymenoptera","Coleoptera","Lepidoptera","Hemiptera")
+idx1 <- which(!combined_mg$Order %in% big_five)
+idx2 <- which(!combined_se$Order %in% big_five)
+combined_mg$Order[idx1] <- "Other"
+combined_se$Order[idx2] <- "Other"
+
+mg_otus <- unique(combined_mg[,c("cluster","Order","Family","Clade")])
+se_otus <- unique(combined_se[combined_se$trap_habitat=="forest",c("cluster","Order","Family","Clade")])
+mg_rainforest_otus <- unique(combined_mg[combined_mg$trap_habitat=="Rainforest",c("cluster","Order","Family","Clade")])
+mg_dryforest_otus <- unique(combined_mg[combined_mg$trap_habitat=="Dry_Forest",c("cluster","Order","Family","Clade")])
 
 family_stats <- function(df) {
     res <- data.frame(table(df$Family))
     colnames(res) <- c("Family","OTUs")
+    res$Order <- df$Order[match(res$Family,df$Family)]
+    res$Order <- factor(df$Order, levels=c(big_five,"Other"))
     res <- res[order(res$OTUs,decreasing=TRUE),]
     return (res)
 }
 clade_stats <- function(df) {
     res <- data.frame(table(df$Clade))
-    colnames(res) <- c("Family","OTUs")
+    colnames(res) <- c("Clade","OTUs")
+    res$Order <- df$Order[match(res$Clade,df$Clade)]
+    res$Order <- factor(df$Order, levels=c(big_five,"Other"))
     res <- res[order(res$OTUs,decreasing=TRUE),]
     return (res)
 }
@@ -60,41 +75,13 @@ mg_rainforest_clades <- clade_stats(mg_rainforest_otus)
 mg_dryforest_clades <- clade_stats(mg_dryforest_otus)
 
 
-# Generate plots
-# --------------
+# Plot family composition
+# -----------------------
 
-# Plot rendering functions
-plot_family <- function(D, num_top, plot_title) {
-    D <- D[1:num_top,]
-    D$Family <- factor(D$Family,levels=c(D$Family[num_top:1]))
-    ggplot(data=D, aes(x=Family, y=OTUs)) +
-        geom_col(width=0.8) +
-        coord_flip() +
-        labs(title = plot_title,
-             x = NULL,
-             y = "Number of OTUs") +
-        theme_minimal(base_size=17)
-}
-plot_clade <- function(D, num_top, plot_title) {
-    D <- D[1:num_top,]
-    D$Clade <- factor(D$Clade,levels=c(D$Family[num_top:1]))
-    ggplot(data=D, aes(x=Family, y=OTUs)) +
-        geom_col(width=0.8) +
-        coord_flip() +
-        labs(title = plot_title,
-             x = NULL,
-             y = "Number of OTUs") +
-        theme_minimal(base_size=17)
-}
-
-# Family composition
-# ------------------
-
+# Render plots
 num_top <- 20
-mg_families$OTUs <- -mg_families$OTUs
-mg_rainforest_families$OTUs <- -mg_rainforest_families$OTUs
-p1 <- plot_family(mg_families, num_top, "Tropical forest (Madagascar)")
-p2 <- plot_family(se_families, num_top, "Temperate forest (Sweden)")
+p1 <- plot_family(mg_families, num_top, 15000, 5, "Tropical forest (Madagascar)")
+p2 <- plot_family(se_families, num_top, 3500, 7, "Temperate forest (Sweden)")
 
 # Put plots together
 ggsave(
@@ -107,15 +94,14 @@ ggsave(
        )
 
 
-# Clade composition
-# -----------------
+# Plot clade composition
+# ----------------------
 
-mg_clades$OTUs <- -mg_clades$OTUs
-mg_rainforest_clades$OTUs <- -mg_rainforest_clades$OTUs
-p1 <- plot_family(mg_clades, num_top, "Tropical forest (Madagascar)")
-p2 <- plot_family(se_clades, num_top, "Temperate forest (Sweden)")
-p3 <- plot_family(mg_rainforest_clades, num_top, "Rainforest (Madagascar)")
-p4 <- plot_family(mg_dryforest_clades, num_top, "Dry forest (Madagascar)")
+# Render plots
+p1 <- plot_clade(mg_clades, num_top, 10000, 5, "Tropical forest (Madagascar)")
+p2 <- plot_clade(se_clades, num_top, 3000, 6, "Temperate forest (Sweden)")
+p3 <- plot_clade(mg_rainforest_clades, num_top, 10000, 5, "Rainforest (Madagascar)")
+p4 <- plot_clade(mg_dryforest_clades, num_top, 3500, 7, "Dry forest (Madagascar)")
 
 # Put plots together
 ggsave(
