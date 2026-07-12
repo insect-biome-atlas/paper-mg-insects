@@ -21,6 +21,6 @@ begin mrbayes;
     prset ratepr=variable;
     unlink shape=(all) statefreq=(all) revmat=(all);
 
-    mcmc nruns=16 nchains=4 ngen=10000000;
+    mcmc nruns=16 nchains=4 diagnfreq=10000 printfreq=2000 samplefreq=5000 ngen=100000000;
 end;
 
