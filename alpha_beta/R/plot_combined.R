@@ -42,7 +42,7 @@ mgPoolDF <- mgPoolDF[mgPoolDF$N >=5,]
 # Madagascar
 p1 <- ggplot(data=mgDF, aes(x=sites, y=species)) +
         geom_line(linewidth=lsize) +
-        geom_ribbon(aes(ymin=species-sd, ymax=species+sd), alpha=0.2, fill="blue") +
+        geom_ribbon(aes(ymin=species-sd, ymax=species+sd), alpha=0.2, fill="green") +
         geom_line(data=mgPoolDF, linewidth=lsize, aes(x=N, y=Chao), linetype="dashed") +
         theme_linedraw(base_size=bs) +
         scale_y_continuous(limits=c(0,126000),
@@ -53,7 +53,7 @@ p1 <- ggplot(data=mgDF, aes(x=sites, y=species)) +
 # Sweden
 p2 <- ggplot(data=seDF, aes(x=sites, y=species)) +
         geom_line(linewidth=lsize) +
-        geom_ribbon(aes(ymin=species-sd, ymax=species+sd) , alpha=0.2, fill="gray") +
+        geom_ribbon(aes(ymin=species-sd, ymax=species+sd) , alpha=0.2, fill="blue") +
         geom_line(data=sePoolDF, linewidth=lsize, aes(x=N, y=Chao), linetype="dashed") +
         theme_linedraw(base_size=bs) +
         scale_y_continuous(limits=c(0,126000),
@@ -114,7 +114,7 @@ mono_se <- monotonic_gam(betapart_swe, nK=5)
 # ------------
 
 p3 <- ggplot(betapart_mad, aes(distance, jaccard)) +
-    geom_point(alpha=0.2, size=2, colour="blue", show.legend=FALSE) +
+    geom_point(alpha=0.2, size=2, colour="green", show.legend=FALSE) +
     theme_linedraw(base_size=20) +
     geom_line(data=mono_mg, aes(distance, pred_fit), lwd=2) +
     scale_y_continuous(limits=c(0.4, 1)) +
@@ -122,7 +122,7 @@ p3 <- ggplot(betapart_mad, aes(distance, jaccard)) +
     labs(title="Madagascar",x="Distance (km)", y="Dissimilarity (J)") 
 
 p4 <- ggplot(betapart_swe, aes(distance, jaccard)) +
-    geom_point(alpha=0.1, size=2, colour="gray", show.legend=FALSE) +
+    geom_point(alpha=0.1, size=2, colour="blue", show.legend=FALSE) +
     theme_linedraw(base_size=20) +
     geom_line(data=mono_se, aes(distance, pred_fit), lwd=2) +
     scale_y_continuous(limits=c(0.4, 1)) +
@@ -188,7 +188,7 @@ mono_temp_se <- monotonic_gam(betapart_temp_swe, nK=5)
 # ------------
 
 p5 <- ggplot(betapart_temp_mad, aes(distance, jaccard)) +
-    geom_point(alpha=0.01, size=2, colour="blue", show.legend=FALSE) +
+    geom_point(alpha=0.01, size=2, colour="green", show.legend=FALSE) +
     theme_linedraw(base_size=20) +
     geom_line(data=mono_temp_mg, aes(distance, pred_fit), lwd=2) +
     scale_y_continuous(limits=c(0.4, 1)) +
@@ -196,7 +196,7 @@ p5 <- ggplot(betapart_temp_mad, aes(distance, jaccard)) +
     labs(title="Madagascar",x="Days", y="Dissimilarity (J)")
 
 p6 <- ggplot(betapart_temp_swe, aes(distance, jaccard)) +
-    geom_point(alpha=0.005, size=2, colour="gray", show.legend=FALSE) +
+    geom_point(alpha=0.005, size=2, colour="blue", show.legend=FALSE) +
     theme_linedraw(base_size=20) +
     geom_line(data=mono_temp_se, aes(distance, pred_fit), lwd=2) +
     scale_y_continuous(limits=c(0.4, 1)) +
