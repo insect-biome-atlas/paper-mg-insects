@@ -29,10 +29,10 @@ plot_match <- function(df, lbl_pos) {
         geom_text(data = subset(df, log(OTUs) > log(Known_2017) + 1.0),
                   aes(label = Family), color="black", alpha = 1.0, hjust = 0.3, vjust = -0.7) +
 #       expand_limits(x = 0, y = 0) +
-        scale_x_continuous(trans="log10",breaks=c(1,10,100,1000,10000,100000,1000000),
-                           labels=c("1","10","100","1000","10000","100000","1000000")) +  
-        scale_y_continuous(trans="log10",breaks=c(1,10,100,1000,10000,100000,1000000),
-                           labels=c("1","10","100","1000","10000","100000","1000000")) +  
+        scale_x_continuous(trans="log10",breaks=c(1,10,100,1000,10000,100000),
+                           labels=c("1","10","100","1000","10000","100000")) +  
+        scale_y_continuous(trans="log10",breaks=c(1,10,100,1000,10000,100000),
+                           labels=c("1","10","100","1000","10000","100000")) +  
         scale_colour_viridis_d(option="viridis", name = "Order") +
         theme_minimal() +
         theme(legend.position = lbl_pos) +
@@ -43,7 +43,7 @@ plot_match <- function(df, lbl_pos) {
 #        scale_linetype_manual(name = "Lines", values = c("100% (y = x)" = 1, "50% (y = 0.5x)" = 3)) +
 #        guides(linetype = guide_legend(override.aes = list(colour = c("black", "black")))) +
         coord_cartesian(clip = "off") +
-        ylab("No. of clusters found") +
+        ylab("No. of OTUs") +
         xlab("No. of known species") +
         theme(plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), 
                            "inches"),
@@ -99,8 +99,8 @@ E2$Order <- factor(E2$Order,levels=c(big_five,"Other"))
 
 ########### Make plots  #####################
 
-plot_A <- plot_match(merge(D,E2),"none")
-plot_B <- plot_match(merge(D,E1),"right")
+plot_A <- plot_match(merge(D,E2),"right")
+plot_B <- plot_match(merge(D,E1),"none")
 
 ########### Make final figure ###############
 ggsave("../figs/Fig_validation_by_order.jpg",

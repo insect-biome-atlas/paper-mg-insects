@@ -26,7 +26,7 @@ dummy_data <- data.frame(
 plot_match <- function(df, lbl_pos) {
 
     ggplot(df, aes(x=Known_2017, y=OTUs)) +
-        geom_point(alpha = 1.0, size = 3, aes(colour=Known_2017/Estimated)) +
+        geom_point(alpha = 0.8, size = 3, aes(colour=Known_2017/Estimated)) +
         geom_text(data = subset(df, log(OTUs) > log(Known_2017) + 1.5),
                   aes(label = Family), color="black", alpha = 1.0, hjust = 0.3, vjust = -0.7) +
 #       expand_limits(x = 0, y = 0) +
@@ -44,7 +44,7 @@ plot_match <- function(df, lbl_pos) {
 #        scale_linetype_manual(name = "Lines", values = c("100% (y = x)" = 1, "50% (y = 0.5x)" = 3)) +
 #        guides(linetype = guide_legend(override.aes = list(colour = c("black", "black")))) +
         coord_cartesian(clip = "off") +
-        ylab("No. of clusters found") +
+        ylab("No. OTUs found") +
         xlab("No. of known species") +
         theme(plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), 
                            "inches"),
@@ -95,20 +95,21 @@ colnames(E3) <- c("Family","OTUs")
 
 ########### Make plots  #####################
 
-plot_C <- plot_match(merge(D,E1),"right")
-plot_B <- plot_match(merge(D,E2),"none")
+X <- merge(D,E1)
+idx <- which(X$Family=="Ectopsocidae")
+X$Family[idx] <- ""     # Remove a colliding label
+plot_C <- plot_match(X,"none")
+plot_B <- plot_match(merge(D,E2),"right")
 plot_A <- plot_match(merge(D,E3),"none")
 
 ########### Make final figure ###############
 ggsave("../figs/Fig_validation.jpg",
        device="jpg",
-       width=30.0,
+       width=20.0,
        height=9.0,
        units="in",
 #       dpi=300,
-       plot = (plot_A + plot_B + plot_C) + plot_annotation(tag_levels="A") + plot_layout(guides="collect")
-#        (plot_A + plot_B) / (plot_C + plot_D) +
-#            plot_annotation(tag_levels="a",theme=theme(plot.title=element_text(face="bold"))) +
-#            plot_layout(heights=c(1,1.3))
-)
+       plot = plot_B + plot_C + 
+           plot_annotation(tag_levels="A")
+        )
 
