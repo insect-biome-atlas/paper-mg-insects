@@ -52,7 +52,7 @@ family_stats <- function(df) {
     res <- data.frame(table(df$Family))
     colnames(res) <- c("Family","OTUs")
     res$Order <- df$Order[match(res$Family,df$Family)]
-    res$Order <- factor(df$Order, levels=c(big_five,"Other"))
+    res$Order <- factor(res$Order, levels=c(big_five,"Other"))
     res <- res[order(res$OTUs,decreasing=TRUE),]
     return (res)
 }
@@ -60,7 +60,7 @@ clade_stats <- function(df) {
     res <- data.frame(table(df$Clade))
     colnames(res) <- c("Clade","OTUs")
     res$Order <- df$Order[match(res$Clade,df$Clade)]
-    res$Order <- factor(df$Order, levels=c(big_five,"Other"))
+    res$Order <- factor(res$Order, levels=c(big_five,"Other"))
     res <- res[order(res$OTUs,decreasing=TRUE),]
     return (res)
 }
