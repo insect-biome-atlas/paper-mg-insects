@@ -1,4 +1,4 @@
-# Compute and plot predictive tests
+# Compute and plot predictive diversification tests
 
 library(ggplot2)
 library(patchwork)
