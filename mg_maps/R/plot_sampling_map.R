@@ -10,35 +10,62 @@ library(geodata)
 library(scales)
 library(ggrepel)
 library(gridExtra)
+library(ggspatial)
+library(ggplot2)
+library(ggnewscale)
 
-# Sweden samples ----------------------------------------------------------
+# Madagascar sites metadata -----------------------------------------------
 
-meta_mg <- read_tsv("iba_data/sites_metadata_MG.tsv")
+meta_mg <- read_tsv("../../iba_data/sites_metadata_MG.tsv", show_col_types=FALSE)
 
-# Encoding on metadata files is broken so names need to be cleaned manually.
-# Strings to remove
-rm_str <- paste(
-          c("RŽserve" ,"de" , "Parc National" , 
-            "SpŽciale" , "Ressources Naturelles",
-            "la For\u0090t Naturelle", "Concession.*?(?=Kirindy)" ,
-            "PaysageHarmonieuxduComplexeZonesHumis", "d'", "PaysageHarmonieuxProtŽgŽLoky",
-            ".*(?=Betampona)", ".*(?=Ambatovy)" , ".*(?=Anjozorobe)" , "Mite", "Cap", 
-            "\\(CNFEREF\\)" , ".*(?=Mahavavy)", ".*(?=Loky)", ".*(?=Oronjia)" , " " 
-            ),
-            collapse = "|")
+# We want one coordinate for each site [avoid multiple overshadowing symbols for multitrap sites]
+meta_mg <- meta_mg[!duplicated(meta_mg$siteID),]
 
-meta_mg <- meta_mg %>% 
-        mutate(parkID = str_remove_all(parkID , rm_str) , fixed = TRUE,
-               parkNumber = as.integer(factor(parkID)))
+# Fix park names; encoding is broken and names too long
+parkNames <- c("Oronjia",
+               "Montagne d'Ambre",
+               "Analamerana",
+               "Ankarana",
+               "Loky Manambato",
+               "Lokobe",
+               "Marojejy",
+               "Masoala",
+               "Mahavavy Kinkony",
+               "Baie de Baly",
+               "Marotandrano",
+               "Mananara-Nord",
+               "Ankarafantsika",
+               "Namoroka",
+               "Analalava",
+               "Betampona",
+               "Ambohitantely",
+               "Anjozorobe Angavo",
+               "Ambatovy",
+               "Maromizaha",
+               "Tsingy de Bemaraha",
+               "Kirindy (Conc. Forest.)",
+               "Kirindy Mite",
+               "Ranomafana",
+               "Isalo",
+               "Mikea",
+               "Zombitse-Vohibasia",
+               "Agnalazaha",
+               "Beza-Mahafaly",
+               "Tsimanampesotse",
+               "Tsitongambarika",
+               "Andohahela",
+               "Cap de Sainte Marie")
+meta_mg$parkID <- parkNames
+meta_mg$parkNumber <- as.integer(factor(parkNames))
 
-# same but for madagascar -------------------------------------------------
+
+# Underlying map ----------------------------------------------------------
 
 # Get elevation, slope, and aspect data
 mad_elev        <- elevation_30s("MDG" , path = ".") 
 mad_slope       <- terrain(mad_elev, "slope", unit = "radians")
 mad_aspect      <- terrain(mad_elev, "aspect", unit = "radians")
 pal_greys <- hcl.colors(1000, "Grays")
-
 
 # Decide on which slopes to shade
 mad_hshade        <- shade(mad_slope, mad_aspect, 30, 270)
@@ -63,45 +90,50 @@ elev_limits <- c(floor(elev_limits[1] / 500), ceiling(elev_limits[2] / 500)) * 5
 elev_limits <- pmax(elev_limits, 0) # Set min to 0
 
 
-# save the hillshaded map to use in other scripts
-saveRDS(mad_hshade_plot  , "mg_maps/R/mdg_hs_map.rds")
-
 # plots ---------------------------------------------------------------------------------------
 
 # Format meta-data
 meta_mg <- meta_mg  |>
             mutate(trap_habitat=recode(trap_habitat , 
                                        "Dry_Forest"          = "Dry Forest",
-                                        "Montane_Rainforest" = "Montane Forest",
-                                        "Rainforest"         = "Wet Forest"),
-                              malaise_trap_type = recode(malaise_trap_type , "Single_trap" = "Single trap"))
+                                       "Montane_Rainforest"  = "Montane forest",
+                                       "Rainforest"          = "Wet forest"),
+                   malaise_trap_type = recode(malaise_trap_type , "Single_trap" = "Single trap"))
 
-
+# Make plot with trap type and habitat
 p1 <- mad_hshade_plot + # PLot hillshaded map
   geom_spatraster(data = mad_elev, maxcell = Inf , show.legend = FALSE) +
-  ggspatial::annotation_scale(location = 'tl',width_hint = .6,text_cex = 2)+
-  scale_fill_hypso_tint_c(limits = elev_limits , palette = "dem_poster",alpha = 0.4,direction = 1)+
-  new_scale_fill()+
+#  ggspatial::annotation_scale(location = 'tl',width_hint = .6,text_cex = 2) +
+  scale_fill_hypso_tint_c(limits = elev_limits , palette = "dem_poster",alpha = 0.4,direction = 1) +
+  new_scale_fill() +
   geom_point(data=meta_mg , aes(longitude_WGS84 , latitude_WGS84 , 
-                                fill = trap_habitat, shape = trap_habitat),size=5)+ 
-  scale_fill_viridis_d(option="mako", end=.8)+
-  scale_shape_manual(values = c(24, 21, 25))+
-  theme_linedraw(base_size = 25)+
-  labs(x = "Longitude" ,
-       y = "Latitude" , 
-       fill = "Elevation",
-       shape = "Trap-type",
-       colour = "Trap habitat")+
+                                fill = factor(malaise_trap_type), shape = factor(trap_habitat)),size=7) + 
+  scale_fill_manual(values = c("Single trap" = "white", "Multitrap" = "grey60"),
+                    breaks = c("Single trap", "Multitrap"),
+                    labels = c("Single trap", "Multitrap")) +
+#  scale_fill_viridis_d(option="mako", end=.8, guide=guide_legend()) +
+  scale_shape_manual(values = c(21, 24, 22)) +
+  theme_linedraw(base_size = 25) +
+  labs(x = NULL, # "Longitude" ,
+       y = NULL, # "Latitude" , 
+       fill = "Traps",
+       shape = "Habitat") +
   theme(legend.key = element_rect(fill = "white"),
         legend.position = "right",
         legend.direction = "vertical",
         legend.key.width = unit(1.5, "cm"),
-        legend.key.height = unit(1.5, "cm"))+
-  guides(fill = guide_legend(override.aes = list(size = 0)),
-          color=guide_legend(override.aes=list(fill=NA,size=6)),
-         shape=guide_legend(override.aes=list(fill=NA,size=6)))
+        legend.key.height = unit(1.5, "cm"),
+        axis.text.x = element_blank(), # element_text(size=17), 
+        axis.text.y = element_blank()) + # element_text(size=17)) +
+  guides(
+         shape = guide_legend(override.aes=list(fill=NA, size=7), order=1),
+         fill = guide_legend(override.aes = list(shape = 21, size = 7), order=2))
 
 
+# Make plot with site names
+# -------------------------
+
+# Select unique parkIDs (already done above...)
 meta_mg_us <- meta_mg %>% 
               select(parkID , siteID , longitude_WGS84 , latitude_WGS84,trap_habitat) %>% 
               slice(1, .by = parkID) %>% 
@@ -109,32 +141,32 @@ meta_mg_us <- meta_mg %>%
   mutate(key = factor(key, levels = key[order(as.numeric(siteID))]))
 
 p2 <- mad_hshade_plot + # PLot hillshaded map
-  ggspatial::annotation_scale(location = 'tl',width_hint = .6,text_cex = 2)+
+  ggspatial::annotation_scale(location = 'tl',width_hint = .6,text_cex = 2, pad_y=unit(0.5,"cm")) +
   geom_point(data = meta_mg_us, aes(longitude_WGS84, latitude_WGS84, colour = key),
-             size = 0, show.legend = TRUE)+
+             size = 1, show.legend = TRUE) +
   geom_text_repel(data=meta_mg_us , aes(longitude_WGS84 , latitude_WGS84 , 
                                 label = siteID),
              size=7, , fontface = "bold",
-             arrow = arrow(length = unit(0.25, 'cm'), type = 'closed'))+
- theme_linedraw(base_size = 25)+
-  scale_colour_viridis_d(option="mako", end=.8)+
+             arrow = arrow(length = unit(0.25, 'cm'), type = 'closed')) +
+  theme_linedraw(base_size = 25) +
+  scale_colour_viridis_d(option="mako", end=.1) +      # Essentially the same colour...
   labs(x = "Longitude" ,
-       y = "Latitude")+
+       y = "Latitude") +
   theme(
         legend.position = "bottom",
         legend.justification = c(0.1, 0),
         legend.title = element_blank(),
-        legend.text = element_text (size = 16))+
+        legend.text = element_text (size = 18),
+        axis.text.x = element_text(size=17),
+        axis.text.y = element_text(size=17)) +
   guides(
-         color=guide_legend(override.aes=list(fill=NA,size=0)),
+         color=guide_legend(override.aes=list(fill=NA,size=0, color="white")),
          shape=guide_legend(override.aes=list(fill=NA,size=0)))
 
 
 # plot ----------------------------------------------------------------------------------------
-tiff("mg_maps/figs/sample_sites.tiff", width = 1400, height = 1000, compression = "lzw")
-(p2 + p1) 
-dev.off()
-
-
-browseURL("mg_maps/figs/sample_sites.tiff")
+ggsave(file="../figs/Fig_sample_sites.jpg",
+       width = 21.0,
+       height = 15.0,
+       plot = (p2 + p1) + plot_layout(axis_titles="collect"))
 
