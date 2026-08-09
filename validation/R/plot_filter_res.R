@@ -4,6 +4,9 @@ library(dplyr)
 library(ggplot2)
 library(patchwork)
 
+source("../../fig_settings/fig_colours.R")
+
+
 plot_filter_res <- function(df) {
 
     ggplot() +
@@ -14,7 +17,7 @@ plot_filter_res <- function(df) {
               axis.title.x=element_text(margin=margin(t=10, r=0, b=0, l=0),size=16),
               axis.title.y=element_text(margin=margin(t=0, r=10, b=0, l=0),size=16),
               legend.position="right") +
-        scale_color_manual(values = c("green","blue")) +
+        scale_color_manual(values = c(mg_col,se_col)) +
         guides(
             color = guide_legend(title="Country"),      # Country color legend
             shape = guide_legend(title="Country"),      # Country shape legend

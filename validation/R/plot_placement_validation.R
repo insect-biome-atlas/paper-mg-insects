@@ -1,6 +1,8 @@
 # Plot match between sintax and epa-ng family assignments
 # -------------------------------------------------------
 
+library(ggplot2)
+
 # Dummy data for plot
 dummy_data <- data.frame(
     x = c(1, 10),
@@ -68,6 +70,6 @@ plot_A <- plot_match(D,"none")
 # Save single plot
 ggsave("../figs/Fig_sintax_vs_epang.jpg",
        width = 7.0,
-       height = 7.0,
+       height = 6.5,
        plot = plot_A)
 
