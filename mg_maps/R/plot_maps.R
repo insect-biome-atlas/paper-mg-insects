@@ -264,7 +264,7 @@ p4 <- mad_hshade_plot + # PLot hillshaded map
          x = NULL,
          y = NULL,
          shape = "Habitat",
-         fill = "# Clades") +
+         fill = "# clades") +
     theme_linedraw() +
     theme(legend.background = element_rect(fill = "white"),
           legend.position = legend_pos, 
