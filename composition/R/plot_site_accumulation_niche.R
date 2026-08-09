@@ -2,6 +2,7 @@
 
 library(ggplot2)
 library(patchwork)
+source("../../fig_settings/fig_colours.R")
 
 
 # Read in data
@@ -18,60 +19,60 @@ p1 <- ggplot(data=sapro, aes(x=samples, y=niche_otu_prop, group=country)) +
   ggtitle("Saprophages") +
   geom_point(alpha=.05 , size=2 , show.legend=FALSE, aes(colour=country)) +
   theme_linedraw(base_size=20) +
-  geom_smooth(method="loess", se=TRUE, lwd=1) +
+  geom_smooth(method="loess", se=TRUE, lwd=1, show.legend=FALSE, aes(colour=country)) +
   xlim(c(1,50)) +
   ylim(c(0.0,0.8)) +
-  scale_color_manual(values=c("Green","Blue")) +
+  scale_color_manual(values=c(mg_col,se_col)) +
   labs(x = "No. sites" , y = "Proportion of major-niche OTUs")
 
 p2 <- ggplot(data=phyto, aes(x=samples, y=niche_otu_prop, group=country)) +
   ggtitle("Phytophages") +
   geom_point(alpha=.05 , size=2 , show.legend=FALSE, aes(colour=country)) +
   theme_linedraw(base_size=20) +
-  geom_smooth(method="loess", se=TRUE, lwd=1) +
+  geom_smooth(method="loess", se=TRUE, lwd=1, show.legend=FALSE, aes(colour=country)) +
   xlim(c(1,50)) +
   ylim(c(0.0,0.8)) +
-  scale_color_manual(values=c("Green","Blue")) +
+  scale_color_manual(values=c(mg_col,se_col)) +
   labs(x = "No. sites" , y = "Proportion of major-niche OTUs")
 
 p3 <- ggplot(data=pred, aes(x=samples, y=niche_otu_prop, group=country)) +
   ggtitle("Predators") +
   geom_point(alpha=.05 , size=2 , show.legend=FALSE, aes(colour=country)) +
   theme_linedraw(base_size=20) +
-  geom_smooth(method="loess", se=TRUE, lwd=1) +
+  geom_smooth(method="loess", se=TRUE, lwd=1, show.legend=FALSE, aes(colour=country)) +
   xlim(c(1,50)) +
   ylim(c(0.0,0.8)) +
-  scale_color_manual(values=c("Green","Blue")) +
+  scale_color_manual(values=c(mg_col,se_col)) +
   labs(x = "No. sites" , y = "Proportion of major-niche OTUs")
 
 p4 <- ggplot(data=sapro_ph, aes(x=samples, y=ph_otu_ratio, group=country)) +
   ggtitle("Saprophage parasitoids") +
   geom_point(alpha=.05 , size=2 , show.legend=FALSE, aes(colour=country)) +
   theme_linedraw(base_size=20) +
-  geom_smooth(method="loess", se=TRUE, lwd=1) +
+  geom_smooth(method="loess", se=TRUE, lwd=1, show.legend=FALSE, aes(colour=country)) +
   xlim(c(1,50)) +
   ylim(c(0.0,1.05)) +
-  scale_color_manual(values=c("Green","Blue")) +
+  scale_color_manual(values=c(mg_col,se_col)) +
   labs(x = "No. sites" , y = "Parasitoid:host OTU ratio")
 
 p5 <- ggplot(data=phyto_ph, aes(x=samples, y=ph_otu_ratio, group=country)) +
   ggtitle("Phytophage parasitoids") +
   geom_point(alpha=.05 , size=2 , show.legend=FALSE, aes(colour=country)) +
   theme_linedraw(base_size=20) +
-  geom_smooth(method="loess", se=TRUE, lwd=1) +
+  geom_smooth(method="loess", se=TRUE, lwd=1, show.legend=FALSE, aes(colour=country)) +
   xlim(c(1,50)) +
   ylim(c(0.0,1.05)) +
-  scale_color_manual(values=c("Green","Blue")) +
+  scale_color_manual(values=c(mg_col,se_col)) +
   labs(x = "No. sites" , y = "Parasitoid:host OTU ratio")
 
 p6 <- ggplot(data=pred_ph, aes(x=samples, y=ph_otu_ratio, group=country)) +
   ggtitle("Predator parasitoids") +
   geom_point(alpha=.05 , size=2 , show.legend=FALSE, aes(colour=country)) +
   theme_linedraw(base_size=20) +
-  geom_smooth(method="loess", se=TRUE, lwd=1) +
+  geom_smooth(method="loess", se=TRUE, lwd=1, show.legend=FALSE, aes(colour=country)) +
   xlim(c(1,50)) +
   ylim(c(0.0,1.05)) +
-  scale_color_manual(values=c("Green","Blue")) +
+  scale_color_manual(values=c(mg_col,se_col)) +
   labs(x = "No. sites" , y = "Parasitoid:host OTU ratio")
 
 # Print Plots

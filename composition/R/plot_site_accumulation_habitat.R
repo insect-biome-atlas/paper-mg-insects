@@ -2,6 +2,7 @@
 
 library(ggplot2)
 library(patchwork)
+source("../../fig_settings/fig_colours.R")
 
 
 # Read in data
@@ -18,60 +19,60 @@ p1 <- ggplot(data=plants, aes(x=samples, y=habitat_otu_prop, group=country)) +
   ggtitle("Plants") +
   geom_point(alpha=.05 , size=2 , show.legend=FALSE, aes(colour=country)) +
   theme_linedraw(base_size=20) +
-  geom_smooth(method="loess", se=TRUE, lwd=1) +
+  geom_smooth(method="loess", se=TRUE, lwd=1, show.legend=FALSE, aes(colour=country)) +
   xlim(c(1,50)) +
   ylim(c(0.0,0.65)) +
-  scale_color_manual(values=c("Green","Blue")) +
+  scale_color_manual(values=c(mg_col,se_col)) +
   labs(x = "No. sites" , y = "Proportion of OTUs")
 
 p2 <- ggplot(data=soil, aes(x=samples, y=habitat_otu_prop, group=country)) +
   ggtitle("Soil") +
   geom_point(alpha=.05 , size=2 , show.legend=FALSE, aes(colour=country)) +
   theme_linedraw(base_size=20) +
-  geom_smooth(method="loess", se=TRUE, lwd=1) +
+  geom_smooth(method="loess", se=TRUE, lwd=1, show.legend=FALSE, aes(colour=country)) +
   xlim(c(1,50)) +
   ylim(c(0.0,0.65)) +
-  scale_color_manual(values=c("Green","Blue")) +
+  scale_color_manual(values=c(mg_col,se_col)) +
   labs(x = "No. sites" , y = "Proportion of OTUs")
 
 p3 <- ggplot(data=water, aes(x=samples, y=habitat_otu_prop, group=country)) +
   ggtitle("Water") +
   geom_point(alpha=.05 , size=2 , show.legend=FALSE, aes(colour=country)) +
   theme_linedraw(base_size=20) +
-  geom_smooth(method="loess", se=TRUE, lwd=1) +
+  geom_smooth(method="loess", se=TRUE, lwd=1, show.legend=FALSE, aes(colour=country)) +
   xlim(c(1,50)) +
   ylim(c(0.0,0.65)) +
-  scale_color_manual(values=c("Green","Blue")) +
+  scale_color_manual(values=c(mg_col,se_col)) +
   labs(x = "No. sites" , y = "Proportion of OTUs")
 
 p4 <- ggplot(data=wood, aes(x=samples, y=habitat_otu_prop, group=country)) +
   ggtitle("Wood") +
   geom_point(alpha=.05 , size=2 , show.legend=FALSE, aes(colour=country)) +
   theme_linedraw(base_size=20) +
-  geom_smooth(method="loess", se=TRUE, lwd=1) +
+  geom_smooth(method="loess", se=TRUE, lwd=1, show.legend=FALSE, aes(colour=country)) +
   xlim(c(1,50)) +
   ylim(c(0.0,0.65)) +
-  scale_color_manual(values=c("Green","Blue")) +
+  scale_color_manual(values=c(mg_col,se_col)) +
   labs(x = "No. sites" , y = "Proportion of OTUs")
 
 p5 <- ggplot(data=temporary, aes(x=samples, y=habitat_otu_prop, group=country)) +
   ggtitle("Temporary habitats") +
   geom_point(alpha=.05 , size=2 , show.legend=FALSE, aes(colour=country)) +
   theme_linedraw(base_size=20) +
-  geom_smooth(method="loess", se=TRUE, lwd=1) +
+  geom_smooth(method="loess", se=TRUE, lwd=1, show.legend=FALSE, aes(colour=country)) +
   xlim(c(1,50)) +
   ylim(c(0.0,0.65)) +
-  scale_color_manual(values=c("Green","Blue")) +
+  scale_color_manual(values=c(mg_col,se_col)) +
   labs(x = "No. sites" , y = "Proportion of OTUs")
 
 p6 <- ggplot(data=fungi, aes(x=samples, y=habitat_otu_prop, group=country)) +
   ggtitle("Fungi") +
   geom_point(alpha=.05 , size=2 , show.legend=FALSE, aes(colour=country)) +
   theme_linedraw(base_size=20) +
-  geom_smooth(method="loess", se=TRUE, lwd=1) +
+  geom_smooth(method="loess", se=TRUE, lwd=1, show.legend=FALSE, aes(colour=country)) +
   xlim(c(1,50)) +
   ylim(c(0.0,0.65)) +
-  scale_color_manual(values=c("Green","Blue")) +
+  scale_color_manual(values=c(mg_col,se_col)) +
   labs(x = "No. sites" , y = "Proportion of OTUs")
 
 # Print Plots
