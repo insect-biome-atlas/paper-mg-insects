@@ -3,7 +3,7 @@
 
 library(ggplot2)
 library(patchwork)
-
+source("../../fig_settings/fig_colours.R")
 
 # Define plot function
 # --------------------
@@ -12,7 +12,7 @@ box_plot <- function(D, acc_vals, plot_title, ylims, ylab=NULL) {
   ggplot(D, aes(x=dataset, y=otu_prop, fill=dataset)) +
     theme_minimal(base_size=20) +
     geom_boxplot() +
-    geom_point(data=acc_vals, aes(x=dataset, y=otu_prop), shape=23, size=7, fill="red") +
+    geom_point(data=acc_vals, aes(x=dataset, y=otu_prop), shape=23, size=7, fill=diamond_col) +
     scale_x_discrete(name = NULL, labels = NULL) +  # drop x labels
     scale_y_continuous(name = ylab, limits=ylims) +
     scale_fill_manual(values = c("deepskyblue","goldenrod4","blue"),
