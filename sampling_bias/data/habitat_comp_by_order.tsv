@@ -1,0 +1,37 @@
+"habitat"	"order"	"species"
+"Fungi"	"Coleoptera"	113
+"Plants"	"Coleoptera"	1136
+"Soil"	"Coleoptera"	1876
+"Temporary habitats"	"Coleoptera"	860
+"Water"	"Coleoptera"	332
+"Wood"	"Coleoptera"	599
+""	"Diptera"	11
+"Fungi"	"Diptera"	1047
+"Homeothermic animals"	"Diptera"	30
+"Plants"	"Diptera"	3409
+"Soil"	"Diptera"	1857
+"Temporary habitats"	"Diptera"	2369
+"Water"	"Diptera"	1381
+"Wood"	"Diptera"	132
+"Homeothermic animals"	"Hemiptera"	4
+"Plants"	"Hemiptera"	1806
+"Soil"	"Hemiptera"	44
+"Water"	"Hemiptera"	63
+"Wood"	"Hemiptera"	24
+""	"Hymenoptera"	6
+"Fungi"	"Hymenoptera"	250
+"Plants"	"Hymenoptera"	9003
+"Soil"	"Hymenoptera"	423
+"Temporary habitats"	"Hymenoptera"	1106
+"Water"	"Hymenoptera"	6
+"Wood"	"Hymenoptera"	306
+"Plants"	"Lepidoptera"	2797
+"Soil"	"Lepidoptera"	73
+"Temporary habitats"	"Lepidoptera"	61
+"Wood"	"Lepidoptera"	57
+"Homeothermic animals"	"Other"	431
+"Plants"	"Other"	381
+"Soil"	"Other"	374
+"Temporary habitats"	"Other"	152
+"Water"	"Other"	418
+"Wood"	"Other"	5

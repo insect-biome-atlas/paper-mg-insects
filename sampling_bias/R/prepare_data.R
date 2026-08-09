@@ -35,8 +35,8 @@ sample_meta_se <- read.delim("../../iba_data/malaise_litter_sample_meta_se.tsv")
 # ----------------------------------------------------------------
 otu_sample_meta_se <- merge(taxa_counts_se, sample_meta_se, by="sampleID_NGI")
 
-# Save data file
-saveRDS(otu_sample_meta_se,"../data/otu_sample_meta_se.rds")
+# Save data file (not needed by current scripts)
+# saveRDS(otu_sample_meta_se,"../data/otu_sample_meta_se.rds")
 
 
 # Aggregate counts at trap level
