@@ -55,16 +55,20 @@ se_families$OTUs <- 100*se_families$OTUs/max(se_families$OTUs)
 
 # Render plots
 num_top <- 20
-p1 <- plot_family(mg_families, num_top, 100, 5, "Tropical forest (Madagascar)")
-p2 <- plot_family(se_families, num_top, 100, 5, "Temperate forest (Sweden)")
+p1 <- plot_family(mg_families, num_top, 100, 5, "Tropical forest (Madagascar)") + guides(fill = guide_legend(nrow=1))
+p2 <- plot_family(se_families, num_top, 100, 5, "Temperate forest (Sweden)") + guides(fill = guide_legend(nrow=1))
+
+# Extract and remove legends
+p3 <- cowplot::get_legend(p1)
+p1 <- p1 + theme(legend.position="none")
+p2 <- p2 + theme(legend.position="none")
 
 # Put plots together
 ggsave(
-       file = "../figs/Fig_shallow_family_composition.jpg",
+       file = "../figs/Fig_shallow_sample_family_composition.jpg",
        width = 14.0,
        height = 10.5,
-       plot = p1 + p2  +
-              plot_layout(ncol=2, axis_titles="collect", guides="collect") +
-              plot_annotation(tag_levels="A") & theme(legend.position="bottom")
+       plot = (p1 + p2) / p3  +
+              plot_layout(heights=c(0.9,0.1), axis_titles="collect")
        )
 

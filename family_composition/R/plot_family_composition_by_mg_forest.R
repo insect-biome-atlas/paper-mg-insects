@@ -5,6 +5,7 @@ library(patchwork)
 library(tidyverse)
 library(shadowtext)
 library(scales)
+library(cowplot)
 
 source("plot_family_fxn.R")
 
@@ -66,7 +67,8 @@ p1 <- ggplot(data=D, aes(x=dataset, y=OTUs, group=habitat, fill=habitat)) +
  
         # Set the titles
         labs(title = NULL,
-             fill = "Habitat") +
+             fill = "Habitat",
+             tag = "A") +
        
         # This refers to original y axis...
         theme(axis.title.x = element_text(size=17, margin=margin(t=15, r=0, b=0, l=0)))
@@ -125,7 +127,8 @@ p2 <- ggplot(data=D, aes(x=dataset, y=Radiations, group=habitat, fill=habitat)) 
 
         # Set the titles
         labs(title = NULL,
-             fill = NULL) +
+             fill = NULL,
+             tag = "B") +
 
         # This refers to original y axis...
         theme(axis.title.x = element_text(size=17, margin=margin(t=15, r=0, b=0, l=0)))
@@ -162,11 +165,18 @@ mg_rainforest_families$Order[idx] <- "Other"
 idx <- which(!(mg_dryforest_families$Order %in% big_five))
 mg_dryforest_families$Order[idx] <- "Other"
 
-# Select the top 20 families
+# Order families
 mg_rainforest_families <- mg_rainforest_families[order(mg_rainforest_families$OTUs,decreasing=TRUE),]
 mg_dryforest_families <- mg_dryforest_families[order(mg_dryforest_families$OTUs,decreasing=TRUE),]
-mg_rainforest_families <- mg_rainforest_families[1:20,]
-mg_dryforest_families <- mg_dryforest_families[1:20,]
+
+# Generate label with rainforest order before family name
+mg_rainforest_families$order_num <- 1:nrow(mg_rainforest_families)
+mg_rainforest_families$family_label <- paste0(mg_rainforest_families$order_num,". ",mg_rainforest_families$Family)
+mg_dryforest_families$family_label <- mg_rainforest_families$family_label[match(mg_dryforest_families$Family,mg_rainforest_families$Family)]
+
+# Use augmented labels as family names
+mg_rainforest_families$Family <- mg_rainforest_families$family_label
+mg_dryforest_families$Family <- mg_dryforest_families$family_label
 
 # Order as factor with levels in order
 orders <- c(big_five, "Other")
@@ -178,17 +188,23 @@ mg_dryforest_families$Order <- factor(mg_dryforest_families$Order, levels=orders
 # --------------
 
 # Make plots
-p3 <- plot_family(mg_rainforest_families, 20, 9000, 6, "Rainforest", 0.3)
-p4 <- plot_family(mg_dryforest_families, 20, 3500, 7, "Dry forest", 0.3)
+p3 <- plot_family(mg_rainforest_families, 20, 9000, 6, "Rainforest", 0.3) + guides(fill=guide_legend(nrow=1))
+p4 <- plot_family(mg_dryforest_families, 20, 3500, 7, "Dry forest", 0.3) + guides(fill=guide_legend(nrow=1))
+p3 <- p3 + labs(tag = "C")
+p4 <- p4 + labs(tag = "D")
+
+# Extract and remove legend to display one shared legend
+p5 <- cowplot::get_legend(p3)   # Extract legend
+p3 <- p3 + theme(legend.position="none") # Remove legend
+p4 <- p4 + theme(legend.position="none") # Remove legend
 
 
 # Put plots together
 ggsave(
        file = "../figs/Fig_family_composition_mg_forests.jpg",
        width = 14.0,
-       height = 21.0,
-       plot = p1 / p2 / (p3 + p4) +
-              plot_layout(axis_titles="collect", heights=c(0.05,0.05,1.0)) +
-              plot_annotation(tag_levels="A")
+       height = 20.0,
+       plot = p1 / p2 / (p3 + p4) / p5 +
+              plot_layout(axis_titles="collect", heights=c(0.05,0.05,0.85,0.05))
        )
 

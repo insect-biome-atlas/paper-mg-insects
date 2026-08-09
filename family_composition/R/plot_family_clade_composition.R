@@ -1,8 +1,9 @@
-# Script generating stacked bar charts showing
-# catch by sample type and forest type
+# Script generating bar charts showing
+# family and clade composition
 
 library(ggplot2)
 library(patchwork)
+library(cowplot)
 
 source("plot_family_fxn.R")
 
@@ -80,17 +81,21 @@ mg_dryforest_clades <- clade_stats(mg_dryforest_otus)
 
 # Render plots
 num_top <- 20
-p1 <- plot_family(mg_families, num_top, 15000, 5, "Tropical forest (Madagascar)")
-p2 <- plot_family(se_families, num_top, 3500, 7, "Temperate forest (Sweden)")
+p1 <- plot_family(mg_families, num_top, 15000, 5, "Tropical forest (Madagascar)") + guides(fill = guide_legend(nrow=1))
+p2 <- plot_family(se_families, num_top, 3500, 7, "Temperate forest (Sweden)") + guides(fill = guide_legend(nrow=1))
+
+# Extract and remove legend
+p3 <- cowplot::get_legend(p1)
+p1 <- p1 + theme(legend.position = "none") + labs(tag = "A")
+p2 <- p2 + theme(legend.position = "none") + labs(tag = "B")
 
 # Put plots together
 ggsave(
        file = "../figs/Fig_family_composition.jpg",
        width = 14.0,
        height = 10.5,
-       plot = p1 + p2  +
-              plot_layout(ncol=2, axis_titles="collect") +
-              plot_annotation(tag_levels="A") & theme(legend.position="bottom")
+       plot = (p1 + p2) / p3 +
+              plot_layout(axis_titles="collect", heights=c(0.9,0.1))
        )
 
 
@@ -98,18 +103,25 @@ ggsave(
 # ----------------------
 
 # Render plots
-p1 <- plot_clade(mg_clades, num_top, 10000, 5, "Tropical forest (Madagascar)")
-p2 <- plot_clade(se_clades, num_top, 3000, 6, "Temperate forest (Sweden)")
-p3 <- plot_clade(mg_rainforest_clades, num_top, 10000, 5, "Rainforest (Madagascar)")
-p4 <- plot_clade(mg_dryforest_clades, num_top, 3500, 7, "Dry forest (Madagascar)")
+p1 <- plot_clade(mg_clades, num_top, 10000, 5, "Tropical forest (Madagascar)") + guides(fill = guide_legend(nrow=1))
+p2 <- plot_clade(se_clades, num_top, 3000, 6, "Temperate forest (Sweden)") + guides(fill = guide_legend(nrow=1))
+p3 <- plot_clade(mg_rainforest_clades, num_top, 10000, 5, "Rainforest (Madagascar)") + guides(fill = guide_legend(nrow=1))
+p4 <- plot_clade(mg_dryforest_clades, num_top, 3500, 7, "Dry forest (Madagascar)") + guides(fill = guide_legend(nrow=1))
+
+# Extract and remove legends
+p5 <- cowplot::get_legend(p1)
+p1 <- p1 + theme(legend.position = "none") + labs(tag = "A")
+p2 <- p2 + theme(legend.position = "none") + labs(tag = "B")
+p6 <- cowplot::get_legend(p3)
+p3 <- p3 + theme(legend.position = "none") + labs(tag = "C")
+p4 <- p4 + theme(legend.position = "none") + labs(tag = "D")
 
 # Put plots together
 ggsave(
        file = "../figs/Fig_clade_composition.jpg",
        width = 14.0,
        height = 21.0,
-       plot = p1 + p2 + p3 + p4 +
-              plot_layout(ncol=2, axis_titles="collect") +
-              plot_annotation(tag_levels="A") & theme(legend.position="bottom")
+       plot = (p1 + p2) / p5 / (p3 + p4) / p6 +
+              plot_layout(axis_titles="collect", heights=c(0.45,0.05,0.45,0.05))
        )
 
