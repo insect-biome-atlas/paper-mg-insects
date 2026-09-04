@@ -14,6 +14,7 @@ The main R scripts are as follows:
 - `compute_sample_accumulation_niche.R`: computes sample accumulation of niche composition
 - `compute_sample_accumulation_habitat.R`: computes sample accumulation of habitat composition
 - `compute_sample_accumulation_taxonomic.R`: computes sample accumulation of taxonomic composition
+- `compute_parasitoid_subgroup_ratios.R`: computes Madagascan to Swedish forest species ratios of various parasitoid groups
 - `plot_site_accumulation_niche.R`: plot site accumulation of niche composition
 - `plot_site_accumulation_habitat.R`: plot site accumulation of habitat composition
 - `plot_site_accumulation_taxonomic.R`: plot site accumulation of taxonomic composition
