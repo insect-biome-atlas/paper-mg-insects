@@ -6,11 +6,13 @@ library(patchwork)
 library(tidyverse)
 
 source("functions.R")
-set.seed(10)
+source("../../fig_settings/fig_colours.R")
 
-# Set basic plot params
+# Set basic plot params and analysis params
 bs    <- 20
 lsize <- 1
+set.seed(10)
+remove_singletons <- TRUE 
 
 # Read data
 # ---------
@@ -42,7 +44,7 @@ mgPoolDF <- mgPoolDF[mgPoolDF$N >=5,]
 # Madagascar
 p1 <- ggplot(data=mgDF, aes(x=sites, y=species)) +
         geom_line(linewidth=lsize) +
-        geom_ribbon(aes(ymin=species-sd, ymax=species+sd), alpha=0.2, fill="green") +
+        geom_ribbon(aes(ymin=species-sd, ymax=species+sd), alpha=0.2, fill=mg_col) +
         geom_line(data=mgPoolDF, linewidth=lsize, aes(x=N, y=Chao), linetype="dashed") +
         theme_linedraw(base_size=bs) +
         scale_y_continuous(limits=c(0,126000),
@@ -53,7 +55,7 @@ p1 <- ggplot(data=mgDF, aes(x=sites, y=species)) +
 # Sweden
 p2 <- ggplot(data=seDF, aes(x=sites, y=species)) +
         geom_line(linewidth=lsize) +
-        geom_ribbon(aes(ymin=species-sd, ymax=species+sd) , alpha=0.2, fill="blue") +
+        geom_ribbon(aes(ymin=species-sd, ymax=species+sd) , alpha=0.2, fill=se_col) +
         geom_line(data=sePoolDF, linewidth=lsize, aes(x=N, y=Chao), linetype="dashed") +
         theme_linedraw(base_size=bs) +
         scale_y_continuous(limits=c(0,126000),
@@ -71,21 +73,23 @@ cat("Generating spatial beta plots\n")
 # Read in and format data
 # -----------------------
 
-# Read species * site matrices
+# Read site * species matrices
 # These are already filtered so that SE data have a minimum requirement of 10 samples per site
 # and SE data only comprise forest traps
-sp_matrix_mg <- readRDS("../../iba_data/site_otu_occurrence_combined_mg.rds")
-sp_matrix_se <- readRDS("../../iba_data/site_otu_occurrence_combined_se.rds")
-sp_matrix_mg <- 1*sp_matrix_mg  # Convert to numeric
-sp_matrix_se <- 1*sp_matrix_se
+site_otu_matrix_mg <- readRDS("../../iba_data/site_otu_occurrence_combined_mg.rds")
+site_otu_matrix_se <- readRDS("../../iba_data/site_otu_occurrence_combined_se.rds")
+site_otu_matrix_mg <- 1*site_otu_matrix_mg  # Convert to numeric
+site_otu_matrix_se <- 1*site_otu_matrix_se
 
 # Read in sample metadata
 site_meta_mg <- read.delim("../../iba_data/malaise_litter_sample_meta_mg.tsv")
 site_meta_se <- read.delim("../../iba_data/malaise_litter_sample_meta_se.tsv")
 
-# Filter out singletons
-sp_matrix_total_se <- sp_matrix_se[,colSums(sp_matrix_se) > 1]
-sp_matrix_total_mg <- sp_matrix_mg[,colSums(sp_matrix_mg) > 1]
+# Filter out singletons or not
+if (remove_singletons) {
+    site_otu_matrix_mg <- site_otu_matrix_mg[,colSums(site_otu_matrix_mg) > 1]
+    site_otu_matrix_se <- site_otu_matrix_se[,colSums(site_otu_matrix_se) > 1]
+}
 
 
 # Spatial turnover analysis
@@ -98,8 +102,8 @@ dist_swe <- get_dists(sf_meta_se)
 dist_mad <- get_dists(sf_meta_mg)
 
 # Compute spatial beta diversity metric
-betapart_mad <- partition_beta_diversity(sp_matrix_total_mg, trap_dist=dist_mad)
-betapart_swe <- partition_beta_diversity(sp_matrix_total_se, trap_dist=dist_swe)
+betapart_mad <- partition_beta_diversity(site_otu_matrix_mg, trap_dist=dist_mad)
+betapart_swe <- partition_beta_diversity(site_otu_matrix_se, trap_dist=dist_swe)
 
 
 # Get monotonic gam fits
@@ -114,7 +118,7 @@ mono_se <- monotonic_gam(betapart_swe, nK=5)
 # ------------
 
 p3 <- ggplot(betapart_mad, aes(distance, jaccard)) +
-    geom_point(alpha=0.2, size=2, colour="green", show.legend=FALSE) +
+    geom_point(alpha=0.2, size=2, colour=mg_col, show.legend=FALSE) +
     theme_linedraw(base_size=20) +
     geom_line(data=mono_mg, aes(distance, pred_fit), lwd=2) +
     scale_y_continuous(limits=c(0.4, 1)) +
@@ -122,7 +126,7 @@ p3 <- ggplot(betapart_mad, aes(distance, jaccard)) +
     labs(title="Madagascar",x="Distance (km)", y="Dissimilarity (J)") 
 
 p4 <- ggplot(betapart_swe, aes(distance, jaccard)) +
-    geom_point(alpha=0.1, size=2, colour="blue", show.legend=FALSE) +
+    geom_point(alpha=0.1, size=2, colour=se_col, show.legend=FALSE) +
     theme_linedraw(base_size=20) +
     geom_line(data=mono_se, aes(distance, pred_fit), lwd=2) +
     scale_y_continuous(limits=c(0.4, 1)) +
@@ -139,15 +143,18 @@ cat("Generating temporal beta plots\n")
 # Read in and format data
 # -----------------------
 
-# Read species * sample matrices
-sp_sample_matrix_mg <- readRDS("../../iba_data/sample_otu_abundance_malaise_mg.rds")
-sp_sample_matrix_se <- readRDS("../../iba_data/sample_otu_abundance_malaise_se.rds")
-sp_sample_matrix_mg <- 1*(sp_sample_matrix_mg > 0)  # Convert to 0/1 occurrence
-sp_sample_matrix_se <- 1*(sp_sample_matrix_se > 0)
+# Read sample * species matrices
+sample_otu_matrix_mg <- readRDS("../../iba_data/sample_otu_abundance_malaise_mg.rds")
+sample_otu_matrix_se <- readRDS("../../iba_data/sample_otu_abundance_malaise_se.rds")
+sample_otu_matrix_mg <- 1*(sample_otu_matrix_mg > 0)  # Convert to 0/1 occurrence
+sample_otu_matrix_se <- 1*(sample_otu_matrix_se > 0)
 
 # Read in sample metadata
 sample_meta_mg <- read.delim("../../iba_data/malaise_sample_meta_mg.tsv")
 sample_meta_se <- read.delim("../../iba_data/malaise_sample_meta_se.tsv")
+
+# Correc trapID error discovered late in the process (time diff==0)
+sample_meta_mg$trapID[sample_meta_mg$sampleID_FIELD=="S3UVGT"]<-"TQKQRH"
 
 
 # Temporal turnover analysis
@@ -159,8 +166,10 @@ compute_temp_data <- function(D, M) {
     for (trap in unique(M$trapID)) {
         trap_samples <- M$sampleID_NGI[M$trapID==trap]
         E <- D[row.names(D) %in% trap_samples,]
-        E <- E[rowSums(E)>0,colSums(E)>1]
-        if (ncol(E)<=2)
+        E <- E[rowSums(E)>0, colSums(E)>0]  # Remove empty rows and columns
+        if (remove_singletons) 
+            E <- E[, colSums(E) > 1]
+        if (nrow(E)<2 || ncol(E)<2) # Sanity check
             next
         X <- M[match(row.names(E),M$sampleID_NGI),]
         dist <- get_temp_dists(X)
@@ -172,9 +181,9 @@ compute_temp_data <- function(D, M) {
 
 # Compute temporal within-site beta diversity metric
 cat("Computing temporal data for MG\n")
-betapart_temp_mad <- compute_temp_data(sp_sample_matrix_mg, sample_meta_mg)
+betapart_temp_mad <- compute_temp_data(sample_otu_matrix_mg, sample_meta_mg)
 cat("Computing temporal data for SE\n")
-betapart_temp_swe <- compute_temp_data(sp_sample_matrix_se, sample_meta_se)
+betapart_temp_swe <- compute_temp_data(sample_otu_matrix_se, sample_meta_se)
 
 # Get monotonic gam fits
 # ----------------------
@@ -188,17 +197,17 @@ mono_temp_se <- monotonic_gam(betapart_temp_swe, nK=5)
 # ------------
 
 p5 <- ggplot(betapart_temp_mad, aes(distance, jaccard)) +
-    geom_point(alpha=0.01, size=2, colour="green", show.legend=FALSE) +
+    geom_point(alpha=0.01, size=2, colour=mg_col, show.legend=FALSE) +
     theme_linedraw(base_size=20) +
-    geom_line(data=mono_temp_mg, aes(distance, pred_fit), lwd=2) +
+    geom_line(data=mono_temp_mg, aes(distance, pred_fit), lwd=lsize) +
     scale_y_continuous(limits=c(0.4, 1)) +
     scale_x_continuous(limits=c(0,185)) +
     labs(title="Madagascar",x="Days", y="Dissimilarity (J)")
 
 p6 <- ggplot(betapart_temp_swe, aes(distance, jaccard)) +
-    geom_point(alpha=0.005, size=2, colour="blue", show.legend=FALSE) +
+    geom_point(alpha=0.005, size=2, colour=se_col, show.legend=FALSE) +
     theme_linedraw(base_size=20) +
-    geom_line(data=mono_temp_se, aes(distance, pred_fit), lwd=2) +
+    geom_line(data=mono_temp_se, aes(distance, pred_fit), lwd=lsize) +
     scale_y_continuous(limits=c(0.4, 1)) +
     scale_x_continuous(limits=c(0,185)) +
     labs(title="Sweden",x="Days", y=NULL)
