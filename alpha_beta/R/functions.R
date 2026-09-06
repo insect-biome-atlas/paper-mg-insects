@@ -62,7 +62,7 @@ partition_beta_diversity <- function(sp_matrix_total , trap_dist) {
   beta_dist <- beta.pair(bpart_core , index.family = "jaccard")  # Pairwise beta diversity using Jaccard index
   
   # Convert Jaccard turnover component to matrix and extract lower triangle
-  IBA_jtu <- beta_dist$beta.jac |>as.matrix()  
+  IBA_jtu <- beta_dist$beta.jtu |>as.matrix()  
   ind_jtu <- which( lower.tri(IBA_jtu,diag=FALSE ), arr.ind = TRUE )
   
   # Create a data frame with Jaccard turnover values for each trap pair
@@ -77,17 +77,17 @@ partition_beta_diversity <- function(sp_matrix_total , trap_dist) {
   IBA_betapart <- inner_join(trap_dist , IBA_turnover , by = "trap_ID")
   IBA_betapart <- drop_units(IBA_betapart)  # Remove units from the distance column for simplicity
   
-  return(IBA_betapart)  # Return the merged data frame
+  return(IBA_betapart[!is.na(IBA_betapart$jaccard),])  # Return the merged data frame
 }
 
-# Partition beta diversity between samples --------------
+# Partition beta temporal diversity between samples --------------
 partition_beta_temp_diversity <- function(sp_matrix_total , sample_dist) {
   # Calculate beta diversity components
   bpart_core <- betapart.core(sp_matrix_total)  # Core calculation of beta diversity
   beta_dist <- beta.pair(bpart_core , index.family = "jaccard")  # Pairwise beta diversity using Jaccard index
 
   # Convert Jaccard turnover component to matrix and extract lower triangle
-  IBA_jtu <- beta_dist$beta.jac |>as.matrix()
+  IBA_jtu <- beta_dist$beta.jtu |>as.matrix()
   ind_jtu <- which( lower.tri(IBA_jtu,diag=FALSE ), arr.ind = TRUE )
 
   # Create a data frame with Jaccard turnover values for each trap pair
@@ -101,7 +101,7 @@ partition_beta_temp_diversity <- function(sp_matrix_total , sample_dist) {
   # Merge the trap distance data with the Jaccard turnover data
   IBA_betapart <- inner_join(sample_dist , IBA_turnover , by = "sample_ID")
 
-  return(IBA_betapart)  # Return the merged data frame
+  return(IBA_betapart[!is.na(IBA_betapart$jaccard),])  # Return the merged data frame
 }
 
 # Fit spline with monotonic assumption 
