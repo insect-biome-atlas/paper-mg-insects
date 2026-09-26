@@ -33,6 +33,7 @@ D$Family <- clusters$Family[idx]
 D$Order <- clusters$Order[idx]
 D$Niche <- clusters$Niche[idx]
 D$Habitat <- clusters$Habitat[idx]
+D$Coleoptera <- 1*(D$Order=="Coleoptera")
 
 # Save data for post-processing
 write.table(D,"../data/diversification_data.tsv",row.names=FALSE,sep="\t")
@@ -43,4 +44,15 @@ cat(D$placement_age, sep=',\n', file='../data/div_data.json', append=TRUE)
 cat('],\n"otus":[', file='../data/div_data.json', append=TRUE)
 cat(D$OTUs, sep=',\n', file='../data/div_data.json', append=TRUE)
 cat(']}\n', file='../data/div_data.json', append=TRUE)
+
+# Save data for treeppl inference with bias correction
+cat('{"ages":[', file='../data/div_data_bias.json')
+cat(D$placement_age[D$Order!="Coleoptera"], sep=',\n', file='../data/div_data_bias.json', append=TRUE)
+cat('],\n"otus":[', file='../data/div_data_bias.json', append=TRUE)
+cat(D$OTUs[D$Order!="Coleoptera"], sep=',\n', file='../data/div_data_bias.json', append=TRUE)
+cat('],\n"bias_ages":[', file='../data/div_data_bias.json', append=TRUE)
+cat(D$placement_age[D$Order=="Coleoptera"], sep=',\n', file='../data/div_data_bias.json', append=TRUE)
+cat('],\n"bias_otus":[', file='../data/div_data_bias.json', append=TRUE)
+cat(D$OTUs[D$Order=="Coleoptera"], sep=',\n', file='../data/div_data_bias.json', append=TRUE)
+cat(']}\n', file='../data/div_data_bias.json', append=TRUE)
 

@@ -1,4 +1,7 @@
 # Compute and plot predictive diversification tests
+# Accommodate potential sampling bias for Coleoptera
+# by using predictive distribution from bias-corrected
+# inference and posterior predictive simulation
 
 library(ggplot2)
 library(patchwork)
@@ -7,7 +10,7 @@ source("../../fig_settings/fig_colours.R")
 
 # Get MG data, and samples from the predictive distribution
 D <- read.delim("../data/diversification_data.tsv")
-P <- read.delim("../data/predictive_samples.tsv")
+P <- read.delim("../data/predictive_samples_bias.tsv")
 
 # Get SE data and complement with clade info
 S <- read.delim("../../composition/data/otu_site_meta_se.tsv")
@@ -215,7 +218,7 @@ cat("\n")
 p6 <- plot_fxn(pred_frac, obs_frac, "Coleoptera fraction", "Fraction")
 
 # Save plots
-ggsave(file = "../figs/Fig_diversification_tests.jpg",
+ggsave(file = "../figs/Fig_diversification_tests_bias.jpg",
        width = 7.5,
        height = 10,
        plot = p1 + p2 + p3 + p4 + p5 + p6 +

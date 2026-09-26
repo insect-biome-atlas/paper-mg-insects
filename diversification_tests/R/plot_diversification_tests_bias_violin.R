@@ -1,4 +1,5 @@
 # Compute and plot predictive diversification tests
+# Correct for Coleoptera sampling bias
 
 library(ggplot2)
 library(patchwork)
@@ -7,7 +8,7 @@ source("../../fig_settings/fig_colours.R")
 
 # Get MG data, and samples from the predictive distribution
 D <- read.delim("../data/diversification_data.tsv")
-P <- read.delim("../data/predictive_samples.tsv")
+P <- read.delim("../data/predictive_samples_bias.tsv")
 
 # Get SE data and complement with clade info
 S <- read.delim("../../composition/data/otu_site_meta_se.tsv")
@@ -19,20 +20,8 @@ kldiv <- function(p,q) {
     sum(p*log(p/q))
 }
 
-plot_fxn <- function(pred_vals, obs_val, title, xlab) {
-
-    D <- data.frame(list(pred_vals=pred_vals))
-    E <- data.frame(list(obs_val=obs_val, y=0.0))
-    ggplot(D, aes(x=pred_vals)) +
-        theme_minimal() + 
-        geom_density(fill="steelblue", alpha=0.5) +
-        geom_point(data=E, aes(x=obs_val, y=y), shape=23, size=3, fill=mg_col) +
-        ylab(NULL) +
-        xlab(xlab) +
-        ggtitle(title)
-}
-
 cat("\n")   # Make output more clearly separated from command line
+
 
 # 1. Major niche composition
 # --------------------------
@@ -66,7 +55,11 @@ cat("Observed KL divergence in major-niche proportions is:", obs_kl_div, "\n")
 cat("Tail probability:", tail_prob, "\n")
 cat("\n")
 
-p1 <- plot_fxn(pred_kl_div, obs_kl_div, "Major-niche composition", "KL distance to temperate fauna")
+# Accumulate results
+lbl <- "Major-niche composition"
+max_scale_val <- max(pred_kl_div,obs_kl_div)
+res1 <- data.frame(label=lbl,vals=pred_kl_div/max_scale_val)
+res2 <- data.frame(label=lbl,obs_val=obs_kl_div/max_scale_val,ref_val=0.0)
 
 
 # 2. Habitat composition
@@ -101,7 +94,11 @@ cat("Observed KL divergence in habitat proportions is:", obs_kl_div, "\n")
 cat("Tail probability (kl_div <= observed):", tail_prob, "\n")
 cat("\n")
 
-p2 <- plot_fxn(pred_kl_div, obs_kl_div, "Habitat composition", "KL distance to temperate fauna")
+# Accumulate results
+lbl <- "Microhabitat use"
+max_scale_val <- max(pred_kl_div,obs_kl_div)
+res1 <- rbind(res1, data.frame(label=lbl,vals=pred_kl_div/max_scale_val))
+res2 <- rbind(res2, data.frame(label=lbl,obs_val=obs_kl_div/max_scale_val,ref_val=0.0))
 
 
 # 3. Order composition
@@ -136,8 +133,11 @@ cat("Observed KL divergence in order proportions is:", obs_kl_div, "\n")
 cat("Tail probability (kl_div <= observed):", tail_prob, "\n")
 cat("\n")
 
-p3 <- plot_fxn(pred_kl_div, obs_kl_div, "Order composition", "KL distance to temperate fauna")
-
+# Accumulate results
+lbl <- "Order composition"
+max_scale_val <- max(pred_kl_div,obs_kl_div)
+res1 <- rbind(res1, data.frame(label=lbl,vals=pred_kl_div/max_scale_val))
+res2 <- rbind(res2, data.frame(label=lbl,obs_val=obs_kl_div/max_scale_val,ref_val=0.0))
 
 # 4. Clade composition
 # --------------------
@@ -171,16 +171,48 @@ cat("Observed KL divergence in clade proportions is:", obs_kl_div, "\n")
 cat("Tail probability (kl_div <= observed):", tail_prob, "\n")
 cat("\n")
 
-p4 <- plot_fxn(pred_kl_div, obs_kl_div, "Family-clade composition", "KL distance to temperate fauna")
+# Accumulate results
+lbl <- "Family-clade composition"
+max_scale_val <- max(pred_kl_div,obs_kl_div)
+res1 <- rbind(res1, data.frame(label=lbl,vals=pred_kl_div/max_scale_val))
+res2 <- rbind(res2, data.frame(label=lbl,obs_val=obs_kl_div/max_scale_val,ref_val=0.0))
+
+res1$label <- factor(res1$label,levels=res2$label[4:1])
+write.table(res1,"dist_data.tsv",sep="\t",row.names=FALSE)
+write.table(res2,"dist_ref_data.tsv",sep="\t",row.names=FALSE)
+
+
+
+# Generate first plot (aspects 1-4)
+# ---------------------------------
+
+p1 <- ggplot(data=res1, aes(x=label, y=vals)) +
+        geom_violin(width=1.0, linewidth=0.2, fill="steelblue", alpha=0.5) +
+        geom_point(data=res2, aes(x=label,y=obs_val), shape=23, size=3, fill=mg_col) +
+        geom_point(data=res2, aes(x=label,y=ref_val), shape=23, size=3, fill=se_col) +
+#        theme_ipsum() +
+        theme_minimal() +
+        theme(
+            legend.position="none"
+        ) +
+        coord_flip() + # This switch X and Y axis and allows to get the horizontal version
+        xlab("") +
+        ylab("Distance (Kullback-Leibler, scaled)")
 
 
 # 5. Scarcity of parasitoids
 # --------------------------
 
 parasitoids <- c("Predator-parasitoid","Phytophage-parasitoid","Saprophage-parasitoid")
+all_niches <- c(niches, parasitoids)
 parasitoid_otus <- sum(D$OTUs[D$Niche %in% parasitoids])
-total_otus <- sum(D$OTUs)
+total_otus <- sum(D$OTUs[D$Niche %in% all_niches])
 obs_frac <- parasitoid_otus / total_otus
+
+# SE reference value
+parasitoid_otus <- length(unique(S$cluster[S$Niche %in% parasitoids]))
+total_otus <- length(unique(S$cluster[S$Niche %in% all_niches]))
+se_frac <- parasitoid_otus / total_otus
 
 pred_frac <- numeric(ncol(P))
 for (i in 1:ncol(P)) {
@@ -193,13 +225,21 @@ cat("Observed fraction of parasitoids is:", obs_frac, "\n")
 cat("Tail probability (frac >= observed):", tail_prob, "\n")
 cat("\n")
 
-p5 <- plot_fxn(pred_frac, obs_frac, "Parasitoid fraction", "Fraction")
+# Accumulate results
+lbl <- "Parasitoid fraction"
+res3 <- data.frame(label=lbl,vals=pred_frac)
+res4 <- data.frame(label=lbl,obs_val=obs_frac,ref_val=se_frac)
 
 
 # 6. Abundance of Coleoptera
 # --------------------------
 
+# Observed MG value
 obs_frac <- sum(D$OTUs[D$Order=="Coleoptera"]) / sum(D$OTUs)
+
+# SE reference value
+se_frac <- length(unique(S$cluster[S$Order=="Coleoptera"])) / length(unique(S$cluster))
+
 
 pred_frac <- numeric(ncol(P))
 for (i in 1:ncol(P)) {
@@ -212,14 +252,52 @@ cat("Observed fraction of Coleoptera:", obs_frac, "\n")
 cat("Tail probability (frac <= observed):", tail_prob, "\n")
 cat("\n")
 
-p6 <- plot_fxn(pred_frac, obs_frac, "Coleoptera fraction", "Fraction")
+# Accumulate results
+lbl <- "Coleoptera fraction"
+res3 <- rbind(res3,data.frame(label=lbl,vals=pred_frac))
+res4 <- rbind(res4,data.frame(label=lbl,obs_val=obs_frac,ref_val=se_frac))
+
+res3$label <- factor(res3$label,levels=res4$label[2:1])
+write.table(res3,"frac_data.tsv",sep="\t",row.names=FALSE)
+write.table(res4,"frac_ref_data.tsv",sep="\t",row.names=FALSE)
+
+# Generate plots
+# --------------
+
+p1 <- ggplot(data=res1, aes(x=label, y=vals)) +
+        geom_violin(width=0.95, linewidth=0.2, fill="steelblue", alpha=0.5) +
+        geom_point(data=res2, aes(x=label,y=obs_val), shape=23, size=3, fill=mg_col) +
+        geom_point(data=res2, aes(x=label,y=ref_val), shape=23, size=3, fill=se_col) +
+        theme_linedraw() +
+        theme(
+            legend.position="none",
+            axis.title.x=element_text(margin=margin(t=5)),
+            axis.text.y=element_text(size=12)
+            ) +
+        coord_flip() + # This switch X and Y axis and allows to get the horizontal version
+        xlab("") +
+        ylab("Distance (Kullback-Leibler, scaled)")
+
+p2 <- ggplot(data=res3, aes(x=label, y=vals)) +
+        geom_violin(width=0.95, linewidth=0.2, fill="steelblue", alpha=0.5) +
+        geom_point(data=res4, aes(x=label,y=obs_val), shape=23, size=3, fill=mg_col) +
+        geom_point(data=res4, aes(x=label,y=ref_val), shape=23, size=3, fill=se_col) +
+        theme_linedraw() +
+        theme(
+            legend.position="none",
+            axis.title.x=element_text(margin=margin(t=5)),
+            axis.text.y=element_text(size=12)
+            ) +
+        coord_flip() + # This switch X and Y axis and allows to get the horizontal version
+        xlab("") +
+        ylab("Proportion of species")
 
 # Save plots
-ggsave(file = "../figs/Fig_diversification_tests.jpg",
+ggsave(file = "../figs/Fig_diversification_tests_bias_violin.jpg",
        width = 7.5,
-       height = 10,
-       plot = p1 + p2 + p3 + p4 + p5 + p6 +
-           plot_layout(ncol=2) +
+       height = 9.0,
+       plot = p1 + p2 +
+           plot_layout(ncol=1, heights=c(4,2)) +
            plot_annotation(tag_levels="A")
        )
 
