@@ -1,0 +1,96 @@
+// Script describing tdbd model of diversification,
+// conditioning on the number of observed ages and
+// numbers of otus.
+
+// This version accommodates a difference in sampling
+// probabilities across lineags, specifically allowing
+// some lineages to be sampled with lower probability
+// than the remaining lineages.
+
+// Compute the log probability of an observation.
+// Condition on survival of one lineage (for detection in MG),
+// (that is, n > 0 always)
+function logP(n: Int, time: Real, lambda: Real, mu: Real) => Real {
+
+    let r = lambda - mu;
+    let ert = exp(-r*time);
+
+    let p0 = mu*(1.0 - ert)/(lambda - mu*ert);
+
+    let f = (lambda - mu) / (lambda - mu*ert);
+    
+    let logP = log(f*f*ert) + (int2real(n) - 1.0)*log((lambda*(1.0 - ert))/(lambda - mu*ert));
+
+    let log_prob = logP - log(1.0 - p0);
+
+    if (log_prob > 0.0) {
+        debug (log_prob);
+    }
+    return log_prob;
+}
+
+// Compute the log probability of an observation.
+// Condition on survival and sampling of one lineage (for detection in MG),
+// (that is, k > 0 always), where k is the number of sampled lineages.
+// We allow sampling probability (rho) to be less than 1.0, that is,
+// less than complete, so that sampling biases across groups can be
+// accommodated.
+function logP_sampling(n: Int, time: Real, lambda: Real, mu: Real, rho: Real) => Real {
+
+    let s = lambda - mu;
+    let q = exp(-s*time);
+
+    let p0 = mu*(1.0 - q)/(lambda - mu*q);
+
+    let f = s/(lambda - mu*q); 
+    let beta = lambda*(1.0 - q)/(lambda - mu*q);
+    let r = beta*rho/(1.0 - beta*(1.0 - rho));
+    let pk0 = p0 + f*(1.0 - beta)*(1.0 - rho)/(1.0 - beta*(1.0 - rho));
+
+    let log_pk = log(f*(1.0 - beta)) + (int2real(n) - 1.0)*log(r) + log(rho + (1.0 - rho)*r);
+
+    let log_prob = log_pk - log(1.0 - pk0);
+    if (log_prob > 0.0) {
+        debug (log_prob);
+    }
+
+    return log_prob;
+}
+
+// Function for transforming times depending on z (here, rate of decrease of rates)
+// (We integrate out rates to get effective rate, then we
+// stretch the time so that the initial rate is correct).
+function transformTime(time: Real, z: Real) => Real {
+    return (1.0 - exp(-z*time))/z;
+}
+
+// Model function
+model function mydiv(ages: Real[], otus: Int[], bias_ages: Real[], bias_otus: Int[]) => Real[] {
+
+    // Bias is computed by the R script compute_coleoptera_sampling_bias.R
+    let rho = 0.6648029;
+
+    // Make sure age is at least 1e-6 (= 1 year)
+    let ages = sapply(ages, max(_,1e-6));
+    let bias_ages = sapply(bias_ages, max(_,1e-6));
+
+    // For the gamma drift kernels, note that shape=(mean^2.0/var) and scale=var/mean
+    assume lambda ~ Gamma(1.0,1.0)       drift Gamma((lambda^2.0)/1e-3,1e-3/lambda);
+    assume epsilon ~ Uniform(0.0,1.0)    drift Uniform(max(epsilon-5e-2,1e-6),min(epsilon+5e-2,1.0-1e-6));
+    assume z ~ Gamma(1.0,1.0)            drift Gamma((z^2.0)/1e-3,1e-3/z);
+
+    let mu = epsilon * lambda;
+
+    let ages = sapply(ages, transformTime(_,z));
+    let logLikes1 = zipWith(logP(_, _, lambda, mu), otus, ages);
+    let logLike1 = seqSumReal(logLikes1);
+    
+    let bias_ages = sapply(bias_ages, transformTime(_,z));
+    let logLikes2 = zipWith(logP_sampling(_, _, lambda, mu, rho), bias_otus, bias_ages);
+    let logLike2 = seqSumReal(logLikes2);
+
+    logWeight logLike1 + logLike2;
+
+    return [lambda, epsilon, z];
+}
+
