@@ -95,7 +95,7 @@ elev_limits <- pmax(elev_limits, 0) # Set min to 0
 # Format meta-data
 meta_mg <- meta_mg  |>
             mutate(trap_habitat=recode(trap_habitat , 
-                                       "Dry_Forest"          = "Dry Forest",
+                                       "Dry_Forest"          = "Dry forest",
                                        "Montane_Rainforest"  = "Montane forest",
                                        "Rainforest"          = "Wet forest"),
                    malaise_trap_type = recode(malaise_trap_type , "Single_trap" = "Single trap"))
@@ -108,7 +108,7 @@ p1 <- mad_hshade_plot + # PLot hillshaded map
   new_scale_fill() +
   geom_point(data=meta_mg , aes(longitude_WGS84 , latitude_WGS84 , 
                                 fill = factor(malaise_trap_type), shape = factor(trap_habitat)),size=7) + 
-  scale_fill_manual(values = c("Single trap" = "white", "Multitrap" = "grey60"),
+  scale_fill_manual(values = c("Single trap" = "white", "Multitrap" = "grey70"),
                     breaks = c("Single trap", "Multitrap"),
                     labels = c("Single trap", "Multitrap")) +
 #  scale_fill_viridis_d(option="mako", end=.8, guide=guide_legend()) +

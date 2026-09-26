@@ -384,16 +384,16 @@ plot_numclades <- function(D, plot_title, lgd_pos=legend_pos, axis_txt=element_b
     scale_fill_viridis_c(option = pal_option)
 }
 
-E1 <- plot_data(D[D$placement_age < 23.0,])
+E1 <- plot_data(D[D$placement_age <= 23.0,])
 E2 <- plot_data(D[D$placement_age > 23.0,])
-E3 <- plot_data(D[D$placement_age < 34.0,])
+E3 <- plot_data(D[D$placement_age <= 34.0,])
 E4 <- plot_data(D[D$placement_age > 34.0,])
 
-supp1 <- plot_numclades(E1, "(A) Young clades (< 23.0 Ma)", compound_legend_pos, element_text(size=12)) +
+supp1 <- plot_numclades(E1, "(A) Young clades (<= 23.0 Ma)", compound_legend_pos, element_text(size=12)) +
             ggspatial::annotation_scale(location = 'br',width_hint = .4,text_cex = 1) +
             guides(shape = guide_legend(title.position = "top", order=2, override.aes = list(size=3)))
 supp2 <- plot_numclades(E2, "(B) Old clades (> 23.0 Ma)")
-supp3 <- plot_numclades(E3, "(C) Young clades (< 34.0 Ma)")
+supp3 <- plot_numclades(E3, "(C) Young clades (<= 34.0 Ma)")
 supp4 <- plot_numclades(E4, "(D) Old clades (> 34.0 Ma)")
 
 # Put plots together and save
