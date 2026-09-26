@@ -17,6 +17,6 @@ Contains source data:
  -	`mg_placement_tree_tiplabels.nwk`: the same tree with original tip labels.
 
 ## `R` directory
-Contains the R script used to compute the placement information:
+Contains the following R scripts:
  - `compute_placement_ages.R`: Uses information in `source` and generates output with placement ages and other info in `data`.
-
+ - `compute_gbif_barcode_overlap.R`: Compute the overlap between IBA MG species and GBIF species recorded from Madagascar / barcoded species
