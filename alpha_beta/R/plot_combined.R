@@ -10,7 +10,8 @@ source("../../fig_settings/fig_colours.R")
 
 # Set basic plot params and analysis params
 bs    <- 20
-lsize <- 1
+lsize1 <- 1.0
+lsize2 <- 2.0
 set.seed(10)
 remove_singletons <- TRUE 
 
@@ -43,10 +44,11 @@ mgPoolDF <- mgPoolDF[mgPoolDF$N >=5,]
 
 # Madagascar
 p1 <- ggplot(data=mgDF, aes(x=sites, y=species)) +
-        geom_line(linewidth=lsize) +
+        geom_line(linewidth=1.0) +
         geom_ribbon(aes(ymin=species-sd, ymax=species+sd), alpha=0.2, fill=mg_col) +
-        geom_line(data=mgPoolDF, linewidth=lsize, aes(x=N, y=Chao), linetype="dashed") +
+        geom_line(data=mgPoolDF, linewidth=lsize1, aes(x=N, y=Chao), linetype="dashed") +
         theme_linedraw(base_size=bs) +
+        theme(plot.title=element_text(hjust=0.5)) +
         scale_y_continuous(limits=c(0,126000),
                            breaks=c(25000,50000,75000,100000,125000),
                            labels=c("25k","50k","75k","100k","125k")) +
@@ -54,10 +56,11 @@ p1 <- ggplot(data=mgDF, aes(x=sites, y=species)) +
 
 # Sweden
 p2 <- ggplot(data=seDF, aes(x=sites, y=species)) +
-        geom_line(linewidth=lsize) +
+        geom_line(linewidth=1.0) +
         geom_ribbon(aes(ymin=species-sd, ymax=species+sd) , alpha=0.2, fill=se_col) +
-        geom_line(data=sePoolDF, linewidth=lsize, aes(x=N, y=Chao), linetype="dashed") +
+        geom_line(data=sePoolDF, linewidth=lsize2, aes(x=N, y=Chao), linetype="dashed") +
         theme_linedraw(base_size=bs) +
+        theme(plot.title=element_text(hjust=0.5)) +
         scale_y_continuous(limits=c(0,126000),
                            breaks=c(25000,50000,75000,100000,125000),
                            labels=c("25k","50k","75k","100k","125k")) +
@@ -120,18 +123,18 @@ mono_se <- monotonic_gam(betapart_swe, nK=5)
 p3 <- ggplot(betapart_mad, aes(distance, jaccard)) +
     geom_point(alpha=0.2, size=2, colour=mg_col, show.legend=FALSE) +
     theme_linedraw(base_size=20) +
-    geom_line(data=mono_mg, aes(distance, pred_fit), lwd=2) +
+    geom_line(data=mono_mg, aes(distance, pred_fit), lwd=lsize2) +
     scale_y_continuous(limits=c(0.4, 1)) +
     scale_x_continuous(limits=c(0,1510)) +
-    labs(title="Madagascar",x="Distance (km)", y="Dissimilarity (J)") 
+    labs(title=NULL,x="Distance (km)", y="Spatial turnover (Jaccard dissim.)") 
 
 p4 <- ggplot(betapart_swe, aes(distance, jaccard)) +
     geom_point(alpha=0.1, size=2, colour=se_col, show.legend=FALSE) +
     theme_linedraw(base_size=20) +
-    geom_line(data=mono_se, aes(distance, pred_fit), lwd=2) +
+    geom_line(data=mono_se, aes(distance, pred_fit), lwd=lsize2) +
     scale_y_continuous(limits=c(0.4, 1)) +
     scale_x_continuous(limits=c(0,1510)) +
-    labs(title="Sweden",x="Distance (km)", y=NULL) 
+    labs(title=NULL,x="Distance (km)", y=NULL) 
 
 
 # Generate temporal beta plots
@@ -199,18 +202,18 @@ mono_temp_se <- monotonic_gam(betapart_temp_swe, nK=5)
 p5 <- ggplot(betapart_temp_mad, aes(distance, jaccard)) +
     geom_point(alpha=0.01, size=2, colour=mg_col, show.legend=FALSE) +
     theme_linedraw(base_size=20) +
-    geom_line(data=mono_temp_mg, aes(distance, pred_fit), lwd=lsize) +
+    geom_line(data=mono_temp_mg, aes(distance, pred_fit), lwd=lsize2) +
     scale_y_continuous(limits=c(0.4, 1)) +
     scale_x_continuous(limits=c(0,185)) +
-    labs(title="Madagascar",x="Days", y="Dissimilarity (J)")
+    labs(title=NULL,x="Days", y="Temporal turnover (Jaccard dissim.)")
 
 p6 <- ggplot(betapart_temp_swe, aes(distance, jaccard)) +
     geom_point(alpha=0.005, size=2, colour=se_col, show.legend=FALSE) +
     theme_linedraw(base_size=20) +
-    geom_line(data=mono_temp_se, aes(distance, pred_fit), lwd=lsize) +
+    geom_line(data=mono_temp_se, aes(distance, pred_fit), lwd=lsize2) +
     scale_y_continuous(limits=c(0.4, 1)) +
     scale_x_continuous(limits=c(0,185)) +
-    labs(title="Sweden",x="Days", y=NULL)
+    labs(title=NULL,x="Days", y=NULL)
 
 
 # Save plots
