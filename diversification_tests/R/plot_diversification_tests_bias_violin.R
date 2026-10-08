@@ -1,5 +1,5 @@
 # Compute and plot predictive diversification tests
-# Correct for Coleoptera sampling bias
+# Use predictive samples corrected for the Coleoptera sampling bias
 
 library(ggplot2)
 library(patchwork)
@@ -177,10 +177,8 @@ max_scale_val <- max(pred_kl_div,obs_kl_div)
 res1 <- rbind(res1, data.frame(label=lbl,vals=pred_kl_div/max_scale_val))
 res2 <- rbind(res2, data.frame(label=lbl,obs_val=obs_kl_div/max_scale_val,ref_val=0.0))
 
+# Prepare for plotting
 res1$label <- factor(res1$label,levels=res2$label[4:1])
-write.table(res1,"dist_data.tsv",sep="\t",row.names=FALSE)
-write.table(res2,"dist_ref_data.tsv",sep="\t",row.names=FALSE)
-
 
 
 # Generate first plot (aspects 1-4)
@@ -231,24 +229,26 @@ res3 <- data.frame(label=lbl,vals=pred_frac)
 res4 <- data.frame(label=lbl,obs_val=obs_frac,ref_val=se_frac)
 
 
-# 6. Abundance of Coleoptera
-# --------------------------
+# 6. Abundance of Coleoptera among non-parasitoids
+# ------------------------------------------------
 
 # Observed MG value
-obs_frac <- sum(D$OTUs[D$Order=="Coleoptera"]) / sum(D$OTUs)
+D1 <- D[!(D$Niche %in% parasitoids),]
+obs_frac <- sum(D1$OTUs[D1$Order=="Coleoptera"]) / sum(D1$OTUs)
 
 # SE reference value
-se_frac <- length(unique(S$cluster[S$Order=="Coleoptera"])) / length(unique(S$cluster))
-
+S1 <- S[!(S$Niche %in% parasitoids),]
+se_frac <- length(unique(S1$cluster[S1$Order=="Coleoptera"])) / length(unique(S1$cluster))
 
 pred_frac <- numeric(ncol(P))
 for (i in 1:ncol(P)) {
     otus <- P[,i]
-    pred_frac[i] <- sum(otus[D$Order=="Coleoptera"]) / sum(otus)
+    otus1 <- otus[!(D$Niche %in% parasitoids)]                          # Subset otus to non-parasitoids
+    pred_frac[i] <- sum(otus1[D1$Order=="Coleoptera"]) / sum(otus1)     # Use 1 to 1 mapping between otus1 and D1
 }
 tail_prob <- sum(pred_frac<=obs_frac) / length(pred_frac)
 
-cat("Observed fraction of Coleoptera:", obs_frac, "\n")
+cat("Observed fraction of Coleoptera among non-parasitoids:", obs_frac, "\n")
 cat("Tail probability (frac <= observed):", tail_prob, "\n")
 cat("\n")
 
@@ -257,9 +257,9 @@ lbl <- "Coleoptera fraction"
 res3 <- rbind(res3,data.frame(label=lbl,vals=pred_frac))
 res4 <- rbind(res4,data.frame(label=lbl,obs_val=obs_frac,ref_val=se_frac))
 
+# Prepare for plotting
 res3$label <- factor(res3$label,levels=res4$label[2:1])
-write.table(res3,"frac_data.tsv",sep="\t",row.names=FALSE)
-write.table(res4,"frac_ref_data.tsv",sep="\t",row.names=FALSE)
+
 
 # Generate plots
 # --------------
