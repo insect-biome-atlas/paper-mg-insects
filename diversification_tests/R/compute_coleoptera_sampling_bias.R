@@ -7,7 +7,12 @@ sampled_lepidoptera <- length(unique(D$cluster[D$Order=="Lepidoptera"]))
 T <- read.delim("../../traits/ronquist_2020_SE_traits.csv",sep=";")
 recorded_coleoptera <- sum(T$Corrected.values.2017[T$Order=="Coleoptera"])
 recorded_lepidoptera <- sum(T$Corrected.values.2017[T$Order=="Lepidoptera"])
+estimated_coleoptera <- sum(T$Sweden.estimated.total[T$Order=="Coleoptera"])
+estimated_lepidoptera <- sum(T$Sweden.estimated.total[T$Order=="Lepidoptera"])
 
 bias <- (sampled_coleoptera/sampled_lepidoptera) / (recorded_coleoptera/recorded_lepidoptera)
-cat("Estimated sampling bias for Coleoptera is:",bias,"\n")
+cat("Estimated sampling bias for Coleoptera using recorded species is:",bias,"\n")
+
+bias <- (sampled_coleoptera/sampled_lepidoptera) / (estimated_coleoptera/estimated_lepidoptera)
+cat("Estimated sampling bias for Coleoptera using estimated species is:",bias,"\n")
 
