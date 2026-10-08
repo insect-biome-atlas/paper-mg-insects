@@ -1,0 +1,27 @@
+#NEXUS
+
+begin mrbayes;
+	set autoclose=yes nowarn=yes;
+	set dir="../";
+	exe chalcidoidea.nex;
+	exe cruaud_constraints.nex;
+	exe higher_constraints.nex;
+	set dir="";
+
+	charset 1st = 1-. \3;
+	charset 2nd = 2-. \3;
+	charset 3rd = 3-. \3;
+	partition cod = 3: 1st, 2nd, 3rd;
+	set partition=cod;
+
+	prset brlenspr=clock:uniform clockvarpr=strict;
+	prset topologypr=constraints(1-227);
+
+	lset rates=gamma nst=mixed;
+	prset ratepr=variable;
+	unlink shape=(all) statefreq=(all) revmat=(all);
+
+	mcmcp printfreq=10000 samplefreq=5000 diagnfreq=50000 nruns=16 ngen=50000000;
+    sumt;
+    sump;
+end;
