@@ -85,7 +85,8 @@ p1 <- plot_family(mg_families, num_top, 15000, 5, "Tropical forest (Madagascar)"
 p2 <- plot_family(se_families, num_top, 3500, 7, "Temperate forest (Sweden)") + guides(fill = guide_legend(nrow=1))
 
 # Extract and remove legend
-p3 <- cowplot::get_legend(p1)
+pDummy <- plot_family(mg_families, num_top, 15000, 5, "Tropical forest (Madagascar)", other_orthoptera=TRUE) + guides(fill = guide_legend(nrow=1))
+p3 <- cowplot::get_legend(pDummy)
 p1 <- p1 + theme(legend.position = "none") + labs(tag = "A")
 p2 <- p2 + theme(legend.position = "none") + labs(tag = "B")
 
@@ -108,20 +109,23 @@ p2 <- plot_clade(se_clades, num_top, 3000, 6, "Temperate forest (Sweden)") + gui
 p3 <- plot_clade(mg_rainforest_clades, num_top, 10000, 5, "Rainforest (Madagascar)") + guides(fill = guide_legend(nrow=1))
 p4 <- plot_clade(mg_dryforest_clades, num_top, 3500, 7, "Dry forest (Madagascar)") + guides(fill = guide_legend(nrow=1))
 
-# Extract and remove legends
-p5 <- cowplot::get_legend(p1)
+# Extract and remove legends (replace "Other" with "Orthoptera", as this is the only "Other" order among the top hits)
+pDummy <- plot_clade(mg_clades, num_top, 10000, 5, "Tropical forest (Madagascar)", other_orthoptera=TRUE) + guides(fill = guide_legend(nrow=1))
+p5 <- cowplot::get_legend(pDummy)
+pDummy <- plot_clade(mg_rainforest_clades, num_top, 10000, 5, "Rainforest (Madagascar)", other_orthoptera=TRUE) + guides(fill = guide_legend(nrow=1))
+p6 <- cowplot::get_legend(pDummy)
+
 p1 <- p1 + theme(legend.position = "none") + labs(tag = "A")
 p2 <- p2 + theme(legend.position = "none") + labs(tag = "B")
-p6 <- cowplot::get_legend(p3)
 p3 <- p3 + theme(legend.position = "none") + labs(tag = "C")
 p4 <- p4 + theme(legend.position = "none") + labs(tag = "D")
 
-# Put plots together
+# Put plots together (legends p5 and p6 are identical so only show one)
 ggsave(
        file = "../figs/Fig_clade_composition.jpg",
        width = 14.0,
        height = 21.0,
-       plot = (p1 + p2) / p5 / (p3 + p4) / p6 +
-              plot_layout(axis_titles="collect", heights=c(0.45,0.05,0.45,0.05))
+       plot = (p1 + p2) / (p3 + p4) / p6 +
+              plot_layout(axis_titles="collect", heights=c(0.45,0.45,0.05))
        )
 

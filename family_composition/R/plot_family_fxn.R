@@ -8,24 +8,31 @@ library(scales)
 
 
 # Family plot rendering function
-plot_family <- function(D, num_top, max_tick, div, plot_title, offset_frac=0.0) {
-   
+plot_family <- function(D, num_top, max_tick, div, plot_title, offset_frac=0.0, other_orthoptera=FALSE) {
+
     my_colors <- viridis_pal()(6)
     
     D <- D[1:num_top,]
     D$Family <- factor(D$Family,levels=c(D$Family[num_top:1]))
     max_x <- max(D$OTUs)
+
+    other_label <- "Other"
+    if (other_orthoptera) {
+        levels(D$Order)[levels(D$Order)=="Other"] <- "Orthoptera"
+        other_label <- "Orthoptera"
+    }
+
     D$label_cutoff <- max_x * as.numeric(sapply(as.character(D$Family),nchar)) / 40
 
-    ggplot(data=D, aes(x=OTUs, y=Family, fill=Order)) +
+    plt <- ggplot(data=D, aes(x=OTUs, y=Family, fill=Order)) +
         geom_col(width=0.8) +
         theme_minimal(base_size=17) +
         labs(title = plot_title,
-             x = "Number of OTUs") +
-        scale_fill_manual(
-            name = "Order",
-            values = c("Diptera" = my_colors[1], "Hymenoptera" = my_colors[2], "Coleoptera" = my_colors[3],
-                       "Lepidoptera" = my_colors[4], "Hemiptera" = my_colors[5], "Other" = my_colors[6])) +
+            x = "Number of OTUs") +
+#        scale_fill_manual(
+#            name = "Order",
+#            values = c("Diptera" = my_colors[1], "Hymenoptera" = my_colors[2], "Coleoptera" = my_colors[3],
+#                       "Lepidoptera" = my_colors[4], "Hemiptera" = my_colors[5], "Other" = my_colors[6]))  +
         theme(legend.position="bottom") +
         scale_x_continuous(
 #            limits = c(0, max_x),
@@ -68,12 +75,29 @@ plot_family <- function(D, num_top, max_tick, div, plot_title, offset_frac=0.0) 
             colour = "white",
             family = "Helvetica",
             size = 6)
+
+    if (other_orthoptera) {
+        plt <- plt +
+            scale_fill_manual(
+            name = "Order",
+            values = c("Diptera" = my_colors[1], "Hymenoptera" = my_colors[2], "Coleoptera" = my_colors[3],
+                       "Lepidoptera" = my_colors[4], "Hemiptera" = my_colors[5], "Orthoptera" = my_colors[6]))
+    } else {
+        plt <- plt +
+            scale_fill_manual(
+                name = "Order",
+                values = c("Diptera" = my_colors[1], "Hymenoptera" = my_colors[2], "Coleoptera" = my_colors[3],
+                           "Lepidoptera" = my_colors[4], "Hemiptera" = my_colors[5], "Other" = my_colors[6]))
+    }
+ 
+    plt
+
 }
 
 # Clade plot rendering function
-plot_clade <- function(D, num_top, max_tick, div, plot_title, offset_frac=0.0) {
+plot_clade <- function(D, num_top, max_tick, div, plot_title, offset_frac=0.0, other_orthoptera=FALSE) {
 
     D$Family <- D$Clade
-    plot_family(D, num_top, max_tick, div, plot_title, offset_frac)
+    plot_family(D, num_top, max_tick, div, plot_title, offset_frac, other_orthoptera)
 }
 

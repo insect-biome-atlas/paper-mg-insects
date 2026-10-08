@@ -188,13 +188,17 @@ mg_dryforest_families$Order <- factor(mg_dryforest_families$Order, levels=orders
 # --------------
 
 # Make plots
-p3 <- plot_family(mg_rainforest_families, 20, 9000, 6, "Rainforest", 0.3) + guides(fill=guide_legend(nrow=1))
-p4 <- plot_family(mg_dryforest_families, 20, 3500, 7, "Dry forest", 0.3) + guides(fill=guide_legend(nrow=1))
+
+p3 <- plot_family(mg_rainforest_families, 20, 9000, 6, "Rainforest OTUs", 0.3) + guides(fill=guide_legend(nrow=1))
+p4 <- plot_family(mg_dryforest_families, 20, 3500, 7, "Dry forest OTUs", 0.3) + guides(fill=guide_legend(nrow=1))
 p3 <- p3 + labs(tag = "C")
 p4 <- p4 + labs(tag = "D")
 
 # Extract and remove legend to display one shared legend
-p5 <- cowplot::get_legend(p3)   # Extract legend
+# Show "Other" as "Orthoptera", as only Orthoptera included in top hits
+pDummy <- plot_family(mg_rainforest_families, 20, 9000, 6, "Rainforest", 0.3, other_orthoptera=TRUE) + guides(fill=guide_legend(nrow=1))
+p5 <- cowplot::get_legend(pDummy)   # Extract legend
+
 p3 <- p3 + theme(legend.position="none") # Remove legend
 p4 <- p4 + theme(legend.position="none") # Remove legend
 
