@@ -4,7 +4,7 @@ Repository for data, scripts and figures related to a paper analyzing the size a
 
 The subdirectories contain the following:
  - `alpha_beta`: Data, scripts and figures for analyses of alpha and beta diversity
- - `clean`: Data and scripts for analyzing contaminations in MG litter data
+ - `clean`: Data and scripts for analyzing contaminations in MG leaf litter data
  - `composition`: Data, scripts and figures for analyses of ecological and taxonomic composition
  - `diversification_tests`: Data, scripts and figures for diversification analyses
  - `family_composition`: Data, scripts and figures for analyses of taxonomic composition at the family and family-clade levels
